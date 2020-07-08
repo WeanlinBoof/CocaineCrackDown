@@ -20,8 +20,8 @@ namespace CocaineCrackDown {
         private Spelare SpelareEtt;
         private int SpelareEttX;
         private int SpelareEttY;
-        private GameTime gameTime;
-        private float Sekunder;
+        private float Sekunder = 0f;
+        private bool AttackState = false;
         //dessa borde sorteras för att underlätta allt för oss ^^^
 
         // class konstruktör
@@ -85,6 +85,11 @@ namespace CocaineCrackDown {
                 Sekunder += (float)gameTime.ElapsedGameTime.TotalSeconds;
                 // Metod För Tangentbords inmatning
                 InmatningTangentbord(rörelseHastighet, Sekunder);
+
+                if(Sekunder > 0.5f){
+                    SpelareEtt.AttackStatus(AttackState = false);
+                    Sekunder = 0f;
+                }
 
                 //Metod För Mus inmatning
                 InmatningMus();
@@ -196,14 +201,11 @@ namespace CocaineCrackDown {
             }
             if (nuvarandeTangentbordStatus.IsKeyDown(Keys.Space)) {
                 //attack
-                SpelareEtt.AttackTrue();
 
+                SpelareEtt.AttackStatus(AttackState = true);
 
             }
-            if(Sekunder > 1.5f){
-                SpelareEtt.AttackFalse();
-                Sekunder = 0;
-            }
+
 
             //sparar nuvarande tangentbord status in i föregående så att man alltid vet vilken den föregående knappen tryckt var
             föregåendeTangentbordStatus = nuvarandeTangentbordStatus;

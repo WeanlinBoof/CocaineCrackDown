@@ -13,10 +13,9 @@ namespace CocaineCrackDown {
         public float SkärmHöjd { get; set; }
         private Texture2D Spelarebild { get; set; }
         private Texture2D SpelarebildAttack { get; set; }
-        private Texture2D NuvarandeSpelarebild { get; set; }
         private readonly SpriteBatch SpriteBatch;
-        private bool AttackStatus = false;
         private int kuk = 0;
+        private bool AttackState;
 
         public Spelare(float x, float y, float skärmbredd,float skärmhöjd, SpriteBatch spritebatch, SpelResurser spelresurs) {
             X = x;
@@ -29,12 +28,15 @@ namespace CocaineCrackDown {
             SkärmBredd = skärmbredd;
             SkärmHöjd = skärmhöjd;
         }
+        public void AttackStatus(bool _AttackState){
+            AttackState = _AttackState;
+        }
         public void Draw() {  //bild      position       rectangel   färg  rotation  origin      skala   SpriteEffect    layerdeapth
-            if(kuk == 0) {
-                NuvarandeSpelarebild = Spelarebild;
-                kuk = 1;
+            if(AttackState == true){
+                SpriteBatch.Draw(SpelarebildAttack, new Vector2(X, Y), null, Color.White, 0, new Vector2(0, 0), 1.0f, SpriteEffects.None, 0);
+            }else {
+                SpriteBatch.Draw(Spelarebild, new Vector2(X, Y), null, Color.White, 0, new Vector2(0, 0), 1.0f, SpriteEffects.None, 0);
             }
-            SpriteBatch.Draw(NuvarandeSpelarebild, new Vector2(X, Y), null, Color.Yellow, 0, new Vector2(0, 0), 1.0f, SpriteEffects.None, 0);
         }
         public void GåVänster(float RörelseHastighet) {
             X -= RörelseHastighet;
@@ -59,12 +61,6 @@ namespace CocaineCrackDown {
             if ((Y + Höjd) > SkärmHöjd) {
                 Y = SkärmHöjd - Höjd;
             }
-        }
-        public void AttackTrue() {
-            NuvarandeSpelarebild = SpelarebildAttack;
-        }
-        public void AttackFalse() {
-            NuvarandeSpelarebild = Spelarebild;
         }
     }
 }
