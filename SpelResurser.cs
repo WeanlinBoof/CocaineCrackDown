@@ -10,10 +10,10 @@ namespace CocaineCrackDown {
         public Texture2D SpelareEttNormalTextur { get; set; }
         public Texture2D SpelareEttAttackTextur { get; set; }
         public SpelResurser(ContentManager Content) {
-            GolvTextur = Content.Load<Texture2D>("bb");
-            BakgrundTextur = Content.Load<Texture2D>("bb");
-            SpelareEttNormalTextur = Content.Load<Texture2D>("bb");
-            SpelareEttAttackTextur = Content.Load<Texture2D>("bb");
+            GolvTextur = Content.Load<Texture2D>("mark");
+            //BakgrundTextur = Content.Load<Texture2D>("bb");
+            SpelareEttNormalTextur = Content.Load<Texture2D>("spelare");
+            SpelareEttAttackTextur = Content.Load<Texture2D>("spelare_attack");
         }
     }
 }

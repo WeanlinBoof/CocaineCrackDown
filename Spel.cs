@@ -11,12 +11,17 @@ namespace CocaineCrackDown {
         private SpriteBatch spriteBatch;
         private SpelResurser spelResurser;
         private readonly string titel = "CocaineCrackDown";
-        private int skärmBredd = 0; 
+        private int skärmBredd = 0;
         private int skärmHöjd = 0;
-        private MouseState föregåendeMusStatus; 
+        private MouseState föregåendeMusStatus;
         private KeyboardState föregåendeTangentbordStatus;
         private float förflutenTid;
         private float rörelseHastighet;
+        private Spelare SpelareEtt;
+        private int SpelareEttX;
+        private int SpelareEttY;
+        private GameTime gameTime;
+        private float Sekunder;
         //dessa borde sorteras för att underlätta allt för oss ^^^
 
         // class konstruktör
@@ -29,7 +34,7 @@ namespace CocaineCrackDown {
             Content.RootDirectory = "Content";
 
             // gör muspekaren är synlig
-            IsMouseVisible = true; 
+            IsMouseVisible = true;
         }
 
         //initialiserar skit inan allt börjar
@@ -41,14 +46,14 @@ namespace CocaineCrackDown {
             // uppdaterar spelet 300 gånger per sekund istället för varje frame
             TargetElapsedTime = TimeSpan.FromSeconds(1.0 / 300.0f);
 
-            // fixar en icke framerate beroende spel 
+            // fixar en icke framerate beroende spel
             IsFixedTimeStep = true;
 
             // inte säker var ej jag som la den där
             base.Initialize();
 
             // Aktiverar de ändringar man gör i grafiken
-            ÄndraGrafik(); 
+            ÄndraGrafik();
         }
 
         //laddar in resurser
@@ -59,24 +64,28 @@ namespace CocaineCrackDown {
             // inte säker var ej jag som la den där
             spelResurser = new SpelResurser(Content);
 
+            SpelareEttX = (skärmBredd - spelResurser.SpelareEttNormalTextur.Width) / 2;
+            SpelareEttY = (skärmHöjd - spelResurser.SpelareEttNormalTextur.Height) / 2;
+            SpelareEtt = new Spelare(SpelareEttX, SpelareEttY, skärmBredd, skärmHöjd, spriteBatch, spelResurser);
         }
 
         //uppdaterar
         protected override void Update(GameTime gameTime) {
 
-            /* gör så att spelet inte updaterar om det ej e fokuserat T.ex om man alt+tab ut från spelet 
+            /* gör så att spelet inte updaterar om det ej e fokuserat T.ex om man alt+tab ut från spelet
             det ska inte vara så här utan det är bara här för att man ska få ett hum hur man ska ta sig åt*/
             if (IsActive != false) {
 
                 // förflutenTid är mängden millisekunder som har förflutit sen start
-                förflutenTid = gameTime.ElapsedGameTime.Milliseconds; 
-               
+                förflutenTid = gameTime.ElapsedGameTime.Milliseconds;
+
                 // förflutenTid dellat det numer som står är likamed rörelseHastigheten
-                rörelseHastighet = förflutenTid / 2.137f; 
-                
+                rörelseHastighet = förflutenTid / 5.5f;
+
+                Sekunder += (float)gameTime.ElapsedGameTime.TotalSeconds;
                 // Metod För Tangentbords inmatning
-                InmatningTangentbord(rörelseHastighet); 
-                
+                InmatningTangentbord(rörelseHastighet, Sekunder);
+
                 //Metod För Mus inmatning
                 InmatningMus();
 
@@ -88,16 +97,20 @@ namespace CocaineCrackDown {
         protected override void Draw(GameTime gameTime) {
 
             // inte säker var ej jag som la den där
-            GraphicsDevice.Clear(Color.CornflowerBlue); 
+            GraphicsDevice.Clear(Color.CornflowerBlue);
 
             // början på spriteBatch
-            spriteBatch.Begin(); 
+            spriteBatch.Begin();
+
+            SpelareEtt.Draw();
 
             // slut på spriteBatch
             spriteBatch.End();
 
+
+
             // inte säker var ej jag som la den där
-            base.Draw(gameTime); 
+            base.Draw(gameTime);
         }
 
         #region Metoder Som Anders Har Skapat
@@ -106,13 +119,13 @@ namespace CocaineCrackDown {
         private void ÄndraGrafik() {
 
             //bufferbredd = uplösning som är vald
-            grafiker.PreferredBackBufferWidth = skärmBredd; 
+            grafiker.PreferredBackBufferWidth = skärmBredd;
 
             //bufferhöjd = uplösning som är vald
-            grafiker.PreferredBackBufferHeight = skärmHöjd; 
+            grafiker.PreferredBackBufferHeight = skärmHöjd;
 
-            // Applicerar ändringar bruh 
-            grafiker.ApplyChanges(); 
+            // Applicerar ändringar bruh
+            grafiker.ApplyChanges();
         }
 
         //Titel Och Den tillfälliga Upplösning för vi inte har någon sätt att ändra instälningar på än
@@ -125,10 +138,12 @@ namespace CocaineCrackDown {
             skärmHöjd = GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Height / 2;
 
             // halva skärmbredden
-            skärmBredd = GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Width / 2; 
+            skärmBredd = GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Width / 2;
+
+
         }
 
-        // Inmatning Från Mus skulle kunna ta in muskänslighet liknade till hur InmatningTangentbord tar rörelseHastighet InmatningTangentbord(float rörelseHastighet) 
+        // Inmatning Från Mus skulle kunna ta in muskänslighet liknade till hur InmatningTangentbord tar rörelseHastighet InmatningTangentbord(float rörelseHastighet)
         private void InmatningMus() {
 
             //uhhh ja årkar inte tänka hur man förklarar
@@ -157,30 +172,37 @@ namespace CocaineCrackDown {
         }
 
         // Inmatning Från Tangentbord, den tar ALLTID in rörelseHastighet.någon borde fixa men behöves typ inte
-        private void InmatningTangentbord(float rörelseHastighet) {
+        private void InmatningTangentbord(float rörelseHastighet, float Sekunder) {
 
             //uhhh ja årkar inte tänka hur man förklarar
             KeyboardState nuvarandeTangentbordStatus = Keyboard.GetState();
 
-            // tabort den här variabel med namnet "obetydlig" när spelar rörelser är implementerat. 
-            //Liknade Exemplet inanför IF statment för Knappen W
-            var obetydlig = rörelseHastighet; 
-
-            if (nuvarandeTangentbordStatus.IsKeyDown(Keys.W)) {
+            if (nuvarandeTangentbordStatus.IsKeyDown(Keys.Up)) {
                 //rörelse
                 //Exempel Spelare.GåUpp(rörelseHastighet)
+                SpelareEtt.GåUpp(rörelseHastighet);
             }
-            if (nuvarandeTangentbordStatus.IsKeyDown(Keys.S)) {
+            if (nuvarandeTangentbordStatus.IsKeyDown(Keys.Down)) {
                 //rörelse
+                SpelareEtt.GåNed(rörelseHastighet);
             }
-            if (nuvarandeTangentbordStatus.IsKeyDown(Keys.A)) {
+            if (nuvarandeTangentbordStatus.IsKeyDown(Keys.Left)) {
                 //rörelse
+                SpelareEtt.GåVänster(rörelseHastighet);
             }
-            if (nuvarandeTangentbordStatus.IsKeyDown(Keys.D)) {
+            if (nuvarandeTangentbordStatus.IsKeyDown(Keys.Right)) {
                 //rörelse
+                SpelareEtt.GåHöger(rörelseHastighet);
             }
             if (nuvarandeTangentbordStatus.IsKeyDown(Keys.Space)) {
                 //attack
+                SpelareEtt.AttackTrue();
+
+
+            }
+            if(Sekunder > 1.5f){
+                SpelareEtt.AttackFalse();
+                Sekunder = 0;
             }
 
             //sparar nuvarande tangentbord status in i föregående så att man alltid vet vilken den föregående knappen tryckt var

@@ -1,1 +1,6 @@
 Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"/home/bithor/c#/cocainecrackdown/CocaineCrackDown/Content/fiende_attack.png","/home/bithor/c#/cocainecrackdown/CocaineCrackDown/Content/bin/DesktopGL/Content/fiende_attack.xnb","TextureProcessor","Texture2DContent",1845,14701,0.001441
+"/home/bithor/c#/cocainecrackdown/CocaineCrackDown/Content/fiende.png","/home/bithor/c#/cocainecrackdown/CocaineCrackDown/Content/bin/DesktopGL/Content/fiende.xnb","TextureProcessor","Texture2DContent",1801,8149,0.185653
+"/home/bithor/c#/cocainecrackdown/CocaineCrackDown/Content/mark.png","/home/bithor/c#/cocainecrackdown/CocaineCrackDown/Content/bin/DesktopGL/Content/mark.xnb","TextureProcessor","Texture2DContent",656,4181,0.000777
+"/home/bithor/c#/cocainecrackdown/CocaineCrackDown/Content/spelare_attack.png","/home/bithor/c#/cocainecrackdown/CocaineCrackDown/Content/bin/DesktopGL/Content/spelare_attack.xnb","TextureProcessor","Texture2DContent",1869,14469,0.001579
+"/home/bithor/c#/cocainecrackdown/CocaineCrackDown/Content/spelare.png","/home/bithor/c#/cocainecrackdown/CocaineCrackDown/Content/bin/DesktopGL/Content/spelare.xnb","TextureProcessor","Texture2DContent",1874,10165,0.0011067
