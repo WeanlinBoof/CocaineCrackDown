@@ -1,11 +1,14 @@
 ﻿using System;
+
 // RÖR INGET HÄR OM DU INTE VET VAD DU GÖR
 namespace CocaineCrackDown {
-    public static class Program {
+
+    internal static class Program {
+
         [STAThread]
-        static void Main() {
-            using Spel spel = new Spel();
-            spel.Run();
+        private static void Main() {
+            using Spel CCD = new Spel();
+            CCD.Run();
         }
     }
 }
