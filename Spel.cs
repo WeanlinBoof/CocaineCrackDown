@@ -126,35 +126,7 @@ namespace CocaineCrackDown {
             base.Update(gameTime);
         }
 
-        private void InmatningXboxKontroller(float rörelseHastighet, float Sekunder) {
-            float TimerNollStäll = 0f;
-            GamePadState NuvarandeKontrollerStatus = GamePad.GetState(PlayerIndex.One);
-            if (NuvarandeKontrollerStatus.Buttons.Back == ButtonState.Pressed) {
-                if (SpelareTvåAktiverad == false) {
-                    SpelareTvåAktiverad = true;
-
-                }
-            }
-            if (NuvarandeKontrollerStatus.IsButtonDown(Buttons.RightThumbstickUp)) {
-                SpelareTvå.GåUpp(rörelseHastighet);
-            }
-            if (NuvarandeKontrollerStatus.IsButtonDown(Buttons.RightThumbstickDown)) {
-                SpelareTvå.GåNed(rörelseHastighet);
-            }
-            if (NuvarandeKontrollerStatus.IsButtonDown(Buttons.RightThumbstickLeft)) {
-                SpelareTvå.GåVänster(rörelseHastighet);
-            }
-            if (NuvarandeKontrollerStatus.IsButtonDown(Buttons.RightThumbstickRight)) {
-                SpelareTvå.GåHöger(rörelseHastighet);
-            }
-            if (NuvarandeKontrollerStatus.IsButtonDown(Buttons.A) && Sekunder != TimerNollStäll) {
-                SpelareTvå.Attack(true);
-            }
-            if (FöregåendeKontrollerStatus.IsButtonDown(Buttons.B)) {
-            }
-
-            FöregåendeKontrollerStatus = NuvarandeKontrollerStatus;
-        }
+        
 
         //Ritar texturer btw det som ska rittas på skärm ska läggas mellan spriteBatch.Begin() & spriteBatch.End()
         protected override void Draw(GameTime gameTime) {
@@ -266,7 +238,35 @@ namespace CocaineCrackDown {
             //sparar nuvarande tangentbord status in i föregående så att man alltid vet vilken den föregående knappen tryckt var
             FöregåendeTangentbordStatus = nuvarandeTangentbordStatus;
         }
+        private void InmatningXboxKontroller(float rörelseHastighet, float Sekunder) {
+            float TimerNollStäll = 0f;
+            GamePadState NuvarandeKontrollerStatus = GamePad.GetState(PlayerIndex.One);
+            if (NuvarandeKontrollerStatus.Buttons.Back == ButtonState.Pressed) {
+                if (SpelareTvåAktiverad == false) {
+                    SpelareTvåAktiverad = true;
 
+                }
+            }
+            if (NuvarandeKontrollerStatus.IsButtonDown(Buttons.RightThumbstickUp)) {
+                SpelareTvå.GåUpp(rörelseHastighet);
+            }
+            if (NuvarandeKontrollerStatus.IsButtonDown(Buttons.RightThumbstickDown)) {
+                SpelareTvå.GåNed(rörelseHastighet);
+            }
+            if (NuvarandeKontrollerStatus.IsButtonDown(Buttons.RightThumbstickLeft)) {
+                SpelareTvå.GåVänster(rörelseHastighet);
+            }
+            if (NuvarandeKontrollerStatus.IsButtonDown(Buttons.RightThumbstickRight)) {
+                SpelareTvå.GåHöger(rörelseHastighet);
+            }
+            if (NuvarandeKontrollerStatus.IsButtonDown(Buttons.A) && Sekunder != TimerNollStäll) {
+                SpelareTvå.Attack(true);
+            }
+            if (FöregåendeKontrollerStatus.IsButtonDown(Buttons.B)) {
+            }
+
+            FöregåendeKontrollerStatus = NuvarandeKontrollerStatus;
+        }
         //metod för timer skeunder if statements
         private void IfTimerSekunder() {
             //gör attackstate false

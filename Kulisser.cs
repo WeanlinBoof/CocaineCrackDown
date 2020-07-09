@@ -20,7 +20,7 @@ namespace CocaineCrackDown {
             SpriteBatch = spritebatch;
         }
         public void Draw() {
-            SpriteBatch.Draw(GolvTextur, new Vector2(X, Y), null, Color.DimGray, 0f, new Vector2(0, 0), 1.0f, SpriteEffects.None, 0f);
+            SpriteBatch.Draw(GolvTextur, new Vector2(X, Y), null, Color.PapayaWhip, 0f, new Vector2(0, 0), 1.0f, SpriteEffects.None, 0f);
         }
     }
     public class Bakgrund : Kulisser {
