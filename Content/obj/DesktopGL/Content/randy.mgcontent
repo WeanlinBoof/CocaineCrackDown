@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>/home/bithor/c#/cocainecrackdown/CocaineCrackDown/Content/randy.png</SourceFile>
-  <SourceTime>2020-07-10T01:21:50.0935262+02:00</SourceTime>
-  <DestFile>/home/bithor/c#/cocainecrackdown/CocaineCrackDown/Content/bin/DesktopGL/Content/randy.xnb</DestFile>
-  <DestTime>2020-07-10T01:23:08.1235285+02:00</DestTime>
+  <SourceFile>C:/Users/Henrik/Desktop/CocaineCrackDown/CocaineCrackDown/Content/randy.png</SourceFile>
+  <SourceTime>2020-07-08T21:07:25.6884876+02:00</SourceTime>
+  <DestFile>C:/Users/Henrik/Desktop/CocaineCrackDown/CocaineCrackDown/Content/bin/DesktopGL/Content/randy.xnb</DestFile>
+  <DestTime>2020-07-10T00:47:47.8837351+02:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2020-05-27T15:15:40+02:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

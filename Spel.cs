@@ -33,7 +33,7 @@ namespace CocaineCrackDown {
         private float TimerSekunderSpelareEtt = 0f;
         private float TimerSekunderSpelareTvå = 0f;
 
-        private Rutor Golv;
+        private GolvRutor Golv;
         private float GolvX;
         private float GolvY;
 
@@ -90,7 +90,7 @@ namespace CocaineCrackDown {
             //////////////
             GolvY = SkärmHöjd / 2;
             GolvX = 0;
-            Golv = new Rutor(GolvX, GolvY, SkärmBredd, SkärmHöjd, SpriteBatch, SpelResurser);
+            Golv = new GolvRutor(GolvX, GolvY, SkärmBredd, SkärmHöjd, SpriteBatch, SpelResurser);
         }
 
         //uppdaterar
@@ -214,23 +214,29 @@ namespace CocaineCrackDown {
             if (nuvarandeTangentbordStatus.IsKeyDown(Keys.Up)) {
                 //rörelse
                 //Exempel Spelare.GåUpp(rörelseHastighet)
-                SpelareEtt.GåUpp(rörelseHastighet);
+                SpelareEtt.FlyttaUpp(rörelseHastighet);
             }
             if (nuvarandeTangentbordStatus.IsKeyDown(Keys.Down)) {
                 //rörelse
-                SpelareEtt.GåNed(rörelseHastighet);
+                SpelareEtt.FlyttaNed(rörelseHastighet);
             }
             if (nuvarandeTangentbordStatus.IsKeyDown(Keys.Left)) {
                 //rörelse
-                SpelareEtt.GåVänster(rörelseHastighet);
+                SpelareEtt.FlyttaVänster(rörelseHastighet);
             }
             if (nuvarandeTangentbordStatus.IsKeyDown(Keys.Right)) {
                 //rörelse
-                SpelareEtt.GåHöger(rörelseHastighet);
+                SpelareEtt.FlyttaHöger(rörelseHastighet);
             }
             if (nuvarandeTangentbordStatus.IsKeyDown(Keys.Space) && Sekunder != TimerNollStäll) {
                 //attack
                 SpelareEtt.Attack(true);
+            }
+            //sifran "två" på tangentborded tarfram spelare två också nu 
+            if (nuvarandeTangentbordStatus.IsKeyDown(Keys.D2)) {
+                if (SpelareTvåAktiverad == false) {
+                    SpelareTvåAktiverad = true;
+                }
             }
             if (FöregåendeTangentbordStatus.IsKeyDown(Keys.B)) {
 
@@ -248,16 +254,16 @@ namespace CocaineCrackDown {
                 }
             }
             if (NuvarandeKontrollerStatus.IsButtonDown(Buttons.RightThumbstickUp)) {
-                SpelareTvå.GåUpp(rörelseHastighet);
+                SpelareTvå.FlyttaUpp(rörelseHastighet);
             }
             if (NuvarandeKontrollerStatus.IsButtonDown(Buttons.RightThumbstickDown)) {
-                SpelareTvå.GåNed(rörelseHastighet);
+                SpelareTvå.FlyttaNed(rörelseHastighet);
             }
             if (NuvarandeKontrollerStatus.IsButtonDown(Buttons.RightThumbstickLeft)) {
-                SpelareTvå.GåVänster(rörelseHastighet);
+                SpelareTvå.FlyttaVänster(rörelseHastighet);
             }
             if (NuvarandeKontrollerStatus.IsButtonDown(Buttons.RightThumbstickRight)) {
-                SpelareTvå.GåHöger(rörelseHastighet);
+                SpelareTvå.FlyttaHöger(rörelseHastighet);
             }
             if (NuvarandeKontrollerStatus.IsButtonDown(Buttons.A) && Sekunder != TimerNollStäll) {
                 SpelareTvå.Attack(true);
