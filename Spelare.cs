@@ -39,18 +39,19 @@ namespace CocaineCrackDown {
         public float SkärmHöjd { get; set; }
         public bool AttackStatus { get; set; }
         public riktning SpelarRiktning { get; set; }
+
         public void GåVänster(float RörelseHastighet) {
             X -= RörelseHastighet;
+            SpelarRiktning = riktning.vänster;
             if (X < 1) {
                 X = 1;
-                SpelarRiktning = riktning.vänster;
             }
         }
         public void GåHöger(float RörelseHastighet) {
             X += RörelseHastighet;
+            SpelarRiktning = riktning.höger;
             if ((X + Bredd) > SkärmBredd) {
                 X = SkärmBredd - Bredd;
-                SpelarRiktning = riktning.höger;
             }
         }
         public void GåUpp(float RörelseHastighet) {
@@ -99,7 +100,8 @@ namespace CocaineCrackDown {
                 else {
                     SpriteBatch.Draw(SpelareEttTextur, new Vector2(X, Y), null, Color.DodgerBlue, 0, new Vector2(0, 0), SkalaPåSpelarna, SpriteEffects.None, 0);
                 }
-            }else if(SpelarRiktning == riktning.vänster) {
+            }
+            if(SpelarRiktning == riktning.vänster) {
                 if (AttackStatus == true) {
                     SpriteBatch.Draw(SpelareEttAttackTextur, new Vector2(X, Y), null, Color.DodgerBlue, 0, new Vector2(0, 0), SkalaPåSpelarna, SpriteEffects.FlipHorizontally, 0);
                 }
