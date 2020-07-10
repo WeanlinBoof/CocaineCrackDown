@@ -4,13 +4,13 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/Henrik/Desktop/CocaineCrackDown/CocaineCrackDown/Content/doug.png</File>
-    <File>C:/Users/Henrik/Desktop/CocaineCrackDown/CocaineCrackDown/Content/doug_attack.png</File>
-    <File>C:/Users/Henrik/Desktop/CocaineCrackDown/CocaineCrackDown/Content/fiende.png</File>
-    <File>C:/Users/Henrik/Desktop/CocaineCrackDown/CocaineCrackDown/Content/fiende_attack.png</File>
-    <File>C:/Users/Henrik/Desktop/CocaineCrackDown/CocaineCrackDown/Content/mark.png</File>
-    <File>C:/Users/Henrik/Desktop/CocaineCrackDown/CocaineCrackDown/Content/randy.png</File>
-    <File>C:/Users/Henrik/Desktop/CocaineCrackDown/CocaineCrackDown/Content/randy_attack.png</File>
+    <File>/home/bithor/c#/cocainecrackdown/CocaineCrackDown/Content/doug.png</File>
+    <File>/home/bithor/c#/cocainecrackdown/CocaineCrackDown/Content/doug_attack.png</File>
+    <File>/home/bithor/c#/cocainecrackdown/CocaineCrackDown/Content/fiende.png</File>
+    <File>/home/bithor/c#/cocainecrackdown/CocaineCrackDown/Content/fiende_attack.png</File>
+    <File>/home/bithor/c#/cocainecrackdown/CocaineCrackDown/Content/mark.png</File>
+    <File>/home/bithor/c#/cocainecrackdown/CocaineCrackDown/Content/randy.png</File>
+    <File>/home/bithor/c#/cocainecrackdown/CocaineCrackDown/Content/randy_attack.png</File>
   </SourceFiles>
   <DestFiles>
     <File xsi:nil="true" />
