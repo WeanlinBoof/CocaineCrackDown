@@ -82,3 +82,4 @@ C:\Users\Henrik\Desktop\CocaineCrackDown\CocaineCrackDown\obj\Debug\netcoreapp3.
 C:\Users\Henrik\Desktop\CocaineCrackDown\CocaineCrackDown\obj\Debug\netcoreapp3.1\CocaineCrackDown.pdb
 C:\Users\Henrik\Desktop\CocaineCrackDown\CocaineCrackDown\obj\Debug\netcoreapp3.1\CocaineCrackDown.genruntimeconfig.cache
 C:\Users\Henrik\Desktop\CocaineCrackDown\CocaineCrackDown\obj\Debug\netcoreapp3.1\CocaineCrackDown.csprojAssemblyReference.cache
+C:\Users\Henrik\Desktop\CocaineCrackDown\CocaineCrackDown\bin\Debug\netcoreapp3.1\Content\Font.xnb

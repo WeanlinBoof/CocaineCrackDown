@@ -1,4 +1,4 @@
-﻿namespace CocaineCrackDown {
+﻿namespace CocaineCrackDown.Objekter {
     //alla fiender ska ärva av Fiende
     public class Fiende : Människa {
 
