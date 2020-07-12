@@ -15,8 +15,8 @@ namespace CocaineCrackDown {
         public SpelResurser(ContentManager Content) {
             /////////////// Texturer För kulissen 
             GolvTextur = Content.Load<Texture2D>("mark");
-            BakgrundTextur = Content.Load<Texture2D>("mark");//byt till korrekt sen
-            HimmelTextur = Content.Load<Texture2D>("mark"); //byt till korrekt sen
+            BakgrundTextur = Content.Load<Texture2D>("bakgrund");//byt till korrekt sen
+            HimmelTextur = Content.Load<Texture2D>("himmel"); //byt till korrekt sen
             ///////////////
             DougNormalTextur = Content.Load<Texture2D>("doug");
             DougAttackTextur = Content.Load<Texture2D>("doug_attack");

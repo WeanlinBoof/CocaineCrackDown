@@ -83,3 +83,7 @@ C:\Users\Henrik\Desktop\CocaineCrackDown\CocaineCrackDown\obj\Debug\netcoreapp3.
 C:\Users\Henrik\Desktop\CocaineCrackDown\CocaineCrackDown\obj\Debug\netcoreapp3.1\CocaineCrackDown.genruntimeconfig.cache
 C:\Users\Henrik\Desktop\CocaineCrackDown\CocaineCrackDown\obj\Debug\netcoreapp3.1\CocaineCrackDown.csprojAssemblyReference.cache
 C:\Users\Henrik\Desktop\CocaineCrackDown\CocaineCrackDown\bin\Debug\netcoreapp3.1\Content\Font.xnb
+C:\Users\Henrik\Desktop\CocaineCrackDown\CocaineCrackDown\bin\Debug\netcoreapp3.1\Content\bakgrund.xnb
+C:\Users\Henrik\Desktop\CocaineCrackDown\CocaineCrackDown\bin\Debug\netcoreapp3.1\Content\himmel.xnb
+C:\Users\Henrik\Desktop\CocaineCrackDown\CocaineCrackDown\bin\Debug\netcoreapp3.1\Content\hus.xnb
+C:\Users\Henrik\Desktop\CocaineCrackDown\CocaineCrackDown\bin\Debug\netcoreapp3.1\Content\telefon.xnb

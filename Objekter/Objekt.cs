@@ -3,8 +3,8 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace CocaineCrackDown.Objekter {
     public class Objekt {
-        public float X { get; set; }
-        public float Y { get; set; }
+        public Vector2 Position = new Vector2(0, 0);
+
         public SpriteBatch SpriteBatch;
         public virtual void LaddaResurser() {
         }

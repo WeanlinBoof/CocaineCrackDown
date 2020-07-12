@@ -8,15 +8,15 @@ namespace CocaineCrackDown {
     public class Spel : Game {
         public static Random Random;
 
-        public static int SkärmBredd = 1280;
-        public static int SkärmHöjd = 720;
+        public static int SkärmBredd = 960;
+        public static int SkärmHöjd = 540;
 
         private Status NuvarandeStatus;
         private Status NästaStatus;
         private readonly GraphicsDeviceManager Grafiker;
         public SpriteBatch spriteBatch;
 
-        private readonly string Titel = "CocaineCrackDown";
+        private readonly string Titel = "Cocaine CrackDown";
 
         // class konstruktör
         public Spel() {
@@ -34,10 +34,10 @@ namespace CocaineCrackDown {
             Window.Title = Titel;
 
             // halva skärmhöjden
-            SkärmHöjd = GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Height / 2;
+            //SkärmHöjd = GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Height / 2;
 
             // halva skärmbredden
-            SkärmBredd = GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Width / 2;
+            //SkärmBredd = GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Width / 2;
 
             // uppdaterar spelet 300 gånger per sekund istället för varje frame
             TargetElapsedTime = TimeSpan.FromSeconds(1.0 / 300.0f);

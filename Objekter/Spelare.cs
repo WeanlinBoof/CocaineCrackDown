@@ -7,7 +7,7 @@ namespace CocaineCrackDown.Objekter {
 
     //alla spelare ska ärva spelare
     public class Spelare : Kamrater {
-        public float SkalaPåSpelarna = 1.0f;
+        public float SkalaPåSpelarna = 2.0f;
         public float Höjd { get; set; }
         public float Bredd { get; set; }
         public float SkärmBredd { get; set; }
@@ -94,32 +94,32 @@ namespace CocaineCrackDown.Objekter {
         }
         ///////////////////////////////////////////////////////////////////////////
         public override void FlyttaVänster(float RörelseHastighet) {
-            X -= RörelseHastighet;
+            Position.X -= RörelseHastighet;
             SpelarRiktning = Riktning.Vänster;
-            if (X < 1) {
-                X = 1;
+            if (Position.X < 1) {
+                Position.X = 1;
             }
         }
         ///////////////////////////////////////////////////////////////////////////
         public override void FlyttaHöger(float RörelseHastighet) {
-            X += RörelseHastighet;
+            Position.X += RörelseHastighet;
             SpelarRiktning = Riktning.Höger;
-            if (X + Bredd > SkärmBredd) {
-                X = SkärmBredd - Bredd;
+            if (Position.X + Bredd > SkärmBredd) {
+                Position.X = SkärmBredd - Bredd;
             }
         }
         ///////////////////////////////////////////////////////////////////////////
         public override void FlyttaUpp(float RörelseHastighet) {
-            Y -= RörelseHastighet;
-            if (Y < GolvTopSlut) {
-                Y = GolvTopSlut;
+            Position.Y -= RörelseHastighet;
+            if (Position.Y < GolvTopSlut) {
+                Position.Y = GolvTopSlut;
             }
         }
         ///////////////////////////////////////////////////////////////////////////
         public override void FlyttaNed(float RörelseHastighet) {
-            Y += RörelseHastighet;
-            if (Y + Höjd > SkärmHöjd) {
-                Y = SkärmHöjd - Höjd;
+            Position.Y += RörelseHastighet;
+            if (Position.Y + Höjd > SkärmHöjd) {
+                Position.Y = SkärmHöjd - Höjd;
             }
         }
     }
@@ -131,8 +131,8 @@ namespace CocaineCrackDown.Objekter {
         private readonly string SpelareEttNamn = "Doug";
         ///////////////////////////////////////////////////////////////////////////
         public SpelareEtt(float x, float y, float skärmbredd, float skärmhöjd, SpriteBatch spritebatch, SpelResurser SpelResurser) {
-            X = x;
-            Y = y;
+            Position.X = x;
+            Position.Y = y;
             PlayerName = SpelareEttNamn;
             SpelareEttTextur = SpelResurser.DougNormalTextur;
             SpelareEttAttackTextur = SpelResurser.DougAttackTextur;
@@ -144,7 +144,7 @@ namespace CocaineCrackDown.Objekter {
             SkärmBredd = skärmbredd;
             SkärmHöjd = skärmhöjd;
             //                halva skärm            spelar textur höjd gånger skala delat på 8 gånger 7
-            GolvTopSlut = skärmhöjd / 2 - SpelareEttTextur.Height * SkalaPåSpelarna / 8 * 7;
+            GolvTopSlut = skärmhöjd - SpelResurser.GolvTextur.Height / 2 - SpelareEttTextur.Height * SkalaPåSpelarna / 10 * 9;
         }
         ///////////////////////////////////////////////////////////////////////////
         public override void Attack(bool AttackStatusSpelareEtt) {
@@ -156,22 +156,22 @@ namespace CocaineCrackDown.Objekter {
             if (SpelarRiktning == Riktning.Höger) {
                 ///////////////////////////////////////////////////////////////////////////
                 if (Attackerar == true) {
-                    SpriteBatch.Draw(SpelareEttAttackTextur, new Vector2(X, Y), null, Color.White, 0, new Vector2(0, 0), SkalaPåSpelarna, SpriteEffects.None, 0);
+                    SpriteBatch.Draw(SpelareEttAttackTextur, new Vector2(Position.X, Position.Y), null, Color.White, 0, new Vector2(0, 0), SkalaPåSpelarna, SpriteEffects.None, 0);
                 }
                 ///////////////////////////////////////////////////////////////////////////
                 else {
-                    SpriteBatch.Draw(SpelareEttTextur, new Vector2(X, Y), null, Color.White, 0, new Vector2(0, 0), SkalaPåSpelarna, SpriteEffects.None, 0);
+                    SpriteBatch.Draw(SpelareEttTextur, new Vector2(Position.X, Position.Y), null, Color.White, 0, new Vector2(0, 0), SkalaPåSpelarna, SpriteEffects.None, 0);
                 }
             }
             ///////////////////////////////////////////////////////////////////////////
             if (SpelarRiktning == Riktning.Vänster) {
                 ///////////////////////////////////////////////////////////////////////////
                 if (Attackerar == true) {
-                    SpriteBatch.Draw(SpelareEttAttackTextur, new Vector2(X - (SpelareEttAttackTextur.Width - SpelareEttTextur.Width), Y), null, Color.White, 0, new Vector2(0, 0), SkalaPåSpelarna, SpriteEffects.FlipHorizontally, 0);
+                    SpriteBatch.Draw(SpelareEttAttackTextur, new Vector2(Position.X - ((SpelareEttAttackTextur.Width - SpelareEttTextur.Width) * 2), Position.Y), null, Color.White, 0, new Vector2(0, 0), SkalaPåSpelarna, SpriteEffects.FlipHorizontally, 0);
                 }
                 ///////////////////////////////////////////////////////////////////////////
                 else {
-                    SpriteBatch.Draw(SpelareEttTextur, new Vector2(X, Y), null, Color.White, 0, new Vector2(0, 0), SkalaPåSpelarna, SpriteEffects.FlipHorizontally, 0);
+                    SpriteBatch.Draw(SpelareEttTextur, new Vector2(Position.X, Position.Y), null, Color.White, 0, new Vector2(0, 0), SkalaPåSpelarna, SpriteEffects.FlipHorizontally, 0);
                 }
             }
         }
@@ -184,8 +184,8 @@ namespace CocaineCrackDown.Objekter {
         private readonly string SpelareTvåNamn = "Randy";
         ///////////////////////////////////////////////////////////////////////////
         public SpelareTvå(float x, float y, float skärmbredd, float skärmhöjd, SpriteBatch spritebatch, SpelResurser SpelResurser) {
-            X = x;
-            Y = y;
+            Position.X = x;
+            Position.Y = y;
             //
             PlayerName = SpelareTvåNamn;
             //
@@ -199,7 +199,7 @@ namespace CocaineCrackDown.Objekter {
             SkärmBredd = skärmbredd;
             SkärmHöjd = skärmhöjd;
             //                halva skärm            spelar textur höjd gånger skala delat på 8 gånger 7
-            GolvTopSlut = skärmhöjd / 2 - SpelareTvåTextur.Height * SkalaPåSpelarna / 8 * 7;
+            GolvTopSlut = skärmhöjd -SpelResurser.GolvTextur.Height / 2 - SpelareTvåTextur.Height * SkalaPåSpelarna / 8 * 7;
         }
         ///////////////////////////////////////////////////////////////////////////
         public override void Attack(bool AttackStatusSpelareTvå) {
@@ -211,22 +211,22 @@ namespace CocaineCrackDown.Objekter {
             if (SpelarRiktning == Riktning.Höger) {
                 ///////////////////////////////////////////////////////////////////////////
                 if (Attackerar == true) {
-                    SpriteBatch.Draw(SpelareTvåAttackTextur, new Vector2(X, Y), null, Color.White, 0, new Vector2(0, 0), SkalaPåSpelarna, SpriteEffects.None, 0);
+                    SpriteBatch.Draw(SpelareTvåAttackTextur, new Vector2(Position.X, Position.Y), null, Color.White, 0, new Vector2(0, 0), SkalaPåSpelarna, SpriteEffects.None, 0);
                 }
                 ///////////////////////////////////////////////////////////////////////////
                 else {
-                    SpriteBatch.Draw(SpelareTvåTextur, new Vector2(X, Y), null, Color.White, 0, new Vector2(0, 0), SkalaPåSpelarna, SpriteEffects.None, 0);
+                    SpriteBatch.Draw(SpelareTvåTextur, new Vector2(Position.X, Position.Y), null, Color.White, 0, new Vector2(0, 0), SkalaPåSpelarna, SpriteEffects.None, 0);
                 }
             }
             ///////////////////////////////////////////////////////////////////////////
             if (SpelarRiktning == Riktning.Vänster) {
                 ///////////////////////////////////////////////////////////////////////////
                 if (Attackerar == true) {
-                    SpriteBatch.Draw(SpelareTvåAttackTextur, new Vector2(X - (SpelareTvåAttackTextur.Width - SpelareTvåTextur.Width), Y), null, Color.White, 0, new Vector2(0, 0), SkalaPåSpelarna, SpriteEffects.FlipHorizontally, 0);
+                    SpriteBatch.Draw(SpelareTvåAttackTextur, new Vector2(Position.X - ((SpelareTvåAttackTextur.Width - SpelareTvåTextur.Width) * 2), Position.Y), null, Color.White, 0, new Vector2(0, 0), SkalaPåSpelarna, SpriteEffects.FlipHorizontally, 0);
                 }
                 ///////////////////////////////////////////////////////////////////////////
                 else {
-                    SpriteBatch.Draw(SpelareTvåTextur, new Vector2(X, Y), null, Color.White, 0, new Vector2(0, 0), SkalaPåSpelarna, SpriteEffects.FlipHorizontally, 0);
+                    SpriteBatch.Draw(SpelareTvåTextur, new Vector2(Position.X, Position.Y), null, Color.White, 0, new Vector2(0, 0), SkalaPåSpelarna, SpriteEffects.FlipHorizontally, 0);
                 }
             }
         }

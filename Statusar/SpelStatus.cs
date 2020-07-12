@@ -23,9 +23,17 @@ namespace CocaineCrackDown.Statusar {
         private float SpelareTvåX;
         private float SpelareTvåY;
 
-        private GolvRutor Golv;
+        private Golv Golv;
         private float GolvX;
         private float GolvY;
+
+        private Bakgrund Back;
+        private float BackX;
+        private float BackY;
+
+        private Himmel Himmel;
+        private float HimmelX;
+        private float HimmelY;
 
         private readonly SpriteBatch spriteBatch;
         ///////////////////////////////////////////////////////////////////////////
@@ -51,18 +59,27 @@ namespace CocaineCrackDown.Statusar {
         }
         ///////////////////////////////////////////////////////////////////////////
         public override void LaddaResurser() {
+            ///////////////////////////////////////////
+            HimmelY = 0;
+            HimmelX = 0;
+            Himmel = new Himmel(HimmelX, HimmelY, spriteBatch, SpelResurser);
+            ///////////////////////////////////////////////////////////////
+            BackY = 40;
+            BackX = 0;
+            Back = new Bakgrund(BackX, BackY, spriteBatch, SpelResurser);
+            ///////////////////////////////////////////////////////////////////////////
+            GolvY = Spel.SkärmHöjd - SpelResurser.GolvTextur.Height / 2;
+            GolvX = 0;
+            Golv = new Golv(GolvX, GolvY, spriteBatch, SpelResurser);
             //spelare ett
             SpelareEttX = (Spel.SkärmBredd - Spel.SkärmBredd + SpelResurser.DougNormalTextur.Width) / 2;
-            SpelareEttY = (Spel.SkärmHöjd - SpelResurser.DougNormalTextur.Height) / 6 * 5;
+            SpelareEttY = (Spel.SkärmHöjd - SpelResurser.DougNormalTextur.Height * 2);
             SpelareEtt = new SpelareEtt(SpelareEttX, SpelareEttY, Spel.SkärmBredd, Spel.SkärmHöjd, spriteBatch, SpelResurser);
             ///////////////////////////////////////////////////////////////////////////
             SpelareTvåX = (Spel.SkärmBredd - Spel.SkärmBredd + SpelResurser.RandyNormalTextur.Width) / 2;
-            SpelareTvåY = (Spel.SkärmHöjd - SpelResurser.RandyNormalTextur.Height) / 6 * 3;
+            SpelareTvåY = (Spel.SkärmHöjd - SpelResurser.RandyNormalTextur.Height * 2);
             SpelareTvå = new SpelareTvå(SpelareTvåX, SpelareTvåY, Spel.SkärmBredd, Spel.SkärmHöjd, spriteBatch, SpelResurser);
-            ///////////////////////////////////////////////////////////////////////////
-            GolvY = Spel.SkärmHöjd / 2;
-            GolvX = 0;
-            Golv = new GolvRutor(GolvX, GolvY, Spel.SkärmBredd, Spel.SkärmHöjd, spriteBatch, SpelResurser);
+
         }
         ///////////////////////////////////////////////////////////////////////////
         public override void Uppdatera(GameTime gameTime) {
@@ -79,6 +96,8 @@ namespace CocaineCrackDown.Statusar {
         public override void Rita(GameTime gameTime) {
             // början på spriteBatch
             spriteBatch.Begin();
+            Himmel.Rita();
+            Back.Rita();
             //////////////////////////
             Golv.Rita();
             //////////////////////////
