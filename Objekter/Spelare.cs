@@ -24,8 +24,28 @@ namespace CocaineCrackDown.Objekter {
         private KeyboardState NuvarandeTangentbordStatus;
         private GamePadState NuvarandeKontrollerStatus;
 
+        Rectangle kollision;
+
+
         ///////////////////////////////////////////////////////////////////////////
         public void Update(SpelareEtt SpelareEtt, SpelareTvå SpelareTvå, float RörelseHastighet, Inmatning.Tangentbord Tangentbord, Inmatning.Kontroller Kontroller, GameTime gameTime) {
+
+            Rectangle SpelareEttBox = new Rectangle((int)SpelareEtt.Position.X, (int)SpelareEtt.Position.Y, 43 * (int)SpelareEtt.SkalaPåSpelarna, 64 * (int)SpelareEtt.SkalaPåSpelarna);
+            Rectangle SpelareTvåBox = new Rectangle((int)SpelareTvå.Position.X, (int)SpelareTvå.Position.Y, 43 * (int)SpelareEtt.SkalaPåSpelarna, 64 * (int)SpelareEtt.SkalaPåSpelarna);
+
+            //Överlappar vi?
+            kollision = Intersection(SpelareEttBox, SpelareTvåBox);
+
+            if (kollision.Width > 0 && kollision.Height > 0) {
+                Rectangle r1 = Normalize(SpelareEttBox, kollision);
+                Rectangle r2 = Normalize(SpelareTvåBox, kollision);
+                Kollision = TestCollision(SpelareEtt.SpelareEttTextur, r1, SpelareTvå.SpelareTvåTextur, r2);
+            }
+            else {
+                Kollision = false;
+            }
+
+
             ///////////////////////////////////////////////////////////////////////////
             GamePadCapabilities SpelKontroller = GamePad.GetCapabilities(PlayerIndex.One);
             if (SpelKontroller.IsConnected) {
@@ -126,8 +146,8 @@ namespace CocaineCrackDown.Objekter {
 
     //spelare ett
     public class SpelareEtt : Spelare {
-        private Texture2D SpelareEttTextur { get; set; }
-        private Texture2D SpelareEttAttackTextur { get; set; }
+        public Texture2D SpelareEttTextur { get; set; }
+        public Texture2D SpelareEttAttackTextur { get; set; }
         private readonly string SpelareEttNamn = "Doug";
         ///////////////////////////////////////////////////////////////////////////
         public SpelareEtt(float x, float y, float skärmbredd, float skärmhöjd, SpriteBatch spritebatch, SpelResurser SpelResurser) {
@@ -175,12 +195,14 @@ namespace CocaineCrackDown.Objekter {
                 }
             }
         }
+
+
     }
 
     //spelare två
     public class SpelareTvå : Spelare {
-        private Texture2D SpelareTvåTextur { get; set; }
-        private Texture2D SpelareTvåAttackTextur { get; set; }
+        public Texture2D SpelareTvåTextur { get; set; }
+        public Texture2D SpelareTvåAttackTextur { get; set; }
         private readonly string SpelareTvåNamn = "Randy";
         ///////////////////////////////////////////////////////////////////////////
         public SpelareTvå(float x, float y, float skärmbredd, float skärmhöjd, SpriteBatch spritebatch, SpelResurser SpelResurser) {

@@ -4,23 +4,19 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/Henrik/Desktop/CocaineCrackDown/CocaineCrackDown/Content/../../../ccd game art/mark.png</File>
-    <File>C:/Users/Henrik/Desktop/CocaineCrackDown/CocaineCrackDown/Content/bakgrund.png</File>
-    <File>C:/Users/Henrik/Desktop/CocaineCrackDown/CocaineCrackDown/Content/doug.png</File>
-    <File>C:/Users/Henrik/Desktop/CocaineCrackDown/CocaineCrackDown/Content/doug_attack.png</File>
-    <File>C:/Users/Henrik/Desktop/CocaineCrackDown/CocaineCrackDown/Content/fiende.png</File>
-    <File>C:/Users/Henrik/Desktop/CocaineCrackDown/CocaineCrackDown/Content/fiende_attack.png</File>
-    <File>C:/Users/Henrik/Desktop/CocaineCrackDown/CocaineCrackDown/Content/Font.spritefont</File>
-    <File>C:/Users/Henrik/Desktop/CocaineCrackDown/CocaineCrackDown/Content/himmel.png</File>
-    <File>C:/Users/Henrik/Desktop/CocaineCrackDown/CocaineCrackDown/Content/hus.png</File>
-    <File>C:/Users/Henrik/Desktop/CocaineCrackDown/CocaineCrackDown/Content/mark.png</File>
-    <File>C:/Users/Henrik/Desktop/CocaineCrackDown/CocaineCrackDown/Content/randy.png</File>
-    <File>C:/Users/Henrik/Desktop/CocaineCrackDown/CocaineCrackDown/Content/randy_attack.png</File>
-    <File>C:/Users/Henrik/Desktop/CocaineCrackDown/CocaineCrackDown/Content/telefon.png</File>
+    <File>/home/bithor/c#/cocainecrackdown/CocaineCrackDown/Content/bakgrund.png</File>
+    <File>/home/bithor/c#/cocainecrackdown/CocaineCrackDown/Content/doug.png</File>
+    <File>/home/bithor/c#/cocainecrackdown/CocaineCrackDown/Content/doug_attack.png</File>
+    <File>/home/bithor/c#/cocainecrackdown/CocaineCrackDown/Content/fiende.png</File>
+    <File>/home/bithor/c#/cocainecrackdown/CocaineCrackDown/Content/fiende_attack.png</File>
+    <File>/home/bithor/c#/cocainecrackdown/CocaineCrackDown/Content/himmel.png</File>
+    <File>/home/bithor/c#/cocainecrackdown/CocaineCrackDown/Content/hus.png</File>
+    <File>/home/bithor/c#/cocainecrackdown/CocaineCrackDown/Content/mark.png</File>
+    <File>/home/bithor/c#/cocainecrackdown/CocaineCrackDown/Content/randy.png</File>
+    <File>/home/bithor/c#/cocainecrackdown/CocaineCrackDown/Content/randy_attack.png</File>
+    <File>/home/bithor/c#/cocainecrackdown/CocaineCrackDown/Content/telefon.png</File>
   </SourceFiles>
   <DestFiles>
-    <File>mark.png</File>
-    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

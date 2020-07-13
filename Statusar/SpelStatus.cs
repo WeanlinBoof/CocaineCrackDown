@@ -35,6 +35,8 @@ namespace CocaineCrackDown.Statusar {
         private float HimmelX;
         private float HimmelY;
 
+
+
         private readonly SpriteBatch spriteBatch;
         ///////////////////////////////////////////////////////////////////////////
         public Inmatning.Tangentbord Tangentbord = new Inmatning.Tangentbord() {
@@ -76,8 +78,8 @@ namespace CocaineCrackDown.Statusar {
             SpelareEttY = (Spel.SkärmHöjd - SpelResurser.DougNormalTextur.Height * 2);
             SpelareEtt = new SpelareEtt(SpelareEttX, SpelareEttY, Spel.SkärmBredd, Spel.SkärmHöjd, spriteBatch, SpelResurser);
             ///////////////////////////////////////////////////////////////////////////
-            SpelareTvåX = (Spel.SkärmBredd - Spel.SkärmBredd + SpelResurser.RandyNormalTextur.Width) / 2;
-            SpelareTvåY = (Spel.SkärmHöjd - SpelResurser.RandyNormalTextur.Height * 2);
+            SpelareTvåX = (Spel.SkärmBredd - Spel.SkärmBredd + SpelResurser.RandyNormalTextur.Width) / 2 + 100;
+            SpelareTvåY = (Spel.SkärmHöjd - SpelResurser.RandyNormalTextur.Height * 2 - 100);
             SpelareTvå = new SpelareTvå(SpelareTvåX, SpelareTvåY, Spel.SkärmBredd, Spel.SkärmHöjd, spriteBatch, SpelResurser);
 
         }
@@ -88,6 +90,8 @@ namespace CocaineCrackDown.Statusar {
             // förflutenTid dellat det numer som står är likamed rörelseHastigheten
             RörelseHastighet = FörflutenTid / 3.7f;
             Spelare.Update(SpelareEtt, SpelareTvå, RörelseHastighet, Tangentbord, Kontroller, gameTime);
+
+
         }
         ///////////////////////////////////////////////////////////////////////////
         public override void EfterUppdatering(GameTime gameTime) {
