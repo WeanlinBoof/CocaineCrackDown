@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SourceFileCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Profile>Reach</Profile>
+  <Platform>DesktopGL</Platform>
+  <Config />
+  <SourceFiles>
+    <File>C:/Users/Henrik/Desktop/ccd sakeR/CocaineCrackDown/CocaineCrackDown/CCD/CCD/Content/bakgrund.png</File>
+    <File>C:/Users/Henrik/Desktop/ccd sakeR/CocaineCrackDown/CocaineCrackDown/CCD/CCD/Content/bakgrund_hus1.png</File>
+    <File>C:/Users/Henrik/Desktop/ccd sakeR/CocaineCrackDown/CocaineCrackDown/CCD/CCD/Content/bakgrund_hus2.png</File>
+    <File>C:/Users/Henrik/Desktop/ccd sakeR/CocaineCrackDown/CocaineCrackDown/CCD/CCD/Content/däck.png</File>
+    <File>C:/Users/Henrik/Desktop/ccd sakeR/CocaineCrackDown/CocaineCrackDown/CCD/CCD/Content/doug.png</File>
+    <File>C:/Users/Henrik/Desktop/ccd sakeR/CocaineCrackDown/CocaineCrackDown/CCD/CCD/Content/doug_attack.png</File>
+    <File>C:/Users/Henrik/Desktop/ccd sakeR/CocaineCrackDown/CocaineCrackDown/CCD/CCD/Content/fiende.png</File>
+    <File>C:/Users/Henrik/Desktop/ccd sakeR/CocaineCrackDown/CocaineCrackDown/CCD/CCD/Content/fiende_attack.png</File>
+    <File>C:/Users/Henrik/Desktop/ccd sakeR/CocaineCrackDown/CocaineCrackDown/CCD/CCD/Content/firehyrdant.png</File>
+    <File>C:/Users/Henrik/Desktop/ccd sakeR/CocaineCrackDown/CocaineCrackDown/CCD/CCD/Content/fönster.png</File>
+    <File>C:/Users/Henrik/Desktop/ccd sakeR/CocaineCrackDown/CocaineCrackDown/CCD/CCD/Content/himmel.png</File>
+    <File>C:/Users/Henrik/Desktop/ccd sakeR/CocaineCrackDown/CocaineCrackDown/CCD/CCD/Content/hus.png</File>
+    <File>C:/Users/Henrik/Desktop/ccd sakeR/CocaineCrackDown/CocaineCrackDown/CCD/CCD/Content/kiosk.png</File>
+    <File>C:/Users/Henrik/Desktop/ccd sakeR/CocaineCrackDown/CocaineCrackDown/CCD/CCD/Content/lamp.png</File>
+    <File>C:/Users/Henrik/Desktop/ccd sakeR/CocaineCrackDown/CocaineCrackDown/CCD/CCD/Content/mark.png</File>
+    <File>C:/Users/Henrik/Desktop/ccd sakeR/CocaineCrackDown/CocaineCrackDown/CCD/CCD/Content/randy.png</File>
+    <File>C:/Users/Henrik/Desktop/ccd sakeR/CocaineCrackDown/CocaineCrackDown/CCD/CCD/Content/randy_attack.png</File>
+    <File>C:/Users/Henrik/Desktop/ccd sakeR/CocaineCrackDown/CocaineCrackDown/CCD/CCD/Content/sidahus.png</File>
+    <File>C:/Users/Henrik/Desktop/ccd sakeR/CocaineCrackDown/CocaineCrackDown/CCD/CCD/Content/telefon.png</File>
+    <File>C:/Users/Henrik/Desktop/ccd sakeR/CocaineCrackDown/CocaineCrackDown/CCD/CCD/Content/trasigtfönster.png</File>
+    <File>C:/Users/Henrik/Desktop/ccd sakeR/CocaineCrackDown/CocaineCrackDown/CCD/CCD/Content/vägg.png</File>
+  </SourceFiles>
+  <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+  </DestFiles>
+</SourceFileCollection>
