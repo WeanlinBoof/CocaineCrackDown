@@ -92,14 +92,14 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net471"
+          "netcoreapp3.1"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net471": {
+          "netcoreapp3.1": {
             "projectReferences": {}
           }
         },
@@ -110,16 +110,30 @@
         }
       },
       "frameworks": {
-        "net471": {
+        "netcoreapp3.1": {
           "dependencies": {
-            "MonoGame.Framework.Portable": {
-              "suppressParent": "All",
+            "MonoGame.Framework.DesktopGL": {
               "target": "Package",
-              "version": "[3.7.1.189, )"
+              "version": "[3.8.0.1375-develop, )"
             },
             "System.Drawing.Common": {
               "target": "Package",
               "version": "[4.6.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"

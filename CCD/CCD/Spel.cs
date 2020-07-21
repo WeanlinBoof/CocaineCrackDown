@@ -7,6 +7,7 @@ using Nez.Sprites;
 namespace CCD {
     public class Spel : Core {
         public Spel() : base(960,540,false,"Cocaine Crackdown") {
+            
         }
         protected override void Initialize() {
             base.Initialize();

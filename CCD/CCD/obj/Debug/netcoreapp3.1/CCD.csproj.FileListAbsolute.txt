@@ -44,3 +44,8 @@ C:\Users\Henrik\Desktop\ccd sakeR\CocaineCrackDown\CocaineCrackDown\CCD\CCD\bin\
 C:\Users\Henrik\Desktop\ccd sakeR\CocaineCrackDown\CocaineCrackDown\CCD\CCD\bin\Debug\netcoreapp3.1\Content\telefon.xnb
 C:\Users\Henrik\Desktop\ccd sakeR\CocaineCrackDown\CocaineCrackDown\CCD\CCD\bin\Debug\netcoreapp3.1\Content\trasigtfönster.xnb
 C:\Users\Henrik\Desktop\ccd sakeR\CocaineCrackDown\CocaineCrackDown\CCD\CCD\bin\Debug\netcoreapp3.1\Content\vägg.xnb
+C:\Users\Henrik\Desktop\ccd sakeR\CocaineCrackDown\CocaineCrackDown\CCD\CCD\bin\Debug\netcoreapp3.1\Microsoft.Win32.SystemEvents.dll
+C:\Users\Henrik\Desktop\ccd sakeR\CocaineCrackDown\CocaineCrackDown\CCD\CCD\bin\Debug\netcoreapp3.1\System.Drawing.Common.dll
+C:\Users\Henrik\Desktop\ccd sakeR\CocaineCrackDown\CocaineCrackDown\CCD\CCD\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Henrik\Desktop\ccd sakeR\CocaineCrackDown\CocaineCrackDown\CCD\CCD\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\Henrik\Desktop\ccd sakeR\CocaineCrackDown\CocaineCrackDown\CCD\CCD\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
