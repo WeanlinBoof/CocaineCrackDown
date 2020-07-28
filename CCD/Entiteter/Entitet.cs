@@ -14,10 +14,10 @@ namespace CocaineCrackDown.Entiteter {
 
 
         protected float RörelseHastighet = 100f;
-         
+
         public Entitet(string namn) {
             Namn = namn;
-            TexturPlats = $"Content/{Namn}.png";
+            TexturPlats = $"{Namn}";
 
         }
     }

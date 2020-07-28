@@ -25,7 +25,7 @@ namespace CocaineCrackDown.Entiteter {
 
         public override void OnAddedToEntity() {
             SpriteAtlas AtlasTextur = Entity.Scene.Content.LoadSpriteAtlas("Content/doug.atlas");
-            Texture2D Textur = Entity.Scene.Content.Load<Texture2D>(TexturPlats);
+            Texture2D Textur = Entity.Scene.Content.LoadTexture(TexturPlats);
 
             Röraren = Entity.AddComponent(new Mover());
             Animerare = Entity.AddComponent<SpriteAnimator>();
@@ -86,7 +86,7 @@ namespace CocaineCrackDown.Entiteter {
                 Animerare.Pause();
             }
 
-            StandardScen dougscen = Entity.Scene as StandardScen;
+            StandardScen ScenEtt = Entity.Scene as StandardScen;
         }
     }
 }

@@ -7,8 +7,7 @@ using System.Collections.Generic;
 
 namespace CocaineCrackDown.Scener {
 
-    public abstract class StandardScen : Scene {
-        public abstract Table Table { get; set; }
+    public class StandardScen : Scene {
 
         public StandardScen() {
         }
@@ -16,12 +15,6 @@ namespace CocaineCrackDown.Scener {
             SetDesignResolution(640, 360, SceneResolutionPolicy.NoBorderPixelPerfect);
 
             Screen.SetSize(1280, 720);
-
-            UICanvas UICanvas = CreateEntity("ui-canvas").AddComponent(new UICanvas());
-
-            Table = UICanvas.Stage.AddElement(new Table());
-
-            Table.SetFillParent(true).Top().PadLeft(50).PadTop(50);
 
         }
     }
