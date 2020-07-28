@@ -17,7 +17,7 @@ namespace CocaineCrackDown.Entiteter {
 
         public Entitet(string namn) {
             Namn = namn;
-            TexturPlats = $"{Namn}";
+            TexturPlats = $"Content/{Namn}.png";
 
         }
     }

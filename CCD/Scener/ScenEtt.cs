@@ -14,6 +14,11 @@ namespace CocaineCrackDown.Scener {
         public override void Initialize() {
             Entity dougEnhet = CreateEntity("spelare", new Vector2(Screen.Width / 2, Screen.Height / 2));
             dougEnhet.AddComponent(new DougSpelareEtt());
+            dougEnhet.Update();
+
+            Entity randyEnhet = CreateEntity("spelaretvå", new Vector2(Screen.Width / 3, Screen.Height / 2));
+            randyEnhet.AddComponent(new RandySpelareTvå());
+            randyEnhet.Update();
         }
     }
 

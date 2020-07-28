@@ -10,15 +10,9 @@ using Nez.Sprites;
 
 namespace CocaineCrackDown.Entiteter {
 
-    public enum Riktning {
-        höger,
-        vänster,
-        upp,
-        ner,
-    }
-    public class DougSpelareEtt : Entitet, IUpdatable {
+    public class RandySpelareTvå : Entitet, IUpdatable {
 
-        public DougSpelareEtt(string namn = "doug") : base(namn) {
+        public RandySpelareTvå(string namn = "doug") : base(namn) {
         }
 
         private SubpixelVector2 SubPixelVecTvå = new SubpixelVector2();
@@ -28,10 +22,6 @@ namespace CocaineCrackDown.Entiteter {
         private VirtualIntegerAxis XAxisknappar;
 
         private VirtualIntegerAxis YAxisknappar;
-
-        private string animation;
-
-        private Riktning DougRiktning;
 
         public override void OnAddedToEntity() {
             SpriteAtlas AtlasTextur = Entity.Scene.Content.LoadSpriteAtlas("Content/doug.atlas");
@@ -49,47 +39,33 @@ namespace CocaineCrackDown.Entiteter {
 
             // Inmatning för attack
             attackknapp = new VirtualButton();
-            attackknapp.Nodes.Add(new VirtualButton.KeyboardKey(Keys.Z));
+            attackknapp.Nodes.Add(new VirtualButton.KeyboardKey(Keys.J));
             attackknapp.Nodes.Add(new VirtualButton.GamePadButton(0, Buttons.A));
 
             // Horizontel Inmatning
             XAxisknappar = new VirtualIntegerAxis();
             XAxisknappar.Nodes.Add(new VirtualAxis.GamePadDpadLeftRight());
             XAxisknappar.Nodes.Add(new VirtualAxis.GamePadLeftStickX());
-            XAxisknappar.Nodes.Add(new VirtualAxis.KeyboardKeys(VirtualInput.OverlapBehavior.TakeNewer, Keys.Left, Keys.Right));
+            XAxisknappar.Nodes.Add(new VirtualAxis.KeyboardKeys(VirtualInput.OverlapBehavior.TakeNewer, Keys.A, Keys.D));
 
             // Vertikal Inmatning
             YAxisknappar = new VirtualIntegerAxis();
             YAxisknappar.Nodes.Add(new VirtualAxis.GamePadDpadUpDown());
             YAxisknappar.Nodes.Add(new VirtualAxis.GamePadLeftStickY());
-            YAxisknappar.Nodes.Add(new VirtualAxis.KeyboardKeys(VirtualInput.OverlapBehavior.TakeNewer, Keys.Up, Keys.Down));
+            YAxisknappar.Nodes.Add(new VirtualAxis.KeyboardKeys(VirtualInput.OverlapBehavior.TakeNewer, Keys.W, Keys.S));
         }
 
         public void Update() {
 
             // handle movement and animations
             Vector2 moveDir = new Vector2(XAxisknappar.Value, YAxisknappar.Value);
+            string animation;
 
-
-            if(moveDir.X < 0 || moveDir.X > 0 || moveDir.Y < 0 || moveDir.Y > 0){
+            if (moveDir.X < 0 || moveDir.Y < 0|| moveDir.X > 0 || moveDir.Y > 0) {
                 animation = "doug-gång";
             }
             else {
                 animation = "doug-stilla";
-            }
-
-            if(moveDir.X < 0) {
-                DougRiktning = Riktning.vänster;
-            }
-            if(moveDir.X > 0) {
-                DougRiktning = Riktning.höger;
-            }
-
-            if(DougRiktning == Riktning.höger){
-                Animerare.FlipX = false;
-            }
-            if(DougRiktning == Riktning.vänster){
-                Animerare.FlipX = true;
             }
 
             if (moveDir != Vector2.Zero) {
