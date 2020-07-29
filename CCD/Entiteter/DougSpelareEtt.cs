@@ -16,6 +16,7 @@ namespace CocaineCrackDown.Entiteter {
         upp,
         ner,
     }
+
     public class DougSpelareEtt : Entitet, IUpdatable {
 
         public DougSpelareEtt(string namn = "doug") : base(namn) {
@@ -29,14 +30,21 @@ namespace CocaineCrackDown.Entiteter {
 
         private VirtualIntegerAxis YAxisknappar;
 
+        //private UnscaledDeltaTime UnscaledDeltaTime;
+
         private string animation;
 
         private Riktning DougRiktning;
+
+        private bool Attack;
+
+        private float Timer = 0f;
 
         public override void OnAddedToEntity() {
             SpriteAtlas AtlasTextur = Entity.Scene.Content.LoadSpriteAtlas("Content/doug.atlas");
             Texture2D Textur = Entity.Scene.Content.LoadTexture(TexturPlats);
 
+            Kollision = Entity.AddComponent(new BoxCollider(-20, -31, 40, 63));
             Röraren = Entity.AddComponent(new Mover());
             Animerare = Entity.AddComponent<SpriteAnimator>();
 
@@ -70,20 +78,7 @@ namespace CocaineCrackDown.Entiteter {
             // handle movement and animations
             Vector2 moveDir = new Vector2(XAxisknappar.Value, YAxisknappar.Value);
 
-
-            if(moveDir.X < 0 || moveDir.X > 0 || moveDir.Y < 0 || moveDir.Y > 0){
-                animation = "doug-gång";
-            }
-            else {
-                animation = "doug-stilla";
-            }
-
-            if(moveDir.X < 0) {
-                DougRiktning = Riktning.vänster;
-            }
-            if(moveDir.X > 0) {
-                DougRiktning = Riktning.höger;
-            }
+            Attack = attackknapp.IsPressed;
 
             if(DougRiktning == Riktning.höger){
                 Animerare.FlipX = false;
@@ -91,6 +86,31 @@ namespace CocaineCrackDown.Entiteter {
             if(DougRiktning == Riktning.vänster){
                 Animerare.FlipX = true;
             }
+
+            if(Attack && Timer < 0.5f){
+                Animerare.Play("doug-stilla");
+                Timer += Time.DeltaTime;
+                Attack = true;
+                if(Timer>=0.4f){
+                    Timer = 0;
+                    Animerare.Stop();
+                    Animerare.Play("doug-gång");
+                    Attack = false;
+                }
+            }
+
+            if(moveDir.Y < 0 || moveDir.Y > 0) {
+                animation = "doug-gång";
+            }
+            if(moveDir.X < 0) {
+                DougRiktning = Riktning.vänster;
+                animation = "doug-gång";
+            }
+            if(moveDir.X > 0) {
+                DougRiktning = Riktning.höger;
+                animation = "doug-gång";
+            }
+
 
             if (moveDir != Vector2.Zero) {
                 if (!Animerare.IsAnimationActive(animation)) {

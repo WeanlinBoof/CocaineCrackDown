@@ -23,10 +23,13 @@ namespace CocaineCrackDown.Entiteter {
 
         private VirtualIntegerAxis YAxisknappar;
 
+        private Riktning RandyRiktning;
+
         public override void OnAddedToEntity() {
             SpriteAtlas AtlasTextur = Entity.Scene.Content.LoadSpriteAtlas("Content/doug.atlas");
             Texture2D Textur = Entity.Scene.Content.LoadTexture(TexturPlats);
 
+            Kollision = Entity.AddComponent(new BoxCollider(-20, -31, 40, 63));
             Röraren = Entity.AddComponent(new Mover());
             Animerare = Entity.AddComponent<SpriteAnimator>();
 
@@ -61,11 +64,25 @@ namespace CocaineCrackDown.Entiteter {
             Vector2 moveDir = new Vector2(XAxisknappar.Value, YAxisknappar.Value);
             string animation;
 
-            if (moveDir.X < 0 || moveDir.Y < 0|| moveDir.X > 0 || moveDir.Y > 0) {
+            if(moveDir.X < 0 || moveDir.X > 0 || moveDir.Y < 0 || moveDir.Y > 0){
                 animation = "doug-gång";
             }
             else {
                 animation = "doug-stilla";
+            }
+
+            if(moveDir.X < 0) {
+                RandyRiktning = Riktning.vänster;
+            }
+            if(moveDir.X > 0) {
+                RandyRiktning = Riktning.höger;
+            }
+
+            if(RandyRiktning == Riktning.höger){
+                Animerare.FlipX = false;
+            }
+            if(RandyRiktning == Riktning.vänster){
+                Animerare.FlipX = true;
             }
 
             if (moveDir != Vector2.Zero) {

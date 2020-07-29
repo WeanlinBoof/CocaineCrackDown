@@ -5,6 +5,7 @@ using Microsoft.Xna.Framework.Graphics;
 
 using Nez;
 using Nez.Sprites;
+using Nez.Console;
 
 namespace CocaineCrackDown {
     public class Spel : Core {
@@ -15,7 +16,7 @@ namespace CocaineCrackDown {
             base.Initialize();
             Window.AllowUserResizing = true;
             Scene = new ScenEtt();
-
+            Core.DebugRenderEnabled = true;
         }
     }
 }

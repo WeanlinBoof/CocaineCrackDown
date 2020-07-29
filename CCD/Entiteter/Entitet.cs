@@ -12,6 +12,8 @@ namespace CocaineCrackDown.Entiteter {
 
         protected Mover Röraren;
 
+        protected BoxCollider Kollision;
+
 
         protected float RörelseHastighet = 100f;
 
