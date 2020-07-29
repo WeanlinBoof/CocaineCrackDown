@@ -12,7 +12,7 @@ namespace CocaineCrackDown.Scener {
         public StandardScen() {
         }
         public void SetupScene() {
-            SetDesignResolution(640, 360, SceneResolutionPolicy.NoBorderPixelPerfect);
+            SetDesignResolution(640, 360, SceneResolutionPolicy.BestFit);
 
             Screen.SetSize(1280, 720);
 

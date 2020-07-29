@@ -1,22 +1,289 @@
-doug_ga_1
+spritenamn-alvarligtskadad-1
 	0,0,128,128
 	0.5,0.5
-doug_ga_2
+spritenamn-alvarligtskadad-2
 	129,0,128,128
 	0.5,0.5
-doug_ga_3
+spritenamn-alvarligtskadad-3
 	258,0,128,128
 	0.5,0.5
-doug_ga_4
+spritenamn-bakomattack-1
 	0,129,128,128
 	0.5,0.5
-doug_stilla
+spritenamn-bakomattack-2
 	129,129,128,128
 	0.5,0.5
+spritenamn-döende-1
+	0,258,128,128
+	0.5,0.5
+spritenamn-döende-2
+	129,258,128,128
+	0.5,0.5
+spritenamn-döende-3
+	258,129,128,128
+	0.5,0.5
+spritenamn-framotgrep-1
+	258,258,128,128
+	0.5,0.5
+spritenamn-framotgrep-2
+	387,0,128,128
+	0.5,0.5
+spritenamn-framotgrep-3
+	387,129,128,128
+	0.5,0.5
+spritenamn-gång-2
+	516,0,128,128
+	0.5,0.5
+spritenamn-gång-3
+	387,258,128,128
+	0.5,0.5
+spritenamn-gång-4
+	516,129,128,128
+	0.5,0.5
+spritenamn-spritenamn-gång-1
+	645,0,128,128
+	0.5,0.5
+spritenamn-handlingsförlamad-1
+	774,0,128,128
+	0.5,0.5
+spritenamn-handlingsförlamad-2
+	645,129,128,128
+	0.5,0.5
+spritenamn-hoppattack-1
+	516,258,128,128
+	0.5,0.5
+spritenamn-hoppattack-2
+	645,258,128,128
+	0.5,0.5
+spritenamn-hoppattack-3
+	774,129,128,128
+	0.5,0.5
+spritenamn-hoppattack-4
+	774,258,128,128
+	0.5,0.5
+spritenamn-hoppattack-5
+	0,387,128,128
+	0.5,0.5
+spritenamn-hoppklätra-1
+	0,516,128,128
+	0.5,0.5
+spritenamn-hoppklätra-2
+	129,387,128,128
+	0.5,0.5
+spritenamn-hoppklätra-3
+	129,516,128,128
+	0.5,0.5
+spritenamn-hoppklätra-4
+	0,645,128,128
+	0.5,0.5
+spritenamn-hårdattack-1
+	258,387,128,128
+	0.5,0.5
+spritenamn-hårdattack-2
+	129,645,128,128
+	0.5,0.5
+spritenamn-lättattack-1
+	387,387,128,128
+	0.5,0.5
+spritenamn-lättattack-2
+	258,516,128,128
+	0.5,0.5
+spritenamn-lättvapenattack-1
+	516,387,128,128
+	0.5,0.5
+spritenamn-lättvapenattack-2
+	387,516,128,128
+	0.5,0.5
+spritenamn-lättvapenattack-3
+	258,645,128,128
+	0.5,0.5
+spritenamn-parkour-1
+	387,645,128,128
+	0.5,0.5
+spritenamn-parkour-2
+	645,387,128,128
+	0.5,0.5
+spritenamn-parkour-3
+	516,516,128,128
+	0.5,0.5
+spritenamn-parkour-4
+	645,516,128,128
+	0.5,0.5
+spritenamn-parkour-5
+	516,645,128,128
+	0.5,0.5
+spritenamn-parkour-6
+	774,387,128,128
+	0.5,0.5
+spritenamn-ramattack-1
+	774,516,128,128
+	0.5,0.5
+spritenamn-ramattack-2
+	645,645,128,128
+	0.5,0.5
+spritenamn-ramattack-3
+	774,645,128,128
+	0.5,0.5
+spritenamn-ryggkast-1
+	903,0,128,128
+	0.5,0.5
+spritenamn-ryggkast-2
+	903,129,128,128
+	0.5,0.5
+spritenamn-skadad-1
+	1032,0,128,128
+	0.5,0.5
+spritenamn-skadad-2
+	903,258,128,128
+	0.5,0.5
+spritenamn-specialattack-1
+	1161,0,128,128
+	0.5,0.5
+spritenamn-specialattack-2
+	1032,129,128,128
+	0.5,0.5
+spritenamn-specialattack-3
+	1161,129,128,128
+	0.5,0.5
+spritenamn-specialattack-4
+	1032,258,128,128
+	0.5,0.5
+spritenamn-specialattack-5
+	903,387,128,128
+	0.5,0.5
+spritenamn-specialattack-6
+	1290,0,128,128
+	0.5,0.5
+spritenamn-stilla-1
+	1161,258,128,128
+	0.5,0.5
+spritenamn-stilla-2
+	1032,387,128,128
+	0.5,0.5
+spritenamn-stilla-3
+	903,516,128,128
+	0.5,0.5
+spritenamn-stilla-4
+	1419,0,128,128
+	0.5,0.5
+spritenamn-svepad-1
+	1290,129,128,128
+	0.5,0.5
+spritenamn-svepad-2
+	903,645,128,128
+	0.5,0.5
+spritenamn-tungattack-1
+	1419,129,128,128
+	0.5,0.5
+spritenamn-tungattack-2
+	1290,258,128,128
+	0.5,0.5
+spritenamn-tungattack-3
+	1548,0,128,128
+	0.5,0.5
+spritenamn-tungattack-4
+	1161,387,128,128
+	0.5,0.5
+spritenamn-tungvapenattack-1
+	1032,516,128,128
+	0.5,0.5
+spritenamn-tungvapenattack-2
+	1290,387,128,128
+	0.5,0.5
+spritenamn-tungvapenattack-3
+	1161,516,128,128
+	0.5,0.5
+spritenamn-tungvapenattack-4
+	1032,645,128,128
+	0.5,0.5
+spritenamn-tungvapenattack-5
+	1419,258,128,128
+	0.5,0.5
+spritenamn-tungvapenattack-6
+	1548,129,128,128
+	0.5,0.5
+spritenamn-tungvapenattack-7
+	1548,258,128,128
+	0.5,0.5
+spritenamn-upphopp-1
+	1419,387,128,128
+	0.5,0.5
+spritenamn-upphopp-2
+	1161,645,128,128
+	0.5,0.5
+spritenamn-upphopp-3
+	1290,516,128,128
+	0.5,0.5
+spritenamn-vanligthopp-1
+	1419,516,128,128
+	0.5,0.5
+spritenamn-vanligthopp-2
+	1290,645,128,128
+	0.5,0.5
 
+doug-alvarligtskadad
+	8
+	0,1,2
+doug-bakomattack
+	8
+	3,4
+doug-döende
+	8
+	5,6,7
+doug-framotgrep
+	8
+	8,9,10
 doug-gång
 	8
-	0,1,2,3
+	11,12,13,14
+doug-handlingsförlamad
+	8
+	15,16
+doug-hoppattack
+	8
+	17,18,19,20,21
+doug-hoppklätra
+	8
+	22,23,24,25
+doug-hårdattack
+	8
+	26,27
+doug-lättattack
+	8
+	28,29
+doug-lättvapenattack
+	8
+	30,31,32
+doug-parkour
+	8
+	33,34,35,36,37,38
+doug-ramattack
+	8
+	39,40,41
+doug-ryggkast
+	8
+	42,43
+doug-skadad
+	8
+	44,45
+doug-specialattack
+	8
+	46,47,48,49,50,51
 doug-stilla
 	8
-	4
+	52,53,54,55
+doug-svepad
+	8
+	56,57
+doug-tungattack
+	8
+	58,59,60,61
+doug-tungvapenattack
+	8
+	62,63,64,65,66,67,68
+doug-upphopp
+	8
+	69,70,71
+doug-vanligthopp
+	8
+	72,73

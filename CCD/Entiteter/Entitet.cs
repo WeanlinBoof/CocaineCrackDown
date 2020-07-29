@@ -3,6 +3,7 @@ using Nez.Sprites;
 
 namespace CocaineCrackDown.Entiteter {
     public class Entitet : Component {
+        protected const float AttackTimerNollstälare = 0f;
         protected string Namn { get; private set; }
         protected string TexturPlats { get; private set; }
 

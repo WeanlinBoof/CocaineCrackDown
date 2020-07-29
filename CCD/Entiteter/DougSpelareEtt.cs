@@ -1,19 +1,25 @@
-﻿
-using CocaineCrackDown.Scener;
+﻿using CocaineCrackDown.Scener;
 
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 
 using Nez;
+using Nez.AI.FSM;
 using Nez.Sprites;
+using Nez.Timers;
+
 
 namespace CocaineCrackDown.Entiteter {
 
     public enum Riktning {
+
         höger,
+
         vänster,
+
         upp,
+
         ner,
     }
 
@@ -32,13 +38,13 @@ namespace CocaineCrackDown.Entiteter {
 
         //private UnscaledDeltaTime UnscaledDeltaTime;
 
-        private string animation;
+        private string animation = "doug-stilla";
 
         private Riktning DougRiktning;
 
         private bool Attack;
 
-        private float Timer = 0f;
+        private float AttackTimer = 0f;
 
         public override void OnAddedToEntity() {
             SpriteAtlas AtlasTextur = Entity.Scene.Content.LoadSpriteAtlas("Content/doug.atlas");
@@ -78,38 +84,50 @@ namespace CocaineCrackDown.Entiteter {
             // handle movement and animations
             Vector2 moveDir = new Vector2(XAxisknappar.Value, YAxisknappar.Value);
 
-            Attack = attackknapp.IsPressed;
+            if (attackknapp.IsPressed) {
+                    animation = "doug-lättattack";
 
-            if(DougRiktning == Riktning.höger){
-                Animerare.FlipX = false;
-            }
-            if(DougRiktning == Riktning.vänster){
-                Animerare.FlipX = true;
-            }
 
-            if(Attack && Timer < 0.5f){
-                Animerare.Play("doug-stilla");
-                Timer += Time.DeltaTime;
-                Attack = true;
-                if(Timer>=0.4f){
-                    Timer = 0;
-                    Animerare.Stop();
-                    Animerare.Play("doug-gång");
-                    Attack = false;
+
+                if (AttackTimer >= 0.6f) {
+                        Attack = false;
+                        AttackTimer = AttackTimerNollstälare;
                 }
             }
+            //animation = "doug-stilla";
 
-            if(moveDir.Y < 0 || moveDir.Y > 0) {
-                animation = "doug-gång";
+
+            if (moveDir.Y < 0 || moveDir.Y > 0) {
+                if (animation != "doug-gång") {
+                    animation = "doug-gång";
+                }
             }
-            if(moveDir.X < 0) {
+            if (moveDir.X < 0 ) {
                 DougRiktning = Riktning.vänster;
-                animation = "doug-gång";
+                if (animation != "doug-gång") {
+                    animation = "doug-gång";
+                }
             }
-            if(moveDir.X > 0) {
+            if (moveDir.X > 0 ) {
                 DougRiktning = Riktning.höger;
-                animation = "doug-gång";
+                if (animation != "doug-gång") {
+                    animation = "doug-gång";
+                }
+                
             }
+
+            if (DougRiktning == Riktning.höger) {
+                Animerare.FlipX = false;
+            }
+            if (DougRiktning == Riktning.vänster) {
+                Animerare.FlipX = true;
+            }
+            /*            else {
+                            Animerare.Play("doug-stilla", SpriteAnimator.LoopMode.Loop);
+                        }*/
+
+
+
 
 
             if (moveDir != Vector2.Zero) {
@@ -120,17 +138,27 @@ namespace CocaineCrackDown.Entiteter {
                     Animerare.UnPause();
                 }
 
-                Vector2 movement = moveDir * RörelseHastighet * Time.DeltaTime;
+                Vector2 movement = moveDir * RörelseHastighet * Time.UnscaledDeltaTime;
 
                 Röraren.CalculateMovement(ref movement, out CollisionResult res);
                 SubPixelVecTvå.Update(ref movement);
                 Röraren.ApplyMovement(movement);
             }
+            if (Input.IsKeyDown(Keys.H) == false) {
+                if (!Animerare.IsAnimationActive(animation)) {
+                    Animerare.Play(animation);
+                }
+                else {
+                    Animerare.UnPause();
+                }
+            } 
             else {
+
                 Animerare.Pause();
             }
 
-            StandardScen ScenEtt = Entity.Scene as StandardScen;
+
+            StandardScen standardScen = Entity.Scene as StandardScen;
         }
     }
 }

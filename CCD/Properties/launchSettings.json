@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "CocaineCrackDown": {
+      "commandName": "Project",
+      "remoteDebugEnabled": false
+    }
+  }
+}

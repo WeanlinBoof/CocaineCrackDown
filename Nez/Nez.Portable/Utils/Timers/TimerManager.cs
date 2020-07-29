@@ -34,7 +34,7 @@ namespace Nez.Timers
 		/// <param name="onTime">On time.</param>
 		internal ITimer Schedule(float timeInSeconds, bool repeats, object context, Action<ITimer> onTime)
 		{
-			var timer = new Timer();
+			Timer timer = new Timer();
 			timer.Initialize(timeInSeconds, repeats, context, onTime);
 			_timers.Add(timer);
 

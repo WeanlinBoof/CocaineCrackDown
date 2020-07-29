@@ -35,6 +35,14 @@
     <ProjectReference Include="..\Nez\Nez.Portable\Nez.csproj" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Content\doug.atlas">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Content\doug.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
     <Compile Update="Properties\Resources.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
@@ -49,10 +57,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Update="Content\doug.atlas">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="Content\doug.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="Content\effects\transitions\Wind.mgfxo">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

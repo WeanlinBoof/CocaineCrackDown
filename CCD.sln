@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.30204.135
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CocaineCrackDown", "CCD\CocaineCrackDown.csproj", "{5D3B90D0-DE73-448E-9549-0E5D198F45EE}"
+	ProjectSection(ProjectDependencies) = postProject
+		{57EBABAA-823A-48DA-8AE7-D92FD8BEF460} = {57EBABAA-823A-48DA-8AE7-D92FD8BEF460}
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nez", "Nez\Nez.Portable\Nez.csproj", "{55CC5800-5F92-48FF-8E79-7B3912C01834}"
 EndProject
