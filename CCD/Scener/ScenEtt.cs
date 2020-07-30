@@ -16,6 +16,7 @@ namespace CocaineCrackDown.Scener {
             SetupScene();/////glöm ej bort denna brug
             ///////////////////////
             Entity dougEnhet = CreateEntity("spelare", new Vector2(Screen.Width / 2, Screen.Height / 2));
+            dougEnhet.SetTag(69);
             dougEnhet.AddComponent(new DougSpelareEtt());
             dougEnhet.Update();
 

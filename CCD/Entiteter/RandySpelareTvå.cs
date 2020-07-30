@@ -14,7 +14,7 @@ namespace CocaineCrackDown.Entiteter {
 
     public class RandySpelareTvå : Entitet, IUpdatable {
 
-        public RandySpelareTvå(string namn = "doug") : base(namn) {
+        public RandySpelareTvå(string namn = "randy", EntitetRelation entitetRelation = EntitetRelation.Hjälte) : base(namn, entitetRelation) {
         }
 
         private SubpixelVector2 SubPixelVecTvå = new SubpixelVector2();
@@ -27,7 +27,7 @@ namespace CocaineCrackDown.Entiteter {
 
         //private UnscaledDeltaTime UnscaledDeltaTime;
 
-        private string animation = "doug-stilla";
+        private string animation = "randy-stilla";
 
         private Riktning RandyRiktning;
 
@@ -35,10 +35,10 @@ namespace CocaineCrackDown.Entiteter {
 
 
         public override void OnAddedToEntity() {
-            SpriteAtlas AtlasTextur = Entity.Scene.Content.LoadSpriteAtlas("Content/doug.atlas");
+            SpriteAtlas AtlasTextur = Entity.Scene.Content.LoadSpriteAtlas("Content/randy.atlas");
             Texture2D Textur = Entity.Scene.Content.LoadTexture(TexturPlats);
 
-            Kollision = Entity.AddComponent(new BoxCollider(-20, -31, 40, 63));
+            BoxKollision = Entity.AddComponent(new BoxCollider(-20, -31, 40, 63));
             Röraren = Entity.AddComponent(new Mover());
             Animerare = Entity.AddComponent<SpriteAnimator>();
 
@@ -77,7 +77,7 @@ namespace CocaineCrackDown.Entiteter {
             }
 
             if(Attack == true){
-                animation = "doug-lättattack";
+                animation = "randy-lättattack";
                 AttackTimer += Time.UnscaledDeltaTime;
 
                 if (AttackTimer >= 0.3f) {
@@ -89,24 +89,24 @@ namespace CocaineCrackDown.Entiteter {
 
 
             if (moveDir.Y < 0 || moveDir.Y > 0) {
-                if (animation != "doug-gång") {
-                    animation = "doug-gång";
+                if (animation != "randy-gång") {
+                    animation = "randy-gång";
                 }
             }
             if (moveDir.X < 0 ) {
                 RandyRiktning = Riktning.vänster;
-                if (animation != "doug-gång") {
-                    animation = "doug-gång";
+                if (animation != "randy-gång") {
+                    animation = "randy-gång";
                 }
             }
             if (moveDir.X > 0 ) {
                 RandyRiktning = Riktning.höger;
-                if (animation != "doug-gång") {
-                    animation = "doug-gång";
+                if (animation != "randy-gång") {
+                    animation = "randy-gång";
                 }
             }
             if(moveDir.X == 0 && moveDir.Y == 0 && Attack == false) {
-                animation = "doug-stilla";
+                animation = "randy-stilla";
             }
 
             if (RandyRiktning == Riktning.höger) {

@@ -1,4 +1,6 @@
-﻿using Nez;
+﻿using Microsoft.Xna.Framework;
+
+using Nez;
 using Nez.Sprites;
 
 namespace CocaineCrackDown.Entiteter {
@@ -13,9 +15,18 @@ namespace CocaineCrackDown.Entiteter {
 
         ner,
     }
+    public enum EntitetRelation {
+        Skurk,
+        Hjälte,
+        Civil,
+        ETC,
 
+    }
     public class Entitet : Component {
+        public EntitetRelation EntitetRelationen { get; set; }
+
         protected float AttackTimer = 0f;
+
         protected const float AttackTimerNollstälare = 0f;
         protected string Namn { get; private set; }
         protected string TexturPlats { get; private set; }
@@ -24,13 +35,17 @@ namespace CocaineCrackDown.Entiteter {
 
         protected SpriteAnimator Animerare;
 
+        protected SpriteAnimator.LoopMode AnimationUppspelningsTyp;
+
         protected Mover Röraren;
 
-        protected BoxCollider Kollision;
+        public BoxCollider BoxKollision;
 
         protected float RörelseHastighet = 100f;
 
-        public Entitet(string namn) {
+        protected Vector2 Rörelse;
+        public Entitet(string namn,EntitetRelation entitetRelation ) {
+            EntitetRelationen = entitetRelation;
             Namn = namn;
             TexturPlats = $"Content/{Namn}.png";
 
