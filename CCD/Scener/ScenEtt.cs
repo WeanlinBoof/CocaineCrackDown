@@ -22,6 +22,10 @@ namespace CocaineCrackDown.Scener {
             Entity randyEnhet = CreateEntity("spelaretvå", new Vector2(Screen.Width / 3, Screen.Height / 2));
             randyEnhet.AddComponent(new RandySpelareTvå());
             randyEnhet.Update();
+
+            Entity hejdukEnhet = CreateEntity("hejduk", new Vector2(Screen.Width / 4, Screen.Height / 4));
+            hejdukEnhet.AddComponent(new Hejduk());
+            hejdukEnhet.Update();
         }
     }
 

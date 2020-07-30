@@ -2,7 +2,20 @@
 using Nez.Sprites;
 
 namespace CocaineCrackDown.Entiteter {
+
+    public enum Riktning {
+
+        höger,
+
+        vänster,
+
+        upp,
+
+        ner,
+    }
+
     public class Entitet : Component {
+        protected float AttackTimer = 0f;
         protected const float AttackTimerNollstälare = 0f;
         protected string Namn { get; private set; }
         protected string TexturPlats { get; private set; }
@@ -14,7 +27,6 @@ namespace CocaineCrackDown.Entiteter {
         protected Mover Röraren;
 
         protected BoxCollider Kollision;
-
 
         protected float RörelseHastighet = 100f;
 

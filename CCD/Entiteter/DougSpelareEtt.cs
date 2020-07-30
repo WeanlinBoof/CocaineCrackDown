@@ -12,17 +12,6 @@ using Nez.Timers;
 
 namespace CocaineCrackDown.Entiteter {
 
-    public enum Riktning {
-
-        höger,
-
-        vänster,
-
-        upp,
-
-        ner,
-    }
-
     public class DougSpelareEtt : Entitet, IUpdatable {
 
         public DougSpelareEtt(string namn = "doug") : base(namn) {
@@ -44,7 +33,6 @@ namespace CocaineCrackDown.Entiteter {
 
         private bool Attack;
 
-        private float AttackTimer = 0f;
 
         public override void OnAddedToEntity() {
             SpriteAtlas AtlasTextur = Entity.Scene.Content.LoadSpriteAtlas("Content/doug.atlas");
@@ -85,11 +73,14 @@ namespace CocaineCrackDown.Entiteter {
             Vector2 moveDir = new Vector2(XAxisknappar.Value, YAxisknappar.Value);
 
             if (attackknapp.IsPressed) {
-                    animation = "doug-lättattack";
+                Attack = true;
+            }
 
+            if(Attack == true){
+                animation = "doug-lättattack";
+                AttackTimer += Time.UnscaledDeltaTime;
 
-
-                if (AttackTimer >= 0.6f) {
+                if (AttackTimer >= 0.3f) {
                         Attack = false;
                         AttackTimer = AttackTimerNollstälare;
                 }
@@ -113,7 +104,9 @@ namespace CocaineCrackDown.Entiteter {
                 if (animation != "doug-gång") {
                     animation = "doug-gång";
                 }
-                
+            }
+            if(moveDir.X == 0 && moveDir.Y == 0 && Attack == false) {
+                animation = "doug-stilla";
             }
 
             if (DougRiktning == Riktning.höger) {
@@ -131,12 +124,12 @@ namespace CocaineCrackDown.Entiteter {
 
 
             if (moveDir != Vector2.Zero) {
-                if (!Animerare.IsAnimationActive(animation)) {
+                /**if (!Animerare.IsAnimationActive(animation)) {
                     Animerare.Play(animation);
                 }
                 else {
                     Animerare.UnPause();
-                }
+                }**/
 
                 Vector2 movement = moveDir * RörelseHastighet * Time.UnscaledDeltaTime;
 
@@ -144,18 +137,16 @@ namespace CocaineCrackDown.Entiteter {
                 SubPixelVecTvå.Update(ref movement);
                 Röraren.ApplyMovement(movement);
             }
-            if (Input.IsKeyDown(Keys.H) == false) {
-                if (!Animerare.IsAnimationActive(animation)) {
-                    Animerare.Play(animation);
-                }
-                else {
-                    Animerare.UnPause();
-                }
-            } 
+            if (!Animerare.IsAnimationActive(animation)) {
+                Animerare.Play(animation);
+            }
             else {
+                Animerare.UnPause();
+            }
+            /*else {
 
                 Animerare.Pause();
-            }
+            }*/
 
 
             StandardScen standardScen = Entity.Scene as StandardScen;

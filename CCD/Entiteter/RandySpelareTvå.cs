@@ -1,4 +1,3 @@
-﻿
 using CocaineCrackDown.Scener;
 
 using Microsoft.Xna.Framework;
@@ -6,7 +5,10 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 
 using Nez;
+using Nez.AI.FSM;
 using Nez.Sprites;
+using Nez.Timers;
+
 
 namespace CocaineCrackDown.Entiteter {
 
@@ -23,7 +25,14 @@ namespace CocaineCrackDown.Entiteter {
 
         private VirtualIntegerAxis YAxisknappar;
 
+        //private UnscaledDeltaTime UnscaledDeltaTime;
+
+        private string animation = "doug-stilla";
+
         private Riktning RandyRiktning;
+
+        private bool Attack;
+
 
         public override void OnAddedToEntity() {
             SpriteAtlas AtlasTextur = Entity.Scene.Content.LoadSpriteAtlas("Content/doug.atlas");
@@ -62,48 +71,84 @@ namespace CocaineCrackDown.Entiteter {
 
             // handle movement and animations
             Vector2 moveDir = new Vector2(XAxisknappar.Value, YAxisknappar.Value);
-            string animation;
 
-            if(moveDir.X < 0 || moveDir.X > 0 || moveDir.Y < 0 || moveDir.Y > 0){
-                animation = "doug-gång";
+            if (attackknapp.IsPressed) {
+                Attack = true;
             }
-            else {
+
+            if(Attack == true){
+                animation = "doug-lättattack";
+                AttackTimer += Time.UnscaledDeltaTime;
+
+                if (AttackTimer >= 0.3f) {
+                        Attack = false;
+                        AttackTimer = AttackTimerNollstälare;
+                }
+            }
+            //animation = "doug-stilla";
+
+
+            if (moveDir.Y < 0 || moveDir.Y > 0) {
+                if (animation != "doug-gång") {
+                    animation = "doug-gång";
+                }
+            }
+            if (moveDir.X < 0 ) {
+                RandyRiktning = Riktning.vänster;
+                if (animation != "doug-gång") {
+                    animation = "doug-gång";
+                }
+            }
+            if (moveDir.X > 0 ) {
+                RandyRiktning = Riktning.höger;
+                if (animation != "doug-gång") {
+                    animation = "doug-gång";
+                }
+            }
+            if(moveDir.X == 0 && moveDir.Y == 0 && Attack == false) {
                 animation = "doug-stilla";
             }
 
-            if(moveDir.X < 0) {
-                RandyRiktning = Riktning.vänster;
-            }
-            if(moveDir.X > 0) {
-                RandyRiktning = Riktning.höger;
-            }
-
-            if(RandyRiktning == Riktning.höger){
+            if (RandyRiktning == Riktning.höger) {
                 Animerare.FlipX = false;
             }
-            if(RandyRiktning == Riktning.vänster){
+            if (RandyRiktning == Riktning.vänster) {
                 Animerare.FlipX = true;
             }
+            /*            else {
+                            Animerare.Play("doug-stilla", SpriteAnimator.LoopMode.Loop);
+                        }*/
+
+
+
+
 
             if (moveDir != Vector2.Zero) {
-                if (!Animerare.IsAnimationActive(animation)) {
+                /**if (!Animerare.IsAnimationActive(animation)) {
                     Animerare.Play(animation);
                 }
                 else {
                     Animerare.UnPause();
-                }
+                }**/
 
-                Vector2 movement = moveDir * RörelseHastighet * Time.DeltaTime;
+                Vector2 movement = moveDir * RörelseHastighet * Time.UnscaledDeltaTime;
 
                 Röraren.CalculateMovement(ref movement, out CollisionResult res);
                 SubPixelVecTvå.Update(ref movement);
                 Röraren.ApplyMovement(movement);
             }
-            else {
-                Animerare.Pause();
+            if (!Animerare.IsAnimationActive(animation)) {
+                Animerare.Play(animation);
             }
+            else {
+                Animerare.UnPause();
+            }
+            /*else {
 
-            StandardScen ScenEtt = Entity.Scene as StandardScen;
+                Animerare.Pause();
+            }*/
+
+            StandardScen standardScen = Entity.Scene as StandardScen;
         }
     }
 }
