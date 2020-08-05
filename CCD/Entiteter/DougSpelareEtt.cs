@@ -14,8 +14,8 @@ namespace CocaineCrackDown.Entiteter {
 
     public class DougSpelareEtt : Entitet, IUpdatable {
 
-        public DougSpelareEtt(Collider collider, string namn = "doug", EntitetRelation entitetRelation = EntitetRelation.Hjälte) : base(collider, namn, entitetRelation) {
-            this.other = collider;
+        public DougSpelareEtt(string namn = "doug", EntitetRelation entitetRelation = EntitetRelation.Hjälte) : base(namn, entitetRelation) {
+            ///this.other = collider;
         }
 
 

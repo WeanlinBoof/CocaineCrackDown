@@ -13,8 +13,7 @@ namespace CocaineCrackDown.Entiteter {
 
     public class Hejduk : Entitet, IUpdatable {
 
-        public Hejduk(Collider collider, string namn = "doug", EntitetRelation entitetRelation = EntitetRelation.Hjälte) : base(collider, namn, entitetRelation) {
-            this.other = collider;
+        public Hejduk(string namn = "doug", EntitetRelation entitetRelation = EntitetRelation.Hjälte) : base(namn, entitetRelation) {
         }
 
         private SubpixelVector2 SubPixelVecTvå = new SubpixelVector2();
