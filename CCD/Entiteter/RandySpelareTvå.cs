@@ -14,7 +14,8 @@ namespace CocaineCrackDown.Entiteter {
 
     public class RandySpelareTvå : Entitet, IUpdatable {
 
-        public RandySpelareTvå(string namn = "randy", EntitetRelation entitetRelation = EntitetRelation.Hjälte) : base(namn, entitetRelation) {
+        public RandySpelareTvå(Collider collider, string namn = "randy", EntitetRelation entitetRelation = EntitetRelation.Hjälte) : base(collider, namn, entitetRelation) {
+            this.other = collider;
         }
 
         private SubpixelVector2 SubPixelVecTvå = new SubpixelVector2();
@@ -32,6 +33,10 @@ namespace CocaineCrackDown.Entiteter {
         private Riktning RandyRiktning;
 
         private bool Attack;
+
+        private Collider other;
+        private CollisionResult result;
+        public BoxCollider BoxKollision;
 
 
         public override void OnAddedToEntity() {

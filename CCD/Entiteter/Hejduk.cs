@@ -13,7 +13,8 @@ namespace CocaineCrackDown.Entiteter {
 
     public class Hejduk : Entitet, IUpdatable {
 
-        public Hejduk(string namn = "doug", EntitetRelation entitetRelation = EntitetRelation.Skurk) : base(namn, entitetRelation) {
+        public Hejduk(Collider collider, string namn = "doug", EntitetRelation entitetRelation = EntitetRelation.Hjälte) : base(collider, namn, entitetRelation) {
+            this.other = collider;
         }
 
         private SubpixelVector2 SubPixelVecTvå = new SubpixelVector2();
@@ -25,6 +26,11 @@ namespace CocaineCrackDown.Entiteter {
         private VirtualIntegerAxis YAxisknappar;
 
         private string animation = "doug-stilla";
+
+        private Collider other;
+        private CollisionResult result;
+
+        public BoxCollider BoxKollision;
 
         public override void OnAddedToEntity() {
 
@@ -40,7 +46,7 @@ namespace CocaineCrackDown.Entiteter {
 
         }
         /// <summary>
-        /// //////////////////////////////Fixa Ai Fixa Ai Fixa Ai Fixa Ai Fixa Ai Fixa Ai Fixa Ai Fixa Ai Fixa Ai 
+        /// //////////////////////////////Fixa Ai Fixa Ai Fixa Ai Fixa Ai Fixa Ai Fixa Ai Fixa Ai Fixa Ai Fixa Ai
         /// </summary>
         private void SkapaInmatning() {
 
@@ -79,7 +85,7 @@ namespace CocaineCrackDown.Entiteter {
             else {
                 Animerare.UnPause();
             }
-           
+
             //StandardScen standardScen = Entity.Scene as StandardScen;
         }
     }

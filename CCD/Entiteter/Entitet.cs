@@ -39,12 +39,16 @@ namespace CocaineCrackDown.Entiteter {
 
         protected Mover Röraren;
 
-        public BoxCollider BoxKollision;
+        //public BoxCollider BoxKollision;
 
         protected float RörelseHastighet = 100f;
 
         protected Vector2 Rörelse;
-        public Entitet(string namn,EntitetRelation entitetRelation ) {
+
+        public Collider other;
+        public CollisionResult result;
+
+        public Entitet(Collider collider, string namn,EntitetRelation entitetRelation ) {
             EntitetRelationen = entitetRelation;
             Namn = namn;
             TexturPlats = $"Content/{Namn}.png";

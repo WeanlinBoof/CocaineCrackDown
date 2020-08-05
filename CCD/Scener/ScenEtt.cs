@@ -15,18 +15,24 @@ namespace CocaineCrackDown.Scener {
             ////////////////////////
             SetupScene();/////glöm ej bort denna brug
             ///////////////////////
+
+            Entity hejdukEnhet = CreateEntity("hejduk", new Vector2(Screen.Width / 4, Screen.Height / 4));
+            //var HejdukKollision = hejdukEnhet.AddComponent(new BoxCollider(-20, -31, 40, 63));
+            //hejdukEnhet.AddComponent(new Hejduk(HejdukKollision, "doug", EntitetRelation.Hjälte));
+
+            hejdukEnhet.Update();
+
             Entity dougEnhet = CreateEntity("spelare", new Vector2(Screen.Width / 2, Screen.Height / 2));
             dougEnhet.SetTag(69);
-            dougEnhet.AddComponent(new DougSpelareEtt());
+            //dougEnhet.AddComponent(new DougSpelareEtt());
+            dougEnhet.AddComponent(new DougSpelareEtt(hejdukEnhet.hejdukKollision, "doug", EntitetRelation.Hjälte));
             dougEnhet.Update();
 
             Entity randyEnhet = CreateEntity("spelaretvå", new Vector2(Screen.Width / 3, Screen.Height / 2));
-            randyEnhet.AddComponent(new RandySpelareTvå());
+            randyEnhet.AddComponent(new RandySpelareTvå(hejdukEnhet.hejdukKollision, "randy", EntitetRelation.Hjälte));
             randyEnhet.Update();
 
-            Entity hejdukEnhet = CreateEntity("hejduk", new Vector2(Screen.Width / 4, Screen.Height / 4));
-            hejdukEnhet.AddComponent(new Hejduk());
-            hejdukEnhet.Update();
+
         }
     }
 

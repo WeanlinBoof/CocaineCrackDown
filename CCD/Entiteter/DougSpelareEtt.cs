@@ -14,8 +14,10 @@ namespace CocaineCrackDown.Entiteter {
 
     public class DougSpelareEtt : Entitet, IUpdatable {
 
-        public DougSpelareEtt(string namn = "doug", EntitetRelation entitetRelation = EntitetRelation.Hjälte) : base(namn, entitetRelation) {
+        public DougSpelareEtt(Collider collider, string namn = "doug", EntitetRelation entitetRelation = EntitetRelation.Hjälte) : base(collider, namn, entitetRelation) {
+            this.other = collider;
         }
+
 
         private SubpixelVector2 SubPixelVecTvå = new SubpixelVector2();
 
@@ -33,7 +35,14 @@ namespace CocaineCrackDown.Entiteter {
 
         private bool Attack;
 
-      
+        private Collider other;
+        private CollisionResult result;
+        public BoxCollider BoxKollision;
+
+        //public DougSpelareEtt(Collider collider) {
+        //    this.other = collider;
+        //}
+
         public override void OnAddedToEntity() {
             SpriteAtlas AtlasTextur = Entity.Scene.Content.LoadSpriteAtlas("Content/doug.atlas");
             Texture2D Textur = Entity.Scene.Content.LoadTexture(TexturPlats);
@@ -67,6 +76,10 @@ namespace CocaineCrackDown.Entiteter {
         }
 
         public void Update() {
+
+            if (BoxKollision.CollidesWith(other, out result)) {
+                animation = "doug-stilla";
+            }
 
             // handle movement and animations
             Vector2 moveDir = new Vector2(XAxisknappar.Value, YAxisknappar.Value);
@@ -116,7 +129,7 @@ namespace CocaineCrackDown.Entiteter {
             }
 
 
-             
+
 
             if (moveDir != Vector2.Zero) {
 
