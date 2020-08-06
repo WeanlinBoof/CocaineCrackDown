@@ -26,17 +26,16 @@ namespace CocaineCrackDown.Entiteter {
 
         private string animation = "doug-stilla";
 
-        private Collider other;
-        private CollisionResult result;
 
-        public BoxCollider BoxKollision;
+
+        public BoxCollider HejdukBoxKollision;
 
         public override void OnAddedToEntity() {
 
             SpriteAtlas AtlasTextur = Entity.Scene.Content.LoadSpriteAtlas("Content/doug.atlas");
             Texture2D Textur = Entity.Scene.Content.LoadTexture(TexturPlats);
 
-            BoxKollision = Entity.AddComponent(new BoxCollider(-20, -31, 40, 63));
+            HejdukBoxKollision = Entity.AddComponent(new BoxCollider(-20, -31, 40, 63));
             Röraren = Entity.AddComponent(new Mover());
             Animerare = Entity.AddComponent<SpriteAnimator>();
 
@@ -69,7 +68,6 @@ namespace CocaineCrackDown.Entiteter {
 
                 Rörelse = moveDir * RörelseHastighet * Time.UnscaledDeltaTime;
 
-                Röraren.CalculateMovement(ref Rörelse, out CollisionResult res);
                 SubPixelVecTvå.Update(ref Rörelse);
                 Röraren.ApplyMovement(Rörelse);
             }
@@ -85,7 +83,7 @@ namespace CocaineCrackDown.Entiteter {
                 Animerare.UnPause();
             }
 
-            //StandardScen standardScen = Entity.Scene as StandardScen;
+            StandardScen standardScen = Entity.Scene as StandardScen;
         }
     }
 }

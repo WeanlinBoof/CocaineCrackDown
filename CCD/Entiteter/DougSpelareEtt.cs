@@ -9,6 +9,7 @@ using Nez.AI.FSM;
 using Nez.Sprites;
 using Nez.Timers;
 
+using System;
 
 namespace CocaineCrackDown.Entiteter {
 
@@ -35,22 +36,20 @@ namespace CocaineCrackDown.Entiteter {
 
         private bool Attack;
 
-        private Collider other;
-        private CollisionResult result;
-        public BoxCollider BoxKollision;
 
-        //public DougSpelareEtt(Collider collider) {
-        //    this.other = collider;
-        //}
+        public BoxCollider DougBoxKollision;
+
+        private BoxCollider HejdukBoxKollision;
 
         public override void OnAddedToEntity() {
             SpriteAtlas AtlasTextur = Entity.Scene.Content.LoadSpriteAtlas("Content/doug.atlas");
             Texture2D Textur = Entity.Scene.Content.LoadTexture(TexturPlats);
-            BoxKollision = Entity.AddComponent(new BoxCollider(-20, -31, 40, 63));
+            DougBoxKollision = Entity.AddComponent(new BoxCollider(-20, -31, 40, 63));
             Röraren = Entity.AddComponent(new Mover());
             Animerare = Entity.AddComponent<SpriteAnimator>();
 
             Animerare.AddAnimationsFromAtlas(AtlasTextur);
+            HejdukBoxKollision = Entity.Scene.FindEntity("hejduk").GetComponent<BoxCollider>();
 
             SkapaInmatning();
         }
@@ -77,9 +76,7 @@ namespace CocaineCrackDown.Entiteter {
 
         public void Update() {
 
-            if (BoxKollision.CollidesWith(other, out result)) {
-                animation = "doug-stilla";
-            }
+
 
             // handle movement and animations
             Vector2 moveDir = new Vector2(XAxisknappar.Value, YAxisknappar.Value);
@@ -128,16 +125,19 @@ namespace CocaineCrackDown.Entiteter {
                 Animerare.FlipX = true;
             }
 
+            //har bara fixat för doug btw vet exaxt hur man ska fixa bara inte årkat
+            bool Hejdkubool = DougBoxKollision.Overlaps(HejdukBoxKollision);
+            if (Hejdkubool) {
+                Console.WriteLine("doug och hejduk");
 
-
+            }
 
             if (moveDir != Vector2.Zero) {
 
-                Vector2 movement = moveDir * RörelseHastighet * Time.UnscaledDeltaTime;
-
-                Röraren.CalculateMovement(ref movement, out CollisionResult res);
-                SubPixelVecTvå.Update(ref movement);
-                Röraren.ApplyMovement(movement);
+                Rörelse = moveDir * RörelseHastighet * Time.UnscaledDeltaTime;
+                //Röraren.CalculateMovement(ref Rörelse, out CollisionResult res);
+                SubPixelVecTvå.Update(ref Rörelse);
+                Röraren.ApplyMovement(Rörelse);
             }
             if (!Animerare.IsAnimationActive(animation)) {
                 Animerare.Play(animation);

@@ -33,8 +33,6 @@ namespace CocaineCrackDown.Entiteter {
 
         private bool Attack;
 
-        private Collider other;
-        private CollisionResult result;
         public BoxCollider BoxKollision;
 
 
@@ -119,27 +117,20 @@ namespace CocaineCrackDown.Entiteter {
             if (RandyRiktning == Riktning.vänster) {
                 Animerare.FlipX = true;
             }
-            /*            else {
-                            Animerare.Play("doug-stilla", SpriteAnimator.LoopMode.Loop);
-                        }*/
+
 
 
 
 
 
             if (moveDir != Vector2.Zero) {
-                /**if (!Animerare.IsAnimationActive(animation)) {
-                    Animerare.Play(animation);
-                }
-                else {
-                    Animerare.UnPause();
-                }**/
 
-                Vector2 movement = moveDir * RörelseHastighet * Time.UnscaledDeltaTime;
 
-                Röraren.CalculateMovement(ref movement, out CollisionResult res);
-                SubPixelVecTvå.Update(ref movement);
-                Röraren.ApplyMovement(movement);
+                Rörelse = moveDir * RörelseHastighet * Time.UnscaledDeltaTime;
+
+                //Röraren.CalculateMovement(ref Rörelse, out CollisionResult res);
+                SubPixelVecTvå.Update(ref Rörelse);
+                Röraren.ApplyMovement(Rörelse);
             }
             if (!Animerare.IsAnimationActive(animation)) {
                 Animerare.Play(animation);

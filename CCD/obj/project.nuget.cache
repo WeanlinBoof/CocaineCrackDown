@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SJVOsRaqx88e5um3vKjmO4H4hzU0nnrCOPledDM06qQmN+xZWFz919wYSlPaCxRYDq2apfo3iI+D0+w8D+KEwg==",
+  "dgSpecHash": "ctFarGzIgNb/lnooe5Ui4mZzMOelQuTUzyRHY6arHV6sdsLRFIofKdIwyvYO0WRanqgTlvLoFYsx8IGtkSr6Hw==",
   "success": true,
-  "projectFilePath": "D:\\skrivbord\\CocaineCrackDown\\CocaineCrackDown\\CCD\\CocaineCrackDown.csproj",
+  "projectFilePath": "D:\\skrivbord\\Nuvarande Github CCD\\CocaineCrackDown\\CCD\\CocaineCrackDown.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Henrik\\.nuget\\packages\\imgui.net\\1.71.0\\imgui.net.1.71.0.nupkg.sha512",
     "C:\\Users\\Henrik\\.nuget\\packages\\microsoft.netcore.platforms\\3.0.0\\microsoft.netcore.platforms.3.0.0.nupkg.sha512",
