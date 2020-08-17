@@ -40,8 +40,8 @@ namespace CocaineCrackDown.Komponenter.Spelare {
             BoxKollision = Entity.AddComponent(new BoxCollider(-20, -31, 40, 63));
             Röraren = Entity.AddComponent(new Mover());
             Animerare = Entity.AddComponent<SpriteAnimator>();
-            StatusVärde = Entity.AddComponent<StatusVärdeKomponent>();
-            RörelseHastighet = StatusVärde.RörelseHastighet;
+            //StatusVärde = Entity.AddComponent<StatusVärdeKomponent>();
+            RörelseHastighet = 100f;
             Animerare.AddAnimationsFromAtlas(AtlasTextur);
 
             SkapaInmatning();
@@ -66,7 +66,7 @@ namespace CocaineCrackDown.Komponenter.Spelare {
             YAxisknappar.Nodes.Add(new VirtualAxis.GamePadLeftStickY());
             YAxisknappar.Nodes.Add(new VirtualAxis.KeyboardKeys(VirtualInput.OverlapBehavior.TakeNewer, Keys.Up, Keys.Down));
         }
-        public bool DougÄrDöd() {
+       /* public bool DougÄrDöd() {
            HälsoPoäng = Entity.GetComponent<StatusVärdeKomponent>().HälsoPoäng;
             if (HälsoPoäng == 0) {
                 return true;
@@ -74,9 +74,9 @@ namespace CocaineCrackDown.Komponenter.Spelare {
             else {
                 return false;
             }
-        } 
+        }*/
         public void Update() {
-            DougÄrDöd();
+            //DougÄrDöd();
             // handle movement and animations
             Vector2 moveDir = new Vector2(XAxisknappar.Value, YAxisknappar.Value);
 

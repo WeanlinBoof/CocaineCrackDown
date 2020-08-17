@@ -32,7 +32,7 @@ namespace CocaineCrackDown.Komponenter {
 
         protected Mover Röraren;
 
-        protected StatusVärdeKomponent StatusVärde;
+        //protected StatusVärdeKomponent StatusVärde;
 
         public BoxCollider BoxKollision;
 

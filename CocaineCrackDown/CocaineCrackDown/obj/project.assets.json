@@ -277,41 +277,34 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Henrik\\.nuget\\packages\\": {},
-    "D:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "/home/bithor/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Skrivbord\\CocaineCrackDOwn\\CCD Ultra Rewrite\\CocaineCrackDown\\CocaineCrackDown\\CocaineCrackDown.csproj",
+      "projectUniqueName": "/home/bithor/c#/cocainecrackdown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown.csproj",
       "projectName": "CocaineCrackDown",
-      "projectPath": "C:\\Skrivbord\\CocaineCrackDOwn\\CCD Ultra Rewrite\\CocaineCrackDown\\CocaineCrackDown\\CocaineCrackDown.csproj",
-      "packagesPath": "C:\\Users\\Henrik\\.nuget\\packages\\",
-      "outputPath": "C:\\Skrivbord\\CocaineCrackDOwn\\CCD Ultra Rewrite\\CocaineCrackDown\\CocaineCrackDown\\obj\\",
+      "projectPath": "/home/bithor/c#/cocainecrackdown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown.csproj",
+      "packagesPath": "/home/bithor/.nuget/packages/",
+      "outputPath": "/home/bithor/c#/cocainecrackdown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/obj/",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "D:\\Microsoft\\Xamarin\\NuGet\\"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Henrik\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "/home/bithor/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Skrivbord\\CocaineCrackDOwn\\CCD Ultra Rewrite\\CocaineCrackDown\\Nez\\Nez.Persistence\\Nez.Persistence.csproj": {
-              "projectPath": "C:\\Skrivbord\\CocaineCrackDOwn\\CCD Ultra Rewrite\\CocaineCrackDown\\Nez\\Nez.Persistence\\Nez.Persistence.csproj"
+            "/home/bithor/c#/cocainecrackdown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/Nez/Nez.Persistence/Nez.Persistence.csproj": {
+              "projectPath": "/home/bithor/c#/cocainecrackdown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/Nez/Nez.Persistence/Nez.Persistence.csproj"
             },
-            "C:\\Skrivbord\\CocaineCrackDOwn\\CCD Ultra Rewrite\\CocaineCrackDown\\Nez\\Nez.Portable\\Nez.csproj": {
-              "projectPath": "C:\\Skrivbord\\CocaineCrackDOwn\\CCD Ultra Rewrite\\CocaineCrackDown\\Nez\\Nez.Portable\\Nez.csproj"
+            "/home/bithor/c#/cocainecrackdown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/Nez/Nez.Portable/Nez.csproj": {
+              "projectPath": "/home/bithor/c#/cocainecrackdown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/Nez/Nez.Portable/Nez.csproj"
             }
           }
         }
@@ -349,7 +342,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.103/RuntimeIdentifierGraph.json"
       }
     }
   }
