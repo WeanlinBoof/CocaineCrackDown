@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "IYEystRyInFuQYXAKdGHY3A9pFyZCKst/7Xk7ToXaiKbr8S6UibrcA1Uhdl7tNotSsTevsVWq/w8ajZTCbv07Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Anders H. Andersson\\Desktop\\CCD-NOW\\CCD-DEV\\CocaineCrackDown\\Nez\\Nez\\Nez.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Anders H. Andersson\\.nuget\\packages\\microsoft.netcore.platforms\\3.0.0\\microsoft.netcore.platforms.3.0.0.nupkg.sha512",
+    "C:\\Users\\Anders H. Andersson\\.nuget\\packages\\microsoft.win32.systemevents\\4.6.0\\microsoft.win32.systemevents.4.6.0.nupkg.sha512",
+    "C:\\Users\\Anders H. Andersson\\.nuget\\packages\\monogame.framework.desktopgl\\3.8.0.1641\\monogame.framework.desktopgl.3.8.0.1641.nupkg.sha512",
+    "C:\\Users\\Anders H. Andersson\\.nuget\\packages\\system.drawing.common\\4.6.0\\system.drawing.common.4.6.0.nupkg.sha512"
+  ],
+  "logs": []
+}

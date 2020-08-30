@@ -1,0 +1,2 @@
+C:\Skrivbord\CCD Ultra Rewrite\CocaineCrackDown\Nez\Nez.FarseerPhysics\obj\Nez.FarseerPhysics\Debug\Nez.FarseerPhysics.csprojAssemblyReference.cache
+C:\Skrivbord\CCD Ultra Rewrite\CocaineCrackDown\Nez\Nez.FarseerPhysics\obj\Nez.FarseerPhysics\Debug\Nez.FarseerPhysics.csproj.CoreCompileInputs.cache
