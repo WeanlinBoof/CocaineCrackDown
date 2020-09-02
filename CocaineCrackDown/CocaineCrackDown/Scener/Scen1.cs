@@ -17,6 +17,8 @@ namespace CocaineCrackDown.Scener {
 
         public override Table Table { get; set; }
 
+        public Scen1() { }
+        
         public override void Initialize() { 
             BruhUi();
             Table.Add(new Label("Main Menu").SetFontScale(5));
@@ -39,10 +41,10 @@ namespace CocaineCrackDown.Scener {
         }
 
         private void VärdKnapp(Button obj) {
-            Core.StartSceneTransition(new TextureWipeTransition(() => new Scen1()) { TransitionTexture = Core.Content.Load<Texture2D>("nez/textures/textureWipeTransition/wink") });
+            Core.StartSceneTransition(new TextureWipeTransition(() => new VärdScen()) { TransitionTexture = Core.Content.Load<Texture2D>("nez/textures/textureWipeTransition/wink") });
         }
         private void KlientKnapp(Button obj) {
-            Core.StartSceneTransition(new TextureWipeTransition(() => new Scen1()) { TransitionTexture = Core.Content.Load<Texture2D>("nez/textures/textureWipeTransition/crissCross") });
+            Core.StartSceneTransition(new TextureWipeTransition(() => new KlientScen()) { TransitionTexture = Core.Content.Load<Texture2D>("nez/textures/textureWipeTransition/crissCross") });
 
         }
     }

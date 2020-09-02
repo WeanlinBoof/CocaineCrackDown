@@ -158,84 +158,163 @@ C:/Users/Anders H. Andersson/Desktop/CCD-NOW/CCD-DEV/CocaineCrackDown/CocaineCra
 /home/bithor/c#/cocainecrackdown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/obj/Debug/netcoreapp3.1/CocaineCrackDown.csproj.CopyComplete
 /home/bithor/c#/cocainecrackdown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/obj/Debug/netcoreapp3.1/CocaineCrackDown.dll
 /home/bithor/c#/cocainecrackdown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/obj/Debug/netcoreapp3.1/CocaineCrackDown.pdb
-C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\bin\Debug\netcoreapp3.1\CocaineCrackDown.exe
-C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\bin\Debug\netcoreapp3.1\Content\bakgrund.png
-C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\bin\Debug\netcoreapp3.1\Content\doug.atlas
-C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\bin\Debug\netcoreapp3.1\Content\doug.png
-C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\bin\Debug\netcoreapp3.1\Content\himmel.png
-C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\bin\Debug\netcoreapp3.1\Content\hus.png
-C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\bin\Debug\netcoreapp3.1\Content\mark.png
-C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\bin\Debug\netcoreapp3.1\Content\nez\effects\Bevels.mgfxo
-C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\bin\Debug\netcoreapp3.1\Content\nez\effects\BloomCombine.mgfxo
-C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\bin\Debug\netcoreapp3.1\Content\nez\effects\BloomExtract.mgfxo
-C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\bin\Debug\netcoreapp3.1\Content\nez\effects\Crosshatch.mgfxo
-C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\bin\Debug\netcoreapp3.1\Content\nez\effects\DeferredLighting.mgfxo
-C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\bin\Debug\netcoreapp3.1\Content\nez\effects\DeferredSprite.mgfxo
-C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\bin\Debug\netcoreapp3.1\Content\nez\effects\Dissolve.mgfxo
-C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\bin\Debug\netcoreapp3.1\Content\nez\effects\Dots.mgfxo
-C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\bin\Debug\netcoreapp3.1\Content\nez\effects\ForwardLighting.mgfxo
-C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\bin\Debug\netcoreapp3.1\Content\nez\effects\GaussianBlur.mgfxo
-C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\bin\Debug\netcoreapp3.1\Content\nez\effects\Grayscale.mgfxo
-C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\bin\Debug\netcoreapp3.1\Content\nez\effects\HeatDistortion.mgfxo
-C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\bin\Debug\netcoreapp3.1\Content\nez\effects\Invert.mgfxo
-C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\bin\Debug\netcoreapp3.1\Content\nez\effects\Letterbox.mgfxo
-C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\bin\Debug\netcoreapp3.1\Content\nez\effects\MultiTexture.mgfxo
-C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\bin\Debug\netcoreapp3.1\Content\nez\effects\MultiTextureOverlay.mgfxo
-C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\bin\Debug\netcoreapp3.1\Content\nez\effects\Noise.mgfxo
-C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\bin\Debug\netcoreapp3.1\Content\nez\effects\PaletteCycler.mgfxo
-C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\bin\Debug\netcoreapp3.1\Content\nez\effects\PixelGlitch.mgfxo
-C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\bin\Debug\netcoreapp3.1\Content\nez\effects\PolygonLight.mgfxo
-C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\bin\Debug\netcoreapp3.1\Content\nez\effects\Reflection.mgfxo
-C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\bin\Debug\netcoreapp3.1\Content\nez\effects\Scanlines.mgfxo
-C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\bin\Debug\netcoreapp3.1\Content\nez\effects\Sepia.mgfxo
-C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\bin\Debug\netcoreapp3.1\Content\nez\effects\SpriteAlphaTest.mgfxo
-C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\bin\Debug\netcoreapp3.1\Content\nez\effects\SpriteBlinkEffect.mgfxo
-C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\bin\Debug\netcoreapp3.1\Content\nez\effects\SpriteEffect.mgfxo
-C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\bin\Debug\netcoreapp3.1\Content\nez\effects\SpriteLightMultiply.mgfxo
-C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\bin\Debug\netcoreapp3.1\Content\nez\effects\SpriteLines.mgfxo
-C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\bin\Debug\netcoreapp3.1\Content\nez\effects\StencilLight.mgfxo
-C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\bin\Debug\netcoreapp3.1\Content\nez\effects\transitions\Squares.mgfxo
-C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\bin\Debug\netcoreapp3.1\Content\nez\effects\transitions\TextureWipe.mgfxo
-C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\bin\Debug\netcoreapp3.1\Content\nez\effects\transitions\Wind.mgfxo
-C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\bin\Debug\netcoreapp3.1\Content\nez\effects\Twist.mgfxo
-C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\bin\Debug\netcoreapp3.1\Content\nez\effects\Vignette.mgfxo
-C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\bin\Debug\netcoreapp3.1\Content\randy.atlas
-C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\bin\Debug\netcoreapp3.1\Content\randy.png
-C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\bin\Debug\netcoreapp3.1\Content\testnr1.tmx
-C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\bin\Debug\netcoreapp3.1\Content\tilemap.tmx
-C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\bin\Debug\netcoreapp3.1\Content\tileset.png
-C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\bin\Debug\netcoreapp3.1\Content\tilesetVer1.0.png
-C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\bin\Debug\netcoreapp3.1\Content\väg.png
-C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\bin\Debug\netcoreapp3.1\CocaineCrackDown.deps.json
-C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\bin\Debug\netcoreapp3.1\CocaineCrackDown.runtimeconfig.json
-C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\bin\Debug\netcoreapp3.1\CocaineCrackDown.runtimeconfig.dev.json
-C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\bin\Debug\netcoreapp3.1\CocaineCrackDown.dll
-C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\bin\Debug\netcoreapp3.1\CocaineCrackDown.pdb
-C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\bin\Debug\netcoreapp3.1\Microsoft.Win32.SystemEvents.dll
-C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\bin\Debug\netcoreapp3.1\MonoGame.Framework.dll
-C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\bin\Debug\netcoreapp3.1\System.Drawing.Common.dll
-C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
-C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\bin\Debug\netcoreapp3.1\runtimes\linux-x64\native\libSDL2-2.0.so.0
-C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\bin\Debug\netcoreapp3.1\runtimes\linux-x64\native\libopenal.so.1
-C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\bin\Debug\netcoreapp3.1\runtimes\osx\native\libSDL2-2.0.0.dylib
-C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\bin\Debug\netcoreapp3.1\runtimes\osx\native\libopenal.1.dylib
-C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\SDL2.dll
-C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\soft_oal.dll
-C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\SDL2.dll
-C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\soft_oal.dll
-C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
-C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
-C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\bin\Debug\netcoreapp3.1\Lidgren.Network.dll
-C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\bin\Debug\netcoreapp3.1\Nez.dll
-C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\bin\Debug\netcoreapp3.1\Nez.Persistence.dll
-C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\bin\Debug\netcoreapp3.1\Lidgren.Network.pdb
-C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\bin\Debug\netcoreapp3.1\Nez.Persistence.pdb
-C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\bin\Debug\netcoreapp3.1\Nez.pdb
-C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\obj\Debug\netcoreapp3.1\CocaineCrackDown.csprojAssemblyReference.cache
-C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\obj\Debug\netcoreapp3.1\CocaineCrackDown.AssemblyInfoInputs.cache
-C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\obj\Debug\netcoreapp3.1\CocaineCrackDown.AssemblyInfo.cs
-C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\obj\Debug\netcoreapp3.1\CocaineCrackDown.csproj.CoreCompileInputs.cache
-C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\obj\Debug\netcoreapp3.1\CocaineCrackDown.csproj.CopyComplete
-C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\obj\Debug\netcoreapp3.1\CocaineCrackDown.dll
-C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\obj\Debug\netcoreapp3.1\CocaineCrackDown.pdb
-C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\obj\Debug\netcoreapp3.1\CocaineCrackDown.genruntimeconfig.cache
+C:/Users/Anders H. Andersson/Desktop/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/CocaineCrackDown.exe
+C:/Users/Anders H. Andersson/Desktop/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Content/bakgrund.png
+C:/Users/Anders H. Andersson/Desktop/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Content/doug.atlas
+C:/Users/Anders H. Andersson/Desktop/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Content/doug.png
+C:/Users/Anders H. Andersson/Desktop/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Content/himmel.png
+C:/Users/Anders H. Andersson/Desktop/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Content/hus.png
+C:/Users/Anders H. Andersson/Desktop/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Content/mark.png
+C:/Users/Anders H. Andersson/Desktop/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Content/nez/effects/Bevels.mgfxo
+C:/Users/Anders H. Andersson/Desktop/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Content/nez/effects/BloomCombine.mgfxo
+C:/Users/Anders H. Andersson/Desktop/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Content/nez/effects/BloomExtract.mgfxo
+C:/Users/Anders H. Andersson/Desktop/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Content/nez/effects/Crosshatch.mgfxo
+C:/Users/Anders H. Andersson/Desktop/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Content/nez/effects/DeferredLighting.mgfxo
+C:/Users/Anders H. Andersson/Desktop/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Content/nez/effects/DeferredSprite.mgfxo
+C:/Users/Anders H. Andersson/Desktop/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Content/nez/effects/Dissolve.mgfxo
+C:/Users/Anders H. Andersson/Desktop/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Content/nez/effects/Dots.mgfxo
+C:/Users/Anders H. Andersson/Desktop/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Content/nez/effects/ForwardLighting.mgfxo
+C:/Users/Anders H. Andersson/Desktop/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Content/nez/effects/GaussianBlur.mgfxo
+C:/Users/Anders H. Andersson/Desktop/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Content/nez/effects/Grayscale.mgfxo
+C:/Users/Anders H. Andersson/Desktop/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Content/nez/effects/HeatDistortion.mgfxo
+C:/Users/Anders H. Andersson/Desktop/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Content/nez/effects/Invert.mgfxo
+C:/Users/Anders H. Andersson/Desktop/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Content/nez/effects/Letterbox.mgfxo
+C:/Users/Anders H. Andersson/Desktop/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Content/nez/effects/MultiTexture.mgfxo
+C:/Users/Anders H. Andersson/Desktop/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Content/nez/effects/MultiTextureOverlay.mgfxo
+C:/Users/Anders H. Andersson/Desktop/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Content/nez/effects/Noise.mgfxo
+C:/Users/Anders H. Andersson/Desktop/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Content/nez/effects/PaletteCycler.mgfxo
+C:/Users/Anders H. Andersson/Desktop/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Content/nez/effects/PixelGlitch.mgfxo
+C:/Users/Anders H. Andersson/Desktop/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Content/nez/effects/PolygonLight.mgfxo
+C:/Users/Anders H. Andersson/Desktop/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Content/nez/effects/Reflection.mgfxo
+C:/Users/Anders H. Andersson/Desktop/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Content/nez/effects/Scanlines.mgfxo
+C:/Users/Anders H. Andersson/Desktop/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Content/nez/effects/Sepia.mgfxo
+C:/Users/Anders H. Andersson/Desktop/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Content/nez/effects/SpriteAlphaTest.mgfxo
+C:/Users/Anders H. Andersson/Desktop/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Content/nez/effects/SpriteBlinkEffect.mgfxo
+C:/Users/Anders H. Andersson/Desktop/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Content/nez/effects/SpriteEffect.mgfxo
+C:/Users/Anders H. Andersson/Desktop/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Content/nez/effects/SpriteLightMultiply.mgfxo
+C:/Users/Anders H. Andersson/Desktop/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Content/nez/effects/SpriteLines.mgfxo
+C:/Users/Anders H. Andersson/Desktop/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Content/nez/effects/StencilLight.mgfxo
+C:/Users/Anders H. Andersson/Desktop/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Content/nez/effects/transitions/Squares.mgfxo
+C:/Users/Anders H. Andersson/Desktop/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Content/nez/effects/transitions/TextureWipe.mgfxo
+C:/Users/Anders H. Andersson/Desktop/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Content/nez/effects/transitions/Wind.mgfxo
+C:/Users/Anders H. Andersson/Desktop/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Content/nez/effects/Twist.mgfxo
+C:/Users/Anders H. Andersson/Desktop/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Content/nez/effects/Vignette.mgfxo
+C:/Users/Anders H. Andersson/Desktop/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Content/randy.atlas
+C:/Users/Anders H. Andersson/Desktop/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Content/randy.png
+C:/Users/Anders H. Andersson/Desktop/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Content/testnr1.tmx
+C:/Users/Anders H. Andersson/Desktop/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Content/tilemap.tmx
+C:/Users/Anders H. Andersson/Desktop/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Content/tileset.png
+C:/Users/Anders H. Andersson/Desktop/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Content/tilesetVer1.0.png
+C:/Users/Anders H. Andersson/Desktop/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Content/väg.png
+C:/Users/Anders H. Andersson/Desktop/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/CocaineCrackDown.deps.json
+C:/Users/Anders H. Andersson/Desktop/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/CocaineCrackDown.runtimeconfig.json
+C:/Users/Anders H. Andersson/Desktop/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/CocaineCrackDown.runtimeconfig.dev.json
+C:/Users/Anders H. Andersson/Desktop/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/CocaineCrackDown.dll
+C:/Users/Anders H. Andersson/Desktop/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/CocaineCrackDown.pdb
+C:/Users/Anders H. Andersson/Desktop/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Microsoft.Win32.SystemEvents.dll
+C:/Users/Anders H. Andersson/Desktop/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/MonoGame.Framework.dll
+C:/Users/Anders H. Andersson/Desktop/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/System.Drawing.Common.dll
+C:/Users/Anders H. Andersson/Desktop/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp3.0/Microsoft.Win32.SystemEvents.dll
+C:/Users/Anders H. Andersson/Desktop/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/runtimes/linux-x64/native/libSDL2-2.0.so.0
+C:/Users/Anders H. Andersson/Desktop/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/runtimes/linux-x64/native/libopenal.so.1
+C:/Users/Anders H. Andersson/Desktop/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/runtimes/osx/native/libSDL2-2.0.0.dylib
+C:/Users/Anders H. Andersson/Desktop/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/runtimes/osx/native/libopenal.1.dylib
+C:/Users/Anders H. Andersson/Desktop/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/runtimes/win-x64/native/SDL2.dll
+C:/Users/Anders H. Andersson/Desktop/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/runtimes/win-x64/native/soft_oal.dll
+C:/Users/Anders H. Andersson/Desktop/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/runtimes/win-x86/native/SDL2.dll
+C:/Users/Anders H. Andersson/Desktop/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/runtimes/win-x86/native/soft_oal.dll
+C:/Users/Anders H. Andersson/Desktop/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/runtimes/unix/lib/netcoreapp3.0/System.Drawing.Common.dll
+C:/Users/Anders H. Andersson/Desktop/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.dll
+C:/Users/Anders H. Andersson/Desktop/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Lidgren.Network.dll
+C:/Users/Anders H. Andersson/Desktop/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Nez.dll
+C:/Users/Anders H. Andersson/Desktop/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Nez.Persistence.dll
+C:/Users/Anders H. Andersson/Desktop/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Lidgren.Network.pdb
+C:/Users/Anders H. Andersson/Desktop/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Nez.Persistence.pdb
+C:/Users/Anders H. Andersson/Desktop/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Nez.pdb
+C:/Users/Anders H. Andersson/Desktop/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/obj/Debug/netcoreapp3.1/CocaineCrackDown.csprojAssemblyReference.cache
+C:/Users/Anders H. Andersson/Desktop/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/obj/Debug/netcoreapp3.1/CocaineCrackDown.AssemblyInfoInputs.cache
+C:/Users/Anders H. Andersson/Desktop/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/obj/Debug/netcoreapp3.1/CocaineCrackDown.AssemblyInfo.cs
+C:/Users/Anders H. Andersson/Desktop/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/obj/Debug/netcoreapp3.1/CocaineCrackDown.csproj.CoreCompileInputs.cache
+C:/Users/Anders H. Andersson/Desktop/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/obj/Debug/netcoreapp3.1/CocaineCrackDown.csproj.CopyComplete
+C:/Users/Anders H. Andersson/Desktop/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/obj/Debug/netcoreapp3.1/CocaineCrackDown.dll
+C:/Users/Anders H. Andersson/Desktop/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/obj/Debug/netcoreapp3.1/CocaineCrackDown.pdb
+C:/Users/Anders H. Andersson/Desktop/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/obj/Debug/netcoreapp3.1/CocaineCrackDown.genruntimeconfig.cache
+/home/bithor/c#/cocainecrackdown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/obj/Debug/netcoreapp3.1/CocaineCrackDown.csprojAssemblyReference.cache
+/home/bithor/c#/cocainecrackdown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/obj/Debug/netcoreapp3.1/CocaineCrackDown.AssemblyInfoInputs.cache
+/home/bithor/c#/cocainecrackdown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/obj/Debug/netcoreapp3.1/CocaineCrackDown.AssemblyInfo.cs
+/home/bithor/c#/cocainecrackdown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/obj/Debug/netcoreapp3.1/CocaineCrackDown.dll
+/home/bithor/c#/cocainecrackdown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/obj/Debug/netcoreapp3.1/CocaineCrackDown.pdb
+/home/bithor/c#/cocainecrackdown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/CocaineCrackDown
+/home/bithor/c#/cocainecrackdown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Content/bakgrund.png
+/home/bithor/c#/cocainecrackdown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Content/doug.atlas
+/home/bithor/c#/cocainecrackdown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Content/doug.png
+/home/bithor/c#/cocainecrackdown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Content/himmel.png
+/home/bithor/c#/cocainecrackdown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Content/hus.png
+/home/bithor/c#/cocainecrackdown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Content/mark.png
+/home/bithor/c#/cocainecrackdown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Content/nez/effects/Bevels.mgfxo
+/home/bithor/c#/cocainecrackdown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Content/nez/effects/BloomCombine.mgfxo
+/home/bithor/c#/cocainecrackdown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Content/nez/effects/BloomExtract.mgfxo
+/home/bithor/c#/cocainecrackdown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Content/nez/effects/Crosshatch.mgfxo
+/home/bithor/c#/cocainecrackdown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Content/nez/effects/DeferredLighting.mgfxo
+/home/bithor/c#/cocainecrackdown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Content/nez/effects/DeferredSprite.mgfxo
+/home/bithor/c#/cocainecrackdown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Content/nez/effects/Dissolve.mgfxo
+/home/bithor/c#/cocainecrackdown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Content/nez/effects/Dots.mgfxo
+/home/bithor/c#/cocainecrackdown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Content/nez/effects/ForwardLighting.mgfxo
+/home/bithor/c#/cocainecrackdown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Content/nez/effects/GaussianBlur.mgfxo
+/home/bithor/c#/cocainecrackdown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Content/nez/effects/Grayscale.mgfxo
+/home/bithor/c#/cocainecrackdown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Content/nez/effects/HeatDistortion.mgfxo
+/home/bithor/c#/cocainecrackdown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Content/nez/effects/Invert.mgfxo
+/home/bithor/c#/cocainecrackdown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Content/nez/effects/Letterbox.mgfxo
+/home/bithor/c#/cocainecrackdown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Content/nez/effects/MultiTexture.mgfxo
+/home/bithor/c#/cocainecrackdown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Content/nez/effects/MultiTextureOverlay.mgfxo
+/home/bithor/c#/cocainecrackdown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Content/nez/effects/Noise.mgfxo
+/home/bithor/c#/cocainecrackdown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Content/nez/effects/PaletteCycler.mgfxo
+/home/bithor/c#/cocainecrackdown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Content/nez/effects/PixelGlitch.mgfxo
+/home/bithor/c#/cocainecrackdown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Content/nez/effects/PolygonLight.mgfxo
+/home/bithor/c#/cocainecrackdown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Content/nez/effects/Reflection.mgfxo
+/home/bithor/c#/cocainecrackdown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Content/nez/effects/Scanlines.mgfxo
+/home/bithor/c#/cocainecrackdown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Content/nez/effects/Sepia.mgfxo
+/home/bithor/c#/cocainecrackdown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Content/nez/effects/SpriteAlphaTest.mgfxo
+/home/bithor/c#/cocainecrackdown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Content/nez/effects/SpriteBlinkEffect.mgfxo
+/home/bithor/c#/cocainecrackdown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Content/nez/effects/SpriteEffect.mgfxo
+/home/bithor/c#/cocainecrackdown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Content/nez/effects/SpriteLightMultiply.mgfxo
+/home/bithor/c#/cocainecrackdown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Content/nez/effects/SpriteLines.mgfxo
+/home/bithor/c#/cocainecrackdown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Content/nez/effects/StencilLight.mgfxo
+/home/bithor/c#/cocainecrackdown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Content/nez/effects/transitions/Squares.mgfxo
+/home/bithor/c#/cocainecrackdown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Content/nez/effects/transitions/TextureWipe.mgfxo
+/home/bithor/c#/cocainecrackdown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Content/nez/effects/transitions/Wind.mgfxo
+/home/bithor/c#/cocainecrackdown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Content/nez/effects/Twist.mgfxo
+/home/bithor/c#/cocainecrackdown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Content/nez/effects/Vignette.mgfxo
+/home/bithor/c#/cocainecrackdown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Content/randy.atlas
+/home/bithor/c#/cocainecrackdown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Content/randy.png
+/home/bithor/c#/cocainecrackdown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Content/testnr1.tmx
+/home/bithor/c#/cocainecrackdown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Content/tilemap.tmx
+/home/bithor/c#/cocainecrackdown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Content/tileset.png
+/home/bithor/c#/cocainecrackdown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Content/tilesetVer1.0.png
+/home/bithor/c#/cocainecrackdown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Content/väg.png
+/home/bithor/c#/cocainecrackdown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/CocaineCrackDown.deps.json
+/home/bithor/c#/cocainecrackdown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/CocaineCrackDown.runtimeconfig.json
+/home/bithor/c#/cocainecrackdown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/CocaineCrackDown.runtimeconfig.dev.json
+/home/bithor/c#/cocainecrackdown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/CocaineCrackDown.dll
+/home/bithor/c#/cocainecrackdown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/CocaineCrackDown.pdb
+/home/bithor/c#/cocainecrackdown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Microsoft.Win32.SystemEvents.dll
+/home/bithor/c#/cocainecrackdown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/MonoGame.Framework.dll
+/home/bithor/c#/cocainecrackdown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/System.Drawing.Common.dll
+/home/bithor/c#/cocainecrackdown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp3.0/Microsoft.Win32.SystemEvents.dll
+/home/bithor/c#/cocainecrackdown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/runtimes/linux-x64/native/libSDL2-2.0.so.0
+/home/bithor/c#/cocainecrackdown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/runtimes/linux-x64/native/libopenal.so.1
+/home/bithor/c#/cocainecrackdown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/runtimes/osx/native/libSDL2-2.0.0.dylib
+/home/bithor/c#/cocainecrackdown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/runtimes/osx/native/libopenal.1.dylib
+/home/bithor/c#/cocainecrackdown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/runtimes/win-x64/native/SDL2.dll
+/home/bithor/c#/cocainecrackdown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/runtimes/win-x64/native/soft_oal.dll
+/home/bithor/c#/cocainecrackdown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/runtimes/win-x86/native/SDL2.dll
+/home/bithor/c#/cocainecrackdown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/runtimes/win-x86/native/soft_oal.dll
+/home/bithor/c#/cocainecrackdown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/runtimes/unix/lib/netcoreapp3.0/System.Drawing.Common.dll
+/home/bithor/c#/cocainecrackdown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.dll
+/home/bithor/c#/cocainecrackdown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Lidgren.Network.dll
+/home/bithor/c#/cocainecrackdown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Nez.dll
+/home/bithor/c#/cocainecrackdown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Nez.Persistence.dll
+/home/bithor/c#/cocainecrackdown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Lidgren.Network.pdb
+/home/bithor/c#/cocainecrackdown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Nez.Persistence.pdb
+/home/bithor/c#/cocainecrackdown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/bin/Debug/netcoreapp3.1/Nez.pdb
+/home/bithor/c#/cocainecrackdown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/obj/Debug/netcoreapp3.1/CocaineCrackDown.csproj.CopyComplete
