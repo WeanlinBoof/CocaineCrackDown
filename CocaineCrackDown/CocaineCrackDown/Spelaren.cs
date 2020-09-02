@@ -25,6 +25,7 @@ namespace CocaineCrackDown {
 
         public Vector2 Positionen;
 
+        
         public static List<Spelaren> Spelarna = new List<Spelaren>();
 
         public Spelaren(string name, Vector2 Pos) {

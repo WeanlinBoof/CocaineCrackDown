@@ -19,7 +19,6 @@ namespace CocaineCrackDown {
             Network.Config = new NetPeerConfiguration(StandigaVarden.SPELNAMN);
             Network.Config.EnableMessageType(NetIncomingMessageType.ConnectionApproval);
             Network.Config.EnableMessageType(NetIncomingMessageType.StatusChanged);
-            Network.Config.EnableMessageType(NetIncomingMessageType.);
             Network.Config.EnableUPnP = true;
             Network.Config.Port = 14882;
             Network.Config.AcceptIncomingConnections = true;

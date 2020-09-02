@@ -15,7 +15,6 @@ using System.Threading;
 namespace CocaineCrackDown.Scener {
     public class Scen1 : GrundScen {
 
-        public override Table Table { get; set; }
 
         public override void Initialize() { 
             BruhUi();
@@ -31,7 +30,7 @@ namespace CocaineCrackDown.Scener {
 
             KnappFörVärd.OnClicked += VärdKnapp;
 
-            Table.Row().SetPadTop(40);
+
 
             TextButton KnappFörKlient = Table.Add(new TextButton("Klient" , Skin.CreateDefaultSkin())).SetFillX().SetMinHeight(30).GetElement<TextButton>();
 

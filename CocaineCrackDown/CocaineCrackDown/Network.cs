@@ -34,7 +34,7 @@ namespace CocaineCrackDown {
                                 //where the first step in any case is added to the player, 
                                 //and then check the second round with a double for loop that is in agreement with two players.
 
-                                Spelaren.Spelarna.Add(new Spelaren(name , new Vector2(x , y) , new Rectangle(0 , 0 , 20 , 40) , new Rectangle(0 , 0 , 20 , 40)));
+                                Spelaren.Spelarna.Add(new Spelaren(name , new Vector2(x , y));
 
                                 for(int i1 = 0; i1 < Spelaren.Spelarna.Count; i1++) {
                                     for(int i2 = /*0*/i1 + 1; i2 < Spelaren.Spelarna.Count; i2++) {

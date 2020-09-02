@@ -17,7 +17,7 @@ namespace CocaineCrackDown.Scener {
     public class GrundScen : Scene {
 
         public NivåNamn Status = NivåNamn.Scen1;
-        public virtual Table Table { get; set; }
+        public Table Table { get; set; }
 
         public GrundScen() { 
         
