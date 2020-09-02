@@ -1,6 +1,5 @@
 ﻿namespace CocaineCrackDown {
-
-    public class StandigaVarden {
+    public static class StandigaVarden {
 
         public const string SPELNAMN = "CocaineCrackDown";
 

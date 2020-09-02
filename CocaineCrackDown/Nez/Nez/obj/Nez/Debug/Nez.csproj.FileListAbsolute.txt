@@ -58,7 +58,6 @@ C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\Nez\Nez\b
 C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\Nez\Nez\bin\Debug\runtimes\win-x86\native\soft_oal.dll
 C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\Nez\Nez\bin\Debug\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
 C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\Nez\Nez\bin\Debug\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
-C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\Nez\Nez\obj\Nez\Debug\Nez.csprojAssemblyReference.cache
 C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\Nez\Nez\obj\Nez\Debug\Nez.csproj.CoreCompileInputs.cache
 C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\Nez\Nez\obj\Nez\Debug\Nez.csproj.CopyComplete
 C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\Nez\Nez\obj\Nez\Debug\Nez.dll

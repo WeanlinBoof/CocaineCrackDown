@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "2SOahz0p6Rhb3kn13kb5w8FyHHmuL/0Q+/j7QAE3v59LYK3SnbOJ5/h2t0bH9R1Z9azHSHID54CnAm1QW6Fi+w==",
+  "dgSpecHash": "R4MK6Xfq/+84BCJXSGvsVXBvkUsxL4bcRNjQCYzBkFFl+RzthAu9Gf93P+JbHXFvmtwjQs1Ge6NJSThL5jyAMA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Anders H. Andersson\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\Nez\\Nez.Persistence\\Nez.Persistence.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Anders H. Andersson\\.nuget\\packages\\microsoft.netcore.platforms\\3.0.0\\microsoft.netcore.platforms.3.0.0.nupkg.sha512",
-    "C:\\Users\\Anders H. Andersson\\.nuget\\packages\\microsoft.win32.systemevents\\4.6.0\\microsoft.win32.systemevents.4.6.0.nupkg.sha512",
+    "C:\\Users\\Anders H. Andersson\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
+    "C:\\Users\\Anders H. Andersson\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
     "C:\\Users\\Anders H. Andersson\\.nuget\\packages\\monogame.framework.desktopgl\\3.8.0.1641\\monogame.framework.desktopgl.3.8.0.1641.nupkg.sha512",
-    "C:\\Users\\Anders H. Andersson\\.nuget\\packages\\system.drawing.common\\4.6.0\\system.drawing.common.4.6.0.nupkg.sha512"
+    "C:\\Users\\Anders H. Andersson\\.nuget\\packages\\system.drawing.common\\4.7.0\\system.drawing.common.4.7.0.nupkg.sha512"
   ],
   "logs": []
 }

@@ -27,6 +27,7 @@ namespace CocaineCrackDown {
             //RegisterGlobalManager(new NätVärd());
             //lägger scen ett som start scen
             NyScen1();
+
         }
 
         private static void NyScen1() {

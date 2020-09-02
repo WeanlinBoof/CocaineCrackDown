@@ -17,8 +17,6 @@ namespace CocaineCrackDown.Scener {
 
         public override Table Table { get; set; }
 
-        public Scen1() { }
-        
         public override void Initialize() { 
             BruhUi();
             Table.Add(new Label("Main Menu").SetFontScale(5));
