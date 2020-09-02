@@ -24,6 +24,7 @@ namespace CocaineCrackDown {
             DebugRenderEnabled = true;
             //gör knappen  till f10 för att öppna den
             DebugConsole.ConsoleKey = Keys.Tab;
+            //RegisterGlobalManager(new NätVärd());
             //lägger scen ett som start scen
             NyScen1();
         }

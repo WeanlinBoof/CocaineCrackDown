@@ -2,6 +2,7 @@
 using Microsoft.Xna.Framework.Graphics;
 
 using Nez;
+using Nez.UI;
 
 using System;
 using System.Collections.Generic;
@@ -16,6 +17,8 @@ namespace CocaineCrackDown.Scener {
     public class GrundScen : Scene {
 
         public NivåNamn Status = NivåNamn.Scen1;
+        public virtual Table Table { get; set; }
+
         public GrundScen() { 
         
         }
@@ -28,8 +31,15 @@ namespace CocaineCrackDown.Scener {
             //Fixar så att det är 640 x 360 pixlar på skärm skalade
             SetDesignResolution(640, 360, SceneResolutionPolicy.BestFit);
 
+
+        }
+        public virtual void BruhUi() {
+            UICanvas UICanvas = CreateEntity("ui-canvas").AddComponent(new UICanvas());
+
+            Table = UICanvas.Stage.AddElement(new Table());
+
+            Table.SetFillParent(true).Top().PadLeft(10).PadTop(50);
         }
 
-
     } 
-}
+} 

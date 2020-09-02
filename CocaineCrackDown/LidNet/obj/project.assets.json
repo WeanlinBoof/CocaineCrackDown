@@ -89,11 +89,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Anders H. Andersson\\Desktop\\CCD-NOW\\CCD-DEV\\CocaineCrackDown\\LidNet\\Lidgren.Network.csproj",
+      "projectUniqueName": "C:\\Users\\Anders H. Andersson\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\LidNet\\Lidgren.Network.csproj",
       "projectName": "Lidgren.Network",
-      "projectPath": "C:\\Users\\Anders H. Andersson\\Desktop\\CCD-NOW\\CCD-DEV\\CocaineCrackDown\\LidNet\\Lidgren.Network.csproj",
+      "projectPath": "C:\\Users\\Anders H. Andersson\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\LidNet\\Lidgren.Network.csproj",
       "packagesPath": "C:\\Users\\Anders H. Andersson\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Anders H. Andersson\\Desktop\\CCD-NOW\\CCD-DEV\\CocaineCrackDown\\LidNet\\obj\\",
+      "outputPath": "C:\\Users\\Anders H. Andersson\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\LidNet\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"

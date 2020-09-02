@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FlExGQY4Y4csmafKOw9sP9YwxsbOyTxcXDUNyQdgM3+N+g8I3FkNYLS3VX0rk2pbqOGPD5Abyb6ax4D7D+GlGw==",
+  "dgSpecHash": "2SOahz0p6Rhb3kn13kb5w8FyHHmuL/0Q+/j7QAE3v59LYK3SnbOJ5/h2t0bH9R1Z9azHSHID54CnAm1QW6Fi+w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Anders H. Andersson\\Desktop\\CCD-NOW\\CCD-DEV\\CocaineCrackDown\\Nez\\Nez.Persistence\\Nez.Persistence.csproj",
+  "projectFilePath": "C:\\Users\\Anders H. Andersson\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\Nez\\Nez.Persistence\\Nez.Persistence.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Anders H. Andersson\\.nuget\\packages\\microsoft.netcore.platforms\\3.0.0\\microsoft.netcore.platforms.3.0.0.nupkg.sha512",
     "C:\\Users\\Anders H. Andersson\\.nuget\\packages\\microsoft.win32.systemevents\\4.6.0\\microsoft.win32.systemevents.4.6.0.nupkg.sha512",
