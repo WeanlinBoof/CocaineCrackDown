@@ -3,13 +3,16 @@ using System.Reflection;
 
 
 namespace Nez.Persistence {
-	public sealed class DecodeException : Exception {
+    public sealed class DecodeException : Exception {
 		public DecodeException(string message) : base(message) {
 		}
 
 		public DecodeException(string message, Exception innerException) : base(message, innerException) {
 		}
-	}
+
+        public DecodeException() : base() {
+        }
+    }
 
 
 	public static class Json {

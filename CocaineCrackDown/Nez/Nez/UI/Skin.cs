@@ -192,16 +192,16 @@ namespace Nez.UI
 
 				// if name has 'color' in it, we are looking for a color. we check color first because some styles have things like
 				// fontColor so we'll check for font after color. We assume these are strings and do no error checking on 'identifier'
-				if (name.ToLower().Contains("color"))
+				if (name.Contains("color" , StringComparison.OrdinalIgnoreCase))
 				{
 					ReflectionUtils.GetFieldInfo(styleClass, name).SetValue(styleClass, GetColor(identifier));
 				}
-				else if (name.ToLower().Contains("font"))
+				else if (name.Contains("font" , StringComparison.OrdinalIgnoreCase))
 				{
 					ReflectionUtils.GetFieldInfo(styleClass, name)
 						.SetValue(styleClass, contentManager.Load<BitmapFont>(identifier));
 				}
-				else if (name.ToLower().EndsWith("style"))
+				else if (name.EndsWith("style" , StringComparison.OrdinalIgnoreCase))
 				{
 					var styleField = ReflectionUtils.GetFieldInfo(styleClass, name);
 

@@ -780,7 +780,7 @@ namespace Nez.Console
 		static bool ArgBool(string arg)
 		{
 			if (arg != null)
-				return !(arg == "0" || arg.ToLower() == "false" || arg.ToLower() == "f");
+				return !(arg == "0" || string.Equals(arg , "false" , StringComparison.OrdinalIgnoreCase) || string.Equals(arg , "f" , StringComparison.OrdinalIgnoreCase));
 			else
 				return false;
 		}

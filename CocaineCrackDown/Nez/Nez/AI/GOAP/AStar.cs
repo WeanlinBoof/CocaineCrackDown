@@ -74,7 +74,7 @@ namespace Nez.AI.GOAP
 	}
 
 
-	public class AStar
+	public static class AStar
 	{
 		static AStarStorage storage = new AStarStorage();
 

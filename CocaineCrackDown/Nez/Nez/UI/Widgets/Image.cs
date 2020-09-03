@@ -62,12 +62,11 @@ namespace Nez.UI
 			return this;
 		}
 
-
-		/// <summary>
-		///
-		/// </summary>
-		/// <param name="alignment">Alignment.</param>
-		public Image SetAlignment(Align alignment)
+        /// <summary>
+        ///alignment
+        /// </summary>
+        /// <param name="alignment">Alignment.</param>
+        public Image SetAlignment(Align alignment)
 		{
 			_align = (int) alignment;
 			return this;

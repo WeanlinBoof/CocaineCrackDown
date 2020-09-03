@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Y4ocvztCJLSdSR9AXKQkWEhI382jtXVRkFVeOx7A/kh9Yjtl705y4ar95MTlUsL//TJ7k6BnChWuXmVBxOkSJg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Anders H. Andersson\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\RedGrin\\RedGrin.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Anders H. Andersson\\.nuget\\packages\\monogame.framework.desktopgl\\3.8.0.1641\\monogame.framework.desktopgl.3.8.0.1641.nupkg.sha512"
+  ],
+  "logs": []
+}

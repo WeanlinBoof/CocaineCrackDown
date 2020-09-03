@@ -5,7 +5,7 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace Nez.Textures
 {
-	public class GaussianBlur
+	public static class GaussianBlur
 	{
 		/// <summary>
 		/// creates a new texture that is a gaussian blurred version of the original

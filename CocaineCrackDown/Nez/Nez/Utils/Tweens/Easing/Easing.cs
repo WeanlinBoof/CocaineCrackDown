@@ -157,7 +157,7 @@ namespace Nez.Tweens
 		}
 
 
-		public class Elastic
+		public static class Elastic
 		{
 			public static float EaseIn(float t, float d)
 			{

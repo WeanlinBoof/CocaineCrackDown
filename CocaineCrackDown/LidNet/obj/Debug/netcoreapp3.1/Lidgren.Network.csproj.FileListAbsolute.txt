@@ -27,7 +27,6 @@ C:\Users\Anders H. Andersson\Desktop\CCD-NOW\CCD-DEV\CocaineCrackDown\LidNet\obj
 C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\LidNet\bin\Debug\netcoreapp3.1\Lidgren.Network.deps.json
 C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\LidNet\bin\Debug\netcoreapp3.1\Lidgren.Network.dll
 C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\LidNet\bin\Debug\netcoreapp3.1\Lidgren.Network.pdb
-C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\LidNet\obj\Debug\netcoreapp3.1\Lidgren.Network.csprojAssemblyReference.cache
 C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\LidNet\obj\Debug\netcoreapp3.1\Lidgren.Network.AssemblyInfoInputs.cache
 C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\LidNet\obj\Debug\netcoreapp3.1\Lidgren.Network.AssemblyInfo.cs
 C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\LidNet\obj\Debug\netcoreapp3.1\Lidgren.Network.csproj.CoreCompileInputs.cache

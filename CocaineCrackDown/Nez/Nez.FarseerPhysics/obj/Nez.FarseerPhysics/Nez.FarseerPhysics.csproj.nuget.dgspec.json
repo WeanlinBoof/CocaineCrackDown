@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Skrivbord\\CCD Ultra Rewrite\\CocaineCrackDown\\Nez\\Nez.FarseerPhysics\\Nez.FarseerPhysics.csproj": {}
+    "C:\\Users\\Anders H. Andersson\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\Nez\\Nez.FarseerPhysics\\Nez.FarseerPhysics.csproj": {}
   },
   "projects": {
-    "C:\\Skrivbord\\CCD Ultra Rewrite\\CocaineCrackDown\\Nez\\Nez.FarseerPhysics\\Nez.FarseerPhysics.csproj": {
+    "C:\\Users\\Anders H. Andersson\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\Nez\\Nez.FarseerPhysics\\Nez.FarseerPhysics.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Skrivbord\\CCD Ultra Rewrite\\CocaineCrackDown\\Nez\\Nez.FarseerPhysics\\Nez.FarseerPhysics.csproj",
+        "projectUniqueName": "C:\\Users\\Anders H. Andersson\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\Nez\\Nez.FarseerPhysics\\Nez.FarseerPhysics.csproj",
         "projectName": "Nez.FarseerPhysics",
-        "projectPath": "C:\\Skrivbord\\CCD Ultra Rewrite\\CocaineCrackDown\\Nez\\Nez.FarseerPhysics\\Nez.FarseerPhysics.csproj",
-        "packagesPath": "C:\\Users\\Henrik\\.nuget\\packages\\",
-        "outputPath": "C:\\Skrivbord\\CCD Ultra Rewrite\\CocaineCrackDown\\Nez\\Nez.FarseerPhysics\\obj\\Nez.FarseerPhysics\\",
+        "projectPath": "C:\\Users\\Anders H. Andersson\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\Nez\\Nez.FarseerPhysics\\Nez.FarseerPhysics.csproj",
+        "packagesPath": "C:\\Users\\Anders H. Andersson\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Anders H. Andersson\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\Nez\\Nez.FarseerPhysics\\obj\\Nez.FarseerPhysics\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "D:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Henrik\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Anders H. Andersson\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -31,8 +31,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Skrivbord\\CCD Ultra Rewrite\\CocaineCrackDown\\Nez\\Nez\\Nez.csproj": {
-                "projectPath": "C:\\Skrivbord\\CCD Ultra Rewrite\\CocaineCrackDown\\Nez\\Nez\\Nez.csproj"
+              "C:\\Users\\Anders H. Andersson\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\Nez\\Nez\\Nez.csproj": {
+                "projectPath": "C:\\Users\\Anders H. Andersson\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\Nez\\Nez\\Nez.csproj"
               }
             }
           }
@@ -66,24 +66,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Skrivbord\\CCD Ultra Rewrite\\CocaineCrackDown\\Nez\\Nez\\Nez.csproj": {
+    "C:\\Users\\Anders H. Andersson\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\Nez\\Nez\\Nez.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Skrivbord\\CCD Ultra Rewrite\\CocaineCrackDown\\Nez\\Nez\\Nez.csproj",
+        "projectUniqueName": "C:\\Users\\Anders H. Andersson\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\Nez\\Nez\\Nez.csproj",
         "projectName": "Nez",
-        "projectPath": "C:\\Skrivbord\\CCD Ultra Rewrite\\CocaineCrackDown\\Nez\\Nez\\Nez.csproj",
-        "packagesPath": "C:\\Users\\Henrik\\.nuget\\packages\\",
-        "outputPath": "C:\\Skrivbord\\CCD Ultra Rewrite\\CocaineCrackDown\\Nez\\Nez\\obj\\Nez\\",
+        "projectPath": "C:\\Users\\Anders H. Andersson\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\Nez\\Nez\\Nez.csproj",
+        "packagesPath": "C:\\Users\\Anders H. Andersson\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Anders H. Andersson\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\Nez\\Nez\\obj\\Nez\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "D:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Henrik\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Anders H. Andersson\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -114,7 +114,7 @@
             },
             "System.Drawing.Common": {
               "target": "Package",
-              "version": "[4.6.2, )"
+              "version": "[4.7.0, )"
             }
           },
           "imports": [
@@ -132,7 +132,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

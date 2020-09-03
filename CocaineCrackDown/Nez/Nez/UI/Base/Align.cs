@@ -23,7 +23,7 @@ namespace Nez.UI
 	/// used internally so that alignment can be stored as an int and can have an unlimited number of options by just setting it outside
 	/// the bounds of the flags
 	/// </summary>
-	internal class AlignInternal
+	internal static class AlignInternal
 	{
 		public const int Center = 1 << 0;
 		public const int Top = 1 << 1;

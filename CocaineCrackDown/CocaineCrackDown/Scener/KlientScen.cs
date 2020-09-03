@@ -7,6 +7,8 @@ using Nez;
 using Nez.Timers;
 using Nez.UI;
 
+using RedGrin;
+
 using System;
 using System.Collections.Generic;
 using System.Drawing.Printing;
@@ -18,12 +20,13 @@ namespace CocaineCrackDown.Scener {
 
         
 
-        public KlientScen() { }
+        public KlientScen() {
+        }
         
         public TextField textField;
         
 
-        public string ip = "";
+        public string ip;
         public override void Initialize() { 
 
 
@@ -45,29 +48,17 @@ namespace CocaineCrackDown.Scener {
         
 
             KörPå.OnClicked += TextFält;
-
-
-
         }
-
-
-       /* public override void Update() {
-            base.Update();
-
-            KeyboardState state = Keyboard.GetState();
-
-            if(state.IsKeyDown(Keys.Enter)){
-                TextFält(textField);
-            }
-
-        } */
-
         private void TextFält(Button obj){
-            ip = textField.GetText();
-            
-            Core.Scene = new Scen1();
 
+            ip = textField.GetText();
             Console.WriteLine(ip);
+            NetworkManager.Self.Initialize(Konfig);
+            NetworkManager.Self.Start(NetworkRole.Client);
+            NetworkManager.Self.Connect(ip);
+            Core.StartSceneTransition(new TextureWipeTransition(() => new NätLobby()) { TransitionTexture = Core.Content.Load<Texture2D>("nez/textures/textureWipeTransition/wink") });
+
+
         }
     }
 }

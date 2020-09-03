@@ -4,6 +4,8 @@ using Microsoft.Xna.Framework.Graphics;
 using Nez;
 using Nez.UI;
 
+using RedGrin;
+
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -15,10 +17,10 @@ namespace CocaineCrackDown.Scener {
         Scen2
     }
     public class GrundScen : Scene {
-
+        public NetworkConfiguration Konfig { get; set; }
         public NivåNamn Status = NivåNamn.Scen1;
         public virtual Table Table { get; set; }
-
+        public NetworkManager NätHanterare { get; set; }
         public GrundScen() { 
         
         }
@@ -32,6 +34,10 @@ namespace CocaineCrackDown.Scener {
             SetDesignResolution(640, 360, SceneResolutionPolicy.BestFit);
 
 
+        }
+        public override void Update() {
+            base.Update();
+            NetworkManager.Self.Update();
         }
         public virtual void BruhUi() {
             UICanvas UICanvas = CreateEntity("ui-canvas").AddComponent(new UICanvas());

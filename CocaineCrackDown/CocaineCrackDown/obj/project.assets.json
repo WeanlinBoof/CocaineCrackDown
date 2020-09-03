@@ -125,6 +125,20 @@
           "bin/placeholder/Nez.dll": {}
         }
       },
+      "Nez.FarseerPhysics/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "MonoGame.Framework.DesktopGL": "3.8.0.1641",
+          "Nez": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Nez.FarseerPhysics.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Nez.FarseerPhysics.dll": {}
+        }
+      },
       "Nez.Persistence/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
@@ -137,6 +151,20 @@
         },
         "runtime": {
           "bin/placeholder/Nez.Persistence.dll": {}
+        }
+      },
+      "RedGrin/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Lidgren.Network": "1.0.0",
+          "MonoGame.Framework.DesktopGL": "3.8.0.1641"
+        },
+        "compile": {
+          "bin/placeholder/RedGrin.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RedGrin.dll": {}
         }
       }
     }
@@ -262,51 +290,76 @@
       "path": "../Nez/Nez/Nez.csproj",
       "msbuildProject": "../Nez/Nez/Nez.csproj"
     },
+    "Nez.FarseerPhysics/1.0.0": {
+      "type": "project",
+      "path": "../Nez/Nez.FarseerPhysics/Nez.FarseerPhysics.csproj",
+      "msbuildProject": "../Nez/Nez.FarseerPhysics/Nez.FarseerPhysics.csproj"
+    },
     "Nez.Persistence/1.0.0": {
       "type": "project",
       "path": "../Nez/Nez.Persistence/Nez.Persistence.csproj",
       "msbuildProject": "../Nez/Nez.Persistence/Nez.Persistence.csproj"
+    },
+    "RedGrin/1.0.0": {
+      "type": "project",
+      "path": "../RedGrin/RedGrin.csproj",
+      "msbuildProject": "../RedGrin/RedGrin.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "Lidgren.Network >= 1.0.0",
       "Nez >= 1.0.0",
-      "Nez.Persistence >= 1.0.0"
+      "Nez.FarseerPhysics >= 1.0.0",
+      "Nez.Persistence >= 1.0.0",
+      "RedGrin >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "/home/bithor/.nuget/packages/": {}
+    "C:\\Users\\Anders H. Andersson\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/bithor/c#/cocainecrackdown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown.csproj",
+      "projectUniqueName": "C:\\Users\\Anders H. Andersson\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\CocaineCrackDown\\CocaineCrackDown.csproj",
       "projectName": "CocaineCrackDown",
-      "projectPath": "/home/bithor/c#/cocainecrackdown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown.csproj",
-      "packagesPath": "/home/bithor/.nuget/packages/",
-      "outputPath": "/home/bithor/c#/cocainecrackdown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/obj/",
+      "projectPath": "C:\\Users\\Anders H. Andersson\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\CocaineCrackDown\\CocaineCrackDown.csproj",
+      "packagesPath": "C:\\Users\\Anders H. Andersson\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Anders H. Andersson\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\CocaineCrackDown\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
-        "/home/bithor/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Anders H. Andersson\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "/home/bithor/c#/cocainecrackdown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/LidNet/Lidgren.Network.csproj": {
-              "projectPath": "/home/bithor/c#/cocainecrackdown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/LidNet/Lidgren.Network.csproj"
+            "C:\\Users\\Anders H. Andersson\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\LidNet\\Lidgren.Network.csproj": {
+              "projectPath": "C:\\Users\\Anders H. Andersson\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\LidNet\\Lidgren.Network.csproj"
             },
-            "/home/bithor/c#/cocainecrackdown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/Nez/Nez.Persistence/Nez.Persistence.csproj": {
-              "projectPath": "/home/bithor/c#/cocainecrackdown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/Nez/Nez.Persistence/Nez.Persistence.csproj"
+            "C:\\Users\\Anders H. Andersson\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\Nez\\Nez.FarseerPhysics\\Nez.FarseerPhysics.csproj": {
+              "projectPath": "C:\\Users\\Anders H. Andersson\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\Nez\\Nez.FarseerPhysics\\Nez.FarseerPhysics.csproj"
             },
-            "/home/bithor/c#/cocainecrackdown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/Nez/Nez/Nez.csproj": {
-              "projectPath": "/home/bithor/c#/cocainecrackdown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/Nez/Nez/Nez.csproj"
+            "C:\\Users\\Anders H. Andersson\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\Nez\\Nez.Persistence\\Nez.Persistence.csproj": {
+              "projectPath": "C:\\Users\\Anders H. Andersson\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\Nez\\Nez.Persistence\\Nez.Persistence.csproj"
+            },
+            "C:\\Users\\Anders H. Andersson\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\Nez\\Nez\\Nez.csproj": {
+              "projectPath": "C:\\Users\\Anders H. Andersson\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\Nez\\Nez\\Nez.csproj"
+            },
+            "C:\\Users\\Anders H. Andersson\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\RedGrin\\RedGrin.csproj": {
+              "projectPath": "C:\\Users\\Anders H. Andersson\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\RedGrin\\RedGrin.csproj"
             }
           }
         }
@@ -334,7 +387,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.103/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

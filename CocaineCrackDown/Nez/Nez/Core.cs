@@ -251,8 +251,7 @@ namespace Nez
 				// 		- unless it is SceneTransition that doesn't change Scenes (no reason not to update)
 				//		- or it is a SceneTransition that has already switched to the new Scene (the new Scene needs to do its thing)
 				if (_sceneTransition == null ||
-				    (_sceneTransition != null &&
-				     (!_sceneTransition._loadsNewScene || _sceneTransition._isNewSceneLoaded)))
+				    ((!_sceneTransition._loadsNewScene || _sceneTransition._isNewSceneLoaded)))
 				{
 					_scene.Update();
 				}

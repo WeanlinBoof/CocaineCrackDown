@@ -221,13 +221,17 @@ namespace Nez.Analysis
 
 		// TimerRuler draw position.
 		Vector2 _position;
+        private readonly object _lockObject = new object();
+        private readonly object _lockObject2 = new object();
+        private readonly object _lockObject3 = new object();
+        private readonly object _lockObject4 = new object();
 
-		#endregion
+        #endregion
 
 
-		#region Initialization
+        #region Initialization
 
-		static TimeRuler()
+        static TimeRuler()
 		{
 			Instance = new TimeRuler();
 		}
@@ -272,7 +276,7 @@ namespace Nez.Analysis
 		[Conditional("DEBUG")]
 		public void StartFrame()
 		{
-			lock (this)
+			lock (_lockObject)
 			{
 				// We skip reset frame when this method gets called multiple times.
 				var count = Interlocked.Increment(ref updateCount);
@@ -374,7 +378,7 @@ namespace Nez.Analysis
 		[Conditional("DEBUG")]
 		public void BeginMark(string markerName, Color color, int barIndex)
 		{
-			lock (this)
+			lock (_lockObject2)
 			{
 				if (barIndex < 0 || barIndex >= maxBars)
 					throw new ArgumentOutOfRangeException("barIndex");
@@ -439,7 +443,7 @@ namespace Nez.Analysis
 		[Conditional("DEBUG")]
 		public void EndMark(string markerName, int barIndex)
 		{
-			lock (this)
+			lock (_lockObject3)
 			{
 				if (barIndex < 0 || barIndex >= maxBars)
 					throw new ArgumentOutOfRangeException("barIndex");
@@ -495,7 +499,7 @@ namespace Nez.Analysis
 		[Conditional("DEBUG")]
 		public void ResetLog()
 		{
-			lock (this)
+			lock (_lockObject4)
 			{
 				foreach (var markerInfo in markers)
 				{

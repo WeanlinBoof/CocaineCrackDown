@@ -1,2 +1,12 @@
 C:\Skrivbord\CCD Ultra Rewrite\CocaineCrackDown\Nez\Nez.FarseerPhysics\obj\Nez.FarseerPhysics\Debug\Nez.FarseerPhysics.csprojAssemblyReference.cache
 C:\Skrivbord\CCD Ultra Rewrite\CocaineCrackDown\Nez\Nez.FarseerPhysics\obj\Nez.FarseerPhysics\Debug\Nez.FarseerPhysics.csproj.CoreCompileInputs.cache
+C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\Nez\Nez.FarseerPhysics\bin\Debug\Nez.FarseerPhysics.deps.json
+C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\Nez\Nez.FarseerPhysics\bin\Debug\Nez.FarseerPhysics.dll
+C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\Nez\Nez.FarseerPhysics\bin\Debug\Nez.FarseerPhysics.pdb
+C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\Nez\Nez.FarseerPhysics\bin\Debug\Nez.dll
+C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\Nez\Nez.FarseerPhysics\bin\Debug\Nez.pdb
+C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\Nez\Nez.FarseerPhysics\obj\Nez.FarseerPhysics\Debug\Nez.FarseerPhysics.csprojAssemblyReference.cache
+C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\Nez\Nez.FarseerPhysics\obj\Nez.FarseerPhysics\Debug\Nez.FarseerPhysics.csproj.CoreCompileInputs.cache
+C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\Nez\Nez.FarseerPhysics\obj\Nez.FarseerPhysics\Debug\Nez.FarseerPhysics.csproj.CopyComplete
+C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\Nez\Nez.FarseerPhysics\obj\Nez.FarseerPhysics\Debug\Nez.FarseerPhysics.dll
+C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\Nez\Nez.FarseerPhysics\obj\Nez.FarseerPhysics\Debug\Nez.FarseerPhysics.pdb

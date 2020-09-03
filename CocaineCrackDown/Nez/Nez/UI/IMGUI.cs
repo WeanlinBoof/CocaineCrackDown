@@ -10,7 +10,7 @@ namespace Nez
 	/// in quick and dirty fashion. It is not designed to be a full and proper UI system.
 	/// </summary>
 	[System.Obsolete("This class is deprecated in favor of Nez.ImGui and will be removed in the future")]
-	public class IMGUI
+	public static class IMGUI
 	{
 		enum TextAlign
 		{

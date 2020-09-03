@@ -473,7 +473,7 @@ namespace Lidgren.Network
 				{
 					try
 					{
-						resp = resp.Substring(resp.ToLower().IndexOf("location:") + 9);
+						resp = resp.Substring(resp.IndexOf("location:" , StringComparison.OrdinalIgnoreCase) + 9);
 						resp = resp.Substring(0, resp.IndexOf("\r")).Trim();
 						m_upnp.ExtractServiceUrl(resp);
 						return;
