@@ -37,8 +37,12 @@ namespace FarseerPhysics.Common {
 			return Cross(ref a, ref b);
 		}
 
-		/// Perform the cross product on two vectors.
-		public static Vector3 Cross(Vector3 a, Vector3 b) {
+        /// <summary>
+        /// Perform the cross product on two vectors.
+        /// </summary>
+        /// <param name="a"></param>
+        /// <param name="b"></param>
+        public static Vector3 Cross(Vector3 a, Vector3 b) {
 			return new Vector3(a.Y * b.Z - a.Z * b.Y, a.Z * b.X - a.X * b.Z, a.X * b.Y - a.Y * b.X);
 		}
 
@@ -103,13 +107,22 @@ namespace FarseerPhysics.Common {
 			C.Ey.Y = A.Ey.X * B.Ey.X + A.Ey.Y * B.Ey.Y;
 		}
 
-		/// Multiply a matrix times a vector.
-		public static Vector3 Mul(Mat33 A, Vector3 v) {
+        /// <summary>
+        /// Multiply a matrix times a vector.
+        /// </summary>
+        /// <param name="A"></param>
+        /// <param name="v"></param>
+        public static Vector3 Mul(Mat33 A, Vector3 v) {
 			return v.X * A.Ex + v.Y * A.Ey + v.Z * A.Ez;
 		}
 
-		// v2 = A.q.Rot(B.q.Rot(v1) + B.p) + A.p
-		//    = (A.q * B.q).Rot(v1) + A.q.Rot(B.p) + A.p
+		/// <summary>
+		/// v2 = A.q.Rot(B.q.Rot(v1) + B.p) + A.p
+		/// = (A.q * B.q).Rot(v1) + A.q.Rot(B.p) + A.p
+		/// </summary>
+		/// <param name="A"></param>
+		/// <param name="B"></param>
+		/// <returns></returns>
 		public static Transform Mul(Transform A, Transform B) {
 			Transform C = new Transform {
 				Q = Mul(A.Q, B.Q),
@@ -133,12 +146,16 @@ namespace FarseerPhysics.Common {
 			b = tmp;
 		}
 
+		/// <summary>
 		/// Multiply a matrix times a vector.
+		/// </summary>
 		public static Vector2 Mul22(Mat33 A, Vector2 v) {
 			return new Vector2(A.Ex.X * v.X + A.Ey.X * v.Y, A.Ex.Y * v.X + A.Ey.Y * v.Y);
 		}
 
+		/// <summary>
 		/// Multiply two rotations: q * r
+		/// </summary>
 		public static Rot Mul(Rot q, Rot r) {
 			// [qc -qs] * [rc -rs] = [qc*rc-qs*rs -qc*rs-qs*rc]
 			// [qs  qc]   [rs  rc]   [qs*rc+qc*rs -qs*rs+qc*rc]
@@ -159,7 +176,9 @@ namespace FarseerPhysics.Common {
 			return new Vector2(x, y);
 		}
 
+		/// <summary>
 		/// Transpose multiply two rotations: qT * r
+		/// </summary>
 		public static Rot MulT(Rot q, Rot r) {
 			// [ qc qs] * [rc -rs] = [qc*rc+qs*rs -qc*rs+qs*rc]
 			// [-qs qc]   [rs  rc]   [-qs*rc+qc*rs qs*rs+qc*rc]
@@ -181,17 +200,23 @@ namespace FarseerPhysics.Common {
 			return C;
 		}
 
+		/// <summary>
 		/// Rotate a vector
+		/// </summary>
 		public static Vector2 Mul(Rot q, Vector2 v) {
 			return new Vector2(q.C * v.X - q.S * v.Y, q.S * v.X + q.C * v.Y);
 		}
 
+		/// <summary>
 		/// Inverse rotate a vector
+		/// </summary>
 		public static Vector2 MulT(Rot q, Vector2 v) {
 			return new Vector2(q.C * v.X + q.S * v.Y, -q.S * v.X + q.C * v.Y);
 		}
 
+		/// <summary>
 		/// Get the skew vector such that dot(skew_vec, other) == cross(vec, other)
+		/// </summary>
 		public static Vector2 Skew(Vector2 input) {
 			return new Vector2(-input.Y, input.X);
 		}
@@ -269,7 +294,9 @@ namespace FarseerPhysics.Common {
 			return (dtheta);
 		}
 
+		/// <summary>
 		/// Perform the dot product on two vectors.
+		/// </summary>
 		public static float Dot(Vector3 a, Vector3 b) {
 			return a.X * b.X + a.Y * b.Y + a.Z * b.Z;
 		}
@@ -524,8 +551,10 @@ namespace FarseerPhysics.Common {
 			return new Vector2(det * (a22 * b.X - a12 * b.Y), det * (a11 * b.Y - a21 * b.X));
 		}
 
+		/// <summary>
 		/// Get the inverse of this matrix as a 2-by-2.
 		/// Returns the zero matrix if singular.
+		/// </summary>
 		public void GetInverse22(ref Mat33 M) {
 			float a = Ex.X, b = Ey.X, c = Ex.Y, d = Ey.Y;
 			float det = a * d - b * c;
@@ -544,8 +573,10 @@ namespace FarseerPhysics.Common {
 			M.Ez.Z = 0.0f;
 		}
 
+		/// <summary>
 		/// Get the symmetric inverse of this matrix as a 3-by-3.
 		/// Returns the zero matrix if singular.
+		/// </summary>
 		public void GetSymInverse33(ref Mat33 M) {
 			float det = MathUtils.Dot(Ex, MathUtils.Cross(Ey, Ez));
 			if (det != 0.0f) {
@@ -575,7 +606,9 @@ namespace FarseerPhysics.Common {
 	/// Rotation
 	/// </summary>
 	public struct Rot {
+		/// <summary>
 		/// Sine and cosine
+		/// </summary>
 		public float S, C;
 
 		/// <summary>

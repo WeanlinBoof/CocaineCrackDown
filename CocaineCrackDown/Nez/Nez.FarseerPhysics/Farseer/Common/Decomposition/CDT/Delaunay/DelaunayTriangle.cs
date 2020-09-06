@@ -202,6 +202,9 @@ namespace FarseerPhysics.Common.Decomposition.CDT.Delaunay {
 			Points[0] = Points[1] = Points[2] = null;
 		}
 
+		/// <summary>
+		/// oppposite point
+		/// </summary>
 		/// <param name="t">Opposite triangle</param>
 		/// <param name="p">The point in t that isn't shared between the triangles</param>
 		public TriangulationPoint OppositePoint(DelaunayTriangle t, TriangulationPoint p) {

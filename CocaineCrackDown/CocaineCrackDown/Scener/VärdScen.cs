@@ -1,4 +1,6 @@
 ﻿
+using CocaineCrackDown.Hanterare.Nät;
+
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
@@ -6,7 +8,6 @@ using Nez;
 using Nez.Timers;
 using Nez.UI;
 
-using RedGrin;
 
 using System;
 using System.Collections.Generic;
@@ -18,9 +19,10 @@ namespace CocaineCrackDown.Scener {
     public class VärdScen : GrundScen {
 
         public override Table Table { get; set; }
-
+        public ServerNätverkHanterare SNH;
         public VärdScen() { }     
-        public override void Initialize() { 
+        public override void Initialize() {
+            SNH = new ServerNätverkHanterare();
             BruhUi();
             Table.Add(new Label("ok").SetFontScale(5));
 
@@ -32,10 +34,10 @@ namespace CocaineCrackDown.Scener {
             KörPå.OnClicked += TextFält;
         }
         private void TextFält(Button obj) {
+            SNH.Enabled = true;
+            SNH.Anslut();
 
-            NetworkManager.Self.Initialize(Konfig);
-            NetworkManager.Self.Start(NetworkRole.Server);
-            Core.StartSceneTransition(new TextureWipeTransition(() => new NätLobby()) { TransitionTexture = Core.Content.Load<Texture2D>("nez/textures/textureWipeTransition/wink") });
+            Core.StartSceneTransition(new TextureWipeTransition(() => new NätLobby(SNH)) { TransitionTexture = Core.Content.Load<Texture2D>("nez/textures/textureWipeTransition/wink") });
 
 
         }

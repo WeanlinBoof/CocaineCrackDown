@@ -152,20 +152,6 @@
         "runtime": {
           "bin/placeholder/Nez.Persistence.dll": {}
         }
-      },
-      "RedGrin/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
-        "dependencies": {
-          "Lidgren.Network": "1.0.0",
-          "MonoGame.Framework.DesktopGL": "3.8.0.1641"
-        },
-        "compile": {
-          "bin/placeholder/RedGrin.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/RedGrin.dll": {}
-        }
       }
     }
   },
@@ -299,11 +285,6 @@
       "type": "project",
       "path": "../Nez/Nez.Persistence/Nez.Persistence.csproj",
       "msbuildProject": "../Nez/Nez.Persistence/Nez.Persistence.csproj"
-    },
-    "RedGrin/1.0.0": {
-      "type": "project",
-      "path": "../RedGrin/RedGrin.csproj",
-      "msbuildProject": "../RedGrin/RedGrin.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -311,8 +292,7 @@
       "Lidgren.Network >= 1.0.0",
       "Nez >= 1.0.0",
       "Nez.FarseerPhysics >= 1.0.0",
-      "Nez.Persistence >= 1.0.0",
-      "RedGrin >= 1.0.0"
+      "Nez.Persistence >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -357,9 +337,6 @@
             },
             "C:\\Users\\Anders H. Andersson\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\Nez\\Nez\\Nez.csproj": {
               "projectPath": "C:\\Users\\Anders H. Andersson\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\Nez\\Nez\\Nez.csproj"
-            },
-            "C:\\Users\\Anders H. Andersson\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\RedGrin\\RedGrin.csproj": {
-              "projectPath": "C:\\Users\\Anders H. Andersson\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\RedGrin\\RedGrin.csproj"
             }
           }
         }

@@ -1,19 +1,7 @@
-﻿
-using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Graphics;
+﻿using Microsoft.Xna.Framework.Graphics;
 
 using Nez;
-using Nez.Timers;
 using Nez.UI;
-
-using System;
-using System.Collections.Generic;
-using System.Drawing.Printing;
-using System.Text;
-using System.Threading;
-using RedGrin.Interfaces;
-using RedGrin;
-using RedGrin.Logging;
 
 namespace CocaineCrackDown.Scener {
 
@@ -23,11 +11,7 @@ namespace CocaineCrackDown.Scener {
         public override Table Table { get; set; }
         
         public Scen1() {
-            Konfig = new NetworkConfiguration {
-                ApplicationName = StandigaVarden.SPELNAMN ,
-                ApplicationPort = StandigaVarden.PORTEN ,
-                EntityStateTypes = //skapa en lista med alla entiteter och matta in den här e´ller något sådandt
-            };
+
         }
                 
         public override void Initialize() { 

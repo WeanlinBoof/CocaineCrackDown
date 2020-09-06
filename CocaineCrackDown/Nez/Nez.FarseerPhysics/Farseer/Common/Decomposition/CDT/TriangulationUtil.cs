@@ -34,7 +34,7 @@ namespace FarseerPhysics.Common.Decomposition.CDT {
 	 * @author Thomas Åhlén, thahlen@gmail.com
 	 */
 
-	internal class TriangulationUtil {
+	internal static class TriangulationUtil {
 		public static double EPSILON = 1e-12;
 
 		/// <summary>
@@ -152,13 +152,18 @@ namespace FarseerPhysics.Common.Decomposition.CDT {
 			return true;
 		}
 
-		/// Forumla to calculate signed area
-		/// Positive if CCW
-		/// Negative if CW
-		/// 0 if collinear
-		/// A[P1,P2,P3]  =  (x1*y2 - y1*x2) + (x2*y3 - y2*x3) + (x3*y1 - y3*x1)
-		///              =  (x1-x3)*(y2-y3) - (y1-y3)*(x2-x3)
-		public static Orientation Orient2d(TriangulationPoint pa, TriangulationPoint pb, TriangulationPoint pc) {
+        /// <summary>
+        /// Forumla to calculate signed area
+        /// Positive if CCW
+        /// Negative if CW
+        /// 0 if collinear
+        /// A[P1,P2,P3]  =  (x1*y2 - y1*x2) + (x2*y3 - y2*x3) + (x3*y1 - y3*x1)
+        ///              =  (x1-x3)*(y2-y3) - (y1-y3)*(x2-x3)
+        /// </summary>
+        /// <param name="pa"></param>
+        /// <param name="pb"></param>
+        /// <param name="pc"></param>
+        public static Orientation Orient2d(TriangulationPoint pa, TriangulationPoint pb, TriangulationPoint pc) {
 			double detleft = (pa.X - pc.X) * (pb.Y - pc.Y);
 			double detright = (pa.Y - pc.Y) * (pb.X - pc.X);
 			double val = detleft - detright;

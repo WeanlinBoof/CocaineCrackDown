@@ -29,12 +29,12 @@ namespace Nez
 		/// <summary>
 		/// enables/disables if we should quit the app when escape is pressed
 		/// </summary>
-		public static bool ExitOnEscapeKeypress = true;
+		public static bool ExitOnEscapeKeypress = false;
 
 		/// <summary>
 		/// enables/disables pausing when focus is lost. No update or render methods will be called if true when not in focus.
 		/// </summary>
-		public static bool PauseOnFocusLost = true;
+		public static bool PauseOnFocusLost = false;
 
 		/// <summary>
 		/// enables/disables debug rendering
@@ -167,7 +167,7 @@ namespace Nez
 			RegisterGlobalManager(new RenderTarget());
 		}
 
-		void OnOrientationChanged(object sender, EventArgs e)
+		private void OnOrientationChanged(object sender, EventArgs e)
 		{
 			Emitter.Emit(CoreEvents.OrientationChanged);
 		}
@@ -246,14 +246,13 @@ namespace Nez
 						_globalManagers.Buffer[i].Update();
 				}
 
-				// read carefully:
-				// - we do not update the Scene while a SceneTransition is happening
-				// 		- unless it is SceneTransition that doesn't change Scenes (no reason not to update)
-				//		- or it is a SceneTransition that has already switched to the new Scene (the new Scene needs to do its thing)
-				if (_sceneTransition == null ||
-				    ((!_sceneTransition._loadsNewScene || _sceneTransition._isNewSceneLoaded)))
+                // read carefully:
+                // - we do not update the Scene while a SceneTransition is happening
+                // 		- unless it is SceneTransition that doesn't change Scenes (no reason not to update)
+                //		- or it is a SceneTransition that has already switched to the new Scene (the new Scene needs to do its thing)
+                if(_sceneTransition == null || (!_sceneTransition._loadsNewScene || _sceneTransition._isNewSceneLoaded))
 				{
-					_scene.Update();
+                    _scene.Update();
 				}
 
 				if (_nextScene != null)

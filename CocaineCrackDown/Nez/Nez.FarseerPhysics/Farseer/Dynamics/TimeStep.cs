@@ -41,19 +41,25 @@ namespace FarseerPhysics.Dynamics {
 		public float Inv_dt;
 	}
 
+	/// <summary>
 	/// This is an internal structure.
+	/// </summary>
 	public struct Position {
 		public Vector2 C;
 		public float A;
 	}
 
+	/// <summary>
 	/// This is an internal structure.
+	/// </summary>
 	public struct Velocity {
 		public Vector2 V;
 		public float W;
 	}
 
+	/// <summary>
 	/// Solver Data
+	/// </summary>
 	public struct SolverData {
 		public TimeStep Step;
 		public Position[] Positions;

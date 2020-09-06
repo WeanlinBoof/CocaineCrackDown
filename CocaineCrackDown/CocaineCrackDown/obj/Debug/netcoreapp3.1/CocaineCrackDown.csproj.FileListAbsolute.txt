@@ -318,7 +318,5 @@ C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCr
 C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\obj\Debug\netcoreapp3.1\CocaineCrackDown.dll
 C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\obj\Debug\netcoreapp3.1\CocaineCrackDown.pdb
 C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\obj\Debug\netcoreapp3.1\CocaineCrackDown.genruntimeconfig.cache
-C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\bin\Debug\netcoreapp3.1\RedGrin.dll
-C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\bin\Debug\netcoreapp3.1\RedGrin.pdb
 C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\bin\Debug\netcoreapp3.1\Nez.FarseerPhysics.dll
 C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\bin\Debug\netcoreapp3.1\Nez.FarseerPhysics.pdb

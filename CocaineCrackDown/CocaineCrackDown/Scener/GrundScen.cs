@@ -4,7 +4,6 @@ using Microsoft.Xna.Framework.Graphics;
 using Nez;
 using Nez.UI;
 
-using RedGrin;
 
 using System;
 using System.Collections.Generic;
@@ -17,10 +16,8 @@ namespace CocaineCrackDown.Scener {
         Scen2
     }
     public class GrundScen : Scene {
-        public NetworkConfiguration Konfig { get; set; }
         public NivåNamn Status = NivåNamn.Scen1;
         public virtual Table Table { get; set; }
-        public NetworkManager NätHanterare { get; set; }
         public GrundScen() { 
         
         }
@@ -37,7 +34,6 @@ namespace CocaineCrackDown.Scener {
         }
         public override void Update() {
             base.Update();
-            NetworkManager.Self.Update();
         }
         public virtual void BruhUi() {
             UICanvas UICanvas = CreateEntity("ui-canvas").AddComponent(new UICanvas());
@@ -46,6 +42,27 @@ namespace CocaineCrackDown.Scener {
 
             Table.SetFillParent(true).Top().PadLeft(10).PadTop(50);
         }
-
+        public string SlumpAnvändarNamn => new[] {
+                "Gorbi",
+                "Jote",
+                "Frej",
+                "Blias",
+                "Anders",
+                "Erik",
+                "Leonard",
+                "Negus",
+                "Bithor",
+                "Lemon",
+                "Omegan",
+                "Breffer",
+                "Doug",
+                "Randy",
+                "Herman",
+                "Noah",
+                "Tyko",
+                "Calle",
+                "Alfon",
+                "Hendrik",
+        }[Nez.Random.NextInt(20)];
     } 
 } 

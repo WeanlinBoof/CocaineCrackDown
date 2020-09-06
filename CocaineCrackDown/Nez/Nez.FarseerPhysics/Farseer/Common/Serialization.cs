@@ -448,13 +448,13 @@ namespace FarseerPhysics.Common {
 
 			XMLFragmentElement root = XMLFragmentParser.LoadFromStream(stream);
 
-			if (root.Name.ToLower() != "world") {
+			if (!string.Equals(root.Name , "world" , StringComparison.OrdinalIgnoreCase)) {
 				throw new Exception();
 			}
 
-			//Read gravity
-			foreach (XMLFragmentElement element in root.Elements) {
-				if (element.Name.ToLower() == "gravity") {
+            //Read gravity
+            foreach (XMLFragmentElement element in root.Elements) {
+				if (string.Equals(element.Name , "gravity" , StringComparison.OrdinalIgnoreCase)) {
 					world.Gravity = ReadVector(element);
 					break;
 				}
@@ -462,9 +462,9 @@ namespace FarseerPhysics.Common {
 
 			//Read shapes
 			foreach (XMLFragmentElement shapeElement in root.Elements) {
-				if (shapeElement.Name.ToLower() == "shapes") {
+				if (string.Equals(shapeElement.Name , "shapes" , StringComparison.OrdinalIgnoreCase)) {
 					foreach (XMLFragmentElement element in shapeElement.Elements) {
-						if (element.Name.ToLower() != "shape") {
+                        if(!string.Equals(element.Name , "shape" , StringComparison.OrdinalIgnoreCase)) {
 							throw new Exception();
 						}
 
@@ -591,11 +591,11 @@ namespace FarseerPhysics.Common {
 
 			//Read fixtures
 			foreach (XMLFragmentElement fixtureElement in root.Elements) {
-				if (fixtureElement.Name.ToLower() == "fixtures") {
+				if (string.Equals(fixtureElement.Name , "fixtures" , StringComparison.OrdinalIgnoreCase)) {
 					foreach (XMLFragmentElement element in fixtureElement.Elements) {
 						Fixture fixture = new Fixture();
 
-						if (element.Name.ToLower() != "fixture") {
+						if (!string.Equals(element.Name , "fixture" , StringComparison.OrdinalIgnoreCase)) {
 							throw new Exception();
 						}
 
@@ -648,11 +648,11 @@ namespace FarseerPhysics.Common {
 
 			//Read bodies
 			foreach (XMLFragmentElement bodyElement in root.Elements) {
-				if (bodyElement.Name.ToLower() == "bodies") {
+				if (string.Equals(bodyElement.Name , "bodies" , StringComparison.OrdinalIgnoreCase)) {
 					foreach (XMLFragmentElement element in bodyElement.Elements) {
 						Body body = new Body(world);
 
-						if (element.Name.ToLower() != "body") {
+						if (!string.Equals(element.Name , "body" , StringComparison.OrdinalIgnoreCase)) {
 							throw new Exception();
 						}
 
@@ -720,11 +720,11 @@ namespace FarseerPhysics.Common {
 
 			//Read joints
 			foreach (XMLFragmentElement jointElement in root.Elements) {
-				if (jointElement.Name.ToLower() == "joints") {
+				if (string.Equals(jointElement.Name , "joints" , StringComparison.OrdinalIgnoreCase)) {
 					foreach (XMLFragmentElement n in jointElement.Elements) {
 						Joint joint;
 
-						if (n.Name.ToLower() != "joint") {
+						if (!string.Equals(n.Name , "joint" , StringComparison.OrdinalIgnoreCase)) {
 							throw new Exception();
 						}
 
@@ -1089,7 +1089,13 @@ namespace FarseerPhysics.Common {
 		public XMLFragmentException(string message)
 			: base(message) {
 		}
-	}
+
+        public XMLFragmentException() : base() {
+        }
+
+        public XMLFragmentException(string message , Exception innerException) : base(message , innerException) {
+        }
+    }
 
 	internal class FileBuffer {
 		public FileBuffer(Stream stream) {

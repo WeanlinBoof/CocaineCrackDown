@@ -11,8 +11,7 @@
           "Lidgren.Network": "1.0.0",
           "Nez": "1.0.0",
           "Nez.FarseerPhysics": "1.0.0",
-          "Nez.Persistence": "1.0.0",
-          "RedGrin": "1.0.0"
+          "Nez.Persistence": "1.0.0"
         },
         "runtime": {
           "CocaineCrackDown.dll": {}
@@ -148,15 +147,6 @@
         "runtime": {
           "Nez.Persistence.dll": {}
         }
-      },
-      "RedGrin/1.0.0": {
-        "dependencies": {
-          "Lidgren.Network": "1.0.0",
-          "MonoGame.Framework.DesktopGL": "3.8.0.1641"
-        },
-        "runtime": {
-          "RedGrin.dll": {}
-        }
       }
     }
   },
@@ -210,11 +200,6 @@
       "sha512": ""
     },
     "Nez.Persistence/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "RedGrin/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

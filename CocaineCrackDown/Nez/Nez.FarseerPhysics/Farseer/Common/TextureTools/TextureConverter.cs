@@ -376,7 +376,7 @@ namespace FarseerPhysics.Common.TextureTools {
 				}
 			} while (searchOn);
 
-			if (detectedPolygons == null || (detectedPolygons != null && detectedPolygons.Count == 0)) {
+			if (detectedPolygons == null || (detectedPolygons.Count == 0)) {
 				throw new Exception("Couldn't detect any vertices.");
 			}
 

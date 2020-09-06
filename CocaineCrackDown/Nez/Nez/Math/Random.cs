@@ -6,7 +6,7 @@ namespace Nez
 {
 	public static class Random
 	{
-		private static int _seed = Environment.TickCount;
+        private static int _seed = Environment.TickCount;
 		public static System.Random RNG = new System.Random(_seed);
 
 
@@ -48,7 +48,7 @@ namespace Nez
 		/// <param name="max">Max.</param>
 		public static float NextFloat(float max)
 		{
-			return (float) RNG.NextDouble() * max;
+            return (float)RNG.NextDouble() * max;
 		}
 
 
@@ -59,7 +59,7 @@ namespace Nez
 		/// <param name="max">Max.</param>
 		public static int NextInt(int max)
 		{
-			return RNG.Next(max);
+            return RNG.Next(max);
 		}
 
 
@@ -69,7 +69,7 @@ namespace Nez
 		/// <returns>The angle.</returns>
 		public static float NextAngle()
 		{
-			return (float) RNG.NextDouble() * MathHelper.TwoPi;
+			return (float)RNG.NextDouble() * MathHelper.TwoPi;
 		}
 
 
@@ -79,7 +79,7 @@ namespace Nez
 		/// <returns>The color.</returns>
 		public static Color NextColor()
 		{
-			return new Color(NextFloat(), NextFloat(), NextFloat());
+			return new Color(NextFloat() , NextFloat() , NextFloat());
 		}
 
 
@@ -103,7 +103,7 @@ namespace Nez
 		/// <returns></returns>
 		public static float Range(float min, float max)
 		{
-			return min + NextFloat(max - min);
+            return min + NextFloat(max - min);
 		}
 
 
@@ -115,7 +115,7 @@ namespace Nez
 		/// <returns></returns>
 		public static Vector2 Range(Vector2 min, Vector2 max)
 		{
-			return min + new Vector2(NextFloat(max.X - min.X), NextFloat(max.Y - min.Y));
+            return min + new Vector2(NextFloat(max.X - min.X) , NextFloat(max.Y - min.Y));
 		}
 
 
@@ -125,7 +125,7 @@ namespace Nez
 		/// <returns>The one to one.</returns>
 		public static float MinusOneToOne()
 		{
-			return NextFloat(2f) - 1f;
+            return NextFloat(2f) - 1f;
 		}
 
 
@@ -145,7 +145,7 @@ namespace Nez
 		/// <param name="value">Value.</param>
 		public static bool Chance(int value)
 		{
-			return NextInt(100) < value;
+            return NextInt(100) < value;
 		}
 
 
@@ -157,32 +157,26 @@ namespace Nez
 		/// <typeparam name="T">The 1st type parameter.</typeparam>
 		public static T Choose<T>(T first, T second)
 		{
-			if (NextInt(2) == 0)
-				return first;
-
-			return second;
-		}
+            return NextInt(2) == 0 ? first : second;
+        }
 
 
-		/// <summary>
-		/// randomly returns one of the given values
-		/// </summary>
-		/// <param name="first">First.</param>
-		/// <param name="second">Second.</param>
-		/// <param name="third">Third.</param>
-		/// <typeparam name="T">The 1st type parameter.</typeparam>
-		public static T Choose<T>(T first, T second, T third)
+        /// <summary>
+        /// randomly returns one of the given values
+        /// </summary>
+        /// <param name="first">First.</param>
+        /// <param name="second">Second.</param>
+        /// <param name="third">Third.</param>
+        /// <typeparam name="T">The 1st type parameter.</typeparam>
+        public static T Choose<T>(T first, T second, T third)
 		{
-			switch (NextInt(3))
-			{
-				case 0:
-					return first;
-				case 1:
-					return second;
-				default:
-					return third;
-			}
-		}
+            return (NextInt(3)) switch
+            {
+                0 => first,
+                1 => second,
+                _ => third,
+            };
+        }
 
 
 		/// <summary>
@@ -195,17 +189,13 @@ namespace Nez
 		/// <typeparam name="T">The 1st type parameter.</typeparam>
 		public static T Choose<T>(T first, T second, T third, T fourth)
 		{
-			switch (NextInt(4))
-			{
-				case 0:
-					return first;
-				case 1:
-					return second;
-				case 2:
-					return third;
-				default:
-					return fourth;
-			}
-		}
+            return (NextInt(4)) switch
+            {
+                0 => first,
+                1 => second,
+                2 => third,
+                _ => fourth,
+            };
+        }
 	}
 }

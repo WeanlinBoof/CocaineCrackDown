@@ -37,5 +37,11 @@ namespace FarseerPhysics.Common.Decomposition.CDT.Delaunay.Sweep {
 		public PointOnEdgeException(string message)
 			: base(message) {
 		}
-	}
+
+        public PointOnEdgeException() : base() {
+        }
+
+        public PointOnEdgeException(string message , Exception inner) : base(message , inner) {
+        }
+    }
 }

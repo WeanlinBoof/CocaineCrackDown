@@ -78,7 +78,9 @@ namespace FarseerPhysics.Dynamics.Contacts {
 		/// </summary>
 		public Manifold Manifold;
 
+		/// <summary>
 		/// Get or set the desired tangent speed for a conveyor belt behavior. In meters per second.
+		/// </summary>
 		public float TangentSpeed;
 
 		/// <summary>

@@ -28,7 +28,6 @@
     <ProjectReference Include="..\Nez\Nez.FarseerPhysics\Nez.FarseerPhysics.csproj" />
     <ProjectReference Include="..\Nez\Nez.Persistence\Nez.Persistence.csproj" />
     <ProjectReference Include="..\Nez\Nez\Nez.csproj" />
-    <ProjectReference Include="..\RedGrin\RedGrin.csproj" />
   </ItemGroup>
   <ItemGroup>
     <None Update="Content\bakgrund.png">
@@ -177,7 +176,6 @@
     <Service Include="{508349b6-6b84-4df5-91f0-309beebad82d}" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Entiteter\" />
-    <Folder Include="Componenter\" />
+    <Folder Include="Komponenter\" />
   </ItemGroup>
 </Project>
