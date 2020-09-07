@@ -17,7 +17,9 @@ namespace CocaineCrackDown.Scener {
     public class NätLobby : GrundScen {
         private readonly INätverkHanterare NätHanterare;
         private SpelarHanterare Spelarhanterare;
-        string bruh = "du är bog";
+        private readonly string bruh = "du är bog";
+        private NetIncomingMessage InkomandeMeddelande { get; set; }
+
         public NätLobby(INätverkHanterare näthanterare) {
             NätHanterare = näthanterare;
         }
@@ -35,12 +37,8 @@ namespace CocaineCrackDown.Scener {
         }
         public override void Update() {
             base.Update();
-            KeyboardState state = Keyboard.GetState();
-            if(state.IsKeyDown(Keys.R)) {
-                NätHanterare.SkapaMeddelande().Write(bruh);
-                NätHanterare.SickaMeddelande(new StringConsoleMeddelande(bruh));
-            }
             ProcessNetworkMessages();
+
         }
         protected void LäggTillHost() {
 
@@ -51,12 +49,13 @@ namespace CocaineCrackDown.Scener {
         protected void Koppplafrån() {
             NätHanterare.Frånkoppla();
         }
-        private void HandleUpdatePlayerStateMessage(NetIncomingMessage im) {
+
+        public void HandleUpdatePlayerStateMessage(NetIncomingMessage im) {
             UppdateraSpelareStatusMeddelande message = new UppdateraSpelareStatusMeddelande(im);
 
             float timeDelay = (float)(NetTime.Now - im.SenderConnection.GetLocalTime(message.MeddelandesTid));
 
-            Spelare spelare = Spelarhanterare.GetPlayer(message.ID) ?? Spelarhanterare.AddPlayer(message.ID, this  , false);
+            Spelare spelare = Spelarhanterare.GetPlayer(message.ID) ?? Spelarhanterare.AddPlayer(message.ID , this , false);
 
             //message.Position;
             //message.Rörelse;
@@ -68,10 +67,8 @@ namespace CocaineCrackDown.Scener {
             }
         }
 
-        protected void ProcessNetworkMessages() {
-            NetIncomingMessage InkomandeMeddelande;
-
-            while((InkomandeMeddelande = NätHanterare.LäsMeddelande()) != null) {
+        public void ProcessNetworkMessages() {
+            if((InkomandeMeddelande = NätHanterare.LäsMeddelande()) != null) {
                 switch(InkomandeMeddelande.MessageType) {
                     case NetIncomingMessageType.VerboseDebugMessage:
                     case NetIncomingMessageType.DebugMessage:
@@ -85,7 +82,7 @@ namespace CocaineCrackDown.Scener {
                             case NetConnectionStatus.Connected:
                                 if(!IsHost) {
                                     UppdateraSpelareStatusMeddelande message = new UppdateraSpelareStatusMeddelande(InkomandeMeddelande.SenderConnection.RemoteHailMessage);
-                                    Spelarhanterare.AddPlayer(message.ID ,this, true);
+                                    Spelarhanterare.AddPlayer(message.ID , this , true);
                                     Console.WriteLine("Connected to {0}" , InkomandeMeddelande.SenderEndPoint);
                                 }
                                 else {
@@ -97,7 +94,7 @@ namespace CocaineCrackDown.Scener {
                                 break;
                             case NetConnectionStatus.RespondedAwaitingApproval:
                                 NetOutgoingMessage hailMessage = NätHanterare.SkapaMeddelande();
-                                new UppdateraSpelareStatusMeddelande(Spelarhanterare.AddPlayer(this, false)).Encode(hailMessage);
+                                new UppdateraSpelareStatusMeddelande(Spelarhanterare.AddPlayer(this , false)).Encode(hailMessage);
                                 InkomandeMeddelande.SenderConnection.Approve(hailMessage);
                                 break;
                         }
@@ -117,6 +114,5 @@ namespace CocaineCrackDown.Scener {
                 NätHanterare.Återvin(InkomandeMeddelande);
             }
         }
-
     }
 }

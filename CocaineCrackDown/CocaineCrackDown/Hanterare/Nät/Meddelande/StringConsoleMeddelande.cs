@@ -16,7 +16,7 @@ namespace CocaineCrackDown.Hanterare.Nät.Meddelande {
             Text = text;
             MeddelandesTid = NetTime.Now;
         }
-        public string Text { get; set; } 
+        public string Text { get; set; }
         public SpelMeddelandeTyper MeddelandeTyp => SpelMeddelandeTyper.stringconsloe;
 
         public double MeddelandesTid { get; set; }

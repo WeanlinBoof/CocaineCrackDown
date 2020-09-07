@@ -10,7 +10,7 @@ using Random = Nez.Random;
 namespace CocaineCrackDown.Hanterare.Nät {
     public class ServerNätverkHanterare : GlobalManager, INätverkHanterare {
 
-        private readonly NetServer Server;
+        public static NetServer Server;
 
         public ServerNätverkHanterare() {
             NetPeerConfiguration Konfig = new NetPeerConfiguration(StandigaVarden.SPELNAMN) {
@@ -18,8 +18,7 @@ namespace CocaineCrackDown.Hanterare.Nät {
                 EnableUPnP = true ,
                 UseMessageRecycling = true
             };
-            Konfig.EnableMessageType(NetIncomingMessageType.WarningMessage);
-            Konfig.EnableMessageType(NetIncomingMessageType.VerboseDebugMessage);
+            Konfig.EnableMessageType(NetIncomingMessageType.Data);
             Konfig.EnableMessageType(NetIncomingMessageType.ErrorMessage);
             Konfig.EnableMessageType(NetIncomingMessageType.Error);
             Konfig.EnableMessageType(NetIncomingMessageType.DebugMessage);
@@ -29,6 +28,7 @@ namespace CocaineCrackDown.Hanterare.Nät {
         }
         public void Anslut(string ip = "localhost") {
             Server.Start();
+            Server.UPnP.ForwardPort(StandigaVarden.PORTEN , "CCD Port");
         }
         public NetOutgoingMessage SkapaMeddelande() {
             return Server.CreateMessage();
