@@ -1,5 +1,7 @@
 ﻿
 
+using CocaineCrackDown.Nätverk;
+
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
@@ -18,13 +20,15 @@ using System.Threading;
 namespace CocaineCrackDown.Scener {
     public class KlientScen : GrundScen {
 
-        
+        public KlientHanterare KH;
+
 
         public KlientScen() {
+            KH = new KlientHanterare();
+            Core.RegisterGlobalManager(KH);
         }
         
         public TextField textField;
-
         public string ip;
         public override void Initialize() {
             BruhUi();
@@ -49,7 +53,8 @@ namespace CocaineCrackDown.Scener {
         private void TextFält(Button obj) {
             ip = textField.GetText();
             Console.WriteLine(ip);
-            Core.StartSceneTransition(new TextureWipeTransition(() => new NätLobby()) { TransitionTexture = Core.Content.Load<Texture2D>("nez/textures/textureWipeTransition/wink") });
+            KH.Anslut(ip);
+            Core.StartSceneTransition(new TextureWipeTransition(() => new NätLobby(KH)) { TransitionTexture = Core.Content.Load<Texture2D>("nez/textures/textureWipeTransition/wink") });
 
 
         }

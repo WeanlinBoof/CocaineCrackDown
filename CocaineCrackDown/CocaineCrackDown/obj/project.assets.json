@@ -98,19 +98,6 @@
           }
         }
       },
-      "Lidgren.Network/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
-        "dependencies": {
-          "MonoGame.Framework.DesktopGL": "3.8.0.1641"
-        },
-        "compile": {
-          "bin/placeholder/Lidgren.Network.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Lidgren.Network.dll": {}
-        }
-      },
       "LiteNetLib/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
@@ -276,11 +263,6 @@
         "version.txt"
       ]
     },
-    "Lidgren.Network/1.0.0": {
-      "type": "project",
-      "path": "../LidNet/Lidgren.Network.csproj",
-      "msbuildProject": "../LidNet/Lidgren.Network.csproj"
-    },
     "LiteNetLib/1.0.0": {
       "type": "project",
       "path": "../LiteNetLib/LiteNetLib.csproj",
@@ -304,7 +286,6 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "Lidgren.Network >= 1.0.0",
       "LiteNetLib >= 1.0.0",
       "Nez >= 1.0.0",
       "Nez.FarseerPhysics >= 1.0.0",
@@ -342,9 +323,6 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\Anders H. Andersson\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\LidNet\\Lidgren.Network.csproj": {
-              "projectPath": "C:\\Users\\Anders H. Andersson\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\LidNet\\Lidgren.Network.csproj"
-            },
             "C:\\Users\\Anders H. Andersson\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\LiteNetLib\\LiteNetLib.csproj": {
               "projectPath": "C:\\Users\\Anders H. Andersson\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\LiteNetLib\\LiteNetLib.csproj"
             },

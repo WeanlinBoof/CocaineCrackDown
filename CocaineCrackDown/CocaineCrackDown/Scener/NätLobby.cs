@@ -3,6 +3,8 @@ using System.Text;
 
 using CocaineCrackDown.Entiteter;
 
+using LiteNetLib;
+
 using Microsoft.Xna.Framework.Input;
 
 using Nez;
@@ -10,8 +12,9 @@ using Nez;
 namespace CocaineCrackDown.Scener {
 
     public class NätLobby : GrundScen {
-
-        public NätLobby() {
+        GlobalManager NätHaterare;
+        public NätLobby(GlobalManager GM) {
+            NätHaterare = GM;
         }
         public override void Initialize() {
             base.Initialize();

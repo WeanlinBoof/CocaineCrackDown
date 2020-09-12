@@ -1,5 +1,7 @@
 ﻿
 
+using CocaineCrackDown.Nätverk;
+
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
@@ -18,8 +20,13 @@ namespace CocaineCrackDown.Scener {
     public class VärdScen : GrundScen {
 
         public override Table Table { get; set; }
-        public VärdScen() { }     
+        public VärdHanterare VH;
+        public VärdScen() {
+            VH = new VärdHanterare();
+            Core.RegisterGlobalManager(VH);
+        }
         public override void Initialize() {
+
             BruhUi();
             Table.Add(new Label("ok").SetFontScale(5));
 
@@ -31,7 +38,8 @@ namespace CocaineCrackDown.Scener {
             KörPå.OnClicked += TextFält;
         }
         private void TextFält(Button obj) {
-            Core.StartSceneTransition(new TextureWipeTransition(() => new NätLobby()) { TransitionTexture = Core.Content.Load<Texture2D>("nez/textures/textureWipeTransition/wink") });
+            VH.Anslut();
+            Core.StartSceneTransition(new TextureWipeTransition(() => new NätLobby(VH)) { TransitionTexture = Core.Content.Load<Texture2D>("nez/textures/textureWipeTransition/wink") });
         }
     }
 }

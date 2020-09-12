@@ -1,10 +1,14 @@
-﻿using LiteNetLib.Utils;
+﻿
+using LiteNetLib.Utils;
 
 using Microsoft.Xna.Framework;
 
 namespace CocaineCrackDown {
-    class SpelarDataPacket {
+    public class SpelarDataPacket {
         public SpelarData SpelarDatan { get; set; }
+        public override string ToString() {
+            return SpelarDatan.ToString();
+        }
     }
     public struct SpelarData {
         public ulong ID;
@@ -26,15 +30,17 @@ namespace CocaineCrackDown {
             writer.Put(SD.Y);
 
         }
-
         public static SpelarData Deserialize(NetDataReader reader) {
-            SpelarData SD;
-            SD.ID = reader.GetULong();
-            SD.Användarnamn = reader.GetString();
-            SD.X = reader.GetFloat();
-            SD.Y = reader.GetFloat();
-            return SD;
+            return new SpelarData {
+                ID = reader.GetULong() ,
+                Användarnamn = reader.GetString() ,
+                X = reader.GetFloat() ,
+                Y = reader.GetFloat()
+            };
 
+        }
+        public override string ToString() {
+            return $"ID: {ID}, AnvädarNamn: {Användarnamn}, X: {X}, Y: {Y}";
         }
     }
 }
