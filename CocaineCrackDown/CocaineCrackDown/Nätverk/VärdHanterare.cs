@@ -28,7 +28,10 @@ namespace CocaineCrackDown.Nätverk {
                     request.Reject();
                 }
             };
-
+            lyssnare.NetworkReceiveEvent += (fromPeer , dataReader , deliveryMethod) => {
+                Console.WriteLine("We got: {0}" , dataReader.GetString(100));
+                dataReader.Recycle();
+            };
             lyssnare.PeerConnectedEvent += peer => {
                 Console.WriteLine("We got connection: {0}" , peer.EndPoint); // Show peer ip
             };

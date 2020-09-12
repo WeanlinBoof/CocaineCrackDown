@@ -15,15 +15,18 @@ namespace CocaineCrackDown.Nätverk {
         NetManager Klient;
         public KlientHanterare() {
             lyssnare = new KlientEventLyssnare();
-            lyssnare.NetworkReceiveEvent += (fromPeer , dataReader , deliveryMethod) => {
-                Console.WriteLine("We got: {0}" , dataReader.GetString(100));
-                dataReader.Recycle();
-            };
             Klient = new NetManager(lyssnare);
         }
         public void Anslut(string ip) {
             Klient.Start();
             Klient.Connect(ip , StandigaVarden.PORTEN , "");
+            lyssnare.PeerConnectedEvent += peer => {
+                Console.WriteLine("We got connection: {0}" , peer.EndPoint); // Show peer ip
+            };
+            lyssnare.NetworkReceiveEvent += (fromPeer , dataReader , deliveryMethod) => {
+                Console.WriteLine("We got: {0}" , dataReader.GetString(100));
+                dataReader.Recycle();
+            };
         }
         public override void Update() {
             base.Update();
