@@ -1,0 +1,9 @@
+C:\Users\Anders H. Andersson\Desktop\LiteNetLib\bin\Debug\netstandard2.0\LiteNetLib.deps.json
+C:\Users\Anders H. Andersson\Desktop\LiteNetLib\bin\Debug\netstandard2.0\LiteNetLib.dll
+C:\Users\Anders H. Andersson\Desktop\LiteNetLib\bin\Debug\netstandard2.0\LiteNetLib.pdb
+C:\Users\Anders H. Andersson\Desktop\LiteNetLib\obj\Debug\netstandard2.0\LiteNetLib.csprojAssemblyReference.cache
+C:\Users\Anders H. Andersson\Desktop\LiteNetLib\obj\Debug\netstandard2.0\LiteNetLib.AssemblyInfoInputs.cache
+C:\Users\Anders H. Andersson\Desktop\LiteNetLib\obj\Debug\netstandard2.0\LiteNetLib.AssemblyInfo.cs
+C:\Users\Anders H. Andersson\Desktop\LiteNetLib\obj\Debug\netstandard2.0\LiteNetLib.csproj.CoreCompileInputs.cache
+C:\Users\Anders H. Andersson\Desktop\LiteNetLib\obj\Debug\netstandard2.0\LiteNetLib.dll
+C:\Users\Anders H. Andersson\Desktop\LiteNetLib\obj\Debug\netstandard2.0\LiteNetLib.pdb

@@ -10,43 +10,43 @@ namespace CocaineCrackDown.Client.Managers {
         /// <summary>
         /// AvändKnapp
         /// </summary>
-        public VirtualButton AvändKnapp { get; private set; }
+        public VirtualButton AvändKnapp { get;  set; }
         /// <summary>
         /// AttackKnapp
         /// </summary>
-        public VirtualButton AttackKnapp { get; private set; }
+        public VirtualButton AttackKnapp { get;  set; }
         /// <summary>
         /// HoppKnapp
         /// </summary>
-        public VirtualButton HoppKnapp { get; private set; }
+        public VirtualButton HoppKnapp { get;  set; }
         /// <summary>
         /// UppKnapp
         /// </summary>
-        public VirtualButton UppKnapp { get; private set; }
+        public VirtualButton UppKnapp { get;  set; }
         /// <summary>
         /// HögerKnapp
         /// </summary>
-        public VirtualButton HögerKnapp { get; private set; }
+        public VirtualButton HögerKnapp { get;  set; }
         /// <summary>
         /// VänsterKnapp
         /// </summary>
-        public VirtualButton VänsterKnapp { get; private set; }
+        public VirtualButton VänsterKnapp { get;  set; }
         /// <summary>
         /// NedKnapp
         /// </summary>
-        public VirtualButton NedKnapp { get; private set; }
+        public VirtualButton NedKnapp { get;  set; }
         /// <summary>
         /// RörelseAxelX
         /// </summary>
-        public VirtualIntegerAxis RörelseAxelX { get; private set; }
+        public VirtualIntegerAxis RörelseAxelX { get; set; }
         /// <summary>
         /// RörelseAxelY
         /// </summary>
-        public VirtualIntegerAxis RörelseAxelY { get; private set; }
+        public VirtualIntegerAxis RörelseAxelY { get;  set; }
         /// <summary>
         /// Välj Knappen
         /// </summary>       
-        public VirtualButton VäljKnapp { get; private set; }
+        public VirtualButton VäljKnapp { get;  set; }
         /// <summary>
         /// Blockerar All Interaktion/Använd Typ Av Saker
         /// </summary>
@@ -82,7 +82,7 @@ namespace CocaineCrackDown.Client.Managers {
             RörelseAxelX.AddKeyboardKeys(VirtualInput.OverlapBehavior.TakeNewer, Keys.Left, Keys.Right).AddGamePadLeftStickX().AddGamePadDPadLeftRight();
 
             RörelseAxelY = new VirtualIntegerAxis();
-            RörelseAxelY.AddKeyboardKeys(VirtualInput.OverlapBehavior.TakeNewer, Keys.Left, Keys.Right).AddGamePadLeftStickX().AddGamePadDPadLeftRight();
+            RörelseAxelY.AddKeyboardKeys(VirtualInput.OverlapBehavior.TakeNewer, Keys.Up, Keys.Down).AddGamePadLeftStickY().AddGamePadDPadUpDown();
 
             VäljKnapp = new VirtualButton();
             VäljKnapp.AddKeyboardKey(Keys.Enter).AddGamePadButton(0, Buttons.A).AddGamePadButton(0, Buttons.Start);

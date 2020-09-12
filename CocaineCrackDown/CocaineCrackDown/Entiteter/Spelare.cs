@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Data.Common;
 using System.Text;
 
+using CocaineCrackDown.Client.Managers;
+using CocaineCrackDown.Komponenter;
+
 using Microsoft.Xna.Framework;
 
 using Nez;
@@ -10,20 +13,22 @@ using Nez.Sprites;
 
 namespace CocaineCrackDown.Entiteter {
     public class Spelare : Entity {
-        public Vector2 Rörelse { get; set; }
+        public float RörelseHastighet { get; set; } = 100f;
         protected string Namn { get; set; }
         public double SenasteUpdateringsTid { get; set; }
         public Scene Scen { get; set; }
-
+        protected InmatningsHanterare inmatningsHanterare;
         public Spelare(string namn) {
             Namn = namn;
         }
-        public Spelare(Scene scene, string namn) :this(namn) {
-            Scen = scene;
-        }
+        public bool Lokal { get; set; }
         public override void OnAddedToScene() {
             Name = Namn;
-            //AddComponent()
+            inmatningsHanterare = new InmatningsHanterare();
+            Core.RegisterGlobalManager(inmatningsHanterare);
+            AddComponent(new RörelseKomponent(inmatningsHanterare , RörelseHastighet));
+            AddComponent(new AtlasAnimationKomponent(inmatningsHanterare));
+            
             //AddComponent<>()
         }
 
@@ -35,5 +40,16 @@ namespace CocaineCrackDown.Entiteter {
             base.Update();
         }
 
+    }
+    public class Doug : Spelare {
+        public Doug(string namn = "doug" , bool lokal = false) : base(namn) {
+            Lokal = lokal;
+        }
+    }
+    public class Randy : Spelare {
+        public Randy(string namn = "randy", bool lokal = false) : base(namn) {
+            Lokal = lokal;
+
+        }
     }
 }

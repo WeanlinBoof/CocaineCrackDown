@@ -111,6 +111,16 @@
           "bin/placeholder/Lidgren.Network.dll": {}
         }
       },
+      "LiteNetLib/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/LiteNetLib.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LiteNetLib.dll": {}
+        }
+      },
       "Nez/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
@@ -271,6 +281,11 @@
       "path": "../LidNet/Lidgren.Network.csproj",
       "msbuildProject": "../LidNet/Lidgren.Network.csproj"
     },
+    "LiteNetLib/1.0.0": {
+      "type": "project",
+      "path": "../LiteNetLib/LiteNetLib.csproj",
+      "msbuildProject": "../LiteNetLib/LiteNetLib.csproj"
+    },
     "Nez/1.0.0": {
       "type": "project",
       "path": "../Nez/Nez/Nez.csproj",
@@ -290,6 +305,7 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "Lidgren.Network >= 1.0.0",
+      "LiteNetLib >= 1.0.0",
       "Nez >= 1.0.0",
       "Nez.FarseerPhysics >= 1.0.0",
       "Nez.Persistence >= 1.0.0"
@@ -328,6 +344,9 @@
           "projectReferences": {
             "C:\\Users\\Anders H. Andersson\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\LidNet\\Lidgren.Network.csproj": {
               "projectPath": "C:\\Users\\Anders H. Andersson\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\LidNet\\Lidgren.Network.csproj"
+            },
+            "C:\\Users\\Anders H. Andersson\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\LiteNetLib\\LiteNetLib.csproj": {
+              "projectPath": "C:\\Users\\Anders H. Andersson\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\LiteNetLib\\LiteNetLib.csproj"
             },
             "C:\\Users\\Anders H. Andersson\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\Nez\\Nez.FarseerPhysics\\Nez.FarseerPhysics.csproj": {
               "projectPath": "C:\\Users\\Anders H. Andersson\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\Nez\\Nez.FarseerPhysics\\Nez.FarseerPhysics.csproj"
