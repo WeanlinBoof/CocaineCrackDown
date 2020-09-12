@@ -6,7 +6,7 @@ using LiteNetLib.Utils;
 using Nez;
 
 namespace CocaineCrackDown.Nätverk {
-    public class VärdHanterare : GlobalManager {
+    public class VärdHanterare : GlobalManager , INätHanterare {
         private readonly ServerEventLyssnare lyssnare;
         private readonly NetManager Server;
         public VärdHanterare() {
@@ -18,7 +18,7 @@ namespace CocaineCrackDown.Nätverk {
             Server.PollEvents();
 
         }
-        public void Anslut() {
+        public void Anslut(string ip = "localhost") {
             Server.Start(StandigaVarden.PORTEN);
             lyssnare.ConnectionRequestEvent += request => {
                 if(Server.ConnectedPeersCount < 16) {

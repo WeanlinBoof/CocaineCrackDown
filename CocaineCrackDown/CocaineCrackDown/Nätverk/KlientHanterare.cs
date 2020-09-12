@@ -5,11 +5,12 @@ using System.Net.Sockets;
 using System.Text;
 
 using LiteNetLib;
+using LiteNetLib.Utils;
 
 using Nez;
 
 namespace CocaineCrackDown.Nätverk {
-    public class KlientHanterare : GlobalManager {
+    public class KlientHanterare : GlobalManager, INätHanterare {
         KlientEventLyssnare lyssnare;
         NetManager Klient;
         public KlientHanterare() {
@@ -27,6 +28,11 @@ namespace CocaineCrackDown.Nätverk {
         public override void Update() {
             base.Update();
             Klient.PollEvents();
+        }
+        public void SickaString(string str) {
+            NetDataWriter writer = new NetDataWriter();
+            writer.Put(str);
+            Klient.SendToAll(writer , DeliveryMethod.Sequenced);
         }
     }
 }
