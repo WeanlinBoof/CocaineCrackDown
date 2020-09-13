@@ -62,3 +62,4 @@ C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\Nez\Nez\o
 C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\Nez\Nez\obj\Nez\Debug\Nez.csproj.CopyComplete
 C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\Nez\Nez\obj\Nez\Debug\Nez.dll
 C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\Nez\Nez\obj\Nez\Debug\Nez.pdb
+C:\Users\Anders H. Andersson\Desktop\CocaineCrackDown\CocaineCrackDown\Nez\Nez\obj\Nez\Debug\Nez.csprojAssemblyReference.cache
