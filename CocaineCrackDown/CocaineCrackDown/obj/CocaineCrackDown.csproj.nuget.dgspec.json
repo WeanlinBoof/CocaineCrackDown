@@ -269,7 +269,7 @@
         "projectName": "Nez",
         "projectPath": "C:\\Users\\Anders H. Andersson\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\Nez\\Nez\\Nez.csproj",
         "packagesPath": "C:\\Users\\Anders H. Andersson\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Anders H. Andersson\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\Nez\\Nez\\obj\\Nez\\",
+        "outputPath": "C:\\Users\\Anders H. Andersson\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\Nez\\Nez\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
