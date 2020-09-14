@@ -3,28 +3,29 @@ using System.Collections.Generic;
 using System.Text;
 
 using CocaineCrackDown.Client.Managers;
+using CocaineCrackDown.Entiteter;
 
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
 using Nez;
 using Nez.Sprites;
+using Nez.Tiled;
 
 namespace CocaineCrackDown.Komponenter {
-    public class RörelseKomponent : Component, IUpdatable, ITriggerListener {
-        private SubpixelVector2 SubPixelVecTvå = new SubpixelVector2();
-        private BoxCollider BoxKollision;
+    public class RörelseKomponent : Component, IUpdatable {
+        private SubpixelVector2 V2Pixel;
         private Mover Röraren;
         public float RörelseHastighet;
         public InmatningsHanterare Inmatnings;
+        public TiledMap TM;
         public RörelseKomponent(InmatningsHanterare InHatterare , float RörHastighet) {
             RörelseHastighet = RörHastighet;
             Inmatnings = InHatterare;
         }
         public override void OnAddedToEntity() {
             base.OnAddedToEntity();
-            BoxKollision = Entity.AddComponent(new BoxCollider(-20 , -31 , 40 , 63));
-            Röraren = Entity.AddComponent(new Mover());
+            Röraren = Entity.AddComponent(new Mover());            
         }
 
         public void Update() {
@@ -33,18 +34,10 @@ namespace CocaineCrackDown.Komponenter {
 
                 Vector2 movement = moveDir * RörelseHastighet * Time.DeltaTime;
 
-                Röraren.CalculateMovement(ref movement , out CollisionResult res);
-                SubPixelVecTvå.Update(ref movement);
+                Röraren.CalculateMovement(ref movement , out CollisionResult res );
+                V2Pixel.Update(ref movement);
                 Röraren.ApplyMovement(movement);
             }
-        }
-
-        public void OnTriggerEnter(Collider other , Collider local) {
-            Console.WriteLine("Enter");
-        }
-
-        public void OnTriggerExit(Collider other , Collider local) {
-            Console.WriteLine("Exit");
         }
     }
 }

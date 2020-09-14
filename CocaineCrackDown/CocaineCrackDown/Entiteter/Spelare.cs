@@ -24,12 +24,13 @@ namespace CocaineCrackDown.Entiteter {
         public bool Lokal { get; set; }
         public override void OnAddedToScene() {
             Name = Namn;
+            Position = new Vector2(Scene.SceneRenderTargetSize.X/2, Scene.SceneRenderTargetSize.Y / 2);
             inmatningsHanterare = new InmatningsHanterare();
             Core.RegisterGlobalManager(inmatningsHanterare);
+            //AddComponent(new KollisionsKomponent());
             AddComponent(new RörelseKomponent(inmatningsHanterare , RörelseHastighet));
             AddComponent(new AtlasAnimationKomponent(inmatningsHanterare));
-            
-            //AddComponent<>()
+            AddComponent(new FollowCamera(this));
         }
 
         public override void OnRemovedFromScene() {

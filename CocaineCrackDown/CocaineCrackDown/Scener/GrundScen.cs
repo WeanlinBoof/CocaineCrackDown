@@ -28,9 +28,7 @@ namespace CocaineCrackDown.Scener {
             //Gör Clear Färgen till detta
             ClearColor = new Color(58, 61, 101);
             //Fixar så att det är 640 x 360 pixlar på skärm skalade
-            SetDesignResolution(1664 , 896, SceneResolutionPolicy.ShowAllPixelPerfect);
-            Screen.SetSize(1664 , 896);
-
+            SetDesignResolution(640 , 360 , SceneResolutionPolicy.BestFit);
         }
         public override void Update() {
             base.Update();
