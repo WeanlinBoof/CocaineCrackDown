@@ -15,23 +15,23 @@
           "Nez.FarseerPhysics.dll": {}
         }
       },
-      "Microsoft.NETCore.Platforms/3.1.0": {},
-      "Microsoft.Win32.SystemEvents/4.7.0": {
+      "Microsoft.NETCore.Platforms/5.0.0-preview.8.20407.11": {},
+      "Microsoft.Win32.SystemEvents/5.0.0-preview.8.20407.11": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "3.1.0"
+          "Microsoft.NETCore.Platforms": "5.0.0-preview.8.20407.11"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Win32.SystemEvents.dll": {
-            "assemblyVersion": "4.0.2.0",
-            "fileVersion": "4.700.19.56404"
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.20.40711"
           }
         },
         "runtimeTargets": {
           "runtimes/win/lib/netcoreapp3.0/Microsoft.Win32.SystemEvents.dll": {
             "rid": "win",
             "assetType": "runtime",
-            "assemblyVersion": "4.0.2.0",
-            "fileVersion": "4.700.19.56404"
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.20.40711"
           }
         }
       },
@@ -85,10 +85,10 @@
           }
         }
       },
-      "System.Drawing.Common/4.7.0": {
+      "System.Drawing.Common/5.0.0-preview.8.20407.11": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "3.1.0",
-          "Microsoft.Win32.SystemEvents": "4.7.0"
+          "Microsoft.NETCore.Platforms": "5.0.0-preview.8.20407.11",
+          "Microsoft.Win32.SystemEvents": "5.0.0-preview.8.20407.11"
         },
         "runtime": {
           "lib/netstandard2.0/System.Drawing.Common.dll": {
@@ -100,21 +100,21 @@
           "runtimes/unix/lib/netcoreapp3.0/System.Drawing.Common.dll": {
             "rid": "unix",
             "assetType": "runtime",
-            "assemblyVersion": "4.0.2.0",
-            "fileVersion": "4.700.19.56404"
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.20.40711"
           },
           "runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.dll": {
             "rid": "win",
             "assetType": "runtime",
-            "assemblyVersion": "4.0.2.0",
-            "fileVersion": "4.700.19.56404"
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.20.40711"
           }
         }
       },
       "Nez/1.0.0": {
         "dependencies": {
           "MonoGame.Framework.DesktopGL": "3.8.0.1641",
-          "System.Drawing.Common": "4.7.0"
+          "System.Drawing.Common": "5.0.0-preview.8.20407.11"
         },
         "runtime": {
           "Nez.dll": {}
@@ -128,19 +128,19 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Microsoft.NETCore.Platforms/3.1.0": {
+    "Microsoft.NETCore.Platforms/5.0.0-preview.8.20407.11": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-z7aeg8oHln2CuNulfhiLYxCVMPEwBl3rzicjvIX+4sUuCwvXw5oXQEtbiU2c0z4qYL5L3Kmx0mMA/+t/SbY67w==",
-      "path": "microsoft.netcore.platforms/3.1.0",
-      "hashPath": "microsoft.netcore.platforms.3.1.0.nupkg.sha512"
+      "sha512": "sha512-r1yAhsxC6fvVkOwikgfC3T5m+kRjXbfLsHd8+p1EE9JTUqOkZPm3lzco2naZqMseBI8v/Ws0M/tGfBTe5Dj0ZQ==",
+      "path": "microsoft.netcore.platforms/5.0.0-preview.8.20407.11",
+      "hashPath": "microsoft.netcore.platforms.5.0.0-preview.8.20407.11.nupkg.sha512"
     },
-    "Microsoft.Win32.SystemEvents/4.7.0": {
+    "Microsoft.Win32.SystemEvents/5.0.0-preview.8.20407.11": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-mtVirZr++rq+XCDITMUdnETD59XoeMxSpLRIII7JRI6Yj0LEDiO1pPn0ktlnIj12Ix8bfvQqQDMMIF9wC98oCA==",
-      "path": "microsoft.win32.systemevents/4.7.0",
-      "hashPath": "microsoft.win32.systemevents.4.7.0.nupkg.sha512"
+      "sha512": "sha512-TLcacbHCpoXrwtsS6ZbAd3Ockh628bGoXujs4I//QSmN5t+uCfb8v3TrbmDmnRtE6G9dHQu1Iih3HGW53J1noA==",
+      "path": "microsoft.win32.systemevents/5.0.0-preview.8.20407.11",
+      "hashPath": "microsoft.win32.systemevents.5.0.0-preview.8.20407.11.nupkg.sha512"
     },
     "MonoGame.Framework.DesktopGL/3.8.0.1641": {
       "type": "package",
@@ -149,12 +149,12 @@
       "path": "monogame.framework.desktopgl/3.8.0.1641",
       "hashPath": "monogame.framework.desktopgl.3.8.0.1641.nupkg.sha512"
     },
-    "System.Drawing.Common/4.7.0": {
+    "System.Drawing.Common/5.0.0-preview.8.20407.11": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-v+XbyYHaZjDfn0ENmJEV1VYLgGgCTx1gnfOBcppowbpOAriglYgGCvFCPr2EEZyBvXlpxbEsTwkOlInl107ahA==",
-      "path": "system.drawing.common/4.7.0",
-      "hashPath": "system.drawing.common.4.7.0.nupkg.sha512"
+      "sha512": "sha512-UO+cpFEnXyUSupwz/XwtWLzt+38mYZG6xf/0qbxpDzZKG9TmzG0SDy4NGXZpNtov2cUIUDSWwaRG/mnAcgYyUg==",
+      "path": "system.drawing.common/5.0.0-preview.8.20407.11",
+      "hashPath": "system.drawing.common.5.0.0-preview.8.20407.11.nupkg.sha512"
     },
     "Nez/1.0.0": {
       "type": "project",

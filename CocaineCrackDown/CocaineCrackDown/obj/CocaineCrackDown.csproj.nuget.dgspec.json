@@ -306,7 +306,7 @@
             },
             "System.Drawing.Common": {
               "target": "Package",
-              "version": "[4.7.0, )"
+              "version": "[5.0.0-preview.8.20407.11, )"
             }
           },
           "imports": [

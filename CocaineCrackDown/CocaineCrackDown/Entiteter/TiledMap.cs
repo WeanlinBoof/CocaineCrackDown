@@ -13,21 +13,21 @@ namespace CocaineCrackDown.Entiteter {
             base.OnAddedToScene();
 
             Name = "KakelKarta";
-            TmxMap map = Scene.Content.LoadTiledMap("Content/tilemap.tmx");
-            TiledMapRenderer tiledMapRenderer = AddComponent(new TiledMapRenderer(map, "collision"));
-			tiledMapRenderer.SetLayersToRender(new[] { "tiles","terrain","details" });
+            TmxMap map = Scene.Content.LoadTiledMap("Content/testnr1.tmx");
+            TiledMapRenderer tiledMapRenderer = AddComponent(new TiledMapRenderer(map, "Kollision"));
+			tiledMapRenderer.SetLayersToRender(new[] { "Mark" });
 
             // render below/behind everything else. our player is at 0 and projectile is at 1.
             tiledMapRenderer.RenderLayer = 10;
 
-            // the details layer will write to the stencil buffer so we can draw a shadow when the player is behind it. we need an AlphaTestEffect
-            // here as well
-            TiledMapRenderer tiledMapDetailsComp = AddComponent(new TiledMapRenderer(map));
-            tiledMapDetailsComp.SetLayerToRender("above-details");
-            tiledMapDetailsComp.RenderLayer = -1;
+            //// the details layer will write to the stencil buffer so we can draw a shadow when the player is behind it. we need an AlphaTestEffect
+            //// here as well
+            //TiledMapRenderer tiledMapDetailsComp = AddComponent(new TiledMapRenderer(map));
+            //tiledMapDetailsComp.SetLayerToRender("above-details");
+            //tiledMapDetailsComp.RenderLayer = -1;
 
-            tiledMapDetailsComp.Material = Material.StencilWrite();
-            tiledMapDetailsComp.Material.Effect = Scene.Content.LoadNezEffect<SpriteAlphaTestEffect>();
+            //tiledMapDetailsComp.Material = Material.StencilWrite();
+            //tiledMapDetailsComp.Material.Effect = Scene.Content.LoadNezEffect<SpriteAlphaTestEffect>();
 
             // setup our camera bounds with a 1 tile border around the edges (for the outside collision tiles)
             Vector2 topLeft = new Vector2(map.TileWidth , map.TileWidth);
