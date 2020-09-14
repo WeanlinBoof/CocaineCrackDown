@@ -3,8 +3,9 @@
 	<PropertyGroup>
 		
 		<OutputType>Library</OutputType>
-		
-		
+		<CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+
+
 		<RootNamespace>Nez</RootNamespace>
 		
 		<AssemblyName>Nez</AssemblyName>
@@ -16,7 +17,11 @@
 		<NoWarn>1591,1570,1572,1573</NoWarn>
 
 		</PropertyGroup>
-
+	<ItemGroup>
+		<EmbeddedResource Include="Content\NezDefaultBMFont.xnb" />
+		<Compile Remove="Graphics\SVG\Shapes\Paths\SvgPathBuilder.cs" />
+		<Compile Remove="Utils\MonoGameCompat.cs" />
+	</ItemGroup>
 
 			<ItemGroup>
 		<PackageReference Include="MonoGame.Framework.DesktopGL" Version="3.8.0.1641" />
