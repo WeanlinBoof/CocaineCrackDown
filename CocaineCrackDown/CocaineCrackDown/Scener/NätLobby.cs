@@ -21,6 +21,10 @@ namespace CocaineCrackDown.Scener {
         }
         public override void Initialize() {
             base.Initialize();
+
+            AddEntity(new TiledMap("testnr1"));
+            AddEntity(new Randy());
+
             BruhUi();
 
             Table.Add(new Label("ok").SetFontScale(5));
