@@ -10,7 +10,7 @@ namespace CocaineCrackDown.Scener {
             base.Initialize();
             //AddEntity(new Spelare("doug"));
             AddEntity(new TiledMap("testnr1"));
-            AddEntity(new Doug());
+            AddEntity(new Randy());
         }
     }
 }

@@ -68,7 +68,7 @@ namespace CocaineCrackDown.Entiteter {
             }
             atlasAnimationsKomponent.AttackBox.Enabled = atlasAnimationsKomponent.Attackerar;
             if(atlasAnimationsKomponent.Attackerar) {
-                atlasAnimationsKomponent.animation = "doug-lättattack";
+                atlasAnimationsKomponent.animation = $"{Name}-lättattack";
                 atlasAnimationsKomponent.AttackTimer += Time.UnscaledDeltaTime;
                 if(atlasAnimationsKomponent.AttackTimer >= 0.3f) {
                     atlasAnimationsKomponent.Attackerar = false;
@@ -77,37 +77,37 @@ namespace CocaineCrackDown.Entiteter {
             }
 
             if(moveDir.Y < 0 || moveDir.Y > 0) {
-                if(atlasAnimationsKomponent.animation != "doug-gång") {
-                    atlasAnimationsKomponent.animation = "doug-gång";
+                if(atlasAnimationsKomponent.animation != $"{Name}-gång") {
+                    atlasAnimationsKomponent.animation = $"{Name}-gång";
                 }
             }
             if(moveDir.X < 0) {
                 atlasAnimationsKomponent.DougRiktning = Riktning.vänster;
-                if(atlasAnimationsKomponent.animation != "doug-gång") {
-                    atlasAnimationsKomponent.animation = "doug-gång";
+                if(atlasAnimationsKomponent.animation != $"{Name}-gång") {
+                    atlasAnimationsKomponent.animation = $"{Name}-gång";
                 }
             }
             if(moveDir.X > 0) {
                 atlasAnimationsKomponent.DougRiktning = Riktning.höger;
-                if(atlasAnimationsKomponent.animation != "doug-gång") {
-                    atlasAnimationsKomponent.animation = "doug-gång";
+                if(atlasAnimationsKomponent.animation != $"{Name}-gång") {
+                    atlasAnimationsKomponent.animation = $"{Name}-gång";
                 }
             }
             if(moveDir.X == 0 && moveDir.Y == 0 && atlasAnimationsKomponent.Attackerar == false) {
-                if(atlasAnimationsKomponent.animation != "doug-stilla") {
-                    atlasAnimationsKomponent.animation = "doug-stilla";
+                if(atlasAnimationsKomponent.animation != $"{Name}-stilla") {
+                    atlasAnimationsKomponent.animation = $"{Name}-stilla";
                 }
             }
             if(atlasAnimationsKomponent.DougRiktning == Riktning.höger) {
                 atlasAnimationsKomponent.Animerare.FlipX = false;
                 //fixa brugh
-                atlasAnimationsKomponent.AttackBox.SetLocalOffset(new Vector2(-20 , -31));
+                atlasAnimationsKomponent.AttackBox.SetLocalOffset(new Vector2(5 , -15));
 
             }
             if(atlasAnimationsKomponent.DougRiktning == Riktning.vänster) {
                 atlasAnimationsKomponent.Animerare.FlipX = true;
                 //fixa bruhg
-                atlasAnimationsKomponent.AttackBox.SetLocalOffset(new Vector2(-4 * 0 , -31));
+                atlasAnimationsKomponent.AttackBox.SetLocalOffset(new Vector2(-5, -15));
             }
 
             if(!atlasAnimationsKomponent.Animerare.IsAnimationActive(atlasAnimationsKomponent.animation)) {
