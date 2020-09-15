@@ -19,8 +19,8 @@ namespace CocaineCrackDown.Entiteter {
         public Scene Scen { get; set; }
         protected InmatningsHanterare inmatningsHanterare;
         protected RörelseKomponent rörelseKomponent;
-        protected AtlasAnimationKomponent atlasAnimationsKomponent; 
-        protected FollowCamera followCamera; 
+        protected AtlasAnimationKomponent atlasAnimationsKomponent;
+        protected FollowCamera followCamera;
         public Spelare(string namn) {
             Namn = namn;
             inmatningsHanterare = new InmatningsHanterare();
@@ -32,7 +32,7 @@ namespace CocaineCrackDown.Entiteter {
         public bool Lokal { get; set; }
         public override void OnAddedToScene() {
             Name = Namn;
-            Position = new Vector2(Scene.SceneRenderTargetSize.X/2, Scene.SceneRenderTargetSize.Y / 2);
+            Position = new Vector2(Scene.SceneRenderTargetSize.X / 2 , Scene.SceneRenderTargetSize.Y / 2);
             //AddComponent(new KollisionsKomponent());
             AddComponent(rörelseKomponent);
             AddComponent(atlasAnimationsKomponent);
@@ -45,8 +45,78 @@ namespace CocaineCrackDown.Entiteter {
 
         public override void Update() {
             base.Update();
+            Vector2 moveDir = new Vector2(inmatningsHanterare.RörelseAxelX.Value , inmatningsHanterare.RörelseAxelY.Value);
+            AtlasAnimationsKomponentUppdatera(moveDir);
+            RörelseKomponentUppdatera(moveDir);
         }
 
+        private void RörelseKomponentUppdatera(Vector2 moveDir) {
+            if(moveDir != Vector2.Zero) {
+
+                Vector2 movement = moveDir * RörelseHastighet * Time.DeltaTime;
+
+                rörelseKomponent.Röraren.CalculateMovement(ref movement , out CollisionResult res);
+                rörelseKomponent.V2Pixel.Update(ref movement);
+                rörelseKomponent.Röraren.ApplyMovement(movement);
+            }
+        }
+
+        private void AtlasAnimationsKomponentUppdatera(Vector2 moveDir) {
+
+            if(atlasAnimationsKomponent.Inmatnings.AttackKnapp.IsPressed) {
+                atlasAnimationsKomponent.Attackerar = true;
+            }
+            atlasAnimationsKomponent.AttackBox.Enabled = atlasAnimationsKomponent.Attackerar;
+            if(atlasAnimationsKomponent.Attackerar) {
+                atlasAnimationsKomponent.animation = "doug-lättattack";
+                atlasAnimationsKomponent.AttackTimer += Time.UnscaledDeltaTime;
+                if(atlasAnimationsKomponent.AttackTimer >= 0.3f) {
+                    atlasAnimationsKomponent.Attackerar = false;
+                    atlasAnimationsKomponent.AttackTimer = AtlasAnimationKomponent.AttackTimerNollstälare;
+                }
+            }
+
+            if(moveDir.Y < 0 || moveDir.Y > 0) {
+                if(atlasAnimationsKomponent.animation != "doug-gång") {
+                    atlasAnimationsKomponent.animation = "doug-gång";
+                }
+            }
+            if(moveDir.X < 0) {
+                atlasAnimationsKomponent.DougRiktning = Riktning.vänster;
+                if(atlasAnimationsKomponent.animation != "doug-gång") {
+                    atlasAnimationsKomponent.animation = "doug-gång";
+                }
+            }
+            if(moveDir.X > 0) {
+                atlasAnimationsKomponent.DougRiktning = Riktning.höger;
+                if(atlasAnimationsKomponent.animation != "doug-gång") {
+                    atlasAnimationsKomponent.animation = "doug-gång";
+                }
+            }
+            if(moveDir.X == 0 && moveDir.Y == 0 && atlasAnimationsKomponent.Attackerar == false) {
+                if(atlasAnimationsKomponent.animation != "doug-stilla") {
+                    atlasAnimationsKomponent.animation = "doug-stilla";
+                }
+            }
+            if(atlasAnimationsKomponent.DougRiktning == Riktning.höger) {
+                atlasAnimationsKomponent.Animerare.FlipX = false;
+                //fixa brugh
+                atlasAnimationsKomponent.AttackBox.SetLocalOffset(new Vector2(-20 , -31));
+
+            }
+            if(atlasAnimationsKomponent.DougRiktning == Riktning.vänster) {
+                atlasAnimationsKomponent.Animerare.FlipX = true;
+                //fixa bruhg
+                atlasAnimationsKomponent.AttackBox.SetLocalOffset(new Vector2(-4 * 0 , -31));
+            }
+
+            if(!atlasAnimationsKomponent.Animerare.IsAnimationActive(atlasAnimationsKomponent.animation)) {
+                atlasAnimationsKomponent.Animerare.Play(atlasAnimationsKomponent.animation);
+            }
+            else {
+                atlasAnimationsKomponent.Animerare.UnPause();
+            }
+        }
     }
     public class Doug : Spelare {
         public Doug(string namn = "doug" , bool lokal = false) : base(namn) {
