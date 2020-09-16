@@ -3,10 +3,21 @@ using System.Diagnostics;
 
 namespace LiteNetLib
 {
-    public class InvalidPacketException : ArgumentException
-    {
+    public class InvalidPacketException : ArgumentException {
         public InvalidPacketException(string message) : base(message)
         {
+        }
+
+        public InvalidPacketException() : base() {
+        }
+
+        public InvalidPacketException(string message,Exception innerException) : base(message,innerException) {
+        }
+
+        public InvalidPacketException(string message,string paramName) : base(message,paramName) {
+        }
+
+        public InvalidPacketException(string message,string paramName,Exception innerException) : base(message,paramName,innerException) {
         }
     }
 
@@ -14,6 +25,18 @@ namespace LiteNetLib
     {
         public TooBigPacketException(string message) : base(message)
         {
+        }
+
+        public TooBigPacketException() : base() {
+        }
+
+        public TooBigPacketException(string message,Exception innerException) : base(message,innerException) {
+        }
+
+        public TooBigPacketException(string message,string paramName) : base(message,paramName) {
+        }
+
+        public TooBigPacketException(string message,string paramName,Exception innerException) : base(message,paramName,innerException) {
         }
     }
 

@@ -22,8 +22,8 @@ namespace CocaineCrackDown.Scener {
         public override void Initialize() {
             base.Initialize();
 
-            AddEntity(new TiledMap("testnr1"));
-            AddEntity(new Randy());
+            //AddEntity(new TiledMap("testnr1"));
+            //AddEntity(new Randy());
 
             BruhUi();
 

@@ -8,11 +8,29 @@ namespace LiteNetLib.Utils
     public class InvalidTypeException : ArgumentException
     {
         public InvalidTypeException(string message) : base(message) { }
+
+        public InvalidTypeException() : base() {
+        }
+
+        public InvalidTypeException(string message,Exception innerException) : base(message,innerException) {
+        }
+
+        public InvalidTypeException(string message,string paramName) : base(message,paramName) {
+        }
+
+        public InvalidTypeException(string message,string paramName,Exception innerException) : base(message,paramName,innerException) {
+        }
     }
 
     public class ParseException : Exception
     {
         public ParseException(string message) : base(message) { }
+
+        public ParseException() : base() {
+        }
+
+        public ParseException(string message,Exception innerException) : base(message,innerException) {
+        }
     }
 
     public class NetSerializer
@@ -676,6 +694,10 @@ namespace LiteNetLib.Utils
             return ClassInfo<T>.Instance;
         }
 
+        /// <summary>
+        /// register
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
         /// <exception cref="InvalidTypeException"><typeparamref name="T"/>'s fields are not supported, or it has no fields</exception>
         public void Register<T>()
         {

@@ -47,3 +47,13 @@ C:\Users\Henrik\Source\Repos\WeanlinBoof\CocaineCrackDown\CocaineCrackDown\Nez\N
 C:\Users\Henrik\Source\Repos\WeanlinBoof\CocaineCrackDown\CocaineCrackDown\Nez\Nez.Persistence\obj\Nez.Persistence\Debug\Nez.Persistence.csproj.CopyComplete
 C:\Users\Henrik\Source\Repos\WeanlinBoof\CocaineCrackDown\CocaineCrackDown\Nez\Nez.Persistence\obj\Nez.Persistence\Debug\Nez.Persistence.dll
 C:\Users\Henrik\Source\Repos\WeanlinBoof\CocaineCrackDown\CocaineCrackDown\Nez\Nez.Persistence\obj\Nez.Persistence\Debug\Nez.Persistence.pdb
+C:\Users\Henrik\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\Nez\Nez.Persistence\bin\Debug\Nez.Persistence.deps.json
+C:\Users\Henrik\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\Nez\Nez.Persistence\bin\Debug\Nez.Persistence.dll
+C:\Users\Henrik\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\Nez\Nez.Persistence\bin\Debug\Nez.Persistence.pdb
+C:\Users\Henrik\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\Nez\Nez.Persistence\bin\Debug\Nez.dll
+C:\Users\Henrik\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\Nez\Nez.Persistence\bin\Debug\Nez.pdb
+C:\Users\Henrik\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\Nez\Nez.Persistence\obj\Nez.Persistence\Debug\Nez.Persistence.csprojAssemblyReference.cache
+C:\Users\Henrik\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\Nez\Nez.Persistence\obj\Nez.Persistence\Debug\Nez.Persistence.csproj.CoreCompileInputs.cache
+C:\Users\Henrik\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\Nez\Nez.Persistence\obj\Nez.Persistence\Debug\Nez.Persistence.csproj.CopyComplete
+C:\Users\Henrik\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\Nez\Nez.Persistence\obj\Nez.Persistence\Debug\Nez.Persistence.dll
+C:\Users\Henrik\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\Nez\Nez.Persistence\obj\Nez.Persistence\Debug\Nez.Persistence.pdb

@@ -337,9 +337,9 @@ namespace LiteNetLib
                             new IPv6MulticastOption(MulticastAddressV6));
 #endif
                     }
-                    catch (Exception)
+                    catch(Exception)
                     {
-                        // Unity3d throws exception - ignored
+                        Console.WriteLine("// Unity3d throws exception - ignored");
                     }
                 }
             }

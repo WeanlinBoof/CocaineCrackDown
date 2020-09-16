@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "DB8vqZc+AbaiOgqWH+/rM+8oedEeV3ErAp3d8fIvJRYx3/ebFg6XizUxdgOEKk4JLeaILbDf0gp98/eOhMd/xg==",
+  "dgSpecHash": "5voBaao93/HXbC5rDwd2QFSwKvs57bfdma1i4R8/UGlH59CBZMgXWlJhgWQbK8/tEP/KjUJP/XsQWi+K8EdVjQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Henrik\\Source\\Repos\\WeanlinBoof\\CocaineCrackDown\\CocaineCrackDown\\CocaineCrackDown\\CocaineCrackDown.csproj",
+  "projectFilePath": "C:\\Users\\Henrik\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\CocaineCrackDown\\CocaineCrackDown\\CocaineCrackDown.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Henrik\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0-preview.8.20407.11\\microsoft.netcore.platforms.5.0.0-preview.8.20407.11.nupkg.sha512",
     "C:\\Users\\Henrik\\.nuget\\packages\\microsoft.win32.systemevents\\5.0.0-preview.8.20407.11\\microsoft.win32.systemevents.5.0.0-preview.8.20407.11.nupkg.sha512",

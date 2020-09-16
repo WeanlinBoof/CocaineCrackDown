@@ -33,3 +33,12 @@ C:\Users\Henrik\Source\Repos\WeanlinBoof\CocaineCrackDown\CocaineCrackDown\LiteN
 C:\Users\Henrik\Source\Repos\WeanlinBoof\CocaineCrackDown\CocaineCrackDown\LiteNetLib\obj\Debug\netcoreapp3.1\LiteNetLib.csproj.CoreCompileInputs.cache
 C:\Users\Henrik\Source\Repos\WeanlinBoof\CocaineCrackDown\CocaineCrackDown\LiteNetLib\obj\Debug\netcoreapp3.1\LiteNetLib.dll
 C:\Users\Henrik\Source\Repos\WeanlinBoof\CocaineCrackDown\CocaineCrackDown\LiteNetLib\obj\Debug\netcoreapp3.1\LiteNetLib.pdb
+C:\Users\Henrik\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\LiteNetLib\bin\Debug\netcoreapp3.1\LiteNetLib.deps.json
+C:\Users\Henrik\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\LiteNetLib\bin\Debug\netcoreapp3.1\LiteNetLib.dll
+C:\Users\Henrik\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\LiteNetLib\bin\Debug\netcoreapp3.1\LiteNetLib.pdb
+C:\Users\Henrik\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\LiteNetLib\obj\Debug\netcoreapp3.1\LiteNetLib.csprojAssemblyReference.cache
+C:\Users\Henrik\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\LiteNetLib\obj\Debug\netcoreapp3.1\LiteNetLib.AssemblyInfoInputs.cache
+C:\Users\Henrik\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\LiteNetLib\obj\Debug\netcoreapp3.1\LiteNetLib.AssemblyInfo.cs
+C:\Users\Henrik\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\LiteNetLib\obj\Debug\netcoreapp3.1\LiteNetLib.csproj.CoreCompileInputs.cache
+C:\Users\Henrik\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\LiteNetLib\obj\Debug\netcoreapp3.1\LiteNetLib.dll
+C:\Users\Henrik\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\LiteNetLib\obj\Debug\netcoreapp3.1\LiteNetLib.pdb

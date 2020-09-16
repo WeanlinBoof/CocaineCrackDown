@@ -1,4 +1,6 @@
 ﻿
+using System;
+
 using LiteNetLib;
 using LiteNetLib.Utils;
 
@@ -7,14 +9,12 @@ namespace CocaineCrackDown.Nätverk {
         private readonly NetPacketProcessor NetpaketProcessor = new NetPacketProcessor();
         public KlientEventLyssnare() {
             NetpaketProcessor.RegisterNestedType(SpelarData.Serialize , SpelarData.Deserialize);
+            //Subscribe to packet receiving
+            NetpaketProcessor.SubscribeReusable<SpelarDataPacket , NetPeer>(OnSpelarDataReceived);
         }
-        public new void OnPeerConnected(NetPeer peer) {
-            SpelarDataPacket sp = new SpelarDataPacket {
-                SpelarDatan = new SpelarData() ,
-            };
-             peer.Send(NetpaketProcessor.Write(sp) , DeliveryMethod.Sequenced);
-            //or you can use             NetpaketProcessor.Send(peer , sp , DeliveryMethod.ReliableOrdered);
 
+      private void OnSpelarDataReceived(SpelarDataPacket spelarDataPacket , NetPeer netPeer) {
+            Console.WriteLine("[Server] ReceivedPacket:\n" + spelarDataPacket.SpelarDatan);
         }
     }
 }
