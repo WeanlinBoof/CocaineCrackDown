@@ -20,7 +20,7 @@ namespace CocaineCrackDown.Scener {
         public TextFieldStyle textFields;
         public TextButton KörPå;
         public Label Chat;
-        public Label Meddelade;
+        public TextField Meddelade;
         public float tids = 0f;
         public string Stäng { get; set; } = "Stang";
         public string Svara { get; set; } = "Svara";   
@@ -43,7 +43,8 @@ namespace CocaineCrackDown.Scener {
             MeddelandeSicka = " ";
             textFields = TextFieldStyle.Create(Color.White , Color.White , Color.Black , Color.Black);
             textField = new TextField(MeddelandeSicka , textFields);
-            Meddelade = new Label("", Skin.CreateDefaultSkin()).SetText(MottagetMeddelande).SetFontScale(4.0f);
+            TextFieldStyle tfs = TextFieldStyle.Create(Color.Black , Color.Black , Color.White , Color.White);
+            Meddelade = new TextField(MottagetMeddelande, tfs);
             Chat = new Label("", Skin.CreateDefaultSkin()).SetText(NyttMeddelade).SetFontScale(7.0f);
             Table.Add(Chat);
             Table.Row().SetPadTop(20);
