@@ -1,47 +1,44 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Henrik\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\CocaineCrackDown\\CocaineCrackDown\\CocaineCrackDown.csproj": {}
+    "/Users/henrikandersson/Desktop/CCD GitHub/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Henrik\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\CocaineCrackDown\\CocaineCrackDown\\CocaineCrackDown.csproj": {
+    "/Users/henrikandersson/Desktop/CCD GitHub/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Henrik\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\CocaineCrackDown\\CocaineCrackDown\\CocaineCrackDown.csproj",
+        "projectUniqueName": "/Users/henrikandersson/Desktop/CCD GitHub/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown.csproj",
         "projectName": "CocaineCrackDown",
-        "projectPath": "C:\\Users\\Henrik\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\CocaineCrackDown\\CocaineCrackDown\\CocaineCrackDown.csproj",
-        "packagesPath": "C:\\Users\\Henrik\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Henrik\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\CocaineCrackDown\\CocaineCrackDown\\obj\\",
+        "projectPath": "/Users/henrikandersson/Desktop/CCD GitHub/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown.csproj",
+        "packagesPath": "/Users/henrikandersson/.nuget/packages/",
+        "outputPath": "/Users/henrikandersson/Desktop/CCD GitHub/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "E:\\Microsoft\\Xamarin\\NuGet\\"
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Henrik\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "/Users/henrikandersson/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\Henrik\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\CocaineCrackDown\\LiteNetLib\\LiteNetLib.csproj": {
-                "projectPath": "C:\\Users\\Henrik\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\CocaineCrackDown\\LiteNetLib\\LiteNetLib.csproj"
+              "/Users/henrikandersson/Desktop/CCD GitHub/CocaineCrackDown/CocaineCrackDown/LiteNetLib/LiteNetLib.csproj": {
+                "projectPath": "/Users/henrikandersson/Desktop/CCD GitHub/CocaineCrackDown/CocaineCrackDown/LiteNetLib/LiteNetLib.csproj"
               },
-              "C:\\Users\\Henrik\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\CocaineCrackDown\\Nez\\Nez.FarseerPhysics\\Nez.FarseerPhysics.csproj": {
-                "projectPath": "C:\\Users\\Henrik\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\CocaineCrackDown\\Nez\\Nez.FarseerPhysics\\Nez.FarseerPhysics.csproj"
+              "/Users/henrikandersson/Desktop/CCD GitHub/CocaineCrackDown/CocaineCrackDown/Nez/Nez.FarseerPhysics/Nez.FarseerPhysics.csproj": {
+                "projectPath": "/Users/henrikandersson/Desktop/CCD GitHub/CocaineCrackDown/CocaineCrackDown/Nez/Nez.FarseerPhysics/Nez.FarseerPhysics.csproj"
               },
-              "C:\\Users\\Henrik\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\CocaineCrackDown\\Nez\\Nez.Persistence\\Nez.Persistence.csproj": {
-                "projectPath": "C:\\Users\\Henrik\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\CocaineCrackDown\\Nez\\Nez.Persistence\\Nez.Persistence.csproj"
+              "/Users/henrikandersson/Desktop/CCD GitHub/CocaineCrackDown/CocaineCrackDown/Nez/Nez.Persistence/Nez.Persistence.csproj": {
+                "projectPath": "/Users/henrikandersson/Desktop/CCD GitHub/CocaineCrackDown/CocaineCrackDown/Nez/Nez.Persistence/Nez.Persistence.csproj"
               },
-              "C:\\Users\\Henrik\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\CocaineCrackDown\\Nez\\Nez\\Nez.csproj": {
-                "projectPath": "C:\\Users\\Henrik\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\CocaineCrackDown\\Nez\\Nez\\Nez.csproj"
+              "/Users/henrikandersson/Desktop/CCD GitHub/CocaineCrackDown/CocaineCrackDown/Nez/Nez/Nez.csproj": {
+                "projectPath": "/Users/henrikandersson/Desktop/CCD GitHub/CocaineCrackDown/CocaineCrackDown/Nez/Nez/Nez.csproj"
               }
             }
           }
@@ -69,33 +66,30 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.402/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Henrik\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\CocaineCrackDown\\LiteNetLib\\LiteNetLib.csproj": {
+    "/Users/henrikandersson/Desktop/CCD GitHub/CocaineCrackDown/CocaineCrackDown/LiteNetLib/LiteNetLib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Henrik\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\CocaineCrackDown\\LiteNetLib\\LiteNetLib.csproj",
+        "projectUniqueName": "/Users/henrikandersson/Desktop/CCD GitHub/CocaineCrackDown/CocaineCrackDown/LiteNetLib/LiteNetLib.csproj",
         "projectName": "LiteNetLib",
-        "projectPath": "C:\\Users\\Henrik\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\CocaineCrackDown\\LiteNetLib\\LiteNetLib.csproj",
-        "packagesPath": "C:\\Users\\Henrik\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Henrik\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\CocaineCrackDown\\LiteNetLib\\obj\\",
+        "projectPath": "/Users/henrikandersson/Desktop/CCD GitHub/CocaineCrackDown/CocaineCrackDown/LiteNetLib/LiteNetLib.csproj",
+        "packagesPath": "/Users/henrikandersson/.nuget/packages/",
+        "outputPath": "/Users/henrikandersson/Desktop/CCD GitHub/CocaineCrackDown/CocaineCrackDown/LiteNetLib/obj/",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [
-          "E:\\Microsoft\\Xamarin\\NuGet\\"
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Henrik\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "/Users/henrikandersson/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -126,39 +120,36 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.402/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Henrik\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\CocaineCrackDown\\Nez\\Nez.FarseerPhysics\\Nez.FarseerPhysics.csproj": {
+    "/Users/henrikandersson/Desktop/CCD GitHub/CocaineCrackDown/CocaineCrackDown/Nez/Nez.FarseerPhysics/Nez.FarseerPhysics.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Henrik\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\CocaineCrackDown\\Nez\\Nez.FarseerPhysics\\Nez.FarseerPhysics.csproj",
+        "projectUniqueName": "/Users/henrikandersson/Desktop/CCD GitHub/CocaineCrackDown/CocaineCrackDown/Nez/Nez.FarseerPhysics/Nez.FarseerPhysics.csproj",
         "projectName": "Nez.FarseerPhysics",
-        "projectPath": "C:\\Users\\Henrik\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\CocaineCrackDown\\Nez\\Nez.FarseerPhysics\\Nez.FarseerPhysics.csproj",
-        "packagesPath": "C:\\Users\\Henrik\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Henrik\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\CocaineCrackDown\\Nez\\Nez.FarseerPhysics\\obj\\Nez.FarseerPhysics\\",
+        "projectPath": "/Users/henrikandersson/Desktop/CCD GitHub/CocaineCrackDown/CocaineCrackDown/Nez/Nez.FarseerPhysics/Nez.FarseerPhysics.csproj",
+        "packagesPath": "/Users/henrikandersson/.nuget/packages/",
+        "outputPath": "/Users/henrikandersson/Desktop/CCD GitHub/CocaineCrackDown/CocaineCrackDown/Nez/Nez.FarseerPhysics/obj/Nez.FarseerPhysics/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "E:\\Microsoft\\Xamarin\\NuGet\\"
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Henrik\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "/Users/henrikandersson/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\Henrik\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\CocaineCrackDown\\Nez\\Nez\\Nez.csproj": {
-                "projectPath": "C:\\Users\\Henrik\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\CocaineCrackDown\\Nez\\Nez\\Nez.csproj"
+              "/Users/henrikandersson/Desktop/CCD GitHub/CocaineCrackDown/CocaineCrackDown/Nez/Nez/Nez.csproj": {
+                "projectPath": "/Users/henrikandersson/Desktop/CCD GitHub/CocaineCrackDown/CocaineCrackDown/Nez/Nez/Nez.csproj"
               }
             }
           }
@@ -192,39 +183,36 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.402/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Henrik\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\CocaineCrackDown\\Nez\\Nez.Persistence\\Nez.Persistence.csproj": {
+    "/Users/henrikandersson/Desktop/CCD GitHub/CocaineCrackDown/CocaineCrackDown/Nez/Nez.Persistence/Nez.Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Henrik\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\CocaineCrackDown\\Nez\\Nez.Persistence\\Nez.Persistence.csproj",
+        "projectUniqueName": "/Users/henrikandersson/Desktop/CCD GitHub/CocaineCrackDown/CocaineCrackDown/Nez/Nez.Persistence/Nez.Persistence.csproj",
         "projectName": "Nez.Persistence",
-        "projectPath": "C:\\Users\\Henrik\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\CocaineCrackDown\\Nez\\Nez.Persistence\\Nez.Persistence.csproj",
-        "packagesPath": "C:\\Users\\Henrik\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Henrik\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\CocaineCrackDown\\Nez\\Nez.Persistence\\obj\\Nez.Persistence\\",
+        "projectPath": "/Users/henrikandersson/Desktop/CCD GitHub/CocaineCrackDown/CocaineCrackDown/Nez/Nez.Persistence/Nez.Persistence.csproj",
+        "packagesPath": "/Users/henrikandersson/.nuget/packages/",
+        "outputPath": "/Users/henrikandersson/Desktop/CCD GitHub/CocaineCrackDown/CocaineCrackDown/Nez/Nez.Persistence/obj/Nez.Persistence/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "E:\\Microsoft\\Xamarin\\NuGet\\"
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Henrik\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "/Users/henrikandersson/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\Henrik\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\CocaineCrackDown\\Nez\\Nez\\Nez.csproj": {
-                "projectPath": "C:\\Users\\Henrik\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\CocaineCrackDown\\Nez\\Nez\\Nez.csproj"
+              "/Users/henrikandersson/Desktop/CCD GitHub/CocaineCrackDown/CocaineCrackDown/Nez/Nez/Nez.csproj": {
+                "projectPath": "/Users/henrikandersson/Desktop/CCD GitHub/CocaineCrackDown/CocaineCrackDown/Nez/Nez/Nez.csproj"
               }
             }
           }
@@ -258,32 +246,29 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.402/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Henrik\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\CocaineCrackDown\\Nez\\Nez\\Nez.csproj": {
+    "/Users/henrikandersson/Desktop/CCD GitHub/CocaineCrackDown/CocaineCrackDown/Nez/Nez/Nez.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Henrik\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\CocaineCrackDown\\Nez\\Nez\\Nez.csproj",
+        "projectUniqueName": "/Users/henrikandersson/Desktop/CCD GitHub/CocaineCrackDown/CocaineCrackDown/Nez/Nez/Nez.csproj",
         "projectName": "Nez",
-        "projectPath": "C:\\Users\\Henrik\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\CocaineCrackDown\\Nez\\Nez\\Nez.csproj",
-        "packagesPath": "C:\\Users\\Henrik\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Henrik\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\CocaineCrackDown\\Nez\\Nez\\obj\\",
+        "projectPath": "/Users/henrikandersson/Desktop/CCD GitHub/CocaineCrackDown/CocaineCrackDown/Nez/Nez/Nez.csproj",
+        "packagesPath": "/Users/henrikandersson/.nuget/packages/",
+        "outputPath": "/Users/henrikandersson/Desktop/CCD GitHub/CocaineCrackDown/CocaineCrackDown/Nez/Nez/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "E:\\Microsoft\\Xamarin\\NuGet\\"
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Henrik\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "/Users/henrikandersson/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -324,7 +309,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.402/RuntimeIdentifierGraph.json"
         }
       }
     }

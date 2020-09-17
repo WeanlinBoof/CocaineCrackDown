@@ -15,7 +15,7 @@ using Nez.UI;
 namespace CocaineCrackDown.Scener {
 
     public class NätLobby : GrundScen {
-        INätHanterare NätHaterare;
+        private readonly INätHanterare NätHaterare;
         public NätLobby(INätHanterare NH) {
             NätHaterare = NH; 
         }
@@ -27,7 +27,7 @@ namespace CocaineCrackDown.Scener {
 
             BruhUi();
 
-            Table.Add(new Label("ok").SetFontScale(5));
+            Table.Add(new Label("Chat via Terminal").SetFontScale(5));
 
             Table.Row().SetPadTop(20);
 
@@ -39,7 +39,7 @@ namespace CocaineCrackDown.Scener {
 
             Table.Row().SetPadTop(20);
 
-            TextButton KörPå = Table.Add(new TextButton("Klicka" , Skin.CreateDefaultSkin())).SetFillX().SetMinHeight(30).GetElement<TextButton>();
+            TextButton KörPå = Table.Add(new TextButton("Sicka" , Skin.CreateDefaultSkin())).SetFillX().SetMinHeight(30).GetElement<TextButton>();
 
 
             KörPå.OnClicked += TextFält;
@@ -51,6 +51,7 @@ namespace CocaineCrackDown.Scener {
         }
         public override void Update() {
             base.Update();
+            
         
         }
         protected void Koppplafrån() {
