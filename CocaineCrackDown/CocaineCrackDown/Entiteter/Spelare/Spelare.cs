@@ -10,6 +10,7 @@ using Microsoft.Xna.Framework;
 
 using Nez;
 using Nez.Sprites;
+using Nez.Tiled;
 
 namespace CocaineCrackDown.Entiteter {
     public class Spelare : Entity {
@@ -21,6 +22,7 @@ namespace CocaineCrackDown.Entiteter {
         protected RörelseKomponent rörelseKomponent;
         protected AtlasAnimationKomponent atlasAnimationsKomponent;
         protected FollowCamera followCamera;
+
         public Spelare(string namn) {
             Namn = namn;
             inmatningsHanterare = new InmatningsHanterare();
@@ -29,14 +31,17 @@ namespace CocaineCrackDown.Entiteter {
             followCamera = new FollowCamera(this);
             Core.RegisterGlobalManager(inmatningsHanterare);
         }
+
         public bool Lokal { get; set; }
+
         public override void OnAddedToScene() {
             Name = Namn;
             Position = new Vector2(Scene.SceneRenderTargetSize.X / 2 , Scene.SceneRenderTargetSize.Y / 2);
-            //AddComponent(new KollisionsKomponent());
             AddComponent(rörelseKomponent);
             AddComponent(atlasAnimationsKomponent);
             AddComponent(followCamera);
+            TiledMap Map = (TiledMap)Scene.FindEntity("testnr1");
+            Parent = Map.Transform;
         }
 
         public override void OnRemovedFromScene() {
@@ -116,17 +121,6 @@ namespace CocaineCrackDown.Entiteter {
             else {
                 atlasAnimationsKomponent.Animerare.UnPause();
             }
-        }
-    }
-    public class Doug : Spelare {
-        public Doug(string namn = "doug" , bool lokal = false) : base(namn) {
-            Lokal = lokal;
-        }
-    }
-
-    public class Randy : Spelare {
-        public Randy(string namn = "randy", bool lokal = false) : base(namn) {
-            Lokal = lokal;
         }
     }
 }
