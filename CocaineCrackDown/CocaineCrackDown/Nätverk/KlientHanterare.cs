@@ -25,7 +25,7 @@ namespace CocaineCrackDown.Nätverk {
             Hanterare.Start();
             Hanterare.Connect(ip , StandigaVarden.PORTEN , "");
             Lyssnare.PeerConnectedEvent += peer => {
-                MottagenString = $"Connected To: {peer.EndPoint.Address.ToString()}";
+                MottagenString = $"Connected To";
                 Console.WriteLine("We got connection: {0}" , peer.EndPoint); // Show peer ip
             };
             Lyssnare.NetworkReceiveEvent += (fromPeer , dataReader , deliveryMethod) => {

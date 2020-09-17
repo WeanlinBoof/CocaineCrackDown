@@ -40,7 +40,7 @@ namespace CocaineCrackDown.Nätverk {
             };
         
             Lyssnare.PeerConnectedEvent += peer => {
-                MottagenString = $"We got connection: {peer.EndPoint.Address.ToString()}";
+                MottagenString = $"We got connection";
                 Console.WriteLine("We got connection: {0}" , peer.EndPoint); // Show peer ip
             };
         }

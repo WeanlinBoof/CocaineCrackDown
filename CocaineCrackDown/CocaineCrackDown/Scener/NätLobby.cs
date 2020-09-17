@@ -58,7 +58,12 @@ namespace CocaineCrackDown.Scener {
         }
         public override void Update() {
             base.Update();
-            Meddelade.SetText(MottagetMeddelande);
+            if(MottagetMeddelande != NätHaterare.MottagenString) {
+                MottagetMeddelande = NätHaterare.MottagenString;
+                Meddelade.SetText(MottagetMeddelande);
+                
+            }
+
         }
         protected void Koppplafrån() {
 
