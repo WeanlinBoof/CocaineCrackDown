@@ -1,43 +1,65 @@
-C:\Skrivbord\CCD Ultra Rewrite\CocaineCrackDown\Nez\Nez\bin\Debug\Nez.deps.json
-C:\Skrivbord\CCD Ultra Rewrite\CocaineCrackDown\Nez\Nez\bin\Debug\Nez.dll
-C:\Skrivbord\CCD Ultra Rewrite\CocaineCrackDown\Nez\Nez\bin\Debug\Nez.pdb
-C:\Skrivbord\CCD Ultra Rewrite\CocaineCrackDown\Nez\Nez\bin\Debug\Microsoft.Win32.SystemEvents.dll
-C:\Skrivbord\CCD Ultra Rewrite\CocaineCrackDown\Nez\Nez\bin\Debug\MonoGame.Framework.dll
-C:\Skrivbord\CCD Ultra Rewrite\CocaineCrackDown\Nez\Nez\bin\Debug\System.Drawing.Common.dll
-C:\Skrivbord\CCD Ultra Rewrite\CocaineCrackDown\Nez\Nez\bin\Debug\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
-C:\Skrivbord\CCD Ultra Rewrite\CocaineCrackDown\Nez\Nez\bin\Debug\runtimes\linux-x64\native\libSDL2-2.0.so.0
-C:\Skrivbord\CCD Ultra Rewrite\CocaineCrackDown\Nez\Nez\bin\Debug\runtimes\linux-x64\native\libopenal.so.1
-C:\Skrivbord\CCD Ultra Rewrite\CocaineCrackDown\Nez\Nez\bin\Debug\runtimes\osx\native\libSDL2-2.0.0.dylib
-C:\Skrivbord\CCD Ultra Rewrite\CocaineCrackDown\Nez\Nez\bin\Debug\runtimes\osx\native\libopenal.1.dylib
-C:\Skrivbord\CCD Ultra Rewrite\CocaineCrackDown\Nez\Nez\bin\Debug\runtimes\win-x64\native\SDL2.dll
-C:\Skrivbord\CCD Ultra Rewrite\CocaineCrackDown\Nez\Nez\bin\Debug\runtimes\win-x64\native\soft_oal.dll
-C:\Skrivbord\CCD Ultra Rewrite\CocaineCrackDown\Nez\Nez\bin\Debug\runtimes\win-x86\native\SDL2.dll
-C:\Skrivbord\CCD Ultra Rewrite\CocaineCrackDown\Nez\Nez\bin\Debug\runtimes\win-x86\native\soft_oal.dll
-C:\Skrivbord\CCD Ultra Rewrite\CocaineCrackDown\Nez\Nez\bin\Debug\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
-C:\Skrivbord\CCD Ultra Rewrite\CocaineCrackDown\Nez\Nez\bin\Debug\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
-C:\Skrivbord\CCD Ultra Rewrite\CocaineCrackDown\Nez\Nez\obj\Nez\Debug\Nez.csproj.CoreCompileInputs.cache
-C:\Skrivbord\CCD Ultra Rewrite\CocaineCrackDown\Nez\Nez\obj\Nez\Debug\Nez.csproj.CopyComplete
-C:\Skrivbord\CCD Ultra Rewrite\CocaineCrackDown\Nez\Nez\obj\Nez\Debug\Nez.dll
-C:\Skrivbord\CCD Ultra Rewrite\CocaineCrackDown\Nez\Nez\obj\Nez\Debug\Nez.pdb
-C:\Skrivbord\CCD Ultra Rewrite\CocaineCrackDown\Nez\Nez\obj\Nez\Debug\Nez.csprojAssemblyReference.cache
-C:\Users\Anders H. Andersson\Desktop\CCD-NOW\CCD-DEV\CocaineCrackDown\Nez\Nez\bin\Debug\Nez.deps.json
-C:\Users\Anders H. Andersson\Desktop\CCD-NOW\CCD-DEV\CocaineCrackDown\Nez\Nez\bin\Debug\Nez.dll
-C:\Users\Anders H. Andersson\Desktop\CCD-NOW\CCD-DEV\CocaineCrackDown\Nez\Nez\bin\Debug\Nez.pdb
-C:\Users\Anders H. Andersson\Desktop\CCD-NOW\CCD-DEV\CocaineCrackDown\Nez\Nez\bin\Debug\Microsoft.Win32.SystemEvents.dll
-C:\Users\Anders H. Andersson\Desktop\CCD-NOW\CCD-DEV\CocaineCrackDown\Nez\Nez\bin\Debug\MonoGame.Framework.dll
-C:\Users\Anders H. Andersson\Desktop\CCD-NOW\CCD-DEV\CocaineCrackDown\Nez\Nez\bin\Debug\System.Drawing.Common.dll
-C:\Users\Anders H. Andersson\Desktop\CCD-NOW\CCD-DEV\CocaineCrackDown\Nez\Nez\bin\Debug\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
-C:\Users\Anders H. Andersson\Desktop\CCD-NOW\CCD-DEV\CocaineCrackDown\Nez\Nez\bin\Debug\runtimes\linux-x64\native\libSDL2-2.0.so.0
-C:\Users\Anders H. Andersson\Desktop\CCD-NOW\CCD-DEV\CocaineCrackDown\Nez\Nez\bin\Debug\runtimes\linux-x64\native\libopenal.so.1
-C:\Users\Anders H. Andersson\Desktop\CCD-NOW\CCD-DEV\CocaineCrackDown\Nez\Nez\bin\Debug\runtimes\osx\native\libSDL2-2.0.0.dylib
-C:\Users\Anders H. Andersson\Desktop\CCD-NOW\CCD-DEV\CocaineCrackDown\Nez\Nez\bin\Debug\runtimes\osx\native\libopenal.1.dylib
-C:\Users\Anders H. Andersson\Desktop\CCD-NOW\CCD-DEV\CocaineCrackDown\Nez\Nez\bin\Debug\runtimes\win-x64\native\SDL2.dll
-C:\Users\Anders H. Andersson\Desktop\CCD-NOW\CCD-DEV\CocaineCrackDown\Nez\Nez\bin\Debug\runtimes\win-x64\native\soft_oal.dll
-C:\Users\Anders H. Andersson\Desktop\CCD-NOW\CCD-DEV\CocaineCrackDown\Nez\Nez\bin\Debug\runtimes\win-x86\native\SDL2.dll
-C:\Users\Anders H. Andersson\Desktop\CCD-NOW\CCD-DEV\CocaineCrackDown\Nez\Nez\bin\Debug\runtimes\win-x86\native\soft_oal.dll
-C:\Users\Anders H. Andersson\Desktop\CCD-NOW\CCD-DEV\CocaineCrackDown\Nez\Nez\bin\Debug\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
-C:\Users\Anders H. Andersson\Desktop\CCD-NOW\CCD-DEV\CocaineCrackDown\Nez\Nez\bin\Debug\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
-C:\Users\Anders H. Andersson\Desktop\CCD-NOW\CCD-DEV\CocaineCrackDown\Nez\Nez\obj\Nez\Debug\Nez.csproj.CoreCompileInputs.cache
-C:\Users\Anders H. Andersson\Desktop\CCD-NOW\CCD-DEV\CocaineCrackDown\Nez\Nez\obj\Nez\Debug\Nez.csproj.CopyComplete
-C:\Users\Anders H. Andersson\Desktop\CCD-NOW\CCD-DEV\CocaineCrackDown\Nez\Nez\obj\Nez\Debug\Nez.dll
-C:\Users\Anders H. Andersson\Desktop\CCD-NOW\CCD-DEV\CocaineCrackDown\Nez\Nez\obj\Nez\Debug\Nez.pdb
+C:/Skrivbord/CCD Ultra Rewrite/CocaineCrackDown/Nez/Nez/bin/Debug/Nez.deps.json
+C:/Skrivbord/CCD Ultra Rewrite/CocaineCrackDown/Nez/Nez/bin/Debug/Nez.dll
+C:/Skrivbord/CCD Ultra Rewrite/CocaineCrackDown/Nez/Nez/bin/Debug/Nez.pdb
+C:/Skrivbord/CCD Ultra Rewrite/CocaineCrackDown/Nez/Nez/bin/Debug/Microsoft.Win32.SystemEvents.dll
+C:/Skrivbord/CCD Ultra Rewrite/CocaineCrackDown/Nez/Nez/bin/Debug/MonoGame.Framework.dll
+C:/Skrivbord/CCD Ultra Rewrite/CocaineCrackDown/Nez/Nez/bin/Debug/System.Drawing.Common.dll
+C:/Skrivbord/CCD Ultra Rewrite/CocaineCrackDown/Nez/Nez/bin/Debug/runtimes/win/lib/netcoreapp3.0/Microsoft.Win32.SystemEvents.dll
+C:/Skrivbord/CCD Ultra Rewrite/CocaineCrackDown/Nez/Nez/bin/Debug/runtimes/linux-x64/native/libSDL2-2.0.so.0
+C:/Skrivbord/CCD Ultra Rewrite/CocaineCrackDown/Nez/Nez/bin/Debug/runtimes/linux-x64/native/libopenal.so.1
+C:/Skrivbord/CCD Ultra Rewrite/CocaineCrackDown/Nez/Nez/bin/Debug/runtimes/osx/native/libSDL2-2.0.0.dylib
+C:/Skrivbord/CCD Ultra Rewrite/CocaineCrackDown/Nez/Nez/bin/Debug/runtimes/osx/native/libopenal.1.dylib
+C:/Skrivbord/CCD Ultra Rewrite/CocaineCrackDown/Nez/Nez/bin/Debug/runtimes/win-x64/native/SDL2.dll
+C:/Skrivbord/CCD Ultra Rewrite/CocaineCrackDown/Nez/Nez/bin/Debug/runtimes/win-x64/native/soft_oal.dll
+C:/Skrivbord/CCD Ultra Rewrite/CocaineCrackDown/Nez/Nez/bin/Debug/runtimes/win-x86/native/SDL2.dll
+C:/Skrivbord/CCD Ultra Rewrite/CocaineCrackDown/Nez/Nez/bin/Debug/runtimes/win-x86/native/soft_oal.dll
+C:/Skrivbord/CCD Ultra Rewrite/CocaineCrackDown/Nez/Nez/bin/Debug/runtimes/unix/lib/netcoreapp3.0/System.Drawing.Common.dll
+C:/Skrivbord/CCD Ultra Rewrite/CocaineCrackDown/Nez/Nez/bin/Debug/runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.dll
+C:/Skrivbord/CCD Ultra Rewrite/CocaineCrackDown/Nez/Nez/obj/Nez/Debug/Nez.csproj.CoreCompileInputs.cache
+C:/Skrivbord/CCD Ultra Rewrite/CocaineCrackDown/Nez/Nez/obj/Nez/Debug/Nez.csproj.CopyComplete
+C:/Skrivbord/CCD Ultra Rewrite/CocaineCrackDown/Nez/Nez/obj/Nez/Debug/Nez.dll
+C:/Skrivbord/CCD Ultra Rewrite/CocaineCrackDown/Nez/Nez/obj/Nez/Debug/Nez.pdb
+C:/Skrivbord/CCD Ultra Rewrite/CocaineCrackDown/Nez/Nez/obj/Nez/Debug/Nez.csprojAssemblyReference.cache
+C:/Users/Anders H. Andersson/Desktop/CCD-NOW/CCD-DEV/CocaineCrackDown/Nez/Nez/bin/Debug/Nez.deps.json
+C:/Users/Anders H. Andersson/Desktop/CCD-NOW/CCD-DEV/CocaineCrackDown/Nez/Nez/bin/Debug/Nez.dll
+C:/Users/Anders H. Andersson/Desktop/CCD-NOW/CCD-DEV/CocaineCrackDown/Nez/Nez/bin/Debug/Nez.pdb
+C:/Users/Anders H. Andersson/Desktop/CCD-NOW/CCD-DEV/CocaineCrackDown/Nez/Nez/bin/Debug/Microsoft.Win32.SystemEvents.dll
+C:/Users/Anders H. Andersson/Desktop/CCD-NOW/CCD-DEV/CocaineCrackDown/Nez/Nez/bin/Debug/MonoGame.Framework.dll
+C:/Users/Anders H. Andersson/Desktop/CCD-NOW/CCD-DEV/CocaineCrackDown/Nez/Nez/bin/Debug/System.Drawing.Common.dll
+C:/Users/Anders H. Andersson/Desktop/CCD-NOW/CCD-DEV/CocaineCrackDown/Nez/Nez/bin/Debug/runtimes/win/lib/netcoreapp3.0/Microsoft.Win32.SystemEvents.dll
+C:/Users/Anders H. Andersson/Desktop/CCD-NOW/CCD-DEV/CocaineCrackDown/Nez/Nez/bin/Debug/runtimes/linux-x64/native/libSDL2-2.0.so.0
+C:/Users/Anders H. Andersson/Desktop/CCD-NOW/CCD-DEV/CocaineCrackDown/Nez/Nez/bin/Debug/runtimes/linux-x64/native/libopenal.so.1
+C:/Users/Anders H. Andersson/Desktop/CCD-NOW/CCD-DEV/CocaineCrackDown/Nez/Nez/bin/Debug/runtimes/osx/native/libSDL2-2.0.0.dylib
+C:/Users/Anders H. Andersson/Desktop/CCD-NOW/CCD-DEV/CocaineCrackDown/Nez/Nez/bin/Debug/runtimes/osx/native/libopenal.1.dylib
+C:/Users/Anders H. Andersson/Desktop/CCD-NOW/CCD-DEV/CocaineCrackDown/Nez/Nez/bin/Debug/runtimes/win-x64/native/SDL2.dll
+C:/Users/Anders H. Andersson/Desktop/CCD-NOW/CCD-DEV/CocaineCrackDown/Nez/Nez/bin/Debug/runtimes/win-x64/native/soft_oal.dll
+C:/Users/Anders H. Andersson/Desktop/CCD-NOW/CCD-DEV/CocaineCrackDown/Nez/Nez/bin/Debug/runtimes/win-x86/native/SDL2.dll
+C:/Users/Anders H. Andersson/Desktop/CCD-NOW/CCD-DEV/CocaineCrackDown/Nez/Nez/bin/Debug/runtimes/win-x86/native/soft_oal.dll
+C:/Users/Anders H. Andersson/Desktop/CCD-NOW/CCD-DEV/CocaineCrackDown/Nez/Nez/bin/Debug/runtimes/unix/lib/netcoreapp3.0/System.Drawing.Common.dll
+C:/Users/Anders H. Andersson/Desktop/CCD-NOW/CCD-DEV/CocaineCrackDown/Nez/Nez/bin/Debug/runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.dll
+C:/Users/Anders H. Andersson/Desktop/CCD-NOW/CCD-DEV/CocaineCrackDown/Nez/Nez/obj/Nez/Debug/Nez.csproj.CoreCompileInputs.cache
+C:/Users/Anders H. Andersson/Desktop/CCD-NOW/CCD-DEV/CocaineCrackDown/Nez/Nez/obj/Nez/Debug/Nez.csproj.CopyComplete
+C:/Users/Anders H. Andersson/Desktop/CCD-NOW/CCD-DEV/CocaineCrackDown/Nez/Nez/obj/Nez/Debug/Nez.dll
+C:/Users/Anders H. Andersson/Desktop/CCD-NOW/CCD-DEV/CocaineCrackDown/Nez/Nez/obj/Nez/Debug/Nez.pdb
+/Users/henrikandersson/Desktop/CCD GitHub/CocaineCrackDown/CocaineCrackDown/Nez/Nez/bin/Debug/Nez.deps.json
+/Users/henrikandersson/Desktop/CCD GitHub/CocaineCrackDown/CocaineCrackDown/Nez/Nez/bin/Debug/Nez.dll
+/Users/henrikandersson/Desktop/CCD GitHub/CocaineCrackDown/CocaineCrackDown/Nez/Nez/bin/Debug/Nez.pdb
+/Users/henrikandersson/Desktop/CCD GitHub/CocaineCrackDown/CocaineCrackDown/Nez/Nez/bin/Debug/Microsoft.Win32.SystemEvents.dll
+/Users/henrikandersson/Desktop/CCD GitHub/CocaineCrackDown/CocaineCrackDown/Nez/Nez/bin/Debug/MonoGame.Framework.dll
+/Users/henrikandersson/Desktop/CCD GitHub/CocaineCrackDown/CocaineCrackDown/Nez/Nez/bin/Debug/System.Drawing.Common.dll
+/Users/henrikandersson/Desktop/CCD GitHub/CocaineCrackDown/CocaineCrackDown/Nez/Nez/bin/Debug/runtimes/win/lib/netcoreapp3.0/Microsoft.Win32.SystemEvents.dll
+/Users/henrikandersson/Desktop/CCD GitHub/CocaineCrackDown/CocaineCrackDown/Nez/Nez/bin/Debug/runtimes/linux-x64/native/libSDL2-2.0.so.0
+/Users/henrikandersson/Desktop/CCD GitHub/CocaineCrackDown/CocaineCrackDown/Nez/Nez/bin/Debug/runtimes/linux-x64/native/libopenal.so.1
+/Users/henrikandersson/Desktop/CCD GitHub/CocaineCrackDown/CocaineCrackDown/Nez/Nez/bin/Debug/runtimes/osx/native/libSDL2-2.0.0.dylib
+/Users/henrikandersson/Desktop/CCD GitHub/CocaineCrackDown/CocaineCrackDown/Nez/Nez/bin/Debug/runtimes/osx/native/libopenal.1.dylib
+/Users/henrikandersson/Desktop/CCD GitHub/CocaineCrackDown/CocaineCrackDown/Nez/Nez/bin/Debug/runtimes/win-x64/native/SDL2.dll
+/Users/henrikandersson/Desktop/CCD GitHub/CocaineCrackDown/CocaineCrackDown/Nez/Nez/bin/Debug/runtimes/win-x64/native/soft_oal.dll
+/Users/henrikandersson/Desktop/CCD GitHub/CocaineCrackDown/CocaineCrackDown/Nez/Nez/bin/Debug/runtimes/win-x86/native/SDL2.dll
+/Users/henrikandersson/Desktop/CCD GitHub/CocaineCrackDown/CocaineCrackDown/Nez/Nez/bin/Debug/runtimes/win-x86/native/soft_oal.dll
+/Users/henrikandersson/Desktop/CCD GitHub/CocaineCrackDown/CocaineCrackDown/Nez/Nez/bin/Debug/runtimes/unix/lib/netcoreapp3.0/System.Drawing.Common.dll
+/Users/henrikandersson/Desktop/CCD GitHub/CocaineCrackDown/CocaineCrackDown/Nez/Nez/bin/Debug/runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.dll
+/Users/henrikandersson/Desktop/CCD GitHub/CocaineCrackDown/CocaineCrackDown/Nez/Nez/obj/Nez/Debug/Nez.csprojAssemblyReference.cache
+/Users/henrikandersson/Desktop/CCD GitHub/CocaineCrackDown/CocaineCrackDown/Nez/Nez/obj/Nez/Debug/Nez.csproj.CoreCompileInputs.cache
+/Users/henrikandersson/Desktop/CCD GitHub/CocaineCrackDown/CocaineCrackDown/Nez/Nez/obj/Nez/Debug/Nez.csproj.CopyComplete
+/Users/henrikandersson/Desktop/CCD GitHub/CocaineCrackDown/CocaineCrackDown/Nez/Nez/obj/Nez/Debug/Nez.dll
+/Users/henrikandersson/Desktop/CCD GitHub/CocaineCrackDown/CocaineCrackDown/Nez/Nez/obj/Nez/Debug/Nez.pdb

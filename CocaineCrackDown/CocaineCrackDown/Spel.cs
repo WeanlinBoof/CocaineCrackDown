@@ -1,4 +1,4 @@
-﻿//using CocaineCrackDown.Scener;
+﻿using CocaineCrackDown.Scener;
 
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
@@ -25,6 +25,7 @@ namespace CocaineCrackDown {
             //gör knappen  till f10 för att öppna den
             DebugConsole.ConsoleKey = Keys.Tab;
             //lägger scen ett som start scen
+            Scene = new ScenEtt();
 
         }
     }

@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "YM2NFrTgK/wDdQ5y9zbmJMTH9aVqwsdM1Iy9Eaj0verGNKBiQBRZezksSVoUpX5Sh8hBCVxUveAjegT2YTPNyg==",
+  "dgSpecHash": "ExYHZp8azPCo0HcexPcniGOQ83XkX4FNXZ0JksagrkidscgJG7DcJy+w7/w6LfW0cJQ2djRemsQJFE6pLgbzOw==",
   "success": true,
-  "projectFilePath": "C:\\Skrivbord\\CCD Ultra Rewrite\\CocaineCrackDown\\Nez\\Nez.FarseerPhysics\\Nez.FarseerPhysics.csproj",
+  "projectFilePath": "/Users/henrikandersson/Desktop/CCD GitHub/CocaineCrackDown/CocaineCrackDown/Nez/Nez.FarseerPhysics/Nez.FarseerPhysics.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Henrik\\.nuget\\packages\\microsoft.netcore.platforms\\3.0.1\\microsoft.netcore.platforms.3.0.1.nupkg.sha512",
-    "C:\\Users\\Henrik\\.nuget\\packages\\microsoft.win32.systemevents\\4.6.0\\microsoft.win32.systemevents.4.6.0.nupkg.sha512",
-    "C:\\Users\\Henrik\\.nuget\\packages\\monogame.framework.desktopgl\\3.8.0.1641\\monogame.framework.desktopgl.3.8.0.1641.nupkg.sha512",
-    "C:\\Users\\Henrik\\.nuget\\packages\\system.drawing.common\\4.6.2\\system.drawing.common.4.6.2.nupkg.sha512"
+    "/Users/henrikandersson/.nuget/packages/microsoft.netcore.platforms/3.1.0/microsoft.netcore.platforms.3.1.0.nupkg.sha512",
+    "/Users/henrikandersson/.nuget/packages/microsoft.win32.systemevents/4.7.0/microsoft.win32.systemevents.4.7.0.nupkg.sha512",
+    "/Users/henrikandersson/.nuget/packages/monogame.framework.desktopgl/3.8.0.1641/monogame.framework.desktopgl.3.8.0.1641.nupkg.sha512",
+    "/Users/henrikandersson/.nuget/packages/system.drawing.common/4.7.0/system.drawing.common.4.7.0.nupkg.sha512"
   ],
   "logs": []
 }

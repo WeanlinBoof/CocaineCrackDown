@@ -1,0 +1,42 @@
+﻿<Properties StartupConfiguration="{7A2C74C9-1AAA-491C-8055-586F63FD209A}|Default">
+  <MonoDevelop.Ide.ItemProperties.CocaineCrackDown PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Entiteter/Doug.cs">
+    <Files>
+      <File FileName="Spel.cs" Line="28" Column="32" />
+      <File FileName="StandardScenFormat.cs" Line="4" Column="34" />
+      <File FileName="Scener/ScenEtt.cs" Line="12" Column="10" />
+      <File FileName="Entiteter/Entitet.cs" Line="20" Column="43" />
+      <File FileName="Entiteter/Doug.cs" Line="61" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="CocaineCrackDown" expanded="True">
+            <Node name="CocaineCrackDown" expanded="True">
+              <Node name="Entiteter" expanded="True">
+                <Node name="Doug.cs" selected="True" />
+              </Node>
+              <Node name="Scener" expanded="True" />
+            </Node>
+            <Node name="Nez" expanded="True">
+              <Node name="ECS" expanded="True">
+                <Node name="Components" expanded="True">
+                  <Node name="Physics" expanded="True" />
+                  <Node name="Renderables" expanded="True">
+                    <Node name="Sprites" expanded="True" />
+                  </Node>
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

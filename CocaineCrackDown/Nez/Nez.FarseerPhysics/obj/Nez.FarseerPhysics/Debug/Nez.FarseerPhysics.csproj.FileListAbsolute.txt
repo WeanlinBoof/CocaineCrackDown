@@ -1,2 +1,12 @@
-C:\Skrivbord\CCD Ultra Rewrite\CocaineCrackDown\Nez\Nez.FarseerPhysics\obj\Nez.FarseerPhysics\Debug\Nez.FarseerPhysics.csprojAssemblyReference.cache
-C:\Skrivbord\CCD Ultra Rewrite\CocaineCrackDown\Nez\Nez.FarseerPhysics\obj\Nez.FarseerPhysics\Debug\Nez.FarseerPhysics.csproj.CoreCompileInputs.cache
+C:/Skrivbord/CCD Ultra Rewrite/CocaineCrackDown/Nez/Nez.FarseerPhysics/obj/Nez.FarseerPhysics/Debug/Nez.FarseerPhysics.csprojAssemblyReference.cache
+C:/Skrivbord/CCD Ultra Rewrite/CocaineCrackDown/Nez/Nez.FarseerPhysics/obj/Nez.FarseerPhysics/Debug/Nez.FarseerPhysics.csproj.CoreCompileInputs.cache
+/Users/henrikandersson/Desktop/CCD GitHub/CocaineCrackDown/CocaineCrackDown/Nez/Nez.FarseerPhysics/bin/Debug/Nez.FarseerPhysics.deps.json
+/Users/henrikandersson/Desktop/CCD GitHub/CocaineCrackDown/CocaineCrackDown/Nez/Nez.FarseerPhysics/bin/Debug/Nez.FarseerPhysics.dll
+/Users/henrikandersson/Desktop/CCD GitHub/CocaineCrackDown/CocaineCrackDown/Nez/Nez.FarseerPhysics/bin/Debug/Nez.FarseerPhysics.pdb
+/Users/henrikandersson/Desktop/CCD GitHub/CocaineCrackDown/CocaineCrackDown/Nez/Nez.FarseerPhysics/bin/Debug/Nez.dll
+/Users/henrikandersson/Desktop/CCD GitHub/CocaineCrackDown/CocaineCrackDown/Nez/Nez.FarseerPhysics/bin/Debug/Nez.pdb
+/Users/henrikandersson/Desktop/CCD GitHub/CocaineCrackDown/CocaineCrackDown/Nez/Nez.FarseerPhysics/obj/Nez.FarseerPhysics/Debug/Nez.FarseerPhysics.csprojAssemblyReference.cache
+/Users/henrikandersson/Desktop/CCD GitHub/CocaineCrackDown/CocaineCrackDown/Nez/Nez.FarseerPhysics/obj/Nez.FarseerPhysics/Debug/Nez.FarseerPhysics.csproj.CoreCompileInputs.cache
+/Users/henrikandersson/Desktop/CCD GitHub/CocaineCrackDown/CocaineCrackDown/Nez/Nez.FarseerPhysics/obj/Nez.FarseerPhysics/Debug/Nez.FarseerPhysics.csproj.CopyComplete
+/Users/henrikandersson/Desktop/CCD GitHub/CocaineCrackDown/CocaineCrackDown/Nez/Nez.FarseerPhysics/obj/Nez.FarseerPhysics/Debug/Nez.FarseerPhysics.dll
+/Users/henrikandersson/Desktop/CCD GitHub/CocaineCrackDown/CocaineCrackDown/Nez/Nez.FarseerPhysics/obj/Nez.FarseerPhysics/Debug/Nez.FarseerPhysics.pdb

@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "FR5yJ39VcSdb0HUOpuWRUWXEOkaz+RHWl1/WSXzmE+TKmVEG6ByIAovyL7F1Ul8wHXC6SgSw+7TYrkw9W2JrXQ==",
+  "dgSpecHash": "sOAezOxfjVSb9WLxCLxrnQfDqd1KcYM05VfRT6Kl3HQUILNE8NdwyYwbiVvC8L10yTTB25yEZBbNh+wrIX+5lg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Anders H. Andersson\\Desktop\\CCD-NOW\\CCD-DEV\\CocaineCrackDown\\CocaineCrackDown\\CocaineCrackDown.csproj",
+  "projectFilePath": "/Users/henrikandersson/Desktop/CCD GitHub/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Anders H. Andersson\\.nuget\\packages\\microsoft.netcore.platforms\\3.0.0\\microsoft.netcore.platforms.3.0.0.nupkg.sha512",
-    "C:\\Users\\Anders H. Andersson\\.nuget\\packages\\microsoft.win32.systemevents\\4.6.0\\microsoft.win32.systemevents.4.6.0.nupkg.sha512",
-    "C:\\Users\\Anders H. Andersson\\.nuget\\packages\\monogame.framework.desktopgl\\3.8.0.1641\\monogame.framework.desktopgl.3.8.0.1641.nupkg.sha512",
-    "C:\\Users\\Anders H. Andersson\\.nuget\\packages\\system.drawing.common\\4.6.0\\system.drawing.common.4.6.0.nupkg.sha512"
+    "/Users/henrikandersson/.nuget/packages/microsoft.netcore.platforms/3.1.0/microsoft.netcore.platforms.3.1.0.nupkg.sha512",
+    "/Users/henrikandersson/.nuget/packages/microsoft.win32.systemevents/4.7.0/microsoft.win32.systemevents.4.7.0.nupkg.sha512",
+    "/Users/henrikandersson/.nuget/packages/monogame.framework.desktopgl/3.8.0.1641/monogame.framework.desktopgl.3.8.0.1641.nupkg.sha512",
+    "/Users/henrikandersson/.nuget/packages/system.drawing.common/4.7.0/system.drawing.common.4.7.0.nupkg.sha512"
   ],
   "logs": []
 }
