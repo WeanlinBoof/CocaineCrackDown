@@ -15,31 +15,41 @@ using Nez.UI;
 namespace CocaineCrackDown.Scener {
 
     public class NätLobby : GrundScen {
-        private INätHanterare NätHaterare;       
-        private string Chat = "Nytt Meddelade";
-        public string MottagetMeddelande = "inget just nu";
+        public INätHanterare NätHaterare;            
         public TextField textField;
-        public string MeddelandeSicka = "";
         public TextFieldStyle textFields;
         public TextButton KörPå;
-        public string Stäng = "Stang";
-        public string Svara = "Svara";
+        public Label Chat;
+        public Label Meddelade;
         public float tids = 0f;
+        public string Stäng { get; set; } = "Stang";
+        public string Svara { get; set; } = "Svara";   
+        public string NyttMeddelade { get; set; } = "Nytt Meddelade";
+        public string MottagetMeddelande { get; set; } = "";
+        public string MeddelandeSicka { get; set; } = "";
         public NätLobby(INätHanterare NH) {
-            NätHaterare = NH; 
+            NätHaterare = NH;            
         }
         public override void Initialize() {
-            base.Initialize();
-
-            //AddEntity(new TiledMap("testnr1"));
-            //AddEntity(new Randy());
-
             BruhUi();
-
-            textFields = TextFieldStyle.Create(Color.White , Color.Yellow , Color.DimGray , Color.Transparent);
-
+            Stäng = "Stang";
+            Svara = "Svara";
+            NyttMeddelade = "Nytt Meddelade";
+            MottagetMeddelande = " ";
+            MeddelandeSicka = " ";
+            textFields = TextFieldStyle.Create(Color.White , Color.White , Color.Black , Color.Black);
             textField = new TextField(MeddelandeSicka , textFields);
-            ShowDialog(Chat, MottagetMeddelande, Stäng,Svara);
+            Meddelade = new Label("", Skin.CreateDefaultSkin()).SetText(MottagetMeddelande).SetFontScale(4.0f);
+            Chat = new Label("", Skin.CreateDefaultSkin()).SetText(NyttMeddelade).SetFontScale(7.0f);
+            Table.Add(Chat);
+            Table.Row().SetPadTop(20);
+            Table.Add(Meddelade);
+            Table.Row().SetPadTop(20);
+            Table.Add(textField);
+            Table.Row().SetPadTop(20);
+            KörPå = Table.Add(new TextButton(Svara , Skin.CreateDefaultSkin())).SetMinHeight(30).GetElement<TextButton>();
+            KörPå.OnClicked += TextFält;
+
         }
         public override void OnStart() {
             base.OnStart();
@@ -48,51 +58,10 @@ namespace CocaineCrackDown.Scener {
         }
         public override void Update() {
             base.Update();
-
-            if(MottagetMeddelande != null) { 
-                MottagetMeddelande = NätHaterare.MottagenString;
-                ShowDialog(Chat, MottagetMeddelande, Stäng,Svara);
-                tids = Time.DeltaTime;
-                if(tids > 0.5f) {
-                    MottagetMeddelande = null;
-                    tids = 0f;
-
-                }
-
-            }
-            
-            
+            Meddelade.SetText(MottagetMeddelande);
         }
         protected void Koppplafrån() {
 
-        }
-
-
-         
-    public Dialog ShowDialog(string title, string MeddelandeText, string Stäng,string Svara)
-	{
-            Skin skin = Skin.CreateDefaultSkin();
-
-            WindowStyle style = new WindowStyle
-			{
-				Background = new PrimitiveDrawable(new Color(50, 50, 50)),
-				StageBackground = new PrimitiveDrawable(new Color(0, 0, 0, 150))
-			};
-
-            Dialog dialog = new Dialog(title, style);
-			dialog.GetTitleLabel().GetStyle().Background = new PrimitiveDrawable(new Color(55, 100, 100));
-			dialog.Pad(20, 5, 5, 5);
-			dialog.AddText(MeddelandeText);
-            dialog.AddButton(new TextButton(Stäng , skin)).OnClicked += butt => StängUtanSvar(butt , dialog); 
-            dialog.Add(textField);
-            dialog.AddButton(new TextButton(Svara , skin)).OnClicked += TextFält;
-			dialog.Show(Table.GetStage());
-
-			return dialog;
-		}
-
-        private static void StängUtanSvar(Button butt , Dialog dialog) {
-            dialog.Hide();
         }
 
         private void TextFält(Button obj) {

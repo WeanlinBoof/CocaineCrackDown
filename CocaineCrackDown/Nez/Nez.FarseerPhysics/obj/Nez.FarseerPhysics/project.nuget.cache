@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "oIaBr6cHTpzRmXMIInvGKJYANVD22wLRp2STXY/RVixY04ajAdipOSGdmSl/BR8o1/kb64sO4omgzRDTQsPNNw==",
+  "dgSpecHash": "oiSm1PTGUbW7UgNif9bI36IT5U9KZpQsXoeuIvvzYKqwhgJCoQl/jEu8pfrSDrhz3vY9EJT945FTAH4+NlSFYg==",
   "success": true,
-  "projectFilePath": "/Users/henrikandersson/Desktop/CCD GitHub/CocaineCrackDown/CocaineCrackDown/Nez/Nez.FarseerPhysics/Nez.FarseerPhysics.csproj",
+  "projectFilePath": "C:\\Users\\Henrik\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\CocaineCrackDown\\Nez\\Nez.FarseerPhysics\\Nez.FarseerPhysics.csproj",
   "expectedPackageFiles": [
-    "/Users/henrikandersson/.nuget/packages/microsoft.netcore.platforms/5.0.0-preview.8.20407.11/microsoft.netcore.platforms.5.0.0-preview.8.20407.11.nupkg.sha512",
-    "/Users/henrikandersson/.nuget/packages/microsoft.win32.systemevents/5.0.0-preview.8.20407.11/microsoft.win32.systemevents.5.0.0-preview.8.20407.11.nupkg.sha512",
-    "/Users/henrikandersson/.nuget/packages/monogame.framework.desktopgl/3.8.0.1641/monogame.framework.desktopgl.3.8.0.1641.nupkg.sha512",
-    "/Users/henrikandersson/.nuget/packages/system.drawing.common/5.0.0-preview.8.20407.11/system.drawing.common.5.0.0-preview.8.20407.11.nupkg.sha512"
+    "C:\\Users\\Henrik\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0-preview.8.20407.11\\microsoft.netcore.platforms.5.0.0-preview.8.20407.11.nupkg.sha512",
+    "C:\\Users\\Henrik\\.nuget\\packages\\microsoft.win32.systemevents\\5.0.0-preview.8.20407.11\\microsoft.win32.systemevents.5.0.0-preview.8.20407.11.nupkg.sha512",
+    "C:\\Users\\Henrik\\.nuget\\packages\\monogame.framework.desktopgl\\3.8.0.1641\\monogame.framework.desktopgl.3.8.0.1641.nupkg.sha512",
+    "C:\\Users\\Henrik\\.nuget\\packages\\system.drawing.common\\5.0.0-preview.8.20407.11\\system.drawing.common.5.0.0-preview.8.20407.11.nupkg.sha512"
   ],
   "logs": []
 }

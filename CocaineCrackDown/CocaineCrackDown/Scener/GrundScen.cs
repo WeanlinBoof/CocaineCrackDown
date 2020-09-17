@@ -30,6 +30,7 @@ namespace CocaineCrackDown.Scener {
             ClearColor = new Color(58, 61, 101);
             //Fixar så att det är 640 x 360 pixlar på skärm skalade
             SetDesignResolution(640 , 360 , SceneResolutionPolicy.BestFit);
+            
         }
         public override void Update() {
             base.Update();
@@ -39,7 +40,7 @@ namespace CocaineCrackDown.Scener {
 
             Table = UICanvas.Stage.AddElement(new Table());
             
-            Table.SetFillParent(true).Top().PadLeft(10).PadTop(50);            
+            Table.SetFillParent(true).Top().PadLeft(10).PadTop(50);
         }
         public string SlumpAnvändarNamn => new[] {
                 "Gorbi",

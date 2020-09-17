@@ -4,17 +4,17 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/Anders H. Andersson/Desktop/CCD-NOW/CCD-DEV/CocaineCrackDown/CocaineCrackDown/Content/nez/fonts/NezDefaultBMFont.png</File>
-    <File>C:/Users/Anders H. Andersson/Desktop/CCD-NOW/CCD-DEV/CocaineCrackDown/CocaineCrackDown/Content/nez/textures/heatDistortionNoise.png</File>
-    <File>C:/Users/Anders H. Andersson/Desktop/CCD-NOW/CCD-DEV/CocaineCrackDown/CocaineCrackDown/Content/nez/textures/textureWipeTransition/angular.png</File>
-    <File>C:/Users/Anders H. Andersson/Desktop/CCD-NOW/CCD-DEV/CocaineCrackDown/CocaineCrackDown/Content/nez/textures/textureWipeTransition/crissCross.png</File>
-    <File>C:/Users/Anders H. Andersson/Desktop/CCD-NOW/CCD-DEV/CocaineCrackDown/CocaineCrackDown/Content/nez/textures/textureWipeTransition/diagonalDistort.png</File>
-    <File>C:/Users/Anders H. Andersson/Desktop/CCD-NOW/CCD-DEV/CocaineCrackDown/CocaineCrackDown/Content/nez/textures/textureWipeTransition/horizontal.png</File>
-    <File>C:/Users/Anders H. Andersson/Desktop/CCD-NOW/CCD-DEV/CocaineCrackDown/CocaineCrackDown/Content/nez/textures/textureWipeTransition/noise.png</File>
-    <File>C:/Users/Anders H. Andersson/Desktop/CCD-NOW/CCD-DEV/CocaineCrackDown/CocaineCrackDown/Content/nez/textures/textureWipeTransition/pokemon.png</File>
-    <File>C:/Users/Anders H. Andersson/Desktop/CCD-NOW/CCD-DEV/CocaineCrackDown/CocaineCrackDown/Content/nez/textures/textureWipeTransition/sawTooth.png</File>
-    <File>C:/Users/Anders H. Andersson/Desktop/CCD-NOW/CCD-DEV/CocaineCrackDown/CocaineCrackDown/Content/nez/textures/textureWipeTransition/spiral.png</File>
-    <File>C:/Users/Anders H. Andersson/Desktop/CCD-NOW/CCD-DEV/CocaineCrackDown/CocaineCrackDown/Content/nez/textures/textureWipeTransition/wink.png</File>
+    <File>C:/Users/Henrik/Desktop/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/Content/nez/fonts/NezDefaultBMFont.png</File>
+    <File>C:/Users/Henrik/Desktop/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/Content/nez/textures/heatDistortionNoise.png</File>
+    <File>C:/Users/Henrik/Desktop/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/Content/nez/textures/textureWipeTransition/angular.png</File>
+    <File>C:/Users/Henrik/Desktop/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/Content/nez/textures/textureWipeTransition/crissCross.png</File>
+    <File>C:/Users/Henrik/Desktop/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/Content/nez/textures/textureWipeTransition/diagonalDistort.png</File>
+    <File>C:/Users/Henrik/Desktop/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/Content/nez/textures/textureWipeTransition/horizontal.png</File>
+    <File>C:/Users/Henrik/Desktop/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/Content/nez/textures/textureWipeTransition/noise.png</File>
+    <File>C:/Users/Henrik/Desktop/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/Content/nez/textures/textureWipeTransition/pokemon.png</File>
+    <File>C:/Users/Henrik/Desktop/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/Content/nez/textures/textureWipeTransition/sawTooth.png</File>
+    <File>C:/Users/Henrik/Desktop/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/Content/nez/textures/textureWipeTransition/spiral.png</File>
+    <File>C:/Users/Henrik/Desktop/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/CocaineCrackDown/Content/nez/textures/textureWipeTransition/wink.png</File>
   </SourceFiles>
   <DestFiles>
     <File xsi:nil="true" />
