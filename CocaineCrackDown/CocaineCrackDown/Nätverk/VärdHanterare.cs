@@ -33,14 +33,14 @@ namespace CocaineCrackDown.Nätverk {
             };
 //fixa user identefier för att kunna veta vem som är vad i ui
             Lyssnare.NetworkReceiveEvent += (fromPeer , dataReader , deliveryMethod) => {
-                MottagenString = dataReader.GetString(100);
-                Console.WriteLine($"We got: {fromPeer} {dataReader.GetString(100)}");
+                MottagenString = dataReader.GetString();
+                Console.WriteLine($"We got: {fromPeer.EndPoint.Address.ToString()} {dataReader.GetString(100)}");
                 dataReader.Recycle();
                 
             };
         
             Lyssnare.PeerConnectedEvent += peer => {
-                MottagenString = $"We got connection: {peer}";
+                MottagenString = $"We got connection: {peer.EndPoint.Address.ToString()}";
                 Console.WriteLine("We got connection: {0}" , peer.EndPoint); // Show peer ip
             };
         }
