@@ -18,22 +18,21 @@ namespace CocaineCrackDown.Nätverk {
         public KlientHanterare() {
             Lyssnare = new KlientEventLyssnare();
             Hanterare = new NetManager(Lyssnare);
-
+            Lyssnare.PeerConnectedEvent += peer => {
+                MottagenString = $"Connected To {peer.EndPoint}";
+                Console.WriteLine($"Connected To {peer.EndPoint}"); // Show peer ip
+            };
+            Lyssnare.NetworkReceiveEvent += (fromPeer , dataReader , deliveryMethod) => {
+                MottagenString = dataReader.GetString();
+                Console.WriteLine($"We got: {dataReader.GetString(100)}");
+                dataReader.Recycle();
+            };
 
         }
         public void Anslut(string ip) {
             Hanterare.Start();
             Hanterare.Connect(ip , StandigaVarden.PORTEN , "");
-            Lyssnare.PeerConnectedEvent += peer => {
-                MottagenString = $"Connected To";
-                Console.WriteLine("We got connection: {0}" , peer.EndPoint); // Show peer ip
-            };
-            Lyssnare.NetworkReceiveEvent += (fromPeer , dataReader , deliveryMethod) => {
-                dataReader.TryGetString(out string str);
-                MottagenString = str;
-                Console.WriteLine("We got: {0}" , dataReader.GetString(100));
-                dataReader.Recycle();
-            };
+ 
         }
         public override void Update() {
             base.Update();

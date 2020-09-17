@@ -14,14 +14,6 @@ namespace CocaineCrackDown.Nätverk {
         public VärdHanterare() {
             Lyssnare = new ServerEventLyssnare();
             Hanterare = new NetManager(Lyssnare);
-        }
-        public override void Update() {
-            base.Update();
-            Hanterare.PollEvents();
-
-        }
-        public void Anslut(string ip = "localhost") {
-            Hanterare.Start(StandigaVarden.PORTEN);
             Lyssnare.ConnectionRequestEvent += request => {
                 if(Hanterare.ConnectedPeersCount < 16) {
                     request.Accept();
@@ -30,19 +22,27 @@ namespace CocaineCrackDown.Nätverk {
                     request.Reject();
                 }
             };
-//fixa user identefier för att kunna veta vem som är vad i ui
+            //fixa user identefier för att kunna veta vem som är vad i ui
             Lyssnare.NetworkReceiveEvent += (fromPeer , dataReader , deliveryMethod) => {
-                dataReader.TryGetString(out string str);
-                MottagenString = str;
-                Console.WriteLine($"We got: {fromPeer.EndPoint.Address.ToString()} {dataReader.GetString(100)}");
+                MottagenString = dataReader.GetString();
+                Console.WriteLine($"We got: {dataReader.GetString(100)}");
                 dataReader.Recycle();
                 
             };
         
             Lyssnare.PeerConnectedEvent += peer => {
-                MottagenString = $"We got connection";
-                Console.WriteLine("We got connection: {0}" , peer.EndPoint); // Show peer ip
+                MottagenString = $"We got connection: {peer.EndPoint}";
+                Console.WriteLine($"We got connection: {peer.EndPoint}"); // Show peer ip
             };
+        }
+        public override void Update() {
+            base.Update();
+            Hanterare.PollEvents();
+
+        }
+        public void Anslut(string ip = "localhost") {
+            Hanterare.Start(StandigaVarden.PORTEN);
+
         }
         public void SickaString(string str) {
             NetDataWriter writer = new NetDataWriter();               
