@@ -12,7 +12,6 @@ namespace CocaineCrackDown.Nätverk {
         public string MottagenString { get; set; }
 
         public VärdHanterare() {
-            
             Lyssnare = new ServerEventLyssnare();
             Hanterare = new NetManager(Lyssnare);
         }
@@ -33,7 +32,8 @@ namespace CocaineCrackDown.Nätverk {
             };
 //fixa user identefier för att kunna veta vem som är vad i ui
             Lyssnare.NetworkReceiveEvent += (fromPeer , dataReader , deliveryMethod) => {
-                MottagenString = dataReader.GetString();
+                dataReader.TryGetString(out string str);
+                MottagenString = str;
                 Console.WriteLine($"We got: {fromPeer.EndPoint.Address.ToString()} {dataReader.GetString(100)}");
                 dataReader.Recycle();
                 

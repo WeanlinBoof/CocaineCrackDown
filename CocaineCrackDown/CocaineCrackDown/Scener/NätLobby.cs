@@ -14,8 +14,8 @@ using Nez.UI;
 
 namespace CocaineCrackDown.Scener {
 
-    public class NätLobby : GrundScen {
-        public INätHanterare NätHaterare;            
+    public class NätLobby : GrundScen, IUpdatable {
+        public INätHanterare NätHaterare { get; set; }           
         public TextField textField;
         public TextFieldStyle textFields;
         public TextButton KörPå;
@@ -27,8 +27,12 @@ namespace CocaineCrackDown.Scener {
         public string NyttMeddelade { get; set; } = "Nytt Meddelade";
         public string MottagetMeddelande { get; set; } = "";
         public string MeddelandeSicka { get; set; } = "";
+        public bool Enabled { get; }
+        public int UpdateOrder { get; }
+
         public NätLobby(INätHanterare NH) {
-            NätHaterare = NH;            
+            NätHaterare = NH;   
+
         }
         public override void Initialize() {
             BruhUi();
@@ -56,14 +60,13 @@ namespace CocaineCrackDown.Scener {
          
             
         }
-        public override void Update() {
+        void IUpdatable.Update() {
             base.Update();
             if(MottagetMeddelande != NätHaterare.MottagenString) {
                 MottagetMeddelande = NätHaterare.MottagenString;
                 Meddelade.SetText(MottagetMeddelande);
                 
             }
-
         }
         protected void Koppplafrån() {
 

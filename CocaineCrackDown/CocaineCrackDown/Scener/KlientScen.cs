@@ -24,15 +24,15 @@ namespace CocaineCrackDown.Scener {
 
 
         public KlientScen() {
-            KH = new KlientHanterare();
-            Core.RegisterGlobalManager(KH);
+
         }
         
         public TextField textField;
         public string ip;
         public override void Initialize() {
             BruhUi();
-
+            KH = new KlientHanterare();
+            Core.RegisterGlobalManager(KH);
             Table.Add(new Label("ok").SetFontScale(5));
 
             Table.Row().SetPadTop(20);
@@ -54,7 +54,7 @@ namespace CocaineCrackDown.Scener {
             ip = textField.GetText();
             Console.WriteLine(ip);
             KH.Anslut(ip);
-            Core.StartSceneTransition(new TextureWipeTransition(() => new NätLobby(KH)) { TransitionTexture = Core.Content.Load<Texture2D>("nez/textures/textureWipeTransition/wink") });
+            Core.StartSceneTransition(new TextureWipeTransition(() => new NätLobby(KH){NätHaterare = KH}) { TransitionTexture = Core.Content.Load<Texture2D>("nez/textures/textureWipeTransition/wink") });
 
 
         }

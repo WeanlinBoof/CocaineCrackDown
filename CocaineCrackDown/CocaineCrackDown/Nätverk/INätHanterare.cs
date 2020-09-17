@@ -6,7 +6,7 @@ namespace CocaineCrackDown.Nätverk {
         NetManager Hanterare{ get; set; }
         void SickaString(string str);
         void Anslut(string ip);
-        string MottagenString { get; set; }
+        public string MottagenString { get; set; }
     }
     
 }

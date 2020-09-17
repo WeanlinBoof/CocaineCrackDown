@@ -29,7 +29,8 @@ namespace CocaineCrackDown.Nätverk {
                 Console.WriteLine("We got connection: {0}" , peer.EndPoint); // Show peer ip
             };
             Lyssnare.NetworkReceiveEvent += (fromPeer , dataReader , deliveryMethod) => {
-                MottagenString = dataReader.GetString(100);
+                dataReader.TryGetString(out string str);
+                MottagenString = str;
                 Console.WriteLine("We got: {0}" , dataReader.GetString(100));
                 dataReader.Recycle();
             };
