@@ -15,7 +15,16 @@ using Nez.UI;
 namespace CocaineCrackDown.Scener {
 
     public class NätLobby : GrundScen {
-        INätHanterare NätHaterare;
+        private INätHanterare NätHaterare;       
+        private string Chat = "Nytt Meddelade";
+        public string MottagetMeddelande = "inget just nu";
+        public TextField textField;
+        public string MeddelandeSicka = "";
+        public TextFieldStyle textFields;
+        public TextButton KörPå;
+        public string Stäng = "Stang";
+        public string Svara = "Svara";
+        public float tids = 0f;
         public NätLobby(INätHanterare NH) {
             NätHaterare = NH; 
         }
@@ -27,22 +36,10 @@ namespace CocaineCrackDown.Scener {
 
             BruhUi();
 
-            Table.Add(new Label("ok").SetFontScale(5));
+            textFields = TextFieldStyle.Create(Color.White , Color.Yellow , Color.DimGray , Color.Transparent);
 
-            Table.Row().SetPadTop(20);
-
-            TextFieldStyle textFields = TextFieldStyle.Create(Color.White , Color.White , Color.Black , Color.DarkGray);
-
-            textField = new TextField("" , textFields);
-
-            Table.Add(textField);
-
-            Table.Row().SetPadTop(20);
-
-            TextButton KörPå = Table.Add(new TextButton("Klicka" , Skin.CreateDefaultSkin())).SetFillX().SetMinHeight(30).GetElement<TextButton>();
-
-
-            KörPå.OnClicked += TextFält;
+            textField = new TextField(MeddelandeSicka , textFields);
+            ShowDialog(Chat, MottagetMeddelande, Stäng,Svara);
         }
         public override void OnStart() {
             base.OnStart();
@@ -51,17 +48,58 @@ namespace CocaineCrackDown.Scener {
         }
         public override void Update() {
             base.Update();
-        
+
+            if(MottagetMeddelande != null) { 
+                MottagetMeddelande = NätHaterare.MottagenString;
+                ShowDialog(Chat, MottagetMeddelande, Stäng,Svara);
+                tids = Time.DeltaTime;
+                if(tids > 0.5f) {
+                    MottagetMeddelande = null;
+                    tids = 0f;
+
+                }
+
+            }
+            
+            
         }
         protected void Koppplafrån() {
+
         }
-        public TextField textField;
-        public string text;
+
+
+         
+    public Dialog ShowDialog(string title, string MeddelandeText, string Stäng,string Svara)
+	{
+            Skin skin = Skin.CreateDefaultSkin();
+
+            WindowStyle style = new WindowStyle
+			{
+				Background = new PrimitiveDrawable(new Color(50, 50, 50)),
+				StageBackground = new PrimitiveDrawable(new Color(0, 0, 0, 150))
+			};
+
+            Dialog dialog = new Dialog(title, style);
+			dialog.GetTitleLabel().GetStyle().Background = new PrimitiveDrawable(new Color(55, 100, 100));
+			dialog.Pad(20, 5, 5, 5);
+			dialog.AddText(MeddelandeText);
+            dialog.AddButton(new TextButton(Stäng , skin)).OnClicked += butt => StängUtanSvar(butt , dialog); 
+            dialog.Add(textField);
+            dialog.AddButton(new TextButton(Svara , skin)).OnClicked += TextFält;
+			dialog.Show(Table.GetStage());
+
+			return dialog;
+		}
+
+        private static void StängUtanSvar(Button butt , Dialog dialog) {
+            dialog.Hide();
+        }
 
         private void TextFält(Button obj) {
-            text = textField.GetText();
-            Console.WriteLine(text);
-            NätHaterare.SickaString(text);
+            MeddelandeSicka = textField.GetText();
+            NätHaterare.SickaString(MeddelandeSicka);
+            Console.WriteLine(MeddelandeSicka);
         }
     }
+
 }

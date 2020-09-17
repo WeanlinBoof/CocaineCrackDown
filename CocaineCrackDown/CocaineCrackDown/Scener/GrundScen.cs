@@ -18,6 +18,7 @@ namespace CocaineCrackDown.Scener {
     public class GrundScen : Scene {
         public NivåNamn Status = NivåNamn.Scen1;
         public virtual Table Table { get; set; }
+        public UICanvas UICanvas;
         public GrundScen() { 
         
         }
@@ -34,11 +35,11 @@ namespace CocaineCrackDown.Scener {
             base.Update();
         }
         public virtual void BruhUi() {
-            UICanvas UICanvas = CreateEntity("ui-canvas").AddComponent(new UICanvas());
+            UICanvas = CreateEntity("ui-canvas").AddComponent(new UICanvas());
 
             Table = UICanvas.Stage.AddElement(new Table());
-
-            Table.SetFillParent(true).Top().PadLeft(10).PadTop(50);
+            
+            Table.SetFillParent(true).Top().PadLeft(10).PadTop(50);            
         }
         public string SlumpAnvändarNamn => new[] {
                 "Gorbi",

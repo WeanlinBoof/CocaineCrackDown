@@ -7,40 +7,50 @@ using Nez;
 
 namespace CocaineCrackDown.Nätverk {
     public class VärdHanterare : GlobalManager , INätHanterare {
-        private readonly ServerEventLyssnare lyssnare;
-        private readonly NetManager Server;
+        public EventBasedNetListener Lyssnare { get; set; }
+        public NetManager Hanterare { get; set; }
+        public string MottagenString { get; set; }
+
         public VärdHanterare() {
-            lyssnare = new ServerEventLyssnare();
-            Server = new NetManager(lyssnare);
+            
+            Lyssnare = new ServerEventLyssnare();
+            Hanterare = new NetManager(Lyssnare);
         }
         public override void Update() {
             base.Update();
-            Server.PollEvents();
+            Hanterare.PollEvents();
 
         }
         public void Anslut(string ip = "localhost") {
-            Server.Start(StandigaVarden.PORTEN);
-            lyssnare.ConnectionRequestEvent += request => {
-                if(Server.ConnectedPeersCount < 16) {
+            Hanterare.Start(StandigaVarden.PORTEN);
+            Lyssnare.ConnectionRequestEvent += request => {
+                if(Hanterare.ConnectedPeersCount < 16) {
                     request.Accept();
                 }
                 else {
                     request.Reject();
                 }
             };
-            lyssnare.NetworkReceiveEvent += (fromPeer , dataReader , deliveryMethod) => {
-                Console.WriteLine("We got: {0}" , dataReader.GetString(100));
+//fixa user identefier för att kunna veta vem som är vad i ui
+            Lyssnare.NetworkReceiveEvent += (fromPeer , dataReader , deliveryMethod) => {
+                MottagenString = dataReader.GetString(100);
+                Console.WriteLine($"We got: {fromPeer} {dataReader.GetString(100)}");
                 dataReader.Recycle();
+                
             };
-            lyssnare.PeerConnectedEvent += peer => {
+        
+            Lyssnare.PeerConnectedEvent += peer => {
+                MottagenString = $"We got connection: {peer}";
                 Console.WriteLine("We got connection: {0}" , peer.EndPoint); // Show peer ip
             };
         }
         public void SickaString(string str) {
             NetDataWriter writer = new NetDataWriter();               
             writer.Put(str);                              
-            Server.SendToAll(writer , DeliveryMethod.Sequenced);
+            Hanterare.SendToAll(writer , DeliveryMethod.Sequenced);
         }
+
+        
     }
     
 }

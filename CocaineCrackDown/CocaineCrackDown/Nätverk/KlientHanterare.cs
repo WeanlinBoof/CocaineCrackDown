@@ -11,31 +11,38 @@ using Nez;
 
 namespace CocaineCrackDown.Nätverk {
     public class KlientHanterare : GlobalManager, INätHanterare {
-        KlientEventLyssnare lyssnare;
-        NetManager Klient;
+        public EventBasedNetListener Lyssnare { get; set; }
+        public NetManager Hanterare { get; set; }
+        public string MottagenString { get; set; }
+
         public KlientHanterare() {
-            lyssnare = new KlientEventLyssnare();
-            Klient = new NetManager(lyssnare);
+            Lyssnare = new KlientEventLyssnare();
+            Hanterare = new NetManager(Lyssnare);
+
+
         }
         public void Anslut(string ip) {
-            Klient.Start();
-            Klient.Connect(ip , StandigaVarden.PORTEN , "");
-            lyssnare.PeerConnectedEvent += peer => {
+            Hanterare.Start();
+            Hanterare.Connect(ip , StandigaVarden.PORTEN , "");
+            Lyssnare.PeerConnectedEvent += peer => {
+                MottagenString = $"Connected To: {peer}";
                 Console.WriteLine("We got connection: {0}" , peer.EndPoint); // Show peer ip
             };
-            lyssnare.NetworkReceiveEvent += (fromPeer , dataReader , deliveryMethod) => {
+            Lyssnare.NetworkReceiveEvent += (fromPeer , dataReader , deliveryMethod) => {
+                MottagenString = dataReader.GetString(100);
                 Console.WriteLine("We got: {0}" , dataReader.GetString(100));
                 dataReader.Recycle();
             };
         }
         public override void Update() {
             base.Update();
-            Klient.PollEvents();
+            Hanterare.PollEvents();
         }
         public void SickaString(string str) {
             NetDataWriter writer = new NetDataWriter();
             writer.Put(str);
-            Klient.SendToAll(writer , DeliveryMethod.Sequenced);
+            Hanterare.SendToAll(writer , DeliveryMethod.Sequenced);
         }
+
     }
 }

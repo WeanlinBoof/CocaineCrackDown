@@ -159,7 +159,7 @@ namespace LiteNetLib
 
         private readonly Queue<NetEvent> _netEventsQueue;
         private readonly Stack<NetEvent> _netEventsPool;
-        private readonly INetEventListener _netEventListener;
+        private readonly INetEventListener NetEventLyssnare;
         private readonly IDeliveryEventListener _deliveryEventListener;
 
         private readonly Dictionary<IPEndPoint, NetPeer> _peersDict;
@@ -409,7 +409,7 @@ namespace LiteNetLib
         public NetManager(INetEventListener listener, PacketLayerBase extraPacketLayer = null)
         {
             _socket = new NetSocket(this);
-            _netEventListener = listener;
+            NetEventLyssnare = listener;
             _deliveryEventListener = listener as IDeliveryEventListener;
             _netEventsQueue = new Queue<NetEvent>();
             _netEventsPool = new Stack<NetEvent>();
@@ -582,34 +582,34 @@ namespace LiteNetLib
             switch (evt.Type)
             {
                 case NetEvent.EType.Connect:
-                    _netEventListener.OnPeerConnected(evt.Peer);
+                    NetEventLyssnare.OnPeerConnected(evt.Peer);
                     break;
                 case NetEvent.EType.Disconnect:
-                    var info = new DisconnectInfo
+                    DisconnectInfo info = new DisconnectInfo
                     {
                         Reason = evt.DisconnectReason,
                         AdditionalData = evt.DataReader,
                         SocketErrorCode = evt.ErrorCode
                     };
-                    _netEventListener.OnPeerDisconnected(evt.Peer, info);
+                    NetEventLyssnare.OnPeerDisconnected(evt.Peer, info);
                     break;
                 case NetEvent.EType.Receive:
-                    _netEventListener.OnNetworkReceive(evt.Peer, evt.DataReader, evt.DeliveryMethod);
+                    NetEventLyssnare.OnNetworkReceive(evt.Peer, evt.DataReader, evt.DeliveryMethod);
                     break;
                 case NetEvent.EType.ReceiveUnconnected:
-                    _netEventListener.OnNetworkReceiveUnconnected(evt.RemoteEndPoint, evt.DataReader, UnconnectedMessageType.BasicMessage);
+                    NetEventLyssnare.OnNetworkReceiveUnconnected(evt.RemoteEndPoint, evt.DataReader, UnconnectedMessageType.BasicMessage);
                     break;
                 case NetEvent.EType.Broadcast:
-                    _netEventListener.OnNetworkReceiveUnconnected(evt.RemoteEndPoint, evt.DataReader, UnconnectedMessageType.Broadcast);
+                    NetEventLyssnare.OnNetworkReceiveUnconnected(evt.RemoteEndPoint, evt.DataReader, UnconnectedMessageType.Broadcast);
                     break;
                 case NetEvent.EType.Error:
-                    _netEventListener.OnNetworkError(evt.RemoteEndPoint, evt.ErrorCode);
+                    NetEventLyssnare.OnNetworkError(evt.RemoteEndPoint, evt.ErrorCode);
                     break;
                 case NetEvent.EType.ConnectionLatencyUpdated:
-                    _netEventListener.OnNetworkLatencyUpdate(evt.Peer, evt.Latency);
+                    NetEventLyssnare.OnNetworkLatencyUpdate(evt.Peer, evt.Latency);
                     break;
                 case NetEvent.EType.ConnectionRequest:
-                    _netEventListener.OnConnectionRequest(evt.ConnectionRequest);
+                    NetEventLyssnare.OnConnectionRequest(evt.ConnectionRequest);
                     break;
                 case NetEvent.EType.MessageDelivered:
                     _deliveryEventListener.OnMessageDelivered(evt.Peer, evt.UserData);
