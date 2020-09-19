@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Anders H. Andersson\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\LidNet\\Lidgren.Network.csproj": {}
+    "C:\\Users\\Henrik\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\CocaineCrackDown\\LidNet\\Lidgren.Network.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Anders H. Andersson\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\LidNet\\Lidgren.Network.csproj": {
+    "C:\\Users\\Henrik\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\CocaineCrackDown\\LidNet\\Lidgren.Network.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Anders H. Andersson\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\LidNet\\Lidgren.Network.csproj",
+        "projectUniqueName": "C:\\Users\\Henrik\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\CocaineCrackDown\\LidNet\\Lidgren.Network.csproj",
         "projectName": "Lidgren.Network",
-        "projectPath": "C:\\Users\\Anders H. Andersson\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\LidNet\\Lidgren.Network.csproj",
-        "packagesPath": "C:\\Users\\Anders H. Andersson\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Anders H. Andersson\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\LidNet\\obj\\",
+        "projectPath": "C:\\Users\\Henrik\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\CocaineCrackDown\\LidNet\\Lidgren.Network.csproj",
+        "packagesPath": "C:\\Users\\Henrik\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Henrik\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\CocaineCrackDown\\LidNet\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "E:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Anders H. Andersson\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Henrik\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -62,7 +62,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -50,3 +50,4 @@ C:\Users\Henrik\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\LiteN
 C:\Users\Henrik\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\LiteNetLib\obj\Debug\netcoreapp3.1\LiteNetLib.csproj.CoreCompileInputs.cache
 C:\Users\Henrik\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\LiteNetLib\obj\Debug\netcoreapp3.1\LiteNetLib.dll
 C:\Users\Henrik\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\LiteNetLib\obj\Debug\netcoreapp3.1\LiteNetLib.pdb
+C:\Users\Henrik\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\LiteNetLib\obj\Debug\netcoreapp3.1\LiteNetLib.csprojAssemblyReference.cache

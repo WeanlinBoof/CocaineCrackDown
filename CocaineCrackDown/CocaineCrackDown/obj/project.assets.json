@@ -98,14 +98,17 @@
           }
         }
       },
-      "LiteNetLib/1.0.0": {
+      "Lidgren.Network/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "MonoGame.Framework.DesktopGL": "3.8.0.1641"
+        },
         "compile": {
-          "bin/placeholder/LiteNetLib.dll": {}
+          "bin/placeholder/Lidgren.Network.dll": {}
         },
         "runtime": {
-          "bin/placeholder/LiteNetLib.dll": {}
+          "bin/placeholder/Lidgren.Network.dll": {}
         }
       },
       "Nez/1.0.0": {
@@ -266,10 +269,10 @@
         "version.txt"
       ]
     },
-    "LiteNetLib/1.0.0": {
+    "Lidgren.Network/1.0.0": {
       "type": "project",
-      "path": "../LiteNetLib/LiteNetLib.csproj",
-      "msbuildProject": "../LiteNetLib/LiteNetLib.csproj"
+      "path": "../LidNet/Lidgren.Network.csproj",
+      "msbuildProject": "../LidNet/Lidgren.Network.csproj"
     },
     "Nez/1.0.0": {
       "type": "project",
@@ -289,7 +292,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "LiteNetLib >= 1.0.0",
+      "Lidgren.Network >= 1.0.0",
       "Nez >= 1.0.0",
       "Nez.FarseerPhysics >= 1.0.0",
       "Nez.Persistence >= 1.0.0"
@@ -326,8 +329,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\Henrik\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\CocaineCrackDown\\LiteNetLib\\LiteNetLib.csproj": {
-              "projectPath": "C:\\Users\\Henrik\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\CocaineCrackDown\\LiteNetLib\\LiteNetLib.csproj"
+            "C:\\Users\\Henrik\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\CocaineCrackDown\\LidNet\\Lidgren.Network.csproj": {
+              "projectPath": "C:\\Users\\Henrik\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\CocaineCrackDown\\LidNet\\Lidgren.Network.csproj"
             },
             "C:\\Users\\Henrik\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\CocaineCrackDown\\Nez\\Nez.FarseerPhysics\\Nez.FarseerPhysics.csproj": {
               "projectPath": "C:\\Users\\Henrik\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\CocaineCrackDown\\Nez\\Nez.FarseerPhysics\\Nez.FarseerPhysics.csproj"

@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "06z/0RR8YF3BjXiNHxlHODgAhrTia5LC4fzY2inTL6HzMH8iAr/zjdfMo0UR0myGpVwUvEKIudTMVeBzmvFjhA==",
+  "dgSpecHash": "dVYPCPjZStsEwbQHWNykCu3nthN1hGpnKpGz5z0vR0Eb789Mac1sLimTk/mpylhnQxvd3pMPWi9PwMg6+9vX+Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Anders H. Andersson\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\LidNet\\Lidgren.Network.csproj",
+  "projectFilePath": "C:\\Users\\Henrik\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\CocaineCrackDown\\LidNet\\Lidgren.Network.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Anders H. Andersson\\.nuget\\packages\\monogame.framework.desktopgl\\3.8.0.1641\\monogame.framework.desktopgl.3.8.0.1641.nupkg.sha512"
+    "C:\\Users\\Henrik\\.nuget\\packages\\monogame.framework.desktopgl\\3.8.0.1641\\monogame.framework.desktopgl.3.8.0.1641.nupkg.sha512"
   ],
   "logs": []
 }

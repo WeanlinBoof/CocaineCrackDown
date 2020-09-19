@@ -10,6 +10,11 @@
     <ApplicationIcon>Icon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Remove="Hanterare\SpelarHanterare\**" />
+    <EmbeddedResource Remove="Hanterare\SpelarHanterare\**" />
+    <None Remove="Hanterare\SpelarHanterare\**" />
+  </ItemGroup>
+  <ItemGroup>
     <None Remove="Icon.ico" />
     <None Remove="Icon.bmp" />
   </ItemGroup>
@@ -24,7 +29,7 @@
     <TrimmerRootAssembly Include="Microsoft.Xna.Framework.Content.ContentTypeReader" Visible="false" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\LiteNetLib\LiteNetLib.csproj" />
+    <ProjectReference Include="..\LidNet\Lidgren.Network.csproj" />
     <ProjectReference Include="..\Nez\Nez.FarseerPhysics\Nez.FarseerPhysics.csproj" />
     <ProjectReference Include="..\Nez\Nez.Persistence\Nez.Persistence.csproj" />
     <ProjectReference Include="..\Nez\Nez\Nez.csproj" />
@@ -212,7 +217,6 @@
     <Service Include="{508349b6-6b84-4df5-91f0-309beebad82d}" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Hanterare\SpelarHanterare\" />
     <Folder Include="Entiteter\Spelare\" />
   </ItemGroup>
 </Project>
