@@ -40,7 +40,7 @@ namespace CocaineCrackDown.Hanterare {
             throw new NotImplementedException();
         }
 //local
-        public Spelare AddPlayer(INätverkHanterare serverNätverkHanterare , bool v) {
+        public NetIncomingMessage AddPlayer(INätverkHanterare serverNätverkHanterare , bool v) {
             throw new NotImplementedException();
         }
     }

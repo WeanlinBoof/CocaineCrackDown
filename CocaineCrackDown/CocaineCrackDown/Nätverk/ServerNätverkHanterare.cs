@@ -73,7 +73,6 @@ namespace CocaineCrackDown.Nätverk {
             //message.Rörelse;
             if(spelare.SenasteUpdateringsTid < message.MeddelandesTid) {
                 spelare.Position = message.Position;
-                spelare.RörelseHastighet = message.Rörelse;
                 spelare.SenasteUpdateringsTid = message.MeddelandesTid;
             }
         }
