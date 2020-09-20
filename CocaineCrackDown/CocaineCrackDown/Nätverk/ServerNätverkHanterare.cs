@@ -50,7 +50,7 @@ namespace CocaineCrackDown.Nätverk {
             NetPeer.Recycle(InkomandeMeddelande);
         }
 
-        public void SickaMeddelande(ISpelMeddelande SpelMeddelande) {
+        public void SkickaMeddelande(ISpelMeddelande SpelMeddelande) {
             NetOutgoingMessage UtMeddelande = NetPeer.CreateMessage();
             UtMeddelande.Write((byte)SpelMeddelande.MeddelandeTyp);
             SpelMeddelande.Encode(UtMeddelande);

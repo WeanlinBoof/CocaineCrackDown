@@ -71,7 +71,7 @@ namespace CocaineCrackDown.Nätverk {
         /// Sicka Medelande Ut
         /// </summary>
         /// <param name="SpelMeddelande">The game message.</param>
-        public void SickaMeddelande(ISpelMeddelande SpelMeddelande) {
+        public void SkickaMeddelande(ISpelMeddelande SpelMeddelande) {
             NetOutgoingMessage UtMeddelande = NetPeer.CreateMessage();
             UtMeddelande.Write((byte)SpelMeddelande.MeddelandeTyp);
             SpelMeddelande.Encode(UtMeddelande);

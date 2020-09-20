@@ -31,8 +31,9 @@ namespace CocaineCrackDown.Nätverk.Meddelande {
 
         public void AvKoda(NetIncomingMessage InkomandeMeddelande) {
             ID = InkomandeMeddelande.ReadUInt64();
-            MeddelandesTid = InkomandeMeddelande.ReadDouble();
+            Användarnamn = InkomandeMeddelande.ReadString();
             Position = InkomandeMeddelande.ReadVector2();
+            MeddelandesTid = InkomandeMeddelande.ReadDouble();
         }
         public void Encode(NetOutgoingMessage UtMeddelande) {
             UtMeddelande.Write(ID);
