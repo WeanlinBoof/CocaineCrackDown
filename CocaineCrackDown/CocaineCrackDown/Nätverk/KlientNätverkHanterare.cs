@@ -80,29 +80,32 @@ namespace CocaineCrackDown.Nätverk {
             NetPeer.SendMessage(UtMeddelande , NetDeliveryMethod.UnreliableSequenced);
         }
         private void ProcessNetworkMessages(NetIncomingMessage InkommandeMeddelade) {
-           
-            if(InkommandeMeddelade.MessageType == NetIncomingMessageType.VerboseDebugMessage || InkommandeMeddelade.MessageType ==      NetIncomingMessageType.DebugMessage || InkommandeMeddelade.MessageType == NetIncomingMessageType.WarningMessage || InkommandeMeddelade.MessageType == NetIncomingMessageType.ErrorMessage) {
+
+            switch(InkommandeMeddelade.MessageType) {
+                case NetIncomingMessageType.VerboseDebugMessage:
+                case NetIncomingMessageType.DebugMessage:
+                case NetIncomingMessageType.WarningMessage:
+                case NetIncomingMessageType.ErrorMessage:
                     Console.WriteLine(InkommandeMeddelade.ReadString());
-            }
-            else if(InkommandeMeddelade.MessageType == NetIncomingMessageType.StatusChanged) {
+                    break;
+                case NetIncomingMessageType.StatusChanged: {
                     switch((NetConnectionStatus)InkommandeMeddelade.ReadByte()) {
                         case NetConnectionStatus.Connected:
                             UppdateraSpelareStatusMeddelande message = new UppdateraSpelareStatusMeddelande(InkommandeMeddelade.SenderConnection.RemoteHailMessage);
                             SpelarHanterare.AddPlayer(message.ID , this , true);
-                            Console.WriteLine("Connected to {0}" , InkommandeMeddelade.SenderEndPoint);                            break;
+                            Console.WriteLine("Connected to {0}" , InkommandeMeddelade.SenderEndPoint);
+                            break;
                         case NetConnectionStatus.Disconnected:
                             Console.WriteLine("Disconnected From {0} " , InkommandeMeddelade.SenderEndPoint);
                             break;
-                        case NetConnectionStatus.RespondedAwaitingApproval:
-                            NetOutgoingMessage hailMessage = SkapaMeddelande();
-                            new UppdateraSpelareStatusMeddelande(SpelarHanterare.AddPlayer(this , false)).Encode(hailMessage);
-                            InkommandeMeddelade.SenderConnection.Approve(hailMessage);
-                            break;
                     }
-            }
-            else if(InkommandeMeddelade.MessageType == NetIncomingMessageType.Data) {
-                   MottaMeddelande(InkommandeMeddelade.ReadSpelarData());
-                
+
+                    break;
+                }
+
+                case NetIncomingMessageType.Data:
+                    MottaMeddelande(InkommandeMeddelade.ReadSpelarData());
+                    break;
             }
             Återvin(InkommandeMeddelade);
         }

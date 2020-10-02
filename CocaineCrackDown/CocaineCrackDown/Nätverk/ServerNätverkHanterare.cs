@@ -27,7 +27,6 @@ namespace CocaineCrackDown.Nätverk {
             Konfig.EnableMessageType(NetIncomingMessageType.Error);
             Konfig.EnableMessageType(NetIncomingMessageType.DebugMessage);
             Konfig.EnableMessageType(NetIncomingMessageType.ConnectionApproval);
-
             NetPeer = new NetServer(Konfig);
         }
 
@@ -67,29 +66,28 @@ namespace CocaineCrackDown.Nätverk {
         }
 
         public void ProcessNetworkMessages(NetIncomingMessage InkommandeMeddelade) {
-            if(InkommandeMeddelade.MessageType == NetIncomingMessageType.VerboseDebugMessage || InkommandeMeddelade.MessageType == NetIncomingMessageType.DebugMessage || InkommandeMeddelade.MessageType == NetIncomingMessageType.WarningMessage || InkommandeMeddelade.MessageType == NetIncomingMessageType.ErrorMessage) {
-                Console.WriteLine(InkommandeMeddelade.ReadString());
-            }
-            else if(InkommandeMeddelade.MessageType == NetIncomingMessageType.StatusChanged) {
-                switch((NetConnectionStatus)InkommandeMeddelade.ReadByte()) {
-                    case NetConnectionStatus.Connected:
-                        Console.WriteLine("{0} Connected" , InkommandeMeddelade.SenderEndPoint);
-                        break;
+            switch(InkommandeMeddelade.MessageType) {
+                case NetIncomingMessageType.VerboseDebugMessage:
+                case NetIncomingMessageType.DebugMessage:
+                case NetIncomingMessageType.WarningMessage:
+                case NetIncomingMessageType.ErrorMessage:
+                    Console.WriteLine(InkommandeMeddelade.ReadString());
+                    break;
+                case NetIncomingMessageType.StatusChanged:
+                    switch((NetConnectionStatus)InkommandeMeddelade.ReadByte()) {
+                        case NetConnectionStatus.Connected:
+                            Console.WriteLine("{0} Connected" , InkommandeMeddelade.SenderEndPoint);
+                            break;
 
-                    case NetConnectionStatus.Disconnected:
-                        Console.WriteLine("{0} Disconnected" , InkommandeMeddelade.SenderEndPoint);
-                        break;
+                        case NetConnectionStatus.Disconnected:
+                            Console.WriteLine("{0} Disconnected" , InkommandeMeddelade.SenderEndPoint);
+                            break;
+                    }
 
-                    case NetConnectionStatus.RespondedAwaitingApproval:
-                        NetOutgoingMessage hailMessage = SkapaMeddelande();
-                        new UppdateraSpelareStatusMeddelande(SpelarHanterare.AddPlayer(this , false)).Encode(hailMessage);
-                        InkommandeMeddelade.SenderConnection.Approve(hailMessage);
-                        break;
-                }
-            }
-            else if(InkommandeMeddelade.MessageType == NetIncomingMessageType.Data) {
-                MottaMeddelande(InkommandeMeddelade.ReadSpelarData());
-                
+                    break;
+                case NetIncomingMessageType.Data:
+                    MottaMeddelande(InkommandeMeddelade.ReadSpelarData());
+                    break;
             }
             Återvin(InkommandeMeddelade);
         }
