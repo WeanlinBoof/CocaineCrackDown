@@ -1,8 +1,0 @@
-C:\Users\Anders H. Andersson\Desktop\LiteNetLib\bin\Debug\net35\LiteNetLib.dll
-C:\Users\Anders H. Andersson\Desktop\LiteNetLib\bin\Debug\net35\LiteNetLib.pdb
-C:\Users\Anders H. Andersson\Desktop\LiteNetLib\obj\Debug\net35\LiteNetLib.csprojAssemblyReference.cache
-C:\Users\Anders H. Andersson\Desktop\LiteNetLib\obj\Debug\net35\LiteNetLib.AssemblyInfoInputs.cache
-C:\Users\Anders H. Andersson\Desktop\LiteNetLib\obj\Debug\net35\LiteNetLib.AssemblyInfo.cs
-C:\Users\Anders H. Andersson\Desktop\LiteNetLib\obj\Debug\net35\LiteNetLib.csproj.CoreCompileInputs.cache
-C:\Users\Anders H. Andersson\Desktop\LiteNetLib\obj\Debug\net35\LiteNetLib.dll
-C:\Users\Anders H. Andersson\Desktop\LiteNetLib\obj\Debug\net35\LiteNetLib.pdb

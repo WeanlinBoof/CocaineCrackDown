@@ -1,9 +1,0 @@
-C:\Users\Anders H. Andersson\Desktop\LiteNetLib\bin\Debug\netcoreapp2.1\LiteNetLib.deps.json
-C:\Users\Anders H. Andersson\Desktop\LiteNetLib\bin\Debug\netcoreapp2.1\LiteNetLib.dll
-C:\Users\Anders H. Andersson\Desktop\LiteNetLib\bin\Debug\netcoreapp2.1\LiteNetLib.pdb
-C:\Users\Anders H. Andersson\Desktop\LiteNetLib\obj\Debug\netcoreapp2.1\LiteNetLib.csprojAssemblyReference.cache
-C:\Users\Anders H. Andersson\Desktop\LiteNetLib\obj\Debug\netcoreapp2.1\LiteNetLib.AssemblyInfoInputs.cache
-C:\Users\Anders H. Andersson\Desktop\LiteNetLib\obj\Debug\netcoreapp2.1\LiteNetLib.AssemblyInfo.cs
-C:\Users\Anders H. Andersson\Desktop\LiteNetLib\obj\Debug\netcoreapp2.1\LiteNetLib.csproj.CoreCompileInputs.cache
-C:\Users\Anders H. Andersson\Desktop\LiteNetLib\obj\Debug\netcoreapp2.1\LiteNetLib.dll
-C:\Users\Anders H. Andersson\Desktop\LiteNetLib\obj\Debug\netcoreapp2.1\LiteNetLib.pdb
