@@ -15,7 +15,7 @@ namespace CocaineCrackDown.Nätverk.Meddelande {
         }
         public UppdateraSpelareStatusMeddelande(SpelarData Spelare) {
             ID = Spelare.ID;
-            Användarnamn = Spelare.Användarnamn;
+            Användarnamn = Spelare.Namn;
             Position = new Vector2(Spelare.X , Spelare.Y);
             MeddelandesTid = NetTime.Now;
         }

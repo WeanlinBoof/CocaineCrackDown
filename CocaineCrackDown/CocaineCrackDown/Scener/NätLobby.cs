@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Text;
 
 using CocaineCrackDown.Entiteter;
@@ -26,21 +27,76 @@ namespace CocaineCrackDown.Scener {
         public string NyttMeddelade;
         public string MottagetMeddelande;
         public string MeddelandeSicka;
-        public NätLobby(INätverkHanterare NH) {
+        public SpelarData SpelarUtData;
+        public SpelarData SpelarInData;
+        public List<SpelarData> SpelarIDLista;
+        public Randy Randy;
+        public Doug Doug;
+        bool IsHost;
+        public NätLobby(INätverkHanterare NH,bool ishost) {
             NätHaterare = NH;
+            SpelarIDLista = new List<SpelarData>();
+            IsHost = ishost;
         }
         public override void Initialize() {
             BruhUi();
+            
+            AddEntity(new TiledMap("testnr1"));
+            if(IsHost) {
+                Doug = AddEntity(new Doug());
+                Doug.LokalSpelare = true;
+                SpelarUtData = new SpelarData(1,Doug.Name,Doug.Position,Doug.atlasAnimationsKomponent.Attackerar);
+                Doug.LokalSpelarData = SpelarUtData;
+            }
+            if(!IsHost) {
+                Randy = AddEntity(new Randy());
+                Randy.LokalSpelare = true;
+                SpelarUtData = new SpelarData(2,Randy.Name,Randy.Position,Randy.atlasAnimationsKomponent.Attackerar);
+                Randy.LokalSpelarData = SpelarUtData;
 
-
+                
+            }
         }
         public override void OnStart() {
             base.OnStart();
          
             
         }
+        public override void Update() {
+            base.Update();
+            NätHaterare.SkickaMeddelande(SpelarUtData);
+            if(NätHaterare.InkomandeData != null) {
+                if(FindEntity("randy") != null && FindEntity("doug") != null ) {
+                    UppdateraInkomandeDataSpelar(NätHaterare.InkomandeData);
+                }
+                else {
+                    AddSpelare(NätHaterare.InkomandeData);
+                }
+            }
+            
+        }
+
+        private void UppdateraInkomandeDataSpelar(SpelarData spelarData) {
+            if(IsHost) {
+                Randy.NySpelarData = spelarData;
+            }
+            if(!IsHost) {
+                Doug.NySpelarData = spelarData;
+            }
+        }
+
         protected void Koppplafrån() {
 
+        }
+        private void AddSpelare(SpelarData spelarData){
+            if(IsHost) {
+                Randy = AddEntity(new Randy(spelarData));
+                Randy.LokalSpelare = false;
+            }
+            if(!IsHost) {
+                Doug = AddEntity(new Doug(spelarData));
+                Doug.LokalSpelare = false;
+            }
         }
     }
 

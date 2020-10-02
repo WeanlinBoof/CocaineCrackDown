@@ -12,6 +12,10 @@ namespace CocaineCrackDown.Nätverk {
         void Frånkoppla();
         NetIncomingMessage LäsMeddelande();
         void Återvin(NetIncomingMessage InkomandeMeddelande);
-        void SkickaMeddelande(ISpelMeddelande SpelMeddelande);
+        void SkickaMeddelande(SpelarData spelarData);
+        void MottaMeddelande(SpelarData spelarData);
+        public SpelarData InkomandeData { get; set; }
+        public SpelarData UtData { get; set; }
     }
 }
+

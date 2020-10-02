@@ -18,30 +18,50 @@ namespace CocaineCrackDown.Entiteter {
         protected string Namn { get; set; }
         public double SenasteUpdateringsTid { get; set; }
         public Scene Scen { get; set; }
-        protected InmatningsHanterare inmatningsHanterare;
-        protected RörelseKomponent rörelseKomponent;
-        protected AtlasAnimationKomponent atlasAnimationsKomponent;
-        protected FollowCamera followCamera;
+        public InmatningsHanterare inmatningsHanterare;
+        public RörelseKomponent rörelseKomponent;
+        public AtlasAnimationKomponent atlasAnimationsKomponent;
+        public FollowCamera followCamera;
+        public SpelarData LokalSpelarData { get; set; }
 
+        public SpelarData NySpelarData { get; set; }
+        public SpelarData GammalSpelarData{ get; set; }
+        public bool LokalSpelare { get; set; }
         public Spelare(string namn) {
             Namn = namn;
             inmatningsHanterare = new InmatningsHanterare();
             rörelseKomponent = new RörelseKomponent(inmatningsHanterare , RörelseHastighet);
             atlasAnimationsKomponent = new AtlasAnimationKomponent(inmatningsHanterare);
             followCamera = new FollowCamera(this);
+            LokalSpelare = true;
             Core.RegisterGlobalManager(inmatningsHanterare);
         }
-
-        public bool Lokal { get; set; }
+        public Spelare(SpelarData spelarData, string namn){
+            NySpelarData = spelarData;
+            Namn = namn;
+            rörelseKomponent = new RörelseKomponent(inmatningsHanterare , RörelseHastighet);
+            atlasAnimationsKomponent = new AtlasAnimationKomponent(inmatningsHanterare);
+            LokalSpelare = false;
+        }
 
         public override void OnAddedToScene() {
             Name = Namn;
-            Position = new Vector2(Scene.SceneRenderTargetSize.X / 2 , Scene.SceneRenderTargetSize.Y / 2);
-            AddComponent(rörelseKomponent);
-            AddComponent(atlasAnimationsKomponent);
-            AddComponent(followCamera);
-            TiledMap Map = (TiledMap)Scene.FindEntity("testnr1");
-            Parent = Map.Transform;
+            if(LokalSpelare) {
+                Position = new Vector2(Scene.SceneRenderTargetSize.X / 2 , Scene.SceneRenderTargetSize.Y / 2);
+                AddComponent(rörelseKomponent);
+                AddComponent(atlasAnimationsKomponent);
+                AddComponent(followCamera);
+ 
+            }
+            if(!LokalSpelare) {
+                Position = new Vector2(Scene.SceneRenderTargetSize.X / 3 , Scene.SceneRenderTargetSize.Y / 3);
+                AddComponent(rörelseKomponent);
+                AddComponent(atlasAnimationsKomponent);
+                GammalSpelarData = NySpelarData;
+            }
+           Entity Map = Scene.FindEntity("testnr1");
+           Parent = Map.Transform;
+            
         }
 
         public override void OnRemovedFromScene() {
@@ -50,9 +70,19 @@ namespace CocaineCrackDown.Entiteter {
 
         public override void Update() {
             base.Update();
-            Vector2 moveDir = new Vector2(inmatningsHanterare.RörelseAxelX.Value , inmatningsHanterare.RörelseAxelY.Value);
-            AtlasAnimationsKomponentUppdatera(moveDir);
-            RörelseKomponentUppdatera(moveDir);
+            if(NySpelarData != SpelarData.SpelarDataNull && NySpelarData != GammalSpelarData) {
+                Vector2 moveDir = new Vector2(NySpelarData.X , NySpelarData.Y);
+                AtlasAnimationsKomponentUppdatera(moveDir);
+                RörelseKomponentUppdatera(moveDir);
+                
+            }
+            if(LokalSpelare) {
+                Vector2 moveDir = new Vector2(inmatningsHanterare.RörelseAxelX.Value , inmatningsHanterare.RörelseAxelY.Value);
+                AtlasAnimationsKomponentUppdatera(moveDir);
+                RörelseKomponentUppdatera(moveDir);
+            }
+
+
         }
 
         private void RörelseKomponentUppdatera(Vector2 moveDir) {
@@ -67,8 +97,10 @@ namespace CocaineCrackDown.Entiteter {
         }
 
         private void AtlasAnimationsKomponentUppdatera(Vector2 moveDir) {
-
-            if(atlasAnimationsKomponent.Inmatnings.AttackKnapp.IsPressed) {
+            if(LokalSpelare && atlasAnimationsKomponent.Inmatnings.AttackKnapp.IsPressed) {
+                atlasAnimationsKomponent.Attackerar = true;
+            }
+            if(!LokalSpelare && NySpelarData.Attack) {
                 atlasAnimationsKomponent.Attackerar = true;
             }
             atlasAnimationsKomponent.AttackBox.Enabled = atlasAnimationsKomponent.Attackerar;

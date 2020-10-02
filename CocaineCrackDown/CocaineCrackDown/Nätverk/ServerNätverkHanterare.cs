@@ -14,6 +14,8 @@ namespace CocaineCrackDown.Nätverk {
         public NetServer NetPeer { get; set; }
         public SpelarHanterare SpelarHanterare { get; set; }
         public NetIncomingMessage InkommandeMeddelade { get; set; }
+        public SpelarData InkomandeData { get; set; }
+        public SpelarData UtData { get; set; }
 
         public ServerNätverkHanterare() {
             NetPeerConfiguration Konfig = new NetPeerConfiguration(StandigaVarden.SPELNAMN) {
@@ -50,10 +52,10 @@ namespace CocaineCrackDown.Nätverk {
             NetPeer.Recycle(InkomandeMeddelande);
         }
 
-        public void SkickaMeddelande(ISpelMeddelande SpelMeddelande) {
+        public void SkickaMeddelande(SpelarData spelarData) {
+            UtData = spelarData;
             NetOutgoingMessage UtMeddelande = NetPeer.CreateMessage();
-            UtMeddelande.Write((byte)SpelMeddelande.MeddelandeTyp);
-            SpelMeddelande.Encode(UtMeddelande);
+            UtMeddelande.Write(UtData);
             NetPeer.SendToAll(UtMeddelande , NetDeliveryMethod.UnreliableSequenced);
         }
 
@@ -61,19 +63,6 @@ namespace CocaineCrackDown.Nätverk {
             base.Update();
             while((InkommandeMeddelade = LäsMeddelande()) != null) {
                 ProcessNetworkMessages(InkommandeMeddelade);
-            }
-        }
-
-        public void HanteraSpelarDataMeddelade(NetIncomingMessage im) {
-            UppdateraSpelareStatusMeddelande message = new UppdateraSpelareStatusMeddelande(im);
-            float timeDelay = (float)(NetTime.Now - im.SenderConnection.GetLocalTime(message.MeddelandesTid));
-            Spelare spelare = SpelarHanterare.GetPlayer(message.ID) ?? SpelarHanterare.AddPlayer(message.ID , this , false);
-
-            //message.Position;
-            //message.Rörelse;
-            if(spelare.SenasteUpdateringsTid < message.MeddelandesTid) {
-                spelare.Position = message.Position;
-                spelare.SenasteUpdateringsTid = message.MeddelandesTid;
             }
         }
 
@@ -99,17 +88,14 @@ namespace CocaineCrackDown.Nätverk {
                 }
             }
             else if(InkommandeMeddelade.MessageType == NetIncomingMessageType.Data) {
-                if((SpelMeddelandeTyper)InkommandeMeddelade.ReadByte() == SpelMeddelandeTyper.UppdateraSpelarStatus) {
-                    HanteraSpelarDataMeddelade(InkommandeMeddelade);
-                }
-                else if((SpelMeddelandeTyper)InkommandeMeddelade.ReadByte() == SpelMeddelandeTyper.FiendeSpawnad) {
-                }
-                else if((SpelMeddelandeTyper)InkommandeMeddelade.ReadByte() == SpelMeddelandeTyper.FiendeStatus) {
-                }
-                else if((SpelMeddelandeTyper)InkommandeMeddelade.ReadByte() == SpelMeddelandeTyper.stringconsole) {
-                }
+                MottaMeddelande(InkommandeMeddelade.ReadSpelarData());
+                
             }
             Återvin(InkommandeMeddelade);
+        }
+
+        public void MottaMeddelande(SpelarData spelarData) {
+            InkomandeData = spelarData;
         }
     }
 }

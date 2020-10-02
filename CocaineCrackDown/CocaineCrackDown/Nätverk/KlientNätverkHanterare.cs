@@ -15,7 +15,8 @@ namespace CocaineCrackDown.Nätverk {
         public NetClient NetPeer { get; set; }
         public SpelarHanterare SpelarHanterare { get; set; }
         public NetIncomingMessage InkommandeMeddelade { get; set; }
-
+        public SpelarData InkomandeData { get; set; }
+        public SpelarData UtData { get; set; }
         public KlientNätverkHanterare() {
             NetPeerConfiguration Konfig = new NetPeerConfiguration(StandigaVarden.SPELNAMN);
 
@@ -33,6 +34,7 @@ namespace CocaineCrackDown.Nätverk {
             while((InkommandeMeddelade = LäsMeddelande()) != null) {
             ProcessNetworkMessages(InkommandeMeddelade);
             }
+            
         }
         /// <summary>
         /// Klient Anslut
@@ -71,30 +73,18 @@ namespace CocaineCrackDown.Nätverk {
         /// Sicka Medelande Ut
         /// </summary>
         /// <param name="SpelMeddelande">The game message.</param>
-        public void SkickaMeddelande(ISpelMeddelande SpelMeddelande) {
+        public void SkickaMeddelande(SpelarData spelarData) {
+            UtData = spelarData;
             NetOutgoingMessage UtMeddelande = NetPeer.CreateMessage();
-            UtMeddelande.Write((byte)SpelMeddelande.MeddelandeTyp);
-            SpelMeddelande.Encode(UtMeddelande);
-
-            NetPeer.SendMessage(UtMeddelande , NetDeliveryMethod.ReliableUnordered);
-        }
-        public void HanteraSpelarDataMeddelade(NetIncomingMessage im) {
-            UppdateraSpelareStatusMeddelande message = new UppdateraSpelareStatusMeddelande(im);
-            float timeDelay = (float)(NetTime.Now - im.SenderConnection.GetLocalTime(message.MeddelandesTid));
-            Spelare spelare = SpelarHanterare.GetPlayer(message.ID) ?? SpelarHanterare.AddPlayer(message.ID , this , false);
-            //message.Position;
-            //message.Rörelse;
-            if(spelare.SenasteUpdateringsTid < message.MeddelandesTid) {
-                spelare.Position = message.Position;
-                spelare.SenasteUpdateringsTid = message.MeddelandesTid;
-            }
+            UtMeddelande.Write(UtData);
+            NetPeer.SendMessage(UtMeddelande , NetDeliveryMethod.UnreliableSequenced);
         }
         private void ProcessNetworkMessages(NetIncomingMessage InkommandeMeddelade) {
            
-                if(InkommandeMeddelade.MessageType == NetIncomingMessageType.VerboseDebugMessage || InkommandeMeddelade.MessageType == NetIncomingMessageType.DebugMessage || InkommandeMeddelade.MessageType == NetIncomingMessageType.WarningMessage || InkommandeMeddelade.MessageType == NetIncomingMessageType.ErrorMessage) {
+            if(InkommandeMeddelade.MessageType == NetIncomingMessageType.VerboseDebugMessage || InkommandeMeddelade.MessageType ==      NetIncomingMessageType.DebugMessage || InkommandeMeddelade.MessageType == NetIncomingMessageType.WarningMessage || InkommandeMeddelade.MessageType == NetIncomingMessageType.ErrorMessage) {
                     Console.WriteLine(InkommandeMeddelade.ReadString());
-                }
-                else if(InkommandeMeddelade.MessageType == NetIncomingMessageType.StatusChanged) {
+            }
+            else if(InkommandeMeddelade.MessageType == NetIncomingMessageType.StatusChanged) {
                     switch((NetConnectionStatus)InkommandeMeddelade.ReadByte()) {
                         case NetConnectionStatus.Connected:
                             UppdateraSpelareStatusMeddelande message = new UppdateraSpelareStatusMeddelande(InkommandeMeddelade.SenderConnection.RemoteHailMessage);
@@ -109,22 +99,16 @@ namespace CocaineCrackDown.Nätverk {
                             InkommandeMeddelade.SenderConnection.Approve(hailMessage);
                             break;
                     }
-                }
-                else if(InkommandeMeddelade.MessageType == NetIncomingMessageType.Data) {
-                    if((SpelMeddelandeTyper)InkommandeMeddelade.ReadByte() == SpelMeddelandeTyper.UppdateraSpelarStatus) {
-                        HanteraSpelarDataMeddelade(InkommandeMeddelade);
-                    }
-                    else if((SpelMeddelandeTyper)InkommandeMeddelade.ReadByte() == SpelMeddelandeTyper.FiendeSpawnad) {
-                    }
-                    else if((SpelMeddelandeTyper)InkommandeMeddelade.ReadByte() == SpelMeddelandeTyper.FiendeStatus) {
-                    }
-                    else if((SpelMeddelandeTyper)InkommandeMeddelade.ReadByte() == SpelMeddelandeTyper.stringconsole) {
-                    }
-                }
-                Återvin(InkommandeMeddelade);
-            
+            }
+            else if(InkommandeMeddelade.MessageType == NetIncomingMessageType.Data) {
+                   MottaMeddelande(InkommandeMeddelade.ReadSpelarData());
+                
+            }
+            Återvin(InkommandeMeddelade);
         }
 
-
+        public void MottaMeddelande(SpelarData spelarData) {
+            InkomandeData = spelarData;
+        }
     }
 }
