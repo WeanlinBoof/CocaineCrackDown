@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using Microsoft.Xna.Framework;
 
@@ -17,7 +18,8 @@ namespace Nez.Tiled
 
 		public TmxList<TmxObject> Objects;
 		public Dictionary<string, string> Properties { get; set; }
-	}
+
+    }
 
 
 	public class TmxObject : ITmxElement

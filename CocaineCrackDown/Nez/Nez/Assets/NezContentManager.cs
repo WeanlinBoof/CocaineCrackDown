@@ -85,16 +85,14 @@ namespace Nez.Systems
 					return tex;
 			}
 
-			using (var stream = Path.IsPathRooted(name) ? File.OpenRead(name) : TitleContainer.OpenStream(name))
-			{
-				var texture = premultiplyAlpha ? TextureUtils.TextureFromStreamPreMultiplied(stream) : Texture2D.FromStream(Core.GraphicsDevice, stream);
-				texture.Name = name;
-				LoadedAssets[name] = texture;
-				DisposableAssets.Add(texture);
+            using Stream stream = Path.IsPathRooted(name) ? File.OpenRead(name) : TitleContainer.OpenStream(name);
+            Texture2D texture = premultiplyAlpha ? TextureUtils.TextureFromStreamPreMultiplied(stream) : Texture2D.FromStream(Core.GraphicsDevice,stream);
+            texture.Name = name;
+            LoadedAssets[name] = texture;
+            DisposableAssets.Add(texture);
 
-				return texture;
-			}
-		}
+            return texture;
+        }
 
 		/// <summary>
 		/// loads a SoundEffect either from xnb or directly from a wav. Note that xnb files should not contain the .xnb file

@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Text;
 
 using CocaineCrackDown.Client.Managers;
@@ -18,7 +17,7 @@ namespace CocaineCrackDown.Komponenter {
         public Mover Röraren;
         public float RörelseHastighet;
         public InmatningsHanterare Inmatnings;
-        public TiledMap TM;
+        public Karta TM;
         public RörelseKomponent(InmatningsHanterare InHatterare , float RörHastighet) {
             RörelseHastighet = RörHastighet;
             Inmatnings = InHatterare;

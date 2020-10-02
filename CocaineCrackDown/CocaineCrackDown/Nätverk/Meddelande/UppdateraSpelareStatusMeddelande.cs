@@ -1,6 +1,5 @@
-﻿
-using CocaineCrackDown;
-using CocaineCrackDown.Entiteter;
+﻿using CocaineCrackDown.Entiteter;
+using CocaineCrackDown.Verktyg;
 
 using Lidgren.Network;
 

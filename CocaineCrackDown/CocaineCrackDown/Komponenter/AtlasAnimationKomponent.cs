@@ -11,25 +11,29 @@ using Nez;
 using Nez.Sprites;
 
 namespace CocaineCrackDown.Komponenter {
-    public class AtlasAnimationKomponent : Component {
+    public class AtlasAnimationKomponent<T> : Component {
         public InmatningsHanterare Inmatnings;
         public const float AttackTimerNollstälare = 0f;
         public SpriteAtlas Atlas;
         //lägg till mer sen :)
         public BoxCollider StandardBox;
         public BoxCollider AttackBox;
-        public AtlasAnimationKomponent anitmation;
-        public  SpriteAnimator Animerare;
+        //public AtlasAnimationKomponent<T> anitmation;
+        public SpriteAnimator Animerare;
 
         protected SpriteAnimator.LoopMode AnimationUppspelningsTyp;
         public bool Attackerar;
         public string animation = "doug-stilla";
-        public Riktning DougRiktning;
+        public Riktning Riktning;
         public float AttackTimer;
 
         public AtlasAnimationKomponent(InmatningsHanterare inmatnings) {
             Inmatnings = inmatnings;
         }
+
+        public AtlasAnimationKomponent() : base() {
+        }
+
         public override void OnAddedToEntity() {
             Atlas = Entity.Scene.Content.LoadSpriteAtlas($"Content/{Entity.Name}.atlas");
             Entity.Scene.Content.LoadTexture($"Content/{Entity.Name}.png");

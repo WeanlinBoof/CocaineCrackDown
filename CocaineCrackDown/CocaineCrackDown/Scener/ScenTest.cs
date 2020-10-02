@@ -9,7 +9,7 @@ namespace CocaineCrackDown.Scener {
         public override void Initialize() {
             base.Initialize();
             //AddEntity(new Spelare("doug"));
-            AddEntity(new TiledMap("testnr1"));
+            AddEntity(new Karta("testnr1"));
             AddEntity(new Randy());
         }
     }

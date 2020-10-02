@@ -29,6 +29,10 @@ namespace CocaineCrackDown.Scener {
         public NätLobby(INätverkHanterare NH) {
             NätHaterare = NH;
         }
+
+        public NätLobby() {
+        }
+
         public override void Initialize() {
             BruhUi();
 

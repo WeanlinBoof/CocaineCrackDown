@@ -1,12 +1,12 @@
 ﻿namespace CocaineCrackDown.Komponenter {
     public enum Riktning {
 
-        höger,
+        höger = 0,
 
-        vänster,
+        vänster = 1,
 
-        upp,
+        upp = 2,
 
-        ner,
+        ner = 3,
     }
 }
