@@ -13,16 +13,16 @@ using Nez;
 namespace CocaineCrackDown.Nätverk {
     public class VärdHanterare : GlobalManager, INetEventListener, INetLogger {
         //FUCKING KOLLA IN REFERENCER SOM DU HAR I GOOGLECHROME ELLER LETA EFTER MER/BÄTTRE REFERENSER
-        private NetManager server;
+        public NetManager server;
         public string msg;
 
         private NetDataWriter writer;
 
-        private NetPeer lokalPeer;
-        private Spelare lokalSpelare;
+        public NetPeer lokalPeer;
+        public Spelare lokalSpelare;
 
-        private NetPeer otherPeer;
-        private Spelare otherSpelare;
+        public NetPeer otherPeer;
+        public Spelare otherSpelare;
         
 
         public override void OnEnabled() {
@@ -35,6 +35,7 @@ namespace CocaineCrackDown.Nätverk {
         }
         public void Anslut(){
             server.Start(StandigaVarden.PORTEN);
+            lokalPeer = server.FirstPeer;
         }
         public override void Update() {
             server.PollEvents();

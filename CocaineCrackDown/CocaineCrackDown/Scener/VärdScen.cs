@@ -39,7 +39,7 @@ namespace CocaineCrackDown.Scener {
         }
         private void TextFält(Button obj) {
             ServerHanterare.Anslut();
-            Core.StartSceneTransition(new TextureWipeTransition(() => new NätLobby(true){VärdHanterare = ServerHanterare}) { TransitionTexture = Core.Content.Load<Texture2D>("nez/textures/textureWipeTransition/wink") });
+            Core.StartSceneTransition(new TextureWipeTransition(() => new NätLobby(true){Server = ServerHanterare}) { TransitionTexture = Core.Content.Load<Texture2D>("nez/textures/textureWipeTransition/wink") });
         }
     }
 }

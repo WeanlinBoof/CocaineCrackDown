@@ -13,16 +13,16 @@ namespace CocaineCrackDown.Nätverk {
 
     public class KlientHanterare : GlobalManager, INetEventListener {
         public string msg;
-        private NetManager klient;
+        public NetManager klient;
     
         private NetDataWriter writer;
 
-        private NetPeer lokalPeer;
+        public NetPeer lokalPeer;
 
-        private Spelare lokalSpelare;
+        public Spelare lokalSpelare;
 
-        private NetPeer otherPeer;
-        private Spelare otherSpelare;
+        public NetPeer otherPeer;
+        public Spelare otherSpelare;
         public void NetTest(string str){
             NetDataWriter skriv = new NetDataWriter();
             skriv.Put(str);
@@ -34,6 +34,7 @@ namespace CocaineCrackDown.Nätverk {
         public override void OnEnabled() {
             klient = new NetManager(this);
             klient.Start();
+            lokalPeer = klient.FirstPeer;
         }
 
         public override void Update() {

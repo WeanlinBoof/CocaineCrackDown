@@ -14,23 +14,22 @@ using Nez.UI;
 namespace CocaineCrackDown.Scener {
 
     public class NätLobby : GrundScen {
-        private TextField textField;
-        private TextFieldStyle textFields;
+        protected TextField textField;
+        protected TextFieldStyle textFields;
         private TextButton KörPå;
         private Label Chat;
         private TextField Meddelade;
-        private float tids = 0f;
+        protected float tids = 0f;
         private string Stäng;
         private string Svara;
         private string NyttMeddelade;
-        private string MottagetMeddelande;
-        private bool IsHost;
+        protected string MottagetMeddelande;
+        protected bool IsHost;
         public NätLobby(bool ishost) {
             IsHost = ishost;
         }
-
-        public KlientHanterare KlientHanterare { get; internal set; }
-        public VärdHanterare VärdHanterare { get; internal set; }
+        public KlientHanterare Klient { get; internal set; }
+        public VärdHanterare Server { get; internal set; }
 
         public override void Initialize() {
             BruhUi();
@@ -51,15 +50,21 @@ namespace CocaineCrackDown.Scener {
 
             KörPå = Table.Add(new TextButton("skicka" , Skin.CreateDefaultSkin())).SetFillX().SetMinHeight(30).GetElement<TextButton>();
             KörPå.OnClicked += SickaMeddelade;
+
+            Table.Row().SetPadRight(50);
+            
+           TextButton Kör = Table.Add(new TextButton("byebye borski" , Skin.CreateDefaultSkin())).SetFillX().SetMinHeight(30).GetElement<TextButton>();
+            Kör.OnClicked += Koppplafrån;
+
         }
 
-        private void SickaMeddelade(Button obj) {
+        protected void SickaMeddelade(Button obj) {
             string MeddelandeSicka = textField.GetText();
             if(IsHost) {
-                VärdHanterare.NetTest(MeddelandeSicka);
+                Server.NetTest(MeddelandeSicka);
             }
             if(!IsHost) {
-                KlientHanterare.NetTest(MeddelandeSicka);
+                Klient.NetTest(MeddelandeSicka);
             }
             Console.WriteLine(MeddelandeSicka);
         }
@@ -71,19 +76,23 @@ namespace CocaineCrackDown.Scener {
         }
         public override void Update() {
             base.Update();
-            if(IsHost && MottagetMeddelande != VärdHanterare.msg) {
-                MottagetMeddelande = VärdHanterare.msg;
+            if(IsHost && MottagetMeddelande != Server.msg) {
+                MottagetMeddelande = Server.msg;
                 Chat = Chat.SetText(MottagetMeddelande);
             }
-            if(!IsHost && MottagetMeddelande != KlientHanterare.msg) {
-                MottagetMeddelande = KlientHanterare.msg;
+            if(!IsHost && MottagetMeddelande != Klient.msg) {
+                MottagetMeddelande = Klient.msg;
                 Chat = Chat.SetText(MottagetMeddelande);
             }
         }
 
-
-        protected void Koppplafrån() {
-
+        protected void Koppplafrån(Button obj) {
+            if(IsHost) {
+                Server.SetEnabled(false);
+            }
+            if(!IsHost) {
+                Klient.SetEnabled(false);
+            }
         }
      
         
