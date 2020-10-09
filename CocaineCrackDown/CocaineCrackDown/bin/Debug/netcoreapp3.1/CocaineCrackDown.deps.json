@@ -8,7 +8,7 @@
     ".NETCoreApp,Version=v3.1": {
       "CocaineCrackDown/1.0.0": {
         "dependencies": {
-          "Lidgren.Network": "1.0.0",
+          "LiteNetLib": "1.0.0",
           "Nez": "1.0.0",
           "Nez.FarseerPhysics": "1.0.0",
           "Nez.Persistence": "1.0.0"
@@ -113,12 +113,9 @@
           }
         }
       },
-      "Lidgren.Network/1.0.0": {
-        "dependencies": {
-          "MonoGame.Framework.DesktopGL": "3.8.0.1641"
-        },
+      "LiteNetLib/1.0.0": {
         "runtime": {
-          "Lidgren.Network.dll": {}
+          "LiteNetLib.dll": {}
         }
       },
       "Nez/1.0.0": {
@@ -184,7 +181,7 @@
       "path": "system.drawing.common/5.0.0-preview.8.20407.11",
       "hashPath": "system.drawing.common.5.0.0-preview.8.20407.11.nupkg.sha512"
     },
-    "Lidgren.Network/1.0.0": {
+    "LiteNetLib/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

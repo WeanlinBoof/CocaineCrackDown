@@ -1,4 +1,5 @@
-﻿using Microsoft.Xna.Framework;
+﻿
+using Microsoft.Xna.Framework;
 
 namespace CocaineCrackDown {
     public struct SpelarData {
@@ -24,10 +25,6 @@ namespace CocaineCrackDown {
         }
         public override bool Equals(object obj) {
             return obj is SpelarData spelarData && Equals(spelarData);
-        }
-
-        public override int GetHashCode() {
-            throw new System.NotImplementedException();
         }
     }
 }

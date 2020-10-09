@@ -657,11 +657,9 @@ C:\Users\Henrik\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\Cocai
 C:\Users\Henrik\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\soft_oal.dll
 C:\Users\Henrik\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
 C:\Users\Henrik\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
-C:\Users\Henrik\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\bin\Debug\netcoreapp3.1\Lidgren.Network.dll
 C:\Users\Henrik\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\bin\Debug\netcoreapp3.1\Nez.dll
 C:\Users\Henrik\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\bin\Debug\netcoreapp3.1\Nez.FarseerPhysics.dll
 C:\Users\Henrik\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\bin\Debug\netcoreapp3.1\Nez.Persistence.dll
-C:\Users\Henrik\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\bin\Debug\netcoreapp3.1\Lidgren.Network.pdb
 C:\Users\Henrik\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\bin\Debug\netcoreapp3.1\Nez.FarseerPhysics.pdb
 C:\Users\Henrik\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\bin\Debug\netcoreapp3.1\Nez.Persistence.pdb
 C:\Users\Henrik\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\bin\Debug\netcoreapp3.1\Nez.pdb
@@ -673,3 +671,5 @@ C:\Users\Henrik\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\Cocai
 C:\Users\Henrik\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\obj\Debug\netcoreapp3.1\CocaineCrackDown.pdb
 C:\Users\Henrik\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\obj\Debug\netcoreapp3.1\CocaineCrackDown.genruntimeconfig.cache
 C:\Users\Henrik\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\obj\Debug\netcoreapp3.1\CocaineCrackDown.csprojAssemblyReference.cache
+C:\Users\Henrik\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\bin\Debug\netcoreapp3.1\LiteNetLib.dll
+C:\Users\Henrik\Desktop\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\CocaineCrackDown\bin\Debug\netcoreapp3.1\LiteNetLib.pdb

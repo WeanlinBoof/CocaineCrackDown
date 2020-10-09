@@ -20,7 +20,7 @@ using System.Threading;
 namespace CocaineCrackDown.Scener {
     public class KlientScen : GrundScen {
 
-        public KlientNätverkHanterare KlientHanterare;
+        public KlientHanterare KlientHanterare;
 
 
         public KlientScen() {
@@ -31,9 +31,9 @@ namespace CocaineCrackDown.Scener {
         public string ip;
         public override void Initialize() {
             BruhUi();
-            KlientHanterare = new KlientNätverkHanterare();
+            KlientHanterare = new KlientHanterare();
             Core.RegisterGlobalManager(KlientHanterare);
-            Table.Add(new Label("ok").SetFontScale(5));
+            Table.Add(new Label("ip pls").SetFontScale(5));
 
             Table.Row().SetPadTop(20);
             
@@ -54,7 +54,7 @@ namespace CocaineCrackDown.Scener {
             ip = textField.GetText();
             Console.WriteLine(ip);
             KlientHanterare.Anslut(ip);
-            Core.StartSceneTransition(new TextureWipeTransition(() => new NätLobby(KlientHanterare,false){NätHaterare = KlientHanterare}) { TransitionTexture = Core.Content.Load<Texture2D>("nez/textures/textureWipeTransition/wink") });
+            Core.StartSceneTransition(new TextureWipeTransition(() => new NätLobby(false){KlientHanterare = KlientHanterare}) { TransitionTexture = Core.Content.Load<Texture2D>("nez/textures/textureWipeTransition/wink") });
 
 
         }

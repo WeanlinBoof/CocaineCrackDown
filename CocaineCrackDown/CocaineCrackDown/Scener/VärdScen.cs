@@ -20,12 +20,12 @@ namespace CocaineCrackDown.Scener {
     public class VärdScen : GrundScen {
 
         public override Table Table { get; set; }
-        public ServerNätverkHanterare ServerHanterare;
+        public VärdHanterare ServerHanterare;
         public VärdScen() {
 
         }
         public override void Initialize() {
-            ServerHanterare = new ServerNätverkHanterare();
+            ServerHanterare = new VärdHanterare();
             Core.RegisterGlobalManager(ServerHanterare);
             BruhUi();
             Table.Add(new Label("ok").SetFontScale(5));
@@ -39,7 +39,7 @@ namespace CocaineCrackDown.Scener {
         }
         private void TextFält(Button obj) {
             ServerHanterare.Anslut();
-            Core.StartSceneTransition(new TextureWipeTransition(() => new NätLobby(ServerHanterare,true){NätHaterare = ServerHanterare}) { TransitionTexture = Core.Content.Load<Texture2D>("nez/textures/textureWipeTransition/wink") });
+            Core.StartSceneTransition(new TextureWipeTransition(() => new NätLobby(true){VärdHanterare = ServerHanterare}) { TransitionTexture = Core.Content.Load<Texture2D>("nez/textures/textureWipeTransition/wink") });
         }
     }
 }

@@ -16,6 +16,8 @@ namespace CocaineCrackDown {
         protected override void Initialize() {
             //fixar Grafix mer eller mindre
             base.Initialize();
+            //gör att det är fixed timestamp
+            IsFixedTimeStep = true;
             //Man kan dra kanter för att ändra storlek på spel fönster
             Window.AllowUserResizing = true;
             //fönster titel blir detta
@@ -23,8 +25,7 @@ namespace CocaineCrackDown {
             //debug nez console
             DebugRenderEnabled = true;
             //gör knappen  till f10 för att öppna den
-            DebugConsole.ConsoleKey = Keys.Tab;
-            //RegisterGlobalManager(new NätVärd());
+            DebugConsole.ConsoleKey = Keys.F10;
             //lägger scen ett som start scen
             NyScen1();
 
