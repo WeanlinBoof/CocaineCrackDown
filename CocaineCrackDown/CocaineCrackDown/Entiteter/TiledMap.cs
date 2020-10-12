@@ -13,9 +13,12 @@ namespace CocaineCrackDown.Entiteter {
         public string NamnKartaTMX { get; set; }
         public string KollitionsLager { get; set; }
         public TmxMap Karta { get; set; }
+        public TmxObjectGroup ObjGrupp;
         public TiledMapRenderer TiledMapRenderer { get; set; }
         public Vector2 bottomRight;
         public Vector2 topLeft;
+        public TmxObject SpawnSpelareEtt;
+        public TmxObject SpawnSpelareTvå;
         public TiledMap(string TMXKartanamn) {
             NamnKartaTMX = TMXKartanamn;
             TMXKartaPlats = $"Content/{NamnKartaTMX}.tmx";
@@ -27,9 +30,13 @@ namespace CocaineCrackDown.Entiteter {
             Karta = Scene.Content.LoadTiledMap(TMXKartaPlats);
             TiledMapRenderer = AddComponent(new TiledMapRenderer(Karta , KollitionsLager));
             TiledMapRenderer.SetLayersToRender(new[] { "Mark"  });
-            // render below/behind everything else. our player is at 0 and projectile is at 1.
+            //här är huur man får fram object gruper från tiléd 
+            ObjGrupp = Karta.GetObjectGroup("SpelarSpawn");
+            SpawnSpelareEtt = ObjGrupp.Objects["spelare_ett"];
+            SpawnSpelareTvå = ObjGrupp.Objects["spelare_två"];
+            // render below/behind everything else. higher number = further back
             TiledMapRenderer.SetRenderLayer(2);
-
+            
             KamraGränser();
         }
 
