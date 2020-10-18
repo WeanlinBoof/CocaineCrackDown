@@ -54,7 +54,7 @@ namespace CocaineCrackDown.Scener {
             ip = textField.GetText();
             Console.WriteLine(ip);
             KlientHanterare.Anslut(ip);
-            Core.StartSceneTransition(new TextureWipeTransition(() => new NätLobby(false){Klient = KlientHanterare}) { TransitionTexture = Core.Content.Load<Texture2D>("nez/textures/textureWipeTransition/wink") });
+            Core.StartSceneTransition(new TextureWipeTransition(() => new ScenTest(false){Klient = KlientHanterare}) { TransitionTexture = Core.Content.Load<Texture2D>("nez/textures/textureWipeTransition/wink") });
 
 
         }
