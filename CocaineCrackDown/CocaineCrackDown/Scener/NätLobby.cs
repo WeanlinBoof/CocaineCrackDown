@@ -93,12 +93,12 @@ namespace CocaineCrackDown.Scener {
             if(IsHost && MottagetMeddelande != Server.msg) {
                 MottagetMeddelande = Server.msg;
                 Chat = Chat.SetText(MottagetMeddelande);
-                otherReady = Server.ServerReady;
+                otherReady = Klient.KlientReady; 
             }
             if(!IsHost && MottagetMeddelande != Klient.msg) {
                 MottagetMeddelande = Klient.msg;
                 Chat = Chat.SetText(MottagetMeddelande);
-                otherReady = Klient.KlientReady;
+                otherReady = Server.ServerReady;
 
             }
             if(ReadyStart) {
