@@ -7,9 +7,6 @@ using Nez;
 
 namespace CocaineCrackDown.Scener {
     public class ScenTest : GrundScen {  
-        public ScenTest(bool ishost){
-            IsHost = ishost;
-        }
         public KlientHanterare Klient { get; internal set; }
         public VärdHanterare Server { get; internal set; }
         public bool IsHost { get; internal set; }
@@ -20,8 +17,7 @@ namespace CocaineCrackDown.Scener {
             if(IsHost) {
                 AddEntity(new Doug());
             }
-
-            if(!IsHost) {
+            else {
                 AddEntity(new Randy());
             }
         }
