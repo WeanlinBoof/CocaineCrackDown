@@ -6,6 +6,7 @@ using CocaineCrackDown.Entiteter;
 using CocaineCrackDown.Nätverk;
 
 using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 
 using Nez;
@@ -64,11 +65,10 @@ namespace CocaineCrackDown.Scener {
         }
          private void bruh(ITimer time){
             if(IsHost) {
-                Core.StartSceneTransition(new TextureWipeTransition(() => new ScenTest(true){Server = ServerHanterare}) { TransitionTexture = Core.Content.Load<Texture2D>("nez/textures/textureWipeTransition/wink") });
-
+                Core.StartSceneTransition(new TextureWipeTransition(() => new ScenTest(true){Server = Server}) { TransitionTexture = Core.Content.Load<Texture2D>("nez/textures/textureWipeTransition/wink") });
             }
             if(!IsHost) {
-                Core.StartSceneTransition(new TextureWipeTransition(() => new ScenTest(false){Klient = KlientHanterare}) { TransitionTexture = Core.Content.Load<Texture2D>("nez/textures/textureWipeTransition/wink") });
+                Core.StartSceneTransition(new TextureWipeTransition(() => new ScenTest(false){Klient = Klient}) { TransitionTexture = Core.Content.Load<Texture2D>("nez/textures/textureWipeTransition/wink") });
 
             }
          }
