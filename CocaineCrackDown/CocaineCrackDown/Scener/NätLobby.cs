@@ -65,10 +65,10 @@ namespace CocaineCrackDown.Scener {
         }
          private void bruh(ITimer time){
             if(IsHost) {
-                Core.StartSceneTransition(new TextureWipeTransition(() => new ScenTest(true){Server = Server}) { TransitionTexture = Core.Content.Load<Texture2D>("nez/textures/textureWipeTransition/wink") });
+                Core.StartSceneTransition(new TextureWipeTransition(() => new ScenTest(){Server = Server}) { TransitionTexture = Core.Content.Load<Texture2D>("nez/textures/textureWipeTransition/wink") });
             }
             if(!IsHost) {
-                Core.StartSceneTransition(new TextureWipeTransition(() => new ScenTest(false){Klient = Klient}) { TransitionTexture = Core.Content.Load<Texture2D>("nez/textures/textureWipeTransition/wink") });
+                Core.StartSceneTransition(new TextureWipeTransition(() => new ScenTest(){Klient = Klient}) { TransitionTexture = Core.Content.Load<Texture2D>("nez/textures/textureWipeTransition/wink") });
 
             }
          }
