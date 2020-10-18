@@ -12,7 +12,7 @@ namespace CocaineCrackDown.Scener {
         }
         public KlientHanterare Klient { get; internal set; }
         public VärdHanterare Server { get; internal set; }
-        protected bool IsHost;
+        public bool IsHost { get; internal set; }
         public override void Initialize() {
             base.Initialize();
             AddEntity(new TiledMap("testnr1"));
