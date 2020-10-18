@@ -32,7 +32,7 @@ namespace CocaineCrackDown {
         }
 
         private static void NyScen1() {
-            Scene = new ScenTest();
+            Scene = new Scen1();
         }
     }
 }

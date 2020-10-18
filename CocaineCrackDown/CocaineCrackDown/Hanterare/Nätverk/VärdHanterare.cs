@@ -15,6 +15,7 @@ namespace CocaineCrackDown.Nätverk {
         //FUCKING KOLLA IN REFERENCER SOM DU HAR I GOOGLECHROME ELLER LETA EFTER MER/BÄTTRE REFERENSER
         public NetManager server;
         public string msg;
+        public bool ServerReady;
 
         private NetDataWriter writer;
 
@@ -80,15 +81,21 @@ namespace CocaineCrackDown.Nätverk {
         public void OnNetworkReceive(NetPeer peer , NetPacketReader reader , DeliveryMethod deliveryMethod) {
             msg = reader.GetString();
             Console.WriteLine($"{peer.Id}: {msg}");
+            ServerReady = reader.GetBool();
             reader.Recycle();
         }
 
         public void WriteNet(NetLogLevel level , string str , params object[] args) {
             Console.WriteLine(str , args);
         }
-        public void NetTest(string str){
+        public void SickaString(string str){
             NetDataWriter skriv = new NetDataWriter();
             skriv.Put(str);
+            server.SendToAll(skriv,DeliveryMethod.ReliableOrdered);
+        }
+        public void SickaBool(bool bOl){
+            NetDataWriter skriv = new NetDataWriter();
+            skriv.Put(bOl);
             server.SendToAll(skriv,DeliveryMethod.ReliableOrdered);
         }
     }

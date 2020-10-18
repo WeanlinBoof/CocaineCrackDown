@@ -13,19 +13,25 @@ namespace CocaineCrackDown.Nätverk {
 
     public class KlientHanterare : GlobalManager, INetEventListener {
         public string msg;
+        public bool KlientReady;
         public NetManager klient;
     
         private NetDataWriter writer;
-
+        
         public NetPeer lokalPeer;
 
         public Spelare lokalSpelare;
 
         public NetPeer otherPeer;
         public Spelare otherSpelare;
-        public void NetTest(string str){
+        public void SickaString(string str){
             NetDataWriter skriv = new NetDataWriter();
             skriv.Put(str);
+            klient.SendToAll(skriv,DeliveryMethod.ReliableOrdered);
+        }
+        public void SickaBool(bool bOl){
+            NetDataWriter skriv = new NetDataWriter();
+            skriv.Put(bOl);
             klient.SendToAll(skriv,DeliveryMethod.ReliableOrdered);
         }
         public void Anslut(string ip){
@@ -56,6 +62,7 @@ namespace CocaineCrackDown.Nätverk {
         public void OnNetworkReceive(NetPeer peer , NetPacketReader reader , DeliveryMethod deliveryMethod) {
             msg = reader.GetString();
             Console.WriteLine($"{peer.Id}: {msg}");
+            KlientReady = reader.GetBool();
             reader.Recycle();
         }
 

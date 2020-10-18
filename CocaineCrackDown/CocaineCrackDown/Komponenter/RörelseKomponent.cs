@@ -1,11 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Text;
 
 using CocaineCrackDown.Client.Managers;
 using CocaineCrackDown.Entiteter;
 
-using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
 using Nez;
@@ -15,17 +13,19 @@ using Nez.Tiled;
 namespace CocaineCrackDown.Komponenter {
     public class RörelseKomponent : Component {
         public SubpixelVector2 V2Pixel;
-        public Mover Röraren;
+        public Röraren Röraren;
         public float RörelseHastighet;
         public InmatningsHanterare Inmatnings;
-        public TiledMap TM;
-        public RörelseKomponent(InmatningsHanterare InHatterare , float RörHastighet) {
+        private Spelare Spelare;
+        public RörelseKomponent(InmatningsHanterare InHatterare , float RörHastighet,Spelare spelare) {
             RörelseHastighet = RörHastighet;
             Inmatnings = InHatterare;
+            Spelare = spelare;
         }
         public override void OnAddedToEntity() {
             base.OnAddedToEntity();
-            Röraren = Entity.AddComponent(new Mover());            
+            Röraren = Entity.AddComponent(new Röraren(Spelare.Map.Karta));
+
         }
     }
 }

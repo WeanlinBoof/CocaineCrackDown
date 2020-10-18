@@ -32,7 +32,7 @@ namespace CocaineCrackDown.Entiteter {
         public Spelare(string namn) {
             Namn = namn;
             inmatningsHanterare = new InmatningsHanterare();
-            rörelseKomponent = new RörelseKomponent(inmatningsHanterare , RörelseHastighet);
+            rörelseKomponent = new RörelseKomponent(inmatningsHanterare , RörelseHastighet,this);
             atlasAnimationsKomponent = new AtlasAnimationKomponent(inmatningsHanterare);
             followCamera = new FollowCamera(this);
             
@@ -76,12 +76,12 @@ namespace CocaineCrackDown.Entiteter {
 
         private void RörelseKomponentUppdatera(Vector2 moveDir) {
             if(moveDir != Vector2.Zero) {
-
+                                          
                 Vector2 movement = moveDir * RörelseHastighet * Time.DeltaTime;
 
-                rörelseKomponent.Röraren.CalculateMovement(ref movement , out CollisionResult res);
+                rörelseKomponent.Röraren.BeräknaRörelse(ref movement , out CollisionResult res);
                 rörelseKomponent.V2Pixel.Update(ref movement);
-                rörelseKomponent.Röraren.ApplyMovement(movement);
+                rörelseKomponent.Röraren.TillämpaRörelsen(movement);
             }
         }
 

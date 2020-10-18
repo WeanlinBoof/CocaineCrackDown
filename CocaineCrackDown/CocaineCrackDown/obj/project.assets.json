@@ -121,34 +121,6 @@
         "runtime": {
           "bin/placeholder/Nez.dll": {}
         }
-      },
-      "Nez.FarseerPhysics/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
-        "dependencies": {
-          "MonoGame.Framework.DesktopGL": "3.8.0.1641",
-          "Nez": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/Nez.FarseerPhysics.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Nez.FarseerPhysics.dll": {}
-        }
-      },
-      "Nez.Persistence/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
-        "dependencies": {
-          "MonoGame.Framework.DesktopGL": "3.8.0.1641",
-          "Nez": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/Nez.Persistence.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Nez.Persistence.dll": {}
-        }
       }
     }
   },
@@ -275,24 +247,12 @@
       "type": "project",
       "path": "../Nez/Nez/Nez.csproj",
       "msbuildProject": "../Nez/Nez/Nez.csproj"
-    },
-    "Nez.FarseerPhysics/1.0.0": {
-      "type": "project",
-      "path": "../Nez/Nez.FarseerPhysics/Nez.FarseerPhysics.csproj",
-      "msbuildProject": "../Nez/Nez.FarseerPhysics/Nez.FarseerPhysics.csproj"
-    },
-    "Nez.Persistence/1.0.0": {
-      "type": "project",
-      "path": "../Nez/Nez.Persistence/Nez.Persistence.csproj",
-      "msbuildProject": "../Nez/Nez.Persistence/Nez.Persistence.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "LiteNetLib >= 1.0.0",
-      "Nez >= 1.0.0",
-      "Nez.FarseerPhysics >= 1.0.0",
-      "Nez.Persistence >= 1.0.0"
+      "Nez >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -328,12 +288,6 @@
           "projectReferences": {
             "C:\\Users\\Henrik\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\CocaineCrackDown\\LiteNetLib\\LiteNetLib.csproj": {
               "projectPath": "C:\\Users\\Henrik\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\CocaineCrackDown\\LiteNetLib\\LiteNetLib.csproj"
-            },
-            "C:\\Users\\Henrik\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\CocaineCrackDown\\Nez\\Nez.FarseerPhysics\\Nez.FarseerPhysics.csproj": {
-              "projectPath": "C:\\Users\\Henrik\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\CocaineCrackDown\\Nez\\Nez.FarseerPhysics\\Nez.FarseerPhysics.csproj"
-            },
-            "C:\\Users\\Henrik\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\CocaineCrackDown\\Nez\\Nez.Persistence\\Nez.Persistence.csproj": {
-              "projectPath": "C:\\Users\\Henrik\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\CocaineCrackDown\\Nez\\Nez.Persistence\\Nez.Persistence.csproj"
             },
             "C:\\Users\\Henrik\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\CocaineCrackDown\\Nez\\Nez\\Nez.csproj": {
               "projectPath": "C:\\Users\\Henrik\\Desktop\\CocaineCrackDown\\CocaineCrackDown\\CocaineCrackDown\\Nez\\Nez\\Nez.csproj"

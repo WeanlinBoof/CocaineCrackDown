@@ -30,8 +30,6 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\LiteNetLib\LiteNetLib.csproj" />
-    <ProjectReference Include="..\Nez\Nez.FarseerPhysics\Nez.FarseerPhysics.csproj" />
-    <ProjectReference Include="..\Nez\Nez.Persistence\Nez.Persistence.csproj" />
     <ProjectReference Include="..\Nez\Nez\Nez.csproj" />
   </ItemGroup>
   <ItemGroup>

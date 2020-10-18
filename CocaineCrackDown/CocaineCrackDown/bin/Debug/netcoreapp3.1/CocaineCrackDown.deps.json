@@ -9,9 +9,7 @@
       "CocaineCrackDown/1.0.0": {
         "dependencies": {
           "LiteNetLib": "1.0.0",
-          "Nez": "1.0.0",
-          "Nez.FarseerPhysics": "1.0.0",
-          "Nez.Persistence": "1.0.0"
+          "Nez": "1.0.0"
         },
         "runtime": {
           "CocaineCrackDown.dll": {}
@@ -126,24 +124,6 @@
         "runtime": {
           "Nez.dll": {}
         }
-      },
-      "Nez.FarseerPhysics/1.0.0": {
-        "dependencies": {
-          "MonoGame.Framework.DesktopGL": "3.8.0.1641",
-          "Nez": "1.0.0"
-        },
-        "runtime": {
-          "Nez.FarseerPhysics.dll": {}
-        }
-      },
-      "Nez.Persistence/1.0.0": {
-        "dependencies": {
-          "MonoGame.Framework.DesktopGL": "3.8.0.1641",
-          "Nez": "1.0.0"
-        },
-        "runtime": {
-          "Nez.Persistence.dll": {}
-        }
       }
     }
   },
@@ -187,16 +167,6 @@
       "sha512": ""
     },
     "Nez/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Nez.FarseerPhysics/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Nez.Persistence/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

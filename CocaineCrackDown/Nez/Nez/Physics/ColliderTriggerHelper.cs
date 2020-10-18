@@ -3,12 +3,11 @@ using System.Collections.Generic;
 
 namespace Nez
 {
-	/// <summary>
-	/// helper class used by the Movers to manage trigger colliders interactions and calling ITriggerListeners.
-	/// </summary>
-	public class ColliderTriggerHelper
-	{
-		Entity _entity;
+    /// <summary>
+    /// helper class used by the Movers to manage trigger colliders interactions and calling ITriggerListeners.
+    /// </summary>
+    public class ColliderTriggerHelper {
+        Entity _entity;
 
 		/// <summary>
 		/// stores all the active intersection pairs that occured in the current frame

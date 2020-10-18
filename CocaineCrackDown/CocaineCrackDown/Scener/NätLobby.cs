@@ -25,6 +25,8 @@ namespace CocaineCrackDown.Scener {
         private string NyttMeddelade;
         protected string MottagetMeddelande;
         protected bool IsHost;
+        public bool ReadyStart;
+        private bool otherReady;
         public NätLobby(bool ishost) {
             IsHost = ishost;
         }
@@ -52,19 +54,31 @@ namespace CocaineCrackDown.Scener {
             KörPå.OnClicked += SickaMeddelade;
 
             Table.Row().SetPadRight(50);
-            
-           TextButton Kör = Table.Add(new TextButton("byebye borski" , Skin.CreateDefaultSkin())).SetFillX().SetMinHeight(30).GetElement<TextButton>();
-            Kör.OnClicked += Koppplafrån;
+            /*TextButton Kör = Table.Add(new TextButton("byebye borski" , Skin.CreateDefaultSkin())).SetFillX().SetMinHeight(30).GetElement<TextButton>();
+              Kör.OnClicked += Koppplafrån;*/
+            Skin skin = Skin.CreateDefaultSkin();
+            CheckBox checkbox = Table.Add(new CheckBox("Ready", skin)).GetElement<CheckBox>();
+			checkbox.IsChecked = false;
+			checkbox.OnChanged += isChecked => { ReadyStart = isChecked; };
 
         }
+         private void bruh(ITimer time){
+            if(IsHost) {
+                Core.StartSceneTransition(new TextureWipeTransition(() => new ScenTest(true){Server = ServerHanterare}) { TransitionTexture = Core.Content.Load<Texture2D>("nez/textures/textureWipeTransition/wink") });
 
+            }
+            if(!IsHost) {
+                Core.StartSceneTransition(new TextureWipeTransition(() => new ScenTest(false){Klient = KlientHanterare}) { TransitionTexture = Core.Content.Load<Texture2D>("nez/textures/textureWipeTransition/wink") });
+
+            }
+         }
         protected void SickaMeddelade(Button obj) {
             string MeddelandeSicka = textField.GetText();
             if(IsHost) {
-                Server.NetTest(MeddelandeSicka);
+                Server.SickaString(MeddelandeSicka);
             }
             if(!IsHost) {
-                Klient.NetTest(MeddelandeSicka);
+                Klient.SickaString(MeddelandeSicka);
             }
             Console.WriteLine(MeddelandeSicka);
         }
@@ -79,11 +93,26 @@ namespace CocaineCrackDown.Scener {
             if(IsHost && MottagetMeddelande != Server.msg) {
                 MottagetMeddelande = Server.msg;
                 Chat = Chat.SetText(MottagetMeddelande);
+                otherReady = Server.ServerReady;
             }
             if(!IsHost && MottagetMeddelande != Klient.msg) {
                 MottagetMeddelande = Klient.msg;
                 Chat = Chat.SetText(MottagetMeddelande);
+                otherReady = Klient.KlientReady;
+
             }
+            if(ReadyStart) {
+                    Console.WriteLine("Ready");
+
+            }
+            if(!ReadyStart) {
+                    Console.WriteLine("Not Ready");
+
+            }
+            if(ReadyStart && otherReady) {             
+                Core.Schedule(5,false,bruh);
+            }
+            
         }
 
         protected void Koppplafrån(Button obj) {
