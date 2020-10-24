@@ -16,6 +16,7 @@ namespace CocaineCrackDown.Nätverk {
         public NetManager server;
         public string msg;
         public bool ServerReady;
+        public SpelarData recivedSpelarData;
 
         private NetDataWriter writer;
 
@@ -24,7 +25,21 @@ namespace CocaineCrackDown.Nätverk {
 
         public NetPeer otherPeer;
         public Spelare otherSpelare;
-        
+
+        public VärdHanterare() {              
+
+
+        }
+        public void SickaSpelarData(SpelarData spelarData){
+            NetDataWriter skriv = new NetDataWriter();
+            skriv.Put(spelarData.X);
+            skriv.Put(spelarData.Y);
+            skriv.Put(spelarData.Attack);
+            server.SendToAll(skriv ,DeliveryMethod.ReliableOrdered);
+        }
+        private void OnSpelarDataRecived(SPDataPacket spData , NetPeer peer) {
+            recivedSpelarData = spData.SpelarData;
+        }
 
         public override void OnEnabled() {
             NetDebug.Logger = this;
@@ -79,9 +94,11 @@ namespace CocaineCrackDown.Nätverk {
         }
 
         public void OnNetworkReceive(NetPeer peer , NetPacketReader reader , DeliveryMethod deliveryMethod) {
-            msg = reader.GetString();
-            Console.WriteLine($"{peer.Id}: {msg}");
-            ServerReady = reader.GetBool();
+            recivedSpelarData = new SpelarData {
+                X = reader.GetFloat() ,
+                Y = reader.GetFloat() ,
+                Attack = reader.GetBool()
+            };
             reader.Recycle();
         }
 

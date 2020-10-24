@@ -17,7 +17,7 @@ namespace CocaineCrackDown.Komponenter {
         public float RörelseHastighet;
         public InmatningsHanterare Inmatnings;
         private Spelare Spelare;
-        public RörelseKomponent(InmatningsHanterare InHatterare , float RörHastighet,Spelare spelare) {
+        public RörelseKomponent(float RörHastighet,Spelare spelare,InmatningsHanterare InHatterare = null ) {
             RörelseHastighet = RörHastighet;
             Inmatnings = InHatterare;
             Spelare = spelare;

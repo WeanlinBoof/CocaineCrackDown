@@ -2,8 +2,9 @@
 
 namespace CocaineCrackDown.Entiteter {
     public class Randy : Spelare {
-        public Randy(string namn = "randy") : base(namn) {
+        public Randy(bool lokal, string namn = "randy") : base(namn,lokal) {
         }
+        
 
     }
 }

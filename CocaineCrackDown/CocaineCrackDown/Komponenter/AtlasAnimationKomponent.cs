@@ -27,7 +27,7 @@ namespace CocaineCrackDown.Komponenter {
         public Riktning DougRiktning;
         public float AttackTimer;
 
-        public AtlasAnimationKomponent(InmatningsHanterare inmatnings) {
+        public AtlasAnimationKomponent(InmatningsHanterare inmatnings = null ) {
             Inmatnings = inmatnings;
         }
         public override void OnAddedToEntity() {

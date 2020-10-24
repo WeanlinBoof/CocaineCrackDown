@@ -22,6 +22,7 @@ namespace CocaineCrackDown.Entiteter {
         public RörelseKomponent rörelseKomponent;
         public AtlasAnimationKomponent atlasAnimationsKomponent;
         public FollowCamera followCamera;
+        public bool Lokal { get; set; }
         public SpelarData LokalSpelarData { get; set; }
 
         public SpelarData NySpelarData { get; set; }
@@ -29,29 +30,41 @@ namespace CocaineCrackDown.Entiteter {
         public bool LokalSpelare { get; set; }
         public Vector2 Spawn;
         public TiledMap Map;
-        public Spelare(string namn) {
+        public Spelare(string namn,bool lokal) {
+            Lokal = lokal;
             Namn = namn;
             inmatningsHanterare = new InmatningsHanterare();
-            rörelseKomponent = new RörelseKomponent(inmatningsHanterare , RörelseHastighet,this);
-            atlasAnimationsKomponent = new AtlasAnimationKomponent(inmatningsHanterare);
+            Core.RegisterGlobalManager(inmatningsHanterare);
+            if(Lokal) {
+                rörelseKomponent = new RörelseKomponent( RörelseHastighet,this,inmatningsHanterare);
+                atlasAnimationsKomponent = new AtlasAnimationKomponent(inmatningsHanterare);
+            }
+            else {
+                rörelseKomponent = new RörelseKomponent( RörelseHastighet,this);
+                atlasAnimationsKomponent = new AtlasAnimationKomponent();
+            }
+
             followCamera = new FollowCamera(this);
             
-            Core.RegisterGlobalManager(inmatningsHanterare);
         }
         public override void OnAddedToScene() {
             Name = Namn;
             Map = (TiledMap)Scene.FindEntity("testnr1");
-            //bewrode på vilken spelare så spawnar den på respective plats 
-            Spawn = Name switch {
-                "doug" => new Vector2(Map.SpawnSpelareEtt.X , Map.SpawnSpelareEtt.Y),
-                "randy" => new Vector2(Map.SpawnSpelareTvå.X , Map.SpawnSpelareTvå.Y),
-                _ => new Vector2(Map.Position.X , Map.Position.Y),
-            };
+            //bewrode på vilken spelare så spawnar den på respective plats           
+            if(Namn == "randy") {
+                Spawn = new Vector2(Map.SpawnSpelareTvå.X , Map.SpawnSpelareTvå.Y);
+            }
+            if(Namn == "doug") {
+                Spawn = new Vector2(Map.SpawnSpelareEtt.X , Map.SpawnSpelareEtt.Y);
+            }
             Parent = Map.Transform;
             Position = Spawn;
-            AddComponent(rörelseKomponent);
-            AddComponent(atlasAnimationsKomponent);
-            AddComponent(followCamera);
+
+            if(Lokal) {
+                AddComponent(atlasAnimationsKomponent);
+                AddComponent(rörelseKomponent);
+                AddComponent(followCamera);
+            }
  
 
 
@@ -65,12 +78,18 @@ namespace CocaineCrackDown.Entiteter {
 
         public override void Update() {
             base.Update();
-
-
-                Vector2 moveDir = new Vector2(inmatningsHanterare.RörelseAxelX.Value , inmatningsHanterare.RörelseAxelY.Value);
-                AtlasAnimationsKomponentUppdatera(moveDir);
+            if(Lokal) {
+              Vector2 moveDir = new Vector2(inmatningsHanterare.RörelseAxelX.Value , inmatningsHanterare.RörelseAxelY.Value);
+               AtlasAnimationsKomponentUppdatera(moveDir);
                 RörelseKomponentUppdatera(moveDir);
 
+            }
+            if(!Lokal) {
+               //Vector2 moveDir = new Vector2(inmatningsHanterare.RörelseAxelX.Value , inmatningsHanterare.RörelseAxelY.Value);
+               //AtlasAnimationsKomponentUppdatera(moveDir);
+               //RörelseKomponentUppdatera(moveDir);
+
+            }
 
         }
 
